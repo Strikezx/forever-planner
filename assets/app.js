@@ -218,6 +218,30 @@ function autoOrder(k, ranks) {
   }
   return out;
 }
+// Mobalytics "Leveling Path" (and similar lists): a talent name on one line, its level on the next.
+// Takes the first run of 5+ such pairs; finds the class from the names when the hinted class doesn't fit.
+function levelList(t, kHint) {
+  const lines = t.split(/\r?\n/).map(x => x.trim()).filter(Boolean);
+  const runOf = k => {
+    const runs = []; let cur = [];
+    for (let i = 0; i < lines.length; i++) {
+      const x = talByName(k, lines[i]), lv = lines[i + 1];
+      if (x && /^\d{1,2}$/.test(lv || "") && +lv >= 10 && +lv <= 60) { cur.push([x.name, +lv]); i++; }
+      else { if (cur.length >= 5) runs.push(cur); cur = []; }
+    }
+    if (cur.length >= 5) runs.push(cur);
+    return runs;
+  };
+  let k = kHint, runs = runOf(k);
+  if (!runs.length) for (const c of ORDER) { const r = runOf(c); if (r.length) { k = c; runs = r; break; } }
+  if (!runs.length) return null;
+  const run = runs[0].slice().sort((a, b) => a[1] - b[1]);
+  const notes = [];
+  if (run.some((x, i) => x[1] !== 10 + i)) notes.push("Some levels in the list skip or repeat; the planner placed one point per level from 10.");
+  if (runs.length > 1) notes.push(`This paste holds ${runs.length} talent lists; this is the first. Paste the others one at a time.`);
+  const sp = t.match(/Points spent\s+\d+\s+(\d+)\s*\/\s*(\d+)\s*\/\s*(\d+)/i);
+  return { k, order: run.map(x => x[0]), source: /leveling path/i.test(t) ? "Mobalytics" : "Pasted list", expect: sp ? `${sp[1]}/${sp[2]}/${sp[3]}` : "", note: notes.join(" ") };
+}
 // what was pasted? returns {k, order, source, note} or {err}
 function parseBuild(text, kHint) {
   const t = String(text || "").trim();
@@ -254,6 +278,7 @@ function parseBuild(text, kHint) {
   }
   if (/wowhead\.com\/[^\s]*talent-calc/i.test(t)) return { err: "Wowhead talent-calculator links are coded in a way the planner can't read yet. On the Wowhead guide, copy the \"Talent Order\" list (the level-by-level one) and paste that text here instead." };
   if (/^https?:\/\//i.test(t) && !/\s/.test(t)) return { err: "The planner reads Talents Forever and Icy Veins calculator links. For other sites, copy the level-by-level talent order as text and paste it here." };
+  const lst = levelList(t, kHint); if (lst) return lst;
   // plain text: talent names in order. "Rank 3" or "3/5" after a name means up to that rank; "x3" means 3 points.
   const k = kHint, F = flatTal(k);
   const names = F.map(x => x.name).sort((a, b) => b.length - a.length).map(n => n.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/'/g, "['’]"));
@@ -301,7 +326,7 @@ function defaultBuildName(k, order) {
 function buildForm(k) {
   const C = CLS[k];
   openDlg(`<h2 id="dlg-title">Add a build</h2>
-  <p>Paste a <b>Talents Forever</b> or <b>Icy Veins</b> talent calculator link, or a level-by-level talent order copied as text (Mobalytics, Wowhead's "Talent Order" list). The planner checks it against Forever's trees and adds it as a tab in the talent checklist.</p>
+  <p>Paste a <b>Talents Forever</b> or <b>Icy Veins</b> talent calculator link, a whole <b>Mobalytics</b> build page (select all, copy, one build at a time), or a level-by-level order as text, like Wowhead's "Talent Order" list. The planner checks it against Forever's trees and adds it as a tab in the talent checklist.</p>
   <label class="field"><span>Link or talent order</span><textarea name="src" rows="4" placeholder="https://talentsforever.com/…   or   https://www.icy-veins.com/wow-forever/…-talent-calculator#tc-…" autofocus></textarea></label>
   <label class="field"><span>Class, for pasted text</span><select name="cls">${ORDER.map(x => `<option value="${x}"${x === k ? " selected" : ""}>${esc(CLS[x].name)}</option>`).join("")}</select></label>
   <div class="bprev" id="bprev" aria-live="polite"></div>
@@ -316,11 +341,12 @@ function buildForm(k) {
     if (r.err !== undefined) { prev.innerHTML = r.err ? `<p class="ferr">${esc(r.err)}</p>` : ""; return; }
     const chk = checkOrder(r.k, r.order);
     if (!chk.ok) { prev.innerHTML = `<p class="ferr">${esc(chk.err)}</p>`; return; }
+    if (r.expect && r.expect !== chk.split) { prev.innerHTML = `<p class="ferr">The guide says ${esc(r.expect)}, but its talent list adds up to ${esc(chk.split)}. Copy the whole build again and check nothing was cut off.</p>`; return; }
     cur = { ...r, split: chk.split };
     const K = CLS[r.k], g = orderRows(r.k, r.order).rows;
     dlg.style.setProperty("--class", K.color); dlg.style.setProperty("--class-ink", K.ink);
     f.elements.name.placeholder = defaultBuildName(r.k, r.order);
-    prev.innerHTML = `<p class="okline"><b>${esc(K.name)}</b> · ${esc(r.source)} · <span class="mono">${chk.split}</span> · ${chk.points} points, levels 10–${9 + chk.points}${r.k !== k ? ` · it'll go on the ${esc(K.name)} page` : ""}</p>
+    prev.innerHTML = `<p class="okline"><b>${esc(K.name)}</b> · ${esc(r.source)} · <span class="mono">${chk.split}</span>${r.expect ? " ✓ matches the guide" : ""} · ${chk.points} points, levels 10–${9 + chk.points}${r.k !== k ? ` · it'll go on the ${esc(K.name)} page` : ""}</p>
       ${r.note ? `<p class="why">${esc(r.note)}</p>` : ""}
       <ol class="bsteps">${g.map(x => `<li><span class="mono">Lv ${x[3] === x[4] ? x[3] : x[3] + "–" + x[4]}</span> ${esc(x[2])} <span class="mono">${x[1]}</span></li>`).join("")}</ol>`;
     btn.disabled = false;
