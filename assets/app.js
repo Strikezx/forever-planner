@@ -94,7 +94,7 @@ function header(title, lede, stamps, active) {
   $("#page-title").innerHTML = title;
   $("#page-lede").innerHTML = lede;
   $("#page-stamp").innerHTML = (stamps || []).map(s => `<span>${s}</span>`).join("");
-  const links = [["#/", "Your roster", "roster"], ["#/classes", "Class guides", "classes"], ["#/legacy", "Legacy System", "legacy"], ["#/races", "Races &amp; racials", "races"], ["#/extras", "Extras", "extras"]];
+  const links = [["#/", "Your roster", "roster"], ["#/classes", "Class guides", "classes"], ["#/legacy", "Legacy System", "legacy"], ["#/camp", "Campfire", "camp"], ["#/races", "Races &amp; racials", "races"], ["#/extras", "Extras", "extras"]];
   $("#sitenav").innerHTML = links.map(([h, t, k]) => `<a href="${h}"${k === active ? ' class="on" aria-current="page"' : ""}>${t}</a>`).join("");
   document.title = (title.replace(/<[^>]+>/g, "") + " · WoW Forever Planner").replace(/^WoW Forever Planner · /, "");
 }
@@ -585,11 +585,11 @@ function refresh() { if (!ctx) return; if (!CLS[ctx.k].builds[ctx.build]) ctx.bu
 
 /* level box */
 const lvInput = $("#lvinput");
-function setLevel(n) { if (!ctx) return; const v = clampLv(n, ctx.level); ctx.level = v; persistCtx(); refresh(); if (ctx.char) updateCharStamp(); }
+function setLevel(n) { if (!ctx && scope === "camp") { campLv = clampLv(n, campLv); lvInput.value = campLv; renderCampBuffs(); return; } if (!ctx) return; const v = clampLv(n, ctx.level); ctx.level = v; persistCtx(); refresh(); if (ctx.char) updateCharStamp(); }
 lvInput.addEventListener("change", () => setLevel(lvInput.value));
 lvInput.addEventListener("keydown", e => { if (e.key === "Enter") setLevel(lvInput.value); });
-$("#lvdown").addEventListener("click", () => ctx && setLevel(ctx.level - 1));
-$("#lvup").addEventListener("click", () => ctx && setLevel(ctx.level + 1));
+$("#lvdown").addEventListener("click", () => ctx ? setLevel(ctx.level - 1) : scope === "camp" && setLevel(campLv - 1));
+$("#lvup").addEventListener("click", () => ctx ? setLevel(ctx.level + 1) : scope === "camp" && setLevel(campLv + 1));
 
 /* ---------- shared class blocks ---------- */
 function classSections(k) {
@@ -722,6 +722,72 @@ function pageExtras() {
   header("Extras", "Account-wide odds and ends that apply to every character.", [], "extras");
   app.innerHTML = sect("console", D.console.label, D.console.h2, D.console.html, { jump: "Graphics commands" });
   afterRender();
+}
+
+/* campfire */
+const CAMP = window.FP_CAMP, EMBER = { color: "#F2994A", ink: "#A9531A" };
+let campLv = null;
+function rosterHas(pk) { // characters on the roster who can bring a profession's object
+  return S.roster.filter(c => pk.startsWith("s:") ? c.sec && c.sec[pk.slice(2)] : c.prof1 === pk || c.prof2 === pk);
+}
+function whoChips(pk) { const w = rosterHas(pk); return w.length ? `<span class="cwho">${w.map(c => `<a href="#/c/${c.id}" style="--c:${CLS[c.cls].color}">${esc(c.name.split(" ")[0])}</a>`).join("")}</span>` : ""; }
+function buffAt(b, lv) {
+  if (!b.steps) return b.fmt;
+  let s = b.steps[0]; for (const x of b.steps) if (lv >= x[0]) s = x;
+  return b.fmt.replace("{v}", s[1]).replace("{w}", s[2] ?? "");
+}
+function nextStep(b, lv) { const n = b.steps.find(x => x[0] > lv); return n ? `${n[0]}` : ""; }
+function pageCamp() {
+  ctx = null; scope = "camp"; setColors(EMBER.color, EMBER.ink);
+  if (campLv == null) { const m = S.roster.find(c => c.main) || [...S.roster].sort((a, b) => b.level - a.level)[0]; campLv = m ? Math.max(10, m.level) : 60; }
+  setLevelBox(true, "Camp Lv"); lvInput.value = campLv;
+  const brings = CAMP.buffs.filter(b => rosterHas(b.pk).length).length;
+  const anyProf = S.roster.some(c => c.prof1 || c.prof2 || Object.values(c.sec || {}).some(Boolean));
+  header("Campfire", "Forever's camping system: light a fire, add profession objects, sit for a minute and everyone leaves with an hour of buffs. Set a level in the bar to see what each buff gives at that level.",
+    [`Camp objects <b>${CAMP.profs.reduce((n, p) => n + p.t.length, 0)}</b>`, anyProf ? `Your roster brings <b>${brings} of ${CAMP.buffs.length}</b>` : "", `Checked <b>${CAMP.updated}</b>`].filter(Boolean), "camp");
+  const facts = `<div class="cfacts">${CAMP.facts.map(([n, t]) => `<div><b>${esc(n)}</b><span>${esc(t)}</span></div>`).join("")}</div>`;
+  const start = `<ol class="csteps">${CAMP.start.map(([h, t]) => `<li><b>${esc(h)}</b><span>${esc(t)}</span></li>`).join("")}</ol>`;
+  const rules = `<ul class="crules">${CAMP.rules.map(r => `<li>${esc(r)}</li>`).join("")}</ul>`;
+  const how = facts + `<div class="cgrid2"><div><h3 class="ch3">Your first camp</h3>${start}</div><div><h3 class="ch3">House rules</h3>${rules}</div></div>`;
+  const buffs = `<p class="why" id="cbuffnote"></p>${S.roster.length && !anyProf ? `<p class="notice" style="margin:10px 0"><span>Give your characters their professions (open a character, then <b>Edit</b>) and this page marks who on your roster can bring each camp object.</span></p>` : ""}<div class="cbuffs" id="cbuffs"></div>`;
+  const kits = `<div class="ckits">${CAMP.kits.map(k => `<div class="ckit"><div class="ckhead"><b>${esc(k.name)}</b><span class="mono">${k.slots} objects</span></div>
+    <div class="cslots" aria-label="${k.slots} object slots">${'<i class="fire"></i>' + "<i></i>".repeat(k.slots)}</div>
+    <dl><dt>Cooking</dt><dd>${k.learn === k.use ? `${k.learn}` : `learn ${k.learn}, place ${k.use}`}</dd><dt>Burns</dt><dd>${esc(k.wood)} + Flint and Tinder</dd><dt>Recipe</dt><dd>${esc(k.src)}</dd></dl>
+    ${k.note ? `<p class="cnote">${esc(k.note)}</p>` : ""}</div>`).join("")}</div>
+    <p class="why">Star Wood and Thick Logs are sold by an Engineer's Reagent Bot. Each campfire is its own kit: a bigger fire is the only way to fit more objects in one camp.</p>`;
+  const rar = r => r ? `<span class="crar ${r.replace(/\s/g, "")}">${esc(r)}</span>` : "";
+  const profs = `<div class="cprofs">${CAMP.profs.map(p => `<div class="cprof${rosterHas(p.pk).length ? " mine" : ""}"><div class="cph"><b>${esc(p.p)}</b>${whoChips(p.pk)}</div>
+    ${p.t.map((t, i) => `<div class="ctier"><span class="ctn mono">T${i + 1} · ${t[1]}</span><div><b>${esc(t[0])}</b> <span class="cfx">${esc(t[2])}</span>
+      <small>${esc(t[3])}</small>${i === 0 ? `<small class="csrc">${p.p === "Cooking" ? "Comes with Cooking" : "Trainer or the Camping 101 quest"}</small>` : t[4] ? `<small class="csrc">Blueprint: ${esc(t[4])} ${rar(t[5])}</small>` : `<small class="csrc unk">Blueprint source not known yet</small>`}</div></div>`).join("")}</div>`).join("")}</div>`;
+  const bps = `<div class="cdungeons">${CAMP.dungeons.map(d => `<div class="cdun"><div class="cdh"><b>${esc(d.d)}</b>${d.nw ? `<span class="badge">New in Forever</span>` : ""}</div><ul>${d.b.map(b => `<li><span><b>${esc(b[0])}</b> <small>${esc(b[1])}</small></span><span class="cboss">${esc(b[2])} ${rar(b[3])}</span></li>`).join("")}</ul></div>`).join("")}</div>
+    <p class="why">Beta drop rates: about 0.2 to 1.1% from Classic bosses ("rare"), about 6.6 to 10.4% from bosses in Forever's new dungeons ("common"). "One source" means only one guide lists that drop so far. Most tier 3 blueprints haven't been found yet.</p>`;
+  const leg = `<div class="clegacy">${CAMP.legacy.map(([n, tr, rk, t]) => `<div><b>${esc(n)}</b><small>${esc(tr)} tree · ${esc(rk)}</small><p>${esc(t)}</p></div>`).join("")}</div><p class="why"><a href="#/legacy">Open the Legacy System page</a> to plan them.</p>`;
+  const tips = `<div class="ctips">${CAMP.tips.map(([h, t]) => `<div><b>${esc(h)}</b><p>${esc(t)}</p></div>`).join("")}</div>`;
+  const src = `<p>Camping is new and still getting hotfixes (the Journeyman campfire and Expert blueprint both changed on Nov 10). Buff numbers come from the beta client's tables via mmonster.co and can differ slightly from what you see live. Where guides disagree, this page goes with the newest data and says so.</p>
+    <ul class="sources">${CAMP.sources.map(([t, u]) => `<li><a href="${u}" target="_blank" rel="noopener">${esc(t)}</a></li>`).join("")}</ul>`;
+  app.innerHTML = sect("camp-how", "Camping in Forever", "How camping works", how, { jump: "How it works" }) +
+    sect("camp-buffs", "Set a level in the bar above", "Camp buffs", buffs, { jump: "Camp buffs", desc: "The tier 1 object of each profession and what it gives. Higher tiers keep the same buff." }) +
+    sect("camp-fires", "Cooking", "Campfires", kits, { jump: "Campfires" }) +
+    sect("camp-profs", "Every camp object", "By profession, tier by tier", profs, { jump: "By profession", desc: "Tier 1 at skill 20, tier 2 at 140, tier 3 at 300. Each tier replaces the one before." + (S.roster.length ? " Highlighted rows are professions your roster has." : "") }) +
+    sect("camp-bp", "Where to farm", "Blueprint drops by dungeon", bps, { jump: "Blueprints" }) +
+    sect("camp-legacy", "Account-wide", "Legacy perks for camping", leg, { jump: "Legacy perks" }) +
+    sect("camp-tips", "From the guides and the numbers", "Camp tips", tips, { jump: "Tips" }) +
+    sect("camp-src", "Caveats", "Sources", src, { jump: "Sources" });
+  afterRender(); renderCampBuffs();
+}
+function renderCampBuffs() {
+  const box = $("#cbuffs", app); if (!box) return;
+  const lv = campLv;
+  $("#cbuffnote", app).innerHTML = `At level <b class="mono">${lv}</b>. Each buff skips a class buff of the same kind, so bring the ones your group's classes don't already cover.`;
+  box.innerHTML = CAMP.buffs.map(b => {
+    const nx = b.kind ? "" : nextStep(b, lv), who = whoChips(b.pk), cl = b.clash ? CLS[b.clash[1]] : null;
+    return `<div class="cbuff${who ? " mine" : ""}"><div class="cbt"><span class="cprofname">${esc(b.prof)}</span>${who}</div>
+      <b class="cobj">${esc(b.obj)}</b>
+      <div class="cval${b.kind === "text" ? " txt" : ""}">${esc(buffAt(b, lv))}</div>
+      ${b.extra ? `<small>${esc(b.extra)}</small>` : ""}
+      ${nx ? `<small class="cnext">Goes up at level ${nx}</small>` : ""}
+      ${cl ? `<div class="cclash">Skip if <span style="--c:${cl.color}">${esc(cl.name)}</span> brings ${esc(b.clash[0])}</div>` : ""}</div>`;
+  }).join("");
 }
 
 /* legacy */
@@ -975,6 +1041,7 @@ async function route() {
   else if ((m = h.match(/^#\/class\/(\w+)/))) pageClass(m[1]);
   else if (h === "#/classes") pageClasses();
   else if (h === "#/legacy") pageLegacy();
+  else if (h === "#/camp") pageCamp();
   else if (h === "#/races") pageRaces();
   else if (h === "#/extras") pageExtras();
   else if ((m = h.match(/^#\/new(?:\/(\w+))?/))) { const back = sessionStorage.getItem("fp:last") || "#/"; history.replaceState(null, "", location.pathname + back); lastRoute = back; await route(); charForm(null, CLS[m[1]] ? m[1] : ""); return; }
