@@ -302,13 +302,18 @@ function classSections(k) {
     return sect(s.id, s.label, s.h2, s.html, { jump });
   }).join("");
 }
+function specLines(k) {
+  const C = CLS[k];
+  const pct = n => { const x = C.lvl.find(z => z[0] === n); return x ? `<span class="specpct">${Math.round(x[1])}% of leveling builds</span>` : ""; };
+  return `<ul class="speclines">${C.specs.map(([n, t]) => `<li><span class="spechead"><b class="specname">${esc(n)}</b>${pct(n)}</span><span>${esc(t)}</span></li>`).join("")}</ul>${C.general ? `<p class="specgen">${esc(C.general)}</p>` : ""}`;
+}
 function overviewSection(k) {
   const C = CLS[k], cols = ["var(--accent)", "var(--brass)", "var(--muted)"];
   const ally = C.races.filter(r => factionOf(r.race) === "Alliance").map(r => esc(r.race) + (r.new ? " (new)" : "")).join(", ");
   const horde = C.races.filter(r => factionOf(r.race) === "Horde").map(r => esc(r.race) + (r.new ? " (new)" : "")).join(", ");
   const art = `  <article class="cls classcard">
     <div class="top"><h3><span class="swatch" style="background:${C.color}"></span>${esc(C.name)}</h3><div class="roles">${C.roles.map(r => `<span>${esc(r)}</span>`).join("")}</div></div>
-    <p>${esc(C.blurb)}</p>
+    ${specLines(k)}
     <div class="splits"><span class="label">How beta players level</span><div class="bar3">${C.lvl.map(x => `<div style="width:${x[1]}%"></div>`).join("")}</div><div class="keys">${C.lvl.map((x, i) => `<span><i style="background:${cols[i]}"></i>${esc(x[0])} <span class="mono">${x[1]}%</span></span>`).join("")}</div></div>
     <div class="first"><span class="label">Most common first points · ${esc(C.lvl[0][0])}</span><ol>${C.first.map(f => `<li>${esc(f)}</li>`).join("")}</ol></div>
     <p class="racesfor"><b>At 60:</b> ${esc(C.at60)}</p>
@@ -374,7 +379,7 @@ function pageChar(id) {
   const now = sect("now", `${esc(c.name)} · set your level in the bar above`, "What to do now", `  <div class="nowlist" id="now-app"></div>`, { h2id: "now-title", jump: "Now" });
   const card = sect("character", "Your character", esc(c.name), `  <div class="roster single">${charCard(c, true)}</div>`, { jump: "Character" });
   const racials = sect("racials", "Current numbers", `${esc(c.race)} racials`, racialTable(c.race) + `\n  <p class="why" style="margin-top:10px"><a href="#/races">Compare every race</a></p>`, { jump: "Racials" });
-  app.innerHTML = now + card + specSection(c.cls) + classSections(c.cls) + overviewSection(c.cls) + racials;
+  app.innerHTML = overviewSection(c.cls) + now + card + specSection(c.cls) + classSections(c.cls) + racials;
   afterRender(); refresh();
 }
 
@@ -390,7 +395,7 @@ function pageClass(k) {
     [`${esc(C.roles.join(" · "))}`, `Races <b>${C.races.length}</b>`, mine.length ? `On your roster <b>${mine.length}</b>` : ""].filter(Boolean), "classes");
   const top = `<div class="notice" style="margin-bottom:24px"><span>${mine.length ? `You have ${mine.map(m => `<a href="#/c/${m.id}">${esc(m.name)}</a>`).join(", ")}. Open a character to save level and talent ticks.` : `You're browsing. Add a ${esc(C.name)} to your roster to save level and talent ticks.`}</span><a class="btn primary" href="#/new/${k}">Add a ${esc(C.name)}</a></div>`;
   const now = sect("now", "Preview · set a level in the bar above", "What to do now", `  <div class="nowlist" id="now-app"></div>`, { h2id: "now-title", jump: "Now" });
-  app.innerHTML = top + now + specSection(k) + classSections(k) + overviewSection(k);
+  app.innerHTML = top + overviewSection(k) + now + specSection(k) + classSections(k);
   afterRender(); refresh();
 }
 
@@ -399,7 +404,7 @@ function pageClasses() {
   header("Class guides", "Every class's leveling guide, talent order, macros and race picks. Pick a class to browse it, or add a character to keep your own progress.", [`Classes <b>${ORDER.length}</b>`], "classes");
   const cards = ORDER.map(k => {
     const C = CLS[k];
-    return `<article class="cls classcard" style="--class:${C.color}"><div class="top"><h3><span class="swatch" style="background:${C.color}"></span><a href="#/class/${k}" style="color:inherit;text-decoration:none">${esc(C.name)}</a></h3><div class="roles">${C.roles.map(r => `<span>${esc(r)}</span>`).join("")}</div></div><p>${esc(C.blurb)}</p><div class="btnrow"><a class="openplan" href="#/class/${k}">Open the ${esc(C.name)} guide</a><a class="btn" href="#/new/${k}">Add a ${esc(C.name)}</a></div></article>`;
+    return `<article class="cls classcard" style="--class:${C.color};--class-ink:${C.ink}"><div class="top"><h3><span class="swatch" style="background:${C.color}"></span><a href="#/class/${k}" style="color:inherit;text-decoration:none">${esc(C.name)}</a></h3><div class="roles">${C.roles.map(r => `<span>${esc(r)}</span>`).join("")}</div></div>${specLines(k)}<div class="btnrow"><a class="openplan" href="#/class/${k}">Open the ${esc(C.name)} guide</a><a class="btn" href="#/new/${k}">Add a ${esc(C.name)}</a></div></article>`;
   }).join("");
   app.innerHTML = sect("classes", "Pick a class", "Class guides", `<div class="classes">${cards}</div>`, { jump: "Class guides" });
   afterRender();
