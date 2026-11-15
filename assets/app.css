@@ -586,3 +586,16 @@ html[data-style="b"] .classlist a{background:#ffffff0a}
 .specgen{margin:0;font-size:.88rem;color:var(--muted)}
 html[data-style="c"] .specname{color:var(--class-ink)}
 html[data-style="c"] .speclines li{border-left-color:var(--class-ink)}
+
+/* your own builds */
+.tactions .spacer{flex:1}
+.tabs button.mine{font-style:italic}
+.tabs button.mine::before{content:"★ ";font-style:normal;opacity:.7}
+.addhint{margin-top:10px}
+.bprev:empty{display:none}
+.bprev{border:1px solid var(--line,rgba(127,127,127,.3));border-radius:10px;padding:10px 12px;display:grid;gap:6px}
+.bprev p{margin:0}
+.okline{font-size:.92rem}
+.bsteps{margin:0;padding:0 0 0 2px;list-style:none;max-height:220px;overflow:auto;font-size:.86rem;display:grid;gap:2px}
+.bsteps li{display:grid;grid-template-columns:9ch 1fr auto;gap:8px;align-items:baseline}
+.bsteps li .mono:first-child{color:var(--muted)}

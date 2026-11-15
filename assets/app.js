@@ -12,9 +12,16 @@ const app = $("#app");
 
 /* ---------- storage ---------- */
 const KEY = "fp:v1", OPENKEY = "fp:open", LOOKKEY = "fp:look";
-let S = { v: 1, roster: [], legacy: {} };
+let S = { v: 1, roster: [], legacy: {}, builds: [] };
 function load() {
-  try { const d = JSON.parse(localStorage.getItem(KEY)); if (d && Array.isArray(d.roster)) S = { v: 1, roster: d.roster.map(fixChar).filter(Boolean), legacy: d.legacy && typeof d.legacy === "object" ? d.legacy : {} }; } catch (e) {}
+  try {
+    const d = JSON.parse(localStorage.getItem(KEY));
+    if (d && Array.isArray(d.roster)) {
+      const builds = Array.isArray(d.builds) ? d.builds.map(fixBuild).filter(Boolean) : [];
+      applyBuilds(builds);
+      S = { v: 1, builds, roster: d.roster.map(fixChar).filter(Boolean), legacy: d.legacy && typeof d.legacy === "object" ? d.legacy : {} };
+    }
+  } catch (e) {}
 }
 let saveWarned = false;
 function save() {
@@ -58,7 +65,7 @@ function go(h) { if (location.hash === h) route(); else location.hash = h; }
 function charById(id) { return S.roster.find(c => c.id === id); }
 function rowsOf(k, b) { return CLS[k].builds[b].rows; }
 function totalOf(k, b) { return rowsOf(k, b).reduce((n, r) => n + r[5], 0); }
-function spentOf(k, b, ticks) { return rowsOf(k, b).reduce((n, r, i) => n + (ticks[i] ? r[5] : 0), 0); }
+function spentOf(k, b, ticks) { return rowsOf(k, b).reduce((n, r, i) => n + (ticks && ticks[i] ? r[5] : 0), 0); }
 function range(txt) {
   const t = (txt || "").replace(/\s/g, "").replace(/[–—]/g, "-");
   let m;
@@ -173,6 +180,178 @@ document.addEventListener("click", e => {
   try { navigator.clipboard.writeText(el.textContent).then(() => { b.textContent = "Copied"; reset(); }, select); } catch (err) { select(); }
 });
 
+/* ---------- your own builds (Talents Forever / Icy Veins links, pasted talent orders) ---------- */
+const TF_SYMS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz056789", TF_VERSION = "12";
+const flatCache = {};
+function flatTal(k) { // every talent of a class in tree order: {i, t, tree, name, max, row, col, req}
+  if (!flatCache[k]) { const out = []; D.talents[k].forEach(([tree, list], t) => list.forEach(([name, max, row, col, req]) => out.push({ i: out.length, t, tree, name, max, row, col, req }))); flatCache[k] = out; }
+  return flatCache[k];
+}
+function talByName(k, n) { return flatTal(k).find(x => x.name.toLowerCase() === String(n).toLowerCase()); }
+// check an order (array of talent names, one per point from level 10) against the class's trees
+function checkOrder(k, order) {
+  const F = flatTal(k), ranks = F.map(() => 0), inTree = D.talents[k].map(() => 0);
+  if (!order.length) return { err: "No talent points found." };
+  if (order.length > 51) return { err: `That's ${order.length} points; a level 60 character has 51.` };
+  for (let p = 0; p < order.length; p++) {
+    const x = talByName(k, order[p]), lv = 10 + p;
+    if (!x) return { err: `"${order[p]}" isn't a ${CLS[k].name} talent in Forever.` };
+    if (ranks[x.i] >= x.max) return { err: `Level ${lv}: ${x.name} is already at ${x.max}/${x.max}.` };
+    const need = 5 * (x.row - 1);
+    if (inTree[x.t] < need) return { err: `Level ${lv}: ${x.name} needs ${need} points in ${x.tree} first (has ${inTree[x.t]}).` };
+    if (x.req) { const r = talByName(k, x.req); if (ranks[r.i] < r.max) return { err: `Level ${lv}: ${x.name} needs ${r.name} maxed first.` }; }
+    ranks[x.i]++; inTree[x.t]++;
+  }
+  return { ok: true, split: inTree.join("/"), points: order.length };
+}
+// a sensible order when a link has ranks but no order: main tree first, top row down
+function autoOrder(k, ranks) {
+  const F = flatTal(k), left = ranks.slice(), inTree = D.talents[k].map(() => 0), got = F.map(() => 0);
+  const per = D.talents[k].map((_, t) => F.reduce((n, x) => n + (x.t === t ? ranks[x.i] : 0), 0));
+  const treeRank = per.map((n, t) => [n, t]).sort((a, b) => b[0] - a[0]).map(x => x[1]);
+  const cand = F.slice().sort((a, b) => treeRank.indexOf(a.t) - treeRank.indexOf(b.t) || a.row - b.row || a.col - b.col);
+  const out = [], total = ranks.reduce((a, b) => a + b, 0);
+  while (out.length < total) {
+    const x = cand.find(c => left[c.i] > 0 && inTree[c.t] >= 5 * (c.row - 1) && (!c.req || got[talByName(k, c.req).i] >= talByName(k, c.req).max));
+    if (!x) break;
+    out.push(x.name); left[x.i]--; got[x.i]++; inTree[x.t]++;
+  }
+  return out;
+}
+// what was pasted? returns {k, order, source, note} or {err}
+function parseBuild(text, kHint) {
+  const t = String(text || "").trim();
+  if (!t) return { err: "" };
+  let m = t.match(/talentsforever\.com\/[^\s]*?\b(warrior|paladin|hunter|rogue|priest|shaman|mage|warlock|druid)\/(\d+)\/([A-Za-z0-9-]+)/i);
+  if (m) {
+    const k = m[1].toLowerCase(), segs = m[3].split("-"), ver = segs[segs.length - 1];
+    if (ver !== TF_VERSION) return { err: "This Talents Forever link was made before their latest talent update. Open it on Talents Forever (it updates itself), then copy the link again." };
+    const F = flatTal(k), nT = D.talents[k].length, ranks = F.map(() => 0);
+    for (let tr = 0; tr < nT; tr++) { const digs = segs[tr] || "", list = F.filter(x => x.t === tr); list.forEach((x, j) => { ranks[x.i] = Math.min(x.max, +(digs[j] || 0)); }); }
+    const mid = segs.slice(nT, -1), code = mid.length && /[A-Za-z]/.test(mid[mid.length - 1]) ? mid[mid.length - 1] : "";
+    const order = [], taken = F.map(() => 0);
+    for (let i = 0; i < code.length; i++) {
+      const f = TF_SYMS.indexOf(code[i]); if (f < 0 || !F[f]) continue;
+      let n = ranks[f] - taken[f];
+      if (/^[1-4]$/.test(code[i + 1] || "")) { n = Math.min(n, +code[i + 1]); i++; }
+      for (let j = 0; j < n; j++) order.push(F[f].name);
+      taken[f] += Math.max(0, n);
+    }
+    const total = ranks.reduce((a, b) => a + b, 0);
+    if (!total) return { err: "That Talents Forever link has no talent points in it." };
+    if (!order.length) return { k, order: autoOrder(k, ranks), source: "Talents Forever", note: "This link has no talent order, so the planner filled the main tree first, top row down. To keep the author's order, use the link Talents Forever gives after you set the order there." };
+    if (order.length < total) { // order covers part of the build: finish it off
+      const left = ranks.map((r, i) => r - taken[i]), rest = autoOrder(k, left.map(v => Math.max(0, v)));
+      return { k, order: order.concat(rest), source: "Talents Forever", note: `The link's order covers ${order.length} of ${total} points; the last ${total - order.length} were placed top row down.` };
+    }
+    return { k, order, source: "Talents Forever" };
+  }
+  m = t.match(/icy-veins\.com\/wow-forever\/(warrior|paladin|hunter|rogue|priest|shaman|mage|warlock|druid)-talent-calculator#tc-([0-9A-Za-z]+)/i);
+  if (m) {
+    const k = m[1].toLowerCase(), ids = D.ivids[k], F = flatTal(k), order = [];
+    for (const ch of m[2]) { if (!(ch in ids)) return { err: "Part of that Icy Veins link doesn't match Forever's current trees. Open it on Icy Veins and copy the link again." }; order.push(F[ids[ch]].name); }
+    return { k, order, source: "Icy Veins" };
+  }
+  if (/wowhead\.com\/[^\s]*talent-calc/i.test(t)) return { err: "Wowhead talent-calculator links are coded in a way the planner can't read yet. On the Wowhead guide, copy the \"Talent Order\" list (the level-by-level one) and paste that text here instead." };
+  if (/^https?:\/\//i.test(t) && !/\s/.test(t)) return { err: "The planner reads Talents Forever and Icy Veins calculator links. For other sites, copy the level-by-level talent order as text and paste it here." };
+  // plain text: talent names in order. "Rank 3" or "3/5" after a name means up to that rank; "x3" means 3 points.
+  const k = kHint, F = flatTal(k);
+  const names = F.map(x => x.name).sort((a, b) => b.length - a.length).map(n => n.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/'/g, "['’]"));
+  const re = new RegExp("(?<![A-Za-z])(" + names.join("|") + ")", "gi"); // copied lists often run words together ("Twin DisciplinesRank 1")
+  const order = [], have = F.map(() => 0); let mm;
+  while ((mm = re.exec(t))) {
+    const x = talByName(k, mm[1].replace(/’/g, "'")); if (!x) continue;
+    const after = t.slice(re.lastIndex, re.lastIndex + 16);
+    let n = 1, a;
+    if ((a = after.match(/^\s*(?:[x×]\s*(\d)|\((\d)\))/i))) n = +(a[1] || a[2]);
+    else if ((a = after.match(/^\s*(?:[-–:·]\s*)?(?:rank\s*(\d)|(\d)\s*\/\s*\d)/i))) n = +(a[1] || a[2]) - have[x.i];
+    for (let j = 0; j < n; j++) order.push(x.name);
+    have[x.i] += Math.max(0, n);
+  }
+  if (!order.length) return { err: `No ${CLS[k].name} talent names found. Paste a Talents Forever or Icy Veins link, or a level-by-level talent order.` };
+  return { k, order, source: "Pasted order" };
+}
+// checklist rows from an order: [col, "r/max", name, fromLv, toLv, n, note]
+function orderRows(k, order) {
+  const F = flatTal(k), rk = F.map(() => 0), groups = [];
+  order.forEach((n, p) => { const x = talByName(k, n); rk[x.i]++; const g = groups[groups.length - 1]; if (g && g.x === x) { g.to = 10 + p; g.n++; g.r = rk[x.i]; } else groups.push({ x, from: 10 + p, to: 10 + p, n: 1, r: rk[x.i] }); });
+  const last = 9 + order.length;
+  let cut = groups.findIndex(g => g.from > 35); if (cut < 1 || last <= 40) cut = Math.ceil(groups.length / 2);
+  const rows = groups.map((g, i) => [i < cut ? 0 : 1, `${g.r}/${g.x.max}`, g.x.name, g.from, g.to, g.n, ""]);
+  const label = c => { const gs = groups.filter((_, i) => (i < cut) === (c === 0)); if (!gs.length) return ""; const trees = [...new Set(gs.map(g => g.x.tree))]; return `${trees.join(", then ")}, levels ${gs[0].from}–${gs[gs.length - 1].to}`; };
+  const cols = [label(0), label(1)].filter(Boolean);
+  if (cols.length === 1) rows.forEach(r => (r[0] = 0));
+  return { rows, cols };
+}
+function fixBuild(b) {
+  if (!b || typeof b !== "object" || !CLS[b.cls] || !D.talents[b.cls] || !Array.isArray(b.order)) return null;
+  const id = typeof b.id === "string" && /^u_[a-z0-9]{4,24}$/.test(b.id) ? b.id : "u_" + uid();
+  const order = b.order.map(String).slice(0, 51);
+  if (!checkOrder(b.cls, order).ok) return null;
+  return { id, cls: b.cls, name: String(b.name || "My build").slice(0, 40), src: String(b.src || "").slice(0, 40), order };
+}
+function applyBuilds(list) {
+  for (const k of ORDER) for (const b of Object.keys(CLS[k].builds)) if (b.startsWith("u_")) delete CLS[k].builds[b];
+  for (const b of list) { const { rows, cols } = orderRows(b.cls, b.order); CLS[b.cls].builds[b.id] = { name: b.name, sub: b.src ? b.src + " · yours" : "yours", cols, rows, mine: true }; }
+}
+function defaultBuildName(k, order) {
+  const per = D.talents[k].map(() => 0); order.forEach(n => per[talByName(k, n).t]++);
+  return D.talents[k][per.indexOf(Math.max(...per))][0];
+}
+function buildForm(k) {
+  const C = CLS[k];
+  openDlg(`<h2 id="dlg-title">Add a build</h2>
+  <p>Paste a <b>Talents Forever</b> or <b>Icy Veins</b> talent calculator link, or a level-by-level talent order copied as text (Mobalytics, Wowhead's "Talent Order" list). The planner checks it against Forever's trees and adds it as a tab in the talent checklist.</p>
+  <label class="field"><span>Link or talent order</span><textarea name="src" rows="4" placeholder="https://talentsforever.com/…   or   https://www.icy-veins.com/wow-forever/…-talent-calculator#tc-…" autofocus></textarea></label>
+  <label class="field"><span>Class, for pasted text</span><select name="cls">${ORDER.map(x => `<option value="${x}"${x === k ? " selected" : ""}>${esc(CLS[x].name)}</option>`).join("")}</select></label>
+  <div class="bprev" id="bprev" aria-live="polite"></div>
+  <label class="field"><span>Tab name</span><input type="text" name="name" maxlength="40" placeholder="Named after the main tree if left blank"></label>
+  <p class="why">Your builds save in this browser and travel with your share links and exports.</p>
+  <div class="dlgacts"><button type="button" class="btn" data-close>Cancel</button><button type="submit" class="btn primary" id="bsave" disabled>Add build</button></div>`, [C.color, C.ink]);
+  const f = dform, prev = $("#bprev", f), btn = $("#bsave", f);
+  let cur = null;
+  const show = () => {
+    const r = parseBuild(f.elements.src.value, f.elements.cls.value);
+    cur = null; btn.disabled = true;
+    if (r.err !== undefined) { prev.innerHTML = r.err ? `<p class="ferr">${esc(r.err)}</p>` : ""; return; }
+    const chk = checkOrder(r.k, r.order);
+    if (!chk.ok) { prev.innerHTML = `<p class="ferr">${esc(chk.err)}</p>`; return; }
+    cur = { ...r, split: chk.split };
+    const K = CLS[r.k], g = orderRows(r.k, r.order).rows;
+    dlg.style.setProperty("--class", K.color); dlg.style.setProperty("--class-ink", K.ink);
+    f.elements.name.placeholder = defaultBuildName(r.k, r.order);
+    prev.innerHTML = `<p class="okline"><b>${esc(K.name)}</b> · ${esc(r.source)} · <span class="mono">${chk.split}</span> · ${chk.points} points, levels 10–${9 + chk.points}${r.k !== k ? ` · it'll go on the ${esc(K.name)} page` : ""}</p>
+      ${r.note ? `<p class="why">${esc(r.note)}</p>` : ""}
+      <ol class="bsteps">${g.map(x => `<li><span class="mono">Lv ${x[3] === x[4] ? x[3] : x[3] + "–" + x[4]}</span> ${esc(x[2])} <span class="mono">${x[1]}</span></li>`).join("")}</ol>`;
+    btn.disabled = false;
+  };
+  f.oninput = e => { if (e.target.name === "src") show(); };
+  f.onchange = e => { if (e.target.name === "cls") show(); };
+  f.onsubmit = e => {
+    e.preventDefault(); if (!cur) return;
+    const b = fixBuild({ id: "u_" + uid(), cls: cur.k, name: f.elements.name.value.trim() || defaultBuildName(cur.k, cur.order), src: cur.source, order: cur.order });
+    if (!b) return;
+    S.builds.push(b); applyBuilds(S.builds); save(); closeDlg();
+    if (ctx && ctx.k === b.cls) { ctx.ticks[b.id] = CLS[b.cls].builds[b.id].rows.map(() => false); ctx.build = b.id; persistCtx(); refresh(); toast(`${b.name} added`); }
+    else { (browse[b.cls] = browse[b.cls] || { build: b.id, level: 10, ticks: {} }).build = b.id; toast(`${b.name} added to the ${CLS[b.cls].name} page`); go("#/class/" + b.cls); }
+  };
+}
+function removeBuildForm(k, id) {
+  const b = S.builds.find(x => x.id === id); if (!b) return;
+  const users = S.roster.filter(c => c.build === id);
+  openDlg(`<h2 id="dlg-title">Remove ${esc(b.name)}?</h2><p>This removes the tab and its ticks from this browser.${users.length ? ` ${users.map(c => esc(c.name)).join(", ")} ${users.length > 1 ? "follow" : "follows"} it and will switch to ${esc(CLS[k].builds[firstBuild(k)].name)}.` : ""} You can add it again from the same link.</p>
+  <div class="dlgacts"><button type="button" class="btn" data-close>Cancel</button><button type="submit" class="btn danger">Remove build</button></div>`, [CLS[k].color, CLS[k].ink]);
+  dform.onchange = null; dform.oninput = null;
+  dform.onsubmit = e => {
+    e.preventDefault();
+    S.builds = S.builds.filter(x => x.id !== id); applyBuilds(S.builds);
+    for (const c of S.roster) { delete c.ticks[id]; if (c.build === id) c.build = firstBuild(c.cls); }
+    if (browse[k]) { delete browse[k].ticks[id]; if (browse[k].build === id) browse[k].build = firstBuild(k); }
+    if (ctx && ctx.k === k && ctx.build === id) { ctx.build = firstBuild(k); persistCtx(); }
+    save(); closeDlg(); toast(`${b.name} removed`); refresh();
+  };
+}
+
 /* ---------- planner context (character or browsing a class) ---------- */
 let ctx = null; // {k, build, level, ticks, char}
 const browse = {}; // per-class temporary state when browsing without a character
@@ -186,7 +365,7 @@ function renderTalents() {
   rows.forEach((r, i) => { if (ticks[i]) { sp.cols[r[0]] += r[5]; sp.all += r[5]; } });
   const av = available(), nx = ticks.findIndex(x => !x), tot = totalOf(k, b), diff = av - sp.all;
   const keys = Object.keys(B);
-  const tabs = keys.length > 1 ? `<div class="tabs" role="tablist" aria-label="Talent build">${keys.map(x => `<button type="button" role="tab" aria-selected="${x === b}" data-build="${x}">${esc(B[x].name)}${B[x].sub ? `<small>· ${esc(B[x].sub)}</small>` : ""}</button>`).join("")}</div>` : "";
+  const tabs = keys.length > 1 ? `<div class="tabs" role="tablist" aria-label="Talent build">${keys.map(x => `<button type="button" role="tab" aria-selected="${x === b}" data-build="${x}"${B[x].mine ? ' class="mine"' : ""}>${esc(B[x].name)}${B[x].sub ? `<small>· ${esc(B[x].sub)}</small>` : ""}</button>`).join("")}</div>` : "";
   const pct = Math.round(sp.all / tot * 100);
   const note = ctx.level < 10 ? `<span class="okp">Talents start at 10</span>`
     : diff > 0 ? `<span class="warnp">${diff} point${diff > 1 ? "s" : ""} to spend at level ${ctx.level}</span>`
@@ -202,7 +381,8 @@ function renderTalents() {
   tapp.innerHTML = `${ctx.char ? "" : `<p class="why">You're browsing, so ticks here aren't saved. <a href="#/new/${k}">Add a ${esc(CLS[k].name)}</a> to keep your progress.</p>`}${tabs}
     <div class="tsum"><span class="meter">Points spent <i><b style="width:${pct}%"></b></i> <span class="mono">${sp.all}/${tot}</span></span>${note}</div>
     <div class="cols">${cols}</div>
-    <div class="tactions"><button type="button" class="tbtn" data-act="upto">Tick everything up to level ${ctx.level}</button><button type="button" class="tbtn" data-act="clear">Clear ticks</button></div>`;
+    <div class="tactions"><button type="button" class="tbtn" data-act="upto">Tick everything up to level ${ctx.level}</button><button type="button" class="tbtn" data-act="clear">Clear ticks</button><span class="spacer"></span><button type="button" class="tbtn" data-act="addbuild">+ Add a build</button>${bd.mine ? `<button type="button" class="tbtn" data-act="delbuild">Remove this build</button>` : ""}</div>
+    ${bd.mine ? "" : `<p class="why addhint">Found a build on Talents Forever or Icy Veins? <b>Add a build</b> pastes its link in as a new tab.</p>`}`;
 }
 app.addEventListener("click", e => {
   if (!ctx) return;
@@ -210,6 +390,8 @@ app.addEventListener("click", e => {
   const tb = e.target.closest("[data-build]");
   if (tb) { ctx.build = tb.dataset.build; persistCtx(); refresh(); return; }
   const act = e.target.closest("[data-act]"); if (!act) return;
+  if (act.dataset.act === "addbuild") { buildForm(ctx.k); return; }
+  if (act.dataset.act === "delbuild") { removeBuildForm(ctx.k, ctx.build); return; }
   const rows = rowsOf(ctx.k, ctx.build);
   ctx.ticks[ctx.build] = act.dataset.act === "upto" ? rows.map(r => r[4] <= ctx.level) : rows.map(() => false);
   persistCtx(); refresh();
@@ -285,7 +467,7 @@ function renderNow() {
   el.innerHTML = out;
   const h = $("#now-title", app); if (h) h.textContent = `Level ${L}: what to do now`;
 }
-function refresh() { if (!ctx) return; $("#lvinput").value = ctx.level; renderTalents(); renderBeasts(); renderNow(); markSteps(); syncAllBtn(); }
+function refresh() { if (!ctx) return; if (!CLS[ctx.k].builds[ctx.build]) ctx.build = firstBuild(ctx.k); if (!ctx.ticks[ctx.build]) ctx.ticks[ctx.build] = rowsOf(ctx.k, ctx.build).map(() => false); $("#lvinput").value = ctx.level; renderTalents(); renderBeasts(); renderNow(); markSteps(); syncAllBtn(); }
 
 /* level box */
 const lvInput = $("#lvinput");
@@ -468,6 +650,7 @@ app.addEventListener("click", e => { if (e.target.closest('#legacy [data-lgact="
 const dlg = $("#dlg"), dform = $("#dlg-form");
 function openDlg(html, color) {
   if (color) { dlg.style.setProperty("--class", color[0]); dlg.style.setProperty("--class-ink", color[1]); } else { dlg.style.removeProperty("--class"); dlg.style.removeProperty("--class-ink"); }
+  dform.oninput = dform.onchange = dform.onsubmit = null;
   dform.innerHTML = html;
   if (typeof dlg.showModal === "function") dlg.showModal(); else dlg.setAttribute("open", "");
   const f = $("[autofocus]", dform) || $("input,select,textarea,button", dform); f && f.focus();
@@ -555,7 +738,10 @@ function packChar(c) {
   delete o.faction;
   return o;
 }
-function payload(chars, withLegacy = true) { return { app: "forever-planner", v: 1, roster: chars.map(packChar), legacy: withLegacy ? Object.keys(S.legacy) : [] }; }
+function payload(chars, withLegacy = true) {
+  const used = new Set(chars.map(c => c.build)), builds = S.builds.filter(b => withLegacy || used.has(b.id));
+  return { app: "forever-planner", v: 1, roster: chars.map(packChar), legacy: withLegacy ? Object.keys(S.legacy) : [], builds };
+}
 function b64url(bytes) { let s = ""; for (let i = 0; i < bytes.length; i += 0x8000) s += String.fromCharCode.apply(null, bytes.subarray(i, i + 0x8000)); return btoa(s).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, ""); }
 function unb64url(s) { s = s.replace(/-/g, "+").replace(/_/g, "/"); while (s.length % 4) s += "="; const b = atob(s); const u = new Uint8Array(b.length); for (let i = 0; i < b.length; i++) u[i] = b.charCodeAt(i); return u; }
 async function encode(obj) {
@@ -599,16 +785,24 @@ function exportFile() {
 function validPayload(p) { return p && p.app === "forever-planner" && Array.isArray(p.roster); }
 function importDialog(p, err) {
   if (p) {
+    const inB = (Array.isArray(p.builds) ? p.builds : []).map(fixBuild).filter(Boolean);
+    const newB = inB.filter(b => !S.builds.some(x => x.id === b.id));
+    applyBuilds(S.builds.concat(newB));
     const chars = p.roster.map(fixChar).filter(Boolean);
+    applyBuilds(S.builds);
     const lg = Array.isArray(p.legacy) ? p.legacy.filter(x => typeof x === "string" && x.length < 24) : [];
     const list = chars.map(c => `<li><b>${esc(c.name)}</b> · ${esc(c.race)} ${esc(CLS[c.cls].name)}, level ${c.level}${c.main ? " · Main" : ""}</li>`).join("");
     openDlg(`<h2 id="dlg-title">Import ${chars.length === 1 ? "a character" : `${chars.length} characters`}?</h2>
     <ul style="margin:0;padding-left:20px;display:grid;gap:4px">${list || "<li>No characters in this roster.</li>"}</ul>
     ${lg.length ? `<p class="why">Includes ${lg.length} Legacy challenge ticks.</p>` : ""}
+    ${newB.length ? `<p class="why">Includes ${newB.length === 1 ? "a talent build" : newB.length + " talent builds"}: ${newB.map(b => `${esc(b.name)} (${esc(CLS[b.cls].name)})`).join(", ")}.</p>` : ""}
     ${S.roster.length ? `<p>You already have ${S.roster.length} character${S.roster.length > 1 ? "s" : ""} here. <b>Add</b> keeps them and adds these; <b>Replace</b> swaps your roster for this one.</p>` : ""}
     <div class="dlgacts"><button type="button" class="btn" data-close>Cancel</button>${S.roster.length ? `<button type="button" class="btn danger" id="imp-replace">Replace my roster</button>` : ""}<button type="submit" class="btn primary">${S.roster.length ? "Add to my roster" : "Import"}</button></div>`);
     const finish = replace => {
       if (replace) { S.roster = []; S.legacy = {}; }
+      for (const b of newB) if (!S.builds.some(x => x.id === b.id)) S.builds.push(b);
+      applyBuilds(S.builds);
+      const fixed = p.roster.map(fixChar).filter(Boolean); chars.splice(0, chars.length, ...fixed);
       const ids = new Set(S.roster.map(c => c.id));
       for (const c of chars) { if (ids.has(c.id)) c.id = uid(); S.roster.push(c); }
       for (const k of lg) S.legacy[k] = true;
