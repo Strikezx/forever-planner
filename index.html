@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" data-style="b" data-nbg="charcoal" style="--class:#E3B341;--class-ink:#8A6418">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WoW Forever Planner</title>
+<meta name="description" content="Plan your WoW Forever roster: class leveling guides, talent checklists, macros, races and the Legacy System. Your roster saves in your browser and shares by link.">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/app.css">
+<script>
+try { if (localStorage.getItem("fp:look") === "light") document.documentElement.dataset.style = "c"; } catch (e) {}
+</script>
+</head>
+<body>
+<header class="top wrap" id="top">
+  <span class="label">WoW Forever · Roster &amp; class planner</span>
+  <h1 id="page-title">WoW Forever Planner</h1>
+  <p class="lede" id="page-lede"></p>
+  <div class="stamp" id="page-stamp"></div>
+  <nav class="planners" id="sitenav" aria-label="Pages"></nav>
+</header>
+
+<nav class="bar" aria-label="Sections"><div class="wrap">
+  <div class="jump" id="jump"><button type="button" class="jumpbtn" id="jumpbtn" aria-haspopup="true" aria-expanded="false" aria-controls="jumpmenu"><span class="jl">Jump to</span><span class="jc" id="jumpcur">Top</span></button>
+    <div class="jumpmenu" id="jumpmenu" role="menu" aria-label="Sections" hidden></div></div>
+  <div class="ctl">
+    <div class="lvbox" id="lvbox" role="group" aria-label="Level" hidden><span id="lvlabel">Lv</span><button type="button" id="lvdown" aria-label="Level down">−</button><input id="lvinput" type="number" min="1" max="60" value="1" inputmode="numeric" aria-label="Level"><button type="button" id="lvup" aria-label="Level up">+</button></div>
+    <span class="save" id="savestate" data-s="local">Saved in this browser</span>
+    <button type="button" class="tbtn" id="lookbtn">Light mode</button>
+    <button type="button" class="tbtn" id="expandall">Expand all</button>
+  </div>
+</div></nav>
+
+<main class="wrap" id="app" tabindex="-1"></main>
+
+<footer class="wrap">Fan-made planner for World of Warcraft: Forever. Not affiliated with Blizzard. Guides are summarised from the community sources listed on each class page. Your roster is stored only in your own browser.</footer>
+
+<dialog id="dlg" aria-labelledby="dlg-title"><form method="dialog" id="dlg-form"></form></dialog>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<noscript><p class="wrap">This planner needs JavaScript turned on.</p></noscript>
+<script src="data/classes.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
