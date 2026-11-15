@@ -378,11 +378,12 @@ function renderTalents() {
     return `<li class="${cl}"><label><input type="checkbox" data-i="${i}" ${ticks[i] ? "checked" : ""}><span class="rk">${esc(r[1])}</span><span><b>${esc(r[2])}</b>${r[6] ? ` <span class="why">· ${esc(r[6])}</span>` : ""}</span><span class="lvl2">Lv ${lvTxt(r)}</span></label></li>`;
   }).join("");
   const cols = bd.cols.map((lab, c) => `<div><span class="label">${esc(lab)} <span class="mono colct">${sp.cols[c]}/${colTotal(c)}</span></span><ul class="tick">${col(c)}</ul></div>`).join("");
-  tapp.innerHTML = `${ctx.char ? "" : `<p class="why">You're browsing, so ticks here aren't saved. <a href="#/new/${k}">Add a ${esc(CLS[k].name)}</a> to keep your progress.</p>`}${tabs}
+  const addBtn = `<button type="button" class="addbuild" data-act="addbuild" title="Paste a Talents Forever or Icy Veins link, or a talent order">+ Add a build</button>`;
+  tapp.innerHTML = `${ctx.char ? "" : `<p class="why">You're browsing, so ticks here aren't saved. <a href="#/new/${k}">Add a ${esc(CLS[k].name)}</a> to keep your progress.</p>`}<div class="tbar">${tabs}${addBtn}</div>
     <div class="tsum"><span class="meter">Points spent <i><b style="width:${pct}%"></b></i> <span class="mono">${sp.all}/${tot}</span></span>${note}</div>
     <div class="cols">${cols}</div>
-    <div class="tactions"><button type="button" class="tbtn" data-act="upto">Tick everything up to level ${ctx.level}</button><button type="button" class="tbtn" data-act="clear">Clear ticks</button><span class="spacer"></span><button type="button" class="tbtn" data-act="addbuild">+ Add a build</button>${bd.mine ? `<button type="button" class="tbtn" data-act="delbuild">Remove this build</button>` : ""}</div>
-    ${bd.mine ? "" : `<p class="why addhint">Found a build on Talents Forever or Icy Veins? <b>Add a build</b> pastes its link in as a new tab.</p>`}`;
+    <div class="tactions"><button type="button" class="tbtn" data-act="upto">Tick everything up to level ${ctx.level}</button><button type="button" class="tbtn" data-act="clear">Clear ticks</button><span class="spacer"></span>${bd.mine ? `<button type="button" class="tbtn" data-act="delbuild">Remove this build</button>` : ""}</div>
+`;
 }
 app.addEventListener("click", e => {
   if (!ctx) return;
