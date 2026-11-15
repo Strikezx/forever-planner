@@ -240,7 +240,68 @@ function levelList(t, kHint) {
   if (run.some((x, i) => x[1] !== 10 + i)) notes.push("Some levels in the list skip or repeat; the planner placed one point per level from 10.");
   if (runs.length > 1) notes.push(`This paste holds ${runs.length} talent lists; this is the first. Paste the others one at a time.`);
   const sp = t.match(/Points spent\s+\d+\s+(\d+)\s*\/\s*(\d+)\s*\/\s*(\d+)/i);
-  return { k, order: run.map(x => x[0]), source: /leveling path/i.test(t) ? "Mobalytics" : "Pasted list", expect: sp ? `${sp[1]}/${sp[2]}/${sp[3]}` : "", note: notes.join(" ") };
+  const order = run.map(x => x[0]), mob = /leveling path/i.test(t);
+  const extra = mob && checkOrder(k, order).ok ? mobGuide(t, k, order) : {};
+  return { k, order, source: mob ? "Mobalytics" : "Pasted list", expect: sp ? `${sp[1]}/${sp[2]}/${sp[3]}` : "", note: notes.join(" "), notes: extra.notes || null, guide: extra.guide || null };
+}
+// Mobalytics pages paste with spell names on their own lines; a line that follows one ending in a space,
+// or that starts with a space or punctuation, belongs to the paragraph before it.
+function pasteParas(raw) {
+  const out = []; let prev = null;
+  for (const line of raw.split(/\r?\n/)) {
+    if (!line.trim()) continue;
+    const cont = out.length && (/^[\s.,;:)!?]/.test(line) || (prev !== null && /[  ]$/.test(prev)));
+    if (cont) out[out.length - 1] += line; else out.push(line);
+    prev = line;
+  }
+  return out.map(x => x.replace(/\s+/g, " ").trim()).filter(Boolean);
+}
+const MOB_HEADS = ["Overview", "Strengths And Weaknesses", "Alternatives", "Talents", "Talent Order", "Your Choices in This Build", "Key Breakpoints", "Gameplay & Rotation", "Gear", "Level Walkthrough", "Stat Priority", "Suggested Races", "Consumables", "Campfire Buffs", "Professions", "Tips & Tricks", "WoW Forever Changes", "Common Mistakes"];
+const MOB_KEEP = ["Your Choices in This Build", "Key Breakpoints", "Gameplay & Rotation", "Gear", "Level Walkthrough", "Stat Priority", "Tips & Tricks", "Common Mistakes"];
+function shortNote(s) { // the guide's reason, cut to a sentence or two
+  s = s.replace(/^[\s.,:;-]+/, "").replace(/\s*Level \d+(?: to \d+)?:\s*$/, "").trim();
+  const parts = s.match(/[^.!?]+[.!?]+(\s|$)/g) || [s];
+  let out = parts[0].trim();
+  if (out.length < 45 && parts[1]) out += " " + parts[1].trim();
+  return out.length > 170 ? out.slice(0, 167).replace(/\s+\S*$/, "") + "…" : out;
+}
+// notes per checklist row + the build's own guide sections, from a whole Mobalytics page
+function mobGuide(raw, k, order) {
+  const P = pasteParas(raw), secs = []; let cur = { h: "", p: [] };
+  for (const p of P) {
+    const h = MOB_HEADS.find(x => x.toLowerCase() === p.toLowerCase());
+    if (h) { secs.push(cur); cur = { h, p: [] }; } else cur.p.push(p);
+  }
+  secs.push(cur);
+  const sec = h => secs.find(s => s.h === h), noTabs = ps => ps.filter(p => !/^Build \d+: /.test(p));
+  // talent notes
+  const groups = orderRows(k, order).rows, notes = groups.map(() => "");
+  const to = sec("Talent Order");
+  if (to) {
+    let g = 0;
+    for (let p of to.p) {
+      p = p.replace(/^Level \d+(?: to \d+)?:\s*/, "");
+      for (let j = g; j < Math.min(groups.length, g + 4); j++) {
+        const name = groups[j][2];
+        if (!p.toLowerCase().startsWith(name.toLowerCase())) continue;
+        let rest = p.slice(name.length).replace(/^\s*\d\/\d/, "");
+        const nx = groups[j + 1], both = nx && rest.match(new RegExp("^\\s*and\\s+" + nx[2].replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "(\\s*\\d\\/\\d)?", "i"));
+        if (both) { rest = rest.slice(both[0].length); notes[j] = notes[j + 1] = shortNote(rest); g = j + 2; }
+        else { notes[j] = shortNote(rest); g = j + 1; }
+        break;
+      }
+    }
+  }
+  // guide panel
+  const title = (() => { const i = P.findIndex(p => /^overview$/i.test(p)); return i > 0 && P[0].length < 140 && !/^presentation/i.test(P[0]) ? P[0] : ""; })();
+  const am = raw.match(/\nBy\s*\n\s*([^\n]{1,40})\n/), author = am ? am[1].trim() : "";
+  const intro = [];
+  const alt = sec("Alternatives"); if (alt) intro.push(...noTabs(alt.p).slice(0, 1));
+  const tal = sec("Talents"); if (tal) { const last = tal.p[tal.p.length - 1]; if (last && last.length > 60 && !/^Your first talent point/i.test(last)) intro.push(last); }
+  if (to) intro.push(...to.p.filter(p => /^The order also works/i.test(p)));
+  const parts = MOB_KEEP.map(h => sec(h)).filter(s => s && noTabs(s.p).length).map(s => ({ h: s.h, p: noTabs(s.p).filter(p => !/^The order also works/i.test(p)) }));
+  const guide = intro.length || parts.length ? { title, author, intro, parts } : null;
+  return { notes: notes.some(Boolean) ? notes : null, guide };
 }
 // what was pasted? returns {k, order, source, note} or {err}
 function parseBuild(text, kHint) {
@@ -297,12 +358,12 @@ function parseBuild(text, kHint) {
   return { k, order, source: "Pasted order" };
 }
 // checklist rows from an order: [col, "r/max", name, fromLv, toLv, n, note]
-function orderRows(k, order) {
+function orderRows(k, order, notes) {
   const F = flatTal(k), rk = F.map(() => 0), groups = [];
   order.forEach((n, p) => { const x = talByName(k, n); rk[x.i]++; const g = groups[groups.length - 1]; if (g && g.x === x) { g.to = 10 + p; g.n++; g.r = rk[x.i]; } else groups.push({ x, from: 10 + p, to: 10 + p, n: 1, r: rk[x.i] }); });
   const last = 9 + order.length;
   let cut = groups.findIndex(g => g.from > 35); if (cut < 1 || last <= 40) cut = Math.ceil(groups.length / 2);
-  const rows = groups.map((g, i) => [i < cut ? 0 : 1, `${g.r}/${g.x.max}`, g.x.name, g.from, g.to, g.n, ""]);
+  const rows = groups.map((g, i) => [i < cut ? 0 : 1, `${g.r}/${g.x.max}`, g.x.name, g.from, g.to, g.n, (notes && notes[i]) || ""]);
   const label = c => { const gs = groups.filter((_, i) => (i < cut) === (c === 0)); if (!gs.length) return ""; const trees = [...new Set(gs.map(g => g.x.tree))]; return `${trees.join(", then ")}, levels ${gs[0].from}–${gs[gs.length - 1].to}`; };
   const cols = [label(0), label(1)].filter(Boolean);
   if (cols.length === 1) rows.forEach(r => (r[0] = 0));
@@ -313,11 +374,20 @@ function fixBuild(b) {
   const id = typeof b.id === "string" && /^u_[a-z0-9]{4,24}$/.test(b.id) ? b.id : "u_" + uid();
   const order = b.order.map(String).slice(0, 51);
   if (!checkOrder(b.cls, order).ok) return null;
-  return { id, cls: b.cls, name: String(b.name || "My build").slice(0, 40), src: String(b.src || "").slice(0, 40), order };
+  const str = (x, n) => String(x == null ? "" : x).slice(0, n);
+  const notes = Array.isArray(b.notes) ? b.notes.slice(0, 51).map(x => str(x, 200)) : null;
+  let guide = null;
+  if (b.guide && typeof b.guide === "object") {
+    const ps = a => (Array.isArray(a) ? a : []).slice(0, 40).map(x => str(x, 1500)).filter(Boolean);
+    guide = { title: str(b.guide.title, 140), author: str(b.guide.author, 40), intro: ps(b.guide.intro).slice(0, 4),
+      parts: (Array.isArray(b.guide.parts) ? b.guide.parts : []).slice(0, 10).map(x => ({ h: str(x && x.h, 60), p: ps(x && x.p) })).filter(x => x.h && x.p.length) };
+    if (!guide.intro.length && !guide.parts.length) guide = null;
+  }
+  return { id, cls: b.cls, name: String(b.name || "My build").slice(0, 40), src: String(b.src || "").slice(0, 40), order, ...(notes ? { notes } : {}), ...(guide ? { guide } : {}) };
 }
 function applyBuilds(list) {
   for (const k of ORDER) for (const b of Object.keys(CLS[k].builds)) if (b.startsWith("u_")) delete CLS[k].builds[b];
-  for (const b of list) { const { rows, cols } = orderRows(b.cls, b.order); CLS[b.cls].builds[b.id] = { name: b.name, sub: b.src ? b.src + " · yours" : "yours", cols, rows, mine: true }; }
+  for (const b of list) { const { rows, cols } = orderRows(b.cls, b.order, b.notes); CLS[b.cls].builds[b.id] = { name: b.name, sub: b.src ? b.src + " · yours" : "yours", cols, rows, mine: true, guide: b.guide || null }; }
 }
 function defaultBuildName(k, order) {
   const per = D.talents[k].map(() => 0); order.forEach(n => per[talByName(k, n).t]++);
@@ -343,19 +413,20 @@ function buildForm(k) {
     if (!chk.ok) { prev.innerHTML = `<p class="ferr">${esc(chk.err)}</p>`; return; }
     if (r.expect && r.expect !== chk.split) { prev.innerHTML = `<p class="ferr">The guide says ${esc(r.expect)}, but its talent list adds up to ${esc(chk.split)}. Copy the whole build again and check nothing was cut off.</p>`; return; }
     cur = { ...r, split: chk.split };
-    const K = CLS[r.k], g = orderRows(r.k, r.order).rows;
+    const K = CLS[r.k], g = orderRows(r.k, r.order, r.notes).rows;
     dlg.style.setProperty("--class", K.color); dlg.style.setProperty("--class-ink", K.ink);
     f.elements.name.placeholder = defaultBuildName(r.k, r.order);
     prev.innerHTML = `<p class="okline"><b>${esc(K.name)}</b> · ${esc(r.source)} · <span class="mono">${chk.split}</span>${r.expect ? " ✓ matches the guide" : ""} · ${chk.points} points, levels 10–${9 + chk.points}${r.k !== k ? ` · it'll go on the ${esc(K.name)} page` : ""}</p>
+      ${r.notes || r.guide ? `<p class="why">Also keeps ${[r.notes ? `the guide's note on ${r.notes.filter(Boolean).length} talent steps` : "", r.guide ? `a build guide panel (${[...(r.guide.intro.length ? ["intro"] : []), ...r.guide.parts.map(x => x.h)].join(", ")})` : ""].filter(Boolean).join(" and ")}.</p>` : ""}
       ${r.note ? `<p class="why">${esc(r.note)}</p>` : ""}
-      <ol class="bsteps">${g.map(x => `<li><span class="mono">Lv ${x[3] === x[4] ? x[3] : x[3] + "–" + x[4]}</span> ${esc(x[2])} <span class="mono">${x[1]}</span></li>`).join("")}</ol>`;
+      <ol class="bsteps">${g.map(x => `<li><span class="mono">Lv ${x[3] === x[4] ? x[3] : x[3] + "–" + x[4]}</span> <span>${esc(x[2])}${x[6] ? `<small class="bnote">${esc(x[6])}</small>` : ""}</span> <span class="mono">${x[1]}</span></li>`).join("")}</ol>`;
     btn.disabled = false;
   };
   f.oninput = e => { if (e.target.name === "src") show(); };
   f.onchange = e => { if (e.target.name === "cls") show(); };
   f.onsubmit = e => {
     e.preventDefault(); if (!cur) return;
-    const b = fixBuild({ id: "u_" + uid(), cls: cur.k, name: f.elements.name.value.trim() || defaultBuildName(cur.k, cur.order), src: cur.source, order: cur.order });
+    const b = fixBuild({ id: "u_" + uid(), cls: cur.k, name: f.elements.name.value.trim() || defaultBuildName(cur.k, cur.order), src: cur.source, order: cur.order, notes: cur.notes, guide: cur.guide });
     if (!b) return;
     S.builds.push(b); applyBuilds(S.builds); save(); closeDlg();
     if (ctx && ctx.k === b.cls) { ctx.ticks[b.id] = CLS[b.cls].builds[b.id].rows.map(() => false); ctx.build = b.id; persistCtx(); refresh(); toast(`${b.name} added`); }
@@ -494,7 +565,23 @@ function renderNow() {
   el.innerHTML = out;
   const h = $("#now-title", app); if (h) h.textContent = `Level ${L}: what to do now`;
 }
-function refresh() { if (!ctx) return; if (!CLS[ctx.k].builds[ctx.build]) ctx.build = firstBuild(ctx.k); if (!ctx.ticks[ctx.build]) ctx.ticks[ctx.build] = rowsOf(ctx.k, ctx.build).map(() => false); $("#lvinput").value = ctx.level; renderTalents(); renderBeasts(); renderNow(); markSteps(); syncAllBtn(); }
+function guideHtml(bd) {
+  const g = bd.guide, para = p => p.length <= 40 && !/[.!?:]$/.test(p) ? `<h4>${esc(p)}</h4>` : `<p>${esc(p)}</p>`;
+  return `  <p class="why">${g.author ? `From ${esc(g.author)}'s guide` : "From the guide"}${g.title ? `, <i>${esc(g.title)}</i>` : ""}, pasted from ${esc((bd.sub || "").replace(/ · yours$/, "") || "your paste")}. It's that guide's advice for this build; the other sections on this page are the planner's own ${esc(CLS[ctx.k].name)} guide.</p>
+  ${g.intro.map(p => `<p class="bgintro">${esc(p)}</p>`).join("")}
+  <div class="bguide">${g.parts.map(x => `<div class="bgpart"><h3>${esc(x.h)}</h3>${x.p.map(para).join("")}</div>`).join("")}</div>`;
+}
+function renderBuildGuide() {
+  const host = $("#talents", app)?.closest("#app > section"), old = $("#bguide", app), bd = CLS[ctx.k].builds[ctx.build];
+  if (!host || !bd || !bd.guide) { if (old) { old.remove(); buildJump(); syncAllBtn(); } return; }
+  if (old && old.dataset.b === ctx.build) return;
+  const tmp = document.createElement("div");
+  tmp.innerHTML = sect("bguide", `${esc(bd.name)} · the tab you added`, "Build guide", guideHtml(bd), { jump: "Build guide" });
+  const el = tmp.firstElementChild; el.dataset.b = ctx.build;
+  if (old) old.replaceWith(el); else host.after(el);
+  buildJump(); syncAllBtn();
+}
+function refresh() { if (!ctx) return; if (!CLS[ctx.k].builds[ctx.build]) ctx.build = firstBuild(ctx.k); if (!ctx.ticks[ctx.build]) ctx.ticks[ctx.build] = rowsOf(ctx.k, ctx.build).map(() => false); $("#lvinput").value = ctx.level; renderTalents(); renderBuildGuide(); renderBeasts(); renderNow(); markSteps(); syncAllBtn(); }
 
 /* level box */
 const lvInput = $("#lvinput");
