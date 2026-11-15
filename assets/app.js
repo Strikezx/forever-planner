@@ -306,7 +306,7 @@ function buildForm(k) {
   <label class="field"><span>Class, for pasted text</span><select name="cls">${ORDER.map(x => `<option value="${x}"${x === k ? " selected" : ""}>${esc(CLS[x].name)}</option>`).join("")}</select></label>
   <div class="bprev" id="bprev" aria-live="polite"></div>
   <label class="field"><span>Tab name</span><input type="text" name="name" maxlength="40" placeholder="Named after the main tree if left blank"></label>
-  <p class="why">Your builds save in this browser and travel with your share links and exports.</p>
+  <p class="why">Your builds save in this browser and travel with your share links and exports. Talent trees from <a href="https://talentsforever.com" target="_blank" rel="noopener">talentsforever.com</a> (CC BY 4.0).</p>
   <div class="dlgacts"><button type="button" class="btn" data-close>Cancel</button><button type="submit" class="btn primary" id="bsave" disabled>Add build</button></div>`, [C.color, C.ink]);
   const f = dform, prev = $("#bprev", f), btn = $("#bsave", f);
   let cur = null;
