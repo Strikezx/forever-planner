@@ -165,7 +165,8 @@ nav.bar .ctl{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:.8
 .lvbox span{padding:4px 8px;color:var(--muted);font-weight:600;font-size:.78rem;letter-spacing:.04em;text-transform:uppercase}
 .lvbox button{font:inherit;border:0;background:transparent;color:var(--ink);width:28px;height:30px;cursor:pointer;font-size:1rem}
 .lvbox button:hover{background:var(--accent-soft)}
-.lvbox select,.lvpick select{width:54px;height:30px;border:0;border-inline:1px solid var(--line);background:var(--surface);color:var(--ink);font:500 .95rem var(--f-mono);text-align:center;text-align-last:center;cursor:pointer;-webkit-appearance:none;appearance:none;border-radius:0;padding:0 2px}
+.lvbox input{width:44px;height:30px;border:0;border-inline:1px solid var(--line);background:var(--surface);color:var(--ink);font:500 .95rem var(--f-mono);text-align:center;-moz-appearance:textfield}
+.lvbox input::-webkit-outer-spin-button,.lvbox input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
 .save{font-size:.75rem;color:var(--muted);white-space:nowrap}
 .save::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:6px;background:var(--muted);vertical-align:1px}
 .save[data-s="account"]::before{background:var(--good)}
@@ -301,7 +302,7 @@ html[data-style="b"] nav.bar a{color:var(--muted);border-radius:8px}
 html[data-style="b"] nav.bar a:hover{color:var(--ink);background:#ffffff0f}
 html[data-style="b"] .lvbox{border:0;background:#ffffff10;border-radius:10px}
 html[data-style="b"] .lvbox span{color:var(--muted)}
-html[data-style="b"] .lvbox select{background:transparent;border:0;color:var(--class);font-weight:600}
+html[data-style="b"] .lvbox input{background:transparent;border:0;color:var(--class);font-weight:600}
 html[data-style="b"] .lvbox button{color:var(--ink)}
 html[data-style="b"] .tbtn,html[data-style="b"] .copy,html[data-style="b"] .chipbtn{background:#ffffff0d;border:0;border-radius:8px;color:var(--ink)}
 html[data-style="b"] .chipbtn[aria-pressed="true"]{background:var(--class);color:#10161f}
@@ -364,7 +365,7 @@ html[data-style="c"] nav.bar a:hover{background:var(--accent-soft);color:var(--a
 html[data-style="c"] .lvbox{border:0;border-radius:999px;background:var(--class-ink)}
 html[data-style="c"] .lvbox span,html[data-style="c"] .lvbox button{color:#fff}
 html[data-style="c"] .lvbox button:hover{background:#ffffff26}
-html[data-style="c"] .lvbox select{background:#fff;border:0;border-radius:999px;height:24px;color:var(--class-ink);font-weight:700}
+html[data-style="c"] .lvbox input{background:#fff;border:0;border-radius:999px;height:24px;color:var(--class-ink);font-weight:700}
 html[data-style="c"] .tbtn,html[data-style="c"] .copy,html[data-style="c"] .chipbtn{border-radius:999px;border-color:var(--line);background:var(--surface)}
 html[data-style="c"] .chipbtn[aria-pressed="true"]{background:var(--class-ink);border-color:var(--class-ink);color:#fff}
 html[data-style="c"] .guide{grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:8px 14px}
@@ -437,7 +438,7 @@ html[data-style="b"][data-nbg="charcoal"] body{background:radial-gradient(1100px
 html[data-style="b"][data-nbg="charcoal"] nav.bar{background:#111214db}
 /* ===== shared extras for the rollout ===== */
 .colct{font-size:.75rem;color:var(--muted);margin-left:6px;letter-spacing:0;text-transform:none}
-html[data-style="b"] .rk,html[data-style="b"] .say b,html[data-style="b"] .lvbox select{color:color-mix(in srgb,var(--class) 78%,#fff)}
+html[data-style="b"] .rk,html[data-style="b"] .say b,html[data-style="b"] .lvbox input{color:color-mix(in srgb,var(--class) 78%,#fff)}
 html[data-style="b"] .tabs button[aria-selected="true"],html[data-style="b"] .chipbtn[aria-pressed="true"],html[data-style="b"] .nowrow.hot .nk{color:#111214}
 /* pale class colours (Rogue, Paladin) in light mode: real colour, dark text */
 html[data-pale][data-style="c"] header.top{color:#141922}
@@ -447,7 +448,7 @@ html[data-pale][data-style="c"] .stamp span{background:#14192214;color:#141922}
 html[data-pale][data-style="c"] .stamp b,html[data-pale][data-style="c"] .stamp a,html[data-pale][data-style="c"] header.top a{color:#141922}
 html[data-pale][data-style="c"] .lvbox{background:var(--class)}
 html[data-pale][data-style="c"] .lvbox span,html[data-pale][data-style="c"] .lvbox button{color:#141922}
-html[data-pale][data-style="c"] .lvbox select{color:#141922}
+html[data-pale][data-style="c"] .lvbox input{color:#141922}
 html[data-pale][data-style="c"] .nowrow.hot .nk,html[data-pale][data-style="c"] .tabs button[aria-selected="true"],html[data-pale][data-style="c"] .chipbtn[aria-pressed="true"]{background:var(--class);color:#141922;border-color:color-mix(in srgb,var(--class) 70%,#000)}
 html[data-pale][data-style="c"] .nowcard.hot{background:var(--class);color:#141922}
 /* roster extras */
@@ -713,8 +714,8 @@ html[data-style="c"] .clegacy small{color:var(--class-ink)}
 .lvpick .lvl{padding:4px 10px;color:var(--muted);font-weight:600;font-size:.78rem;letter-spacing:.04em;text-transform:uppercase}
 .lvpick button{font:inherit;border:0;background:transparent;color:var(--ink);width:34px;height:32px;cursor:pointer;font-size:1.05rem}
 .lvpick button:hover{background:var(--accent-soft)}
-.lvpick select{width:58px;height:32px;font-size:1rem}
-.lvbox select option,.lvpick select option{background:var(--surface);color:var(--ink)}
+.lvpick select{width:58px;height:32px;border:0;border-inline:1px solid var(--line);background:var(--surface);color:var(--ink);font:500 1rem var(--f-mono);text-align:center;text-align-last:center;cursor:pointer;-webkit-appearance:none;appearance:none;border-radius:0;padding:0 2px}
+.lvpick select option{background:var(--surface);color:var(--ink)}
 html[data-style="b"] .lvpick{border:0;background:#ffffff10;border-radius:10px}
 html[data-style="b"] .lvpick select{background:transparent;border:0;color:color-mix(in srgb,var(--class) 78%,#fff);font-weight:600}
 html[data-style="c"] .lvpick{border:0;border-radius:999px;background:var(--class-ink)}
