@@ -24,7 +24,7 @@ try { if (localStorage.getItem("fp:look") === "light") document.documentElement.
   <div class="jump" id="jump"><button type="button" class="jumpbtn" id="jumpbtn" aria-haspopup="true" aria-expanded="false" aria-controls="jumpmenu"><span class="jl">Jump to</span><span class="jc" id="jumpcur">Top</span></button>
     <div class="jumpmenu" id="jumpmenu" role="menu" aria-label="Sections" hidden></div></div>
   <div class="ctl">
-    <div class="lvbox" id="lvbox" role="group" aria-label="Level" hidden><span id="lvlabel">Lv</span><button type="button" id="lvdown" aria-label="Level down">−</button><input id="lvinput" type="number" min="1" max="60" value="1" inputmode="numeric" aria-label="Level"><button type="button" id="lvup" aria-label="Level up">+</button></div>
+    <div class="lvbox" id="lvbox" role="group" aria-label="Level" hidden><span id="lvlabel">Lv</span><button type="button" id="lvdown" aria-label="Level down">−</button><select id="lvinput" aria-label="Level"></select><button type="button" id="lvup" aria-label="Level up">+</button></div>
     <span class="save" id="savestate" data-s="local">Saved in this browser</span>
     <button type="button" class="tbtn" id="lookbtn">Light mode</button>
     <button type="button" class="tbtn" id="expandall">Expand all</button>
