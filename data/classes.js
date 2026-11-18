@@ -1,2 +1,4175 @@
-/* WoW Forever Planner class data. Built from the class planners, Nov 15, 2026. */
-window.FP_DATA = {"order": ["warrior", "paladin", "hunter", "rogue", "priest", "shaman", "mage", "warlock", "druid"], "classes": {"warrior": {"key": "warrior", "name": "Warrior", "color": "#C69B6D", "ink": "#8A6534", "roles": ["Tank", "Melee"], "races": [{"race": "Human", "new": false}, {"race": "Dwarf", "new": false}, {"race": "Night Elf", "new": false}, {"race": "Gnome", "new": false}, {"race": "Skyborne (High Order)", "new": true}, {"race": "Orc", "new": false}, {"race": "Undead", "new": false}, {"race": "Tauren", "new": false}, {"race": "Troll", "new": false}, {"race": "Skyborne (Windshaper)", "new": true}], "blurb": "Fury's off-hand attacks generate more rage and Raging Blows cheapens Whirlwind and Cleave. Protection can Charge in Defensive Stance and use Thunder Clap while tanking. Arms ties Rend to Overpower and adds Spearing Strike. Battle Shout is now raid-wide. Little self-healing, so solo leveling is the hardest of any class.", "specs": [["Arms", "Two-hander. Rend ties into Overpower, Spearing Strike is new, and Sweeping Strikes gives strong two-target damage from 30. The strongest dungeon spec, but no sustain."], ["Fury", "Dual-wield from 20. Off-hand hits generate more Rage, Raging Blows cheapens Whirlwind and Cleave, and Gore Drinker adds sustain. Comes online around 36."], ["Protection", "Charge in Defensive Stance and Thunder Clap while tanking. The strongest early leveling spec, online from 16 with Shield Block, with almost no downtime."]], "general": "Battle Shout is now raid-wide. Little self-healing, so solo leveling is the hardest of any class.", "lvl": [["Protection", 47.9], ["Arms", 27.1], ["Fury", 25.1]], "first": ["Shield Specialization 5/5", "Improved Thunder Clap 3/3", "Improved Bloodrage 2/2"], "at60": "Fury 36% · Prot 36% · Arms 28%. Top build: Protection 7/5/39.", "builds": {"prot": {"cols": ["Protection, levels 10–40", "Fury and Arms, 41–60"], "rows": [[0, "5/5", "Shield Specialization", 10, 14, 5, "5 Rage every block; weak until Shield Block at 16"], [0, "3/3", "Improved Revenge", 15, 17, 3, "Revenge, your bread and butter"], [0, "2/3", "Improved Thunder Clap", 18, 19, 2, "cheaper Thunder Clap for groups"], [0, "2/2", "Master of Defense", 20, 21, 2, "5 Rage on dodge or parry with a shield"], [0, "1/1", "Last Stand", 22, 22, 1, "emergency health"], [0, "3/3", "Improved Thunder Clap", 23, 23, 1, ""], [0, "1/3", "Defiance", 24, 24, 1, "threat; skip if you won't tank dungeons"], [0, "1/1", "Vanguard", 25, 25, 1, "Charge in Defensive Stance, no more stance dance"], [0, "3/3", "Defiance", 26, 27, 2, ""], [0, "2/2", "Improved Bloodrage", 28, 29, 2, "more Rage from Bloodrage"], [0, "1/1", "Concussion Blow", 30, 30, 1, "5 sec stun"], [0, "3/3", "Focused Rage", 31, 33, 3, "offensive abilities cost 3 less Rage"], [0, "1/2", "Improved Shield Wall", 34, 34, 1, "shorter cooldown"], [0, "5/5", "Bastion", 35, 39, 5, "+10% damage with a shield"], [0, "1/1", "Shield Slam", 40, 40, 1, "your big hit, scales with Block Value"], [1, "5/5", "Cruelty", 41, 45, 5, "+5% crit"], [1, "5/5", "Lingering Rage", 46, 50, 5, "Rage lasts longer between pulls"], [1, "5/5", "Enrage", 51, 55, 5, "+10% damage after you're hit"], [1, "3/3", "Improved Rend", 56, 58, 3, ""], [1, "2/5", "Deflection", 59, 60, 2, "parry"]], "name": "Protection", "sub": "Ahlaundoh"}, "arms": {"cols": ["Arms, levels 10–41", "Fury, 42–60"], "rows": [[0, "3/3", "Improved Rend", 10, 12, 3, "Rend is very strong for its Rage"], [0, "2/5", "Deflection", 13, 14, 2, "parry speeds your next swing and blocks damage"], [0, "2/2", "Improved Overpower", 15, 16, 2, ""], [0, "2/2", "Improved Charge", 17, 18, 2, ""], [0, "3/5", "Deflection", 19, 19, 1, ""], [0, "3/3", "Deep Wounds", 20, 22, 3, "rolling bleed from crits"], [0, "5/5", "Deflection", 23, 24, 2, ""], [0, "1/1", "Spearing Strike", 25, 25, 1, "bonus against Giants and Dragonkin"], [0, "3/3", "Two-Handed Weapon Specialization", 26, 28, 3, ""], [0, "1/2", "Impale", 29, 29, 1, ""], [0, "1/1", "Sweeping Strikes", 30, 30, 1, "very strong for killing two mobs"], [0, "2/2", "Bloodthrill", 31, 32, 2, "Rend procs Overpower"], [0, "2/2", "Impale", 33, 33, 1, ""], [0, "1/5", "Weaponmaster", 34, 34, 1, "swords, then axes or polearms, then maces or staves"], [0, "1/2", "Improved Slam", 35, 35, 1, "1 point: Slam no longer resets your swing"], [0, "5/5", "Weaponmaster", 36, 39, 4, ""], [0, "1/1", "Mortal Strike", 40, 40, 1, ""], [0, "2/2", "Improved Slam", 41, 41, 1, ""], [1, "5/5", "Cruelty", 42, 46, 5, ""], [1, "5/5", "Unbridled Wrath", 47, 51, 5, ""], [1, "5/5", "Enrage", 52, 56, 5, ""], [1, "1/1", "Piercing Howl", 57, 57, 1, "for running from groups"], [1, "1/1", "Reckless Swings", 58, 58, 1, ""], [1, "2/5", "Lingering Rage", 59, 60, 2, ""]], "name": "Arms", "sub": "Ahlaundoh"}, "fury": {"cols": ["Fury, levels 10–40", "Levels 41–60"], "rows": [[0, "5/5", "Cruelty", 10, 14, 5, "+5% crit"], [0, "5/5", "Unbridled Wrath", 15, 19, 5, "extra Rage per hit"], [0, "2/5", "Enrage", 20, 21, 2, "or 1 point in Piercing Howl at 21"], [0, "3/3", "Blood Craze", 22, 24, 3, "so Gore Drinker isn't delayed"], [0, "1/1", "Reckless Swings", 25, 25, 1, "he's unsure it's worth it while leveling"], [0, "4/5", "Dual Wield Specialization", 26, 29, 4, "you can dual-wield from 20"], [0, "1/1", "Death Wish", 30, 30, 1, ""], [0, "2/2", "Gore Drinker", 31, 32, 2, "great sustain"], [0, "5/5", "Dual Wield Specialization", 33, 33, 1, ""], [0, "3/5", "Enrage", 34, 34, 1, ""], [0, "3/3", "Flurry", 35, 37, 3, ""], [0, "2/2", "Improved Whirlwind", 38, 39, 2, ""], [0, "1/1", "Bloodthirst", 40, 40, 1, ""], [1, "5/5", "Enrage", 41, 42, 2, ""], [1, "3/3", "Furious Precision", 43, 45, 3, "off-hand hit"], [1, "5/5", "Deflection", 46, 50, 5, ""], [1, "2/2", "Improved Execute", 51, 52, 2, ""], [1, "2/2", "Improved Berserker Rage", 53, 54, 2, ""], [1, "2/2", "Improved Overpower", 55, 56, 2, ""], [1, "3/3", "Improved Tactical Mastery", 57, 59, 3, ""], [1, "1/1", "Anger Management", 60, 60, 1, ""]], "name": "Fury", "sub": "Ahlaundoh"}}, "spells": [[1, "Heroic Strike, Battle Shout"], [4, "Charge, Rend"], [6, "Thunder Clap"], [8, "Hamstring"], [10, "Defensive Stance, Taunt, Sunder Armor, Bloodrage"], [12, "Shield Bash, Overpower"], [14, "Revenge, Demoralizing Shout, Tactical Mastery"], [16, "Shield Block, Mocking Blow"], [18, "Disarm"], [20, "Victory Rush, Cleave, Slam, Retaliation, Dual Wield"], [22, "Intimidating Shout"], [24, "Execute"], [26, "Challenging Shout"], [28, "Shield Wall"], [30, "Berserker Stance, Intercept, Berserker Rage"], [36, "Whirlwind"], [38, "Pummel"], [40, "Plate Mail, Dual Talent Specialization"], [50, "Recklessness"]], "weapons": [[10, "Class quest one-hander", "Defensive Stance follow-up"], [14, "Ironforge Greathammer / Hammer of Orgrimmar", "Hall of Thanes quest / RFC chain"], [16, "Furen's Favor / Ruga's Bulwark (shield, 20)", "class quest"], [18, "Deadmines drops / Wingblade", "Deadmines / WC quest"], [24, "Subdued Dragon's Fang / Outlaw Sabre", "Wetlands elite chain / BFD quest"], [29, "Marbled Buckler (shield)", "Razorfen Kraul quest"], [35, "Bludgeon of Betrayed Virtues", "Desolace chain"], [39, "Vanquisher's Sword, Aegis of the Scarlet Commander", "RFD quest / SM Cathedral"], [48, "Thrash Blade", "Maraudon quest, lasts to 60"]], "now": [{"type": "steps", "label": "How to play", "items": [[1, 3, "Battle Shout, Heroic Strike"], [4, 9, "Charge, Rend, Thunder Clap"], [10, 15, "Defensive Stance: Revenge, Demoralizing Shout"], [16, 60, "Shield Block on cooldown, then Revenge"], [20, 60, "Victory Rush under 90% health"], [25, 60, "Charge in Defensive (Vanguard)"], [40, 60, "Shield Slam first"]]}, {"type": "train"}, {"type": "weapon", "label": "Weapon"}, {"type": "steps", "label": "Quests & dungeons", "items": [[10, 11, "Defensive Stance quest + green one-hander"], [20, 21, "Shield class quest"], [30, 32, "Berserker Stance & Intercept quest"], [40, 41, "Mount (90g) or dual spec (50g)"], [12, 14, "Hall of Thanes or Ragefire Chasm"], [16, 18, "Deadmines or Ruins of Lordaeron"], [18, 20, "Wailing Caverns"], [20, 26, "SFK, Stockade, Excavation Site or BFD"], [26, 30, "City of Dalaran, Razorfen Kraul"], [30, 40, "Gnomeregan, Scarlet Monastery, Drowned City"], [40, 50, "Krol'Dok, RFD, Uldaman, ZF, Maraudon"], [50, 60, "Sunken Temple, BRD, LBRS, Blackmaw Hold"]]}], "opts": [{"t": "Protection", "s": "Ahlaundoh · ends 5/15/31", "p": "Shield Specialization 5/5 first, Improved Revenge, Improved Thunder Clap and Master of Defense by 21, Vanguard at 25 so you can Charge in Defensive Stance, Bastion at 35–39 and Shield Slam at 40. Then Cruelty, Lingering Rage and Enrage."}, {"t": "Arms", "s": "Ahlaundoh · ends 32/19/0", "p": "Two-hander. Improved Rend and Deflection first, Sweeping Strikes at 30 for very strong two-target damage, Mortal Strike at 40. Strongest dungeon spec, but no sustain. Needs weapon upgrades."}, {"t": "Fury", "s": "Ahlaundoh · ends 11/40/0", "p": "Dual-wield from 20. Gore Drinker at 31 gives great sustain, but Fury doesn't come online until about 36. Don't respec into it before 36; Vanquisher's Sword (Razorfen Downs) or Sword of Serenity (Scarlet Monastery) is a good moment."}, {"t": "Dual spec from 40", "s": "50 gold", "p": "Keep Protection for questing and add Arms or Fury for dungeons, or the other way round."}], "keyspells": "Charge, Rend 4 · Thunder Clap 6 · Defensive Stance, Taunt, Sunder Armor 10 (class quest) · Shield Bash, Overpower 12 · Revenge 14 · Shield Block 16 · Victory Rush, Cleave, Slam, Dual Wield 20 · Execute 24 · Berserker Stance, Intercept 30 (class quest) · Whirlwind 36 · Pummel 38", "sections": [{"id": "warrior-guide", "label": "Your Warrior · Protection leveling", "h2": "Protection leveling guide", "html": "\n  <p class=\"sdesc\">Built on <a href=\"https://mobalytics.gg/wow-forever/classes/warrior-leveling-guide\" target=\"_blank\" rel=\"noopener\">Ahlaundoh's Warrior Leveling Guide<\/a> (Mobalytics, Nov 12), which has full 10–60 orders for all three specs. Shields and some weapons come from <a href=\"https://mobalytics.gg/wow-forever/profile/kargoz/classes/1-60-protection-warrior-leveling-guide-weapons-talents-rotation-macros\" target=\"_blank\" rel=\"noopener\">Kargoz's Protection guide<\/a> (Oct 14), and class quests from <a href=\"https://www.warcrafttavern.com/forever/guides/warrior-leveling/\" target=\"_blank\" rel=\"noopener\">Warcraft Tavern<\/a>.<\/p>\n  <div class=\"guide\">\n\n    <details class=\"gpanel wide\" id=\"talents\" data-key=\"warrior-guide-talent-order\" open>\n      <summary><h3>Talent order <small>checklist · 51 points · tabs for all three specs<\/small><\/h3><\/summary>\n      <p class=\"why\">Tick each row as you spend the points. Gold rows are due at your level; the outlined row is your next point. Switch tabs for the Arms or Fury order.<\/p>\n      <div id=\"talents-app\"><\/div>\n      <p class=\"why\">Every order here was checked against Forever's talent trees (tier gates and prerequisites), and each adds up to 51. Protection's first 5 points are weak until Shield Block arrives at 16; that's expected.<\/p>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"warrior-guide-rotation\" open>\n      <summary><h3>Rotation by level<\/h3><\/summary>\n      <div class=\"steps\">\n        <div class=\"step\"><span class=\"lv\">1–3<\/span><p>Keep Battle Shout up. Heroic Strike is your only Rage spender; don't use it if a normal swing would kill.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">4–9<\/span><p>Charge, then Rend if the mob will live through it, then Heroic Strike. Thunder Clap from 6: good damage per Rage and a big damage reduction.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">10–15<\/span><p>Do the level 10 class quest for Defensive Stance. Spend your Rage before you swap: changing stance drops you to 10. Revenge whenever it lights up, Demoralizing Shout to keep the debuff up.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">16–39<\/span><p>Shield Block on cooldown: with Shield Specialization it's nearly free and guarantees Revenge. Victory Rush under 90% health, Revenge, Demoralizing Shout, Rend, Thunder Clap, Heroic Strike only above 60 Rage.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">25+<\/span><p>Vanguard lets you Charge in Defensive Stance, so the stance dance is over.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">40–60<\/span><p>Shield Slam first, then Revenge, Victory Rush, Rend on mobs that live, Sunder Armor on tough ones, Heroic Strike with spare Rage.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Groups<\/span><p>Thunder Clap on cooldown, Shield Slam your main target, Revenge, Demoralizing Shout, Cleave with spare Rage. Hit every mob in the pack once.<\/p><\/div>\n      <\/div>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"warrior-guide-rage\">\n      <summary><h3>Rage, the Forever way<\/h3><\/summary>\n      <ul>\n        <li>Rage is normalized: every weapon speed generates the same Rage over time, and crits give double.<\/li>\n        <li>Carry Rage into the next pull. Lingering Rage (from 46 on this path) makes it last longer.<\/li>\n        <li>Execute is a trap while leveling: it overkills and leaves you at 0 Rage for the next mob. Use it near 15 Rage.<\/li>\n        <li>Victory Rush heals 10% of your max health within 20 sec of a non-trivial kill. Chain kills to keep it rolling.<\/li>\n        <li>Battle Shout now lasts 3 minutes, Thunder Clap and Rend scale with Attack Power and can crit, and Thunder Clap works in Defensive Stance.<\/li>\n      <\/ul>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"warrior-guide-weapons\">\n      <summary><h3>Weapons &amp; shields <small>Alliance / Horde<\/small><\/h3><\/summary>\n      <div class=\"steps\">\n        <div class=\"step\"><span class=\"lv\">10<\/span><p>Class quest one-hander after the Defensive Stance quest: Haggard's, Umbral, Elunite, Thun'grim's or Heirloom, by race<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">14+<\/span><p>Ironforge Greathammer (Hall of Thanes quest) / Hammer of Orgrimmar (RFC chain). Use the Greathammer until Shield Block at 16<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">18–24<\/span><p>Deadmines drops like Cruel Barb / Wingblade (Wailing Caverns quest), then Subdued Dragon's Fang (Wetlands elite chain) / Outlaw Sabre (BFD quest)<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">20<\/span><p>Shield class quest: Furen's Favor (The Shieldsmith) / Ruga's Bulwark (Trial at the Field of Giants)<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">20–30<\/span><p>Arctic Buckler (BFD quest), then Marbled Buckler (Razorfen Kraul quest, 29)<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">35–39<\/span><p>Bludgeon of Betrayed Virtues (Desolace), Sword of Serenity (SM quest), Vanquisher's Sword (RFD quest), Aegis of the Scarlet Commander (SM Cathedral, a big shield upgrade)<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">40–50<\/span><p>Optomatic Deflector (Tanaris escort) or Shizzle's Drizzle Blocker (Un'Goro, 49) for shields<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">48–60<\/span><p>Thrash Blade (Maraudon quest) lasts to 60; Draconian Deflector (UBRS) is the shield to chase<\/p><\/div>\n      <\/div>\n      <p class=\"why\">Protection is the least weapon-hungry spec: use the highest-DPS one-hander you have, slightly favouring slower ones, and the highest-armor shield.<\/p>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"warrior-guide-quests\">\n      <summary><h3>Class quests<\/h3><\/summary>\n      <ul>\n        <li><b>10:<\/b> Defensive Stance, Taunt and Sunder Armor, from your race's Warrior trainer, then a green one-hander<\/li>\n        <li><b>20:<\/b> the shield quest (see Weapons &amp; shields). Humans and Skyborne also get a level 20 hauberk quest<\/li>\n        <li><b>30:<\/b> Berserker Stance and Intercept<\/li>\n        <li><b>30:<\/b> Whirlwind weapon (axe, sword or warhammer). Hard at 30, so Ahlaundoh skips it on a fresh character unless friends help<\/li>\n      <\/ul>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"warrior-guide-key-spells\">\n      <summary><h3>Key spells<\/h3><\/summary>\n      <div class=\"steps\">\n        <div class=\"step\"><span class=\"lv\">1–8<\/span><p>Heroic Strike, Battle Shout 1 · Charge, Rend 4 · Thunder Clap 6 · Hamstring 8<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">10–18<\/span><p>Defensive Stance, Taunt, Sunder Armor, Bloodrage 10 · Shield Bash, Overpower 12 · Revenge, Demoralizing Shout, Tactical Mastery 14 · Shield Block 16 · Disarm 18<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">20–28<\/span><p>Victory Rush, Cleave, Slam, Retaliation, Dual Wield 20 · Intimidating Shout 22 · Execute 24 · Challenging Shout 26 · Shield Wall 28<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">30–60<\/span><p>Berserker Stance, Intercept, Berserker Rage 30 · Whirlwind 36 · Pummel 38 · Plate Mail, dual spec 40 · Recklessness 50<\/p><\/div>\n      <\/div>\n      <p class=\"why\">Short on gold? Skip extra ranks of Heroic Strike, Cleave and Overpower, keep Intercept, Shield Bash and Pummel at rank 1, and skip Slam unless you play Arms with Improved Slam.<\/p>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"warrior-guide-stats\">\n      <summary><h3>Stats<\/h3><\/summary>\n      <ul>\n        <li><b>Spirit<\/b> first while questing: Warriors get the most health regen from it in Forever, and it drops below Stamina in dungeons<\/li>\n        <li><b>Strength<\/b> next: 2 Attack Power a point<\/li>\n        <li><b>Agility<\/b> (crit, dodge, armor), then <b>Stamina<\/b><\/li>\n        <li>Kargoz ranks Strength, Stamina, Agility, then Defense and Block Value for Protection. Block Value matters more once you have Shield Slam<\/li>\n        <li>Hit up to 8%, then Expertise, crit and haste<\/li>\n      <\/ul>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"warrior-guide-professions\">\n      <summary><h3>Professions<\/h3><\/summary>\n      <ul>\n        <li><b>First Aid<\/b> is the only must-have: bandages, and Intimidating Shout plus a bandage saves bad pulls<\/li>\n        <li><b>Cooking:<\/b> Well Fed gives +5% XP from kills, and you need it for campfires<\/li>\n        <li><b>Mining + Blacksmithing<\/b> or <b>Herbalism + Alchemy<\/b> if you level professions as you go<\/li>\n        <li>For pure XP an hour, Leatherworking's Camp Tent wins; Skinning's Camp Chair (crit) is the best group buff<\/li>\n        <li>Kargoz's tank pick: Blacksmithing + Enchanting, for gold and rare recipes from dungeons<\/li>\n      <\/ul>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"warrior-guide-tips\">\n      <summary><h3>Tips &amp; mistakes<\/h3><\/summary>\n      <ul>\n        <li>Shield Block is useless against non-Earth elementals: you can't block them.<\/li>\n        <li>Pull casters around corners so they have to come to you.<\/li>\n        <li>Stand behind mobs in groups so they can't parry you.<\/li>\n        <li>Fight weaker mobs near a strong one first to build Rage.<\/li>\n        <li>Charging a neutral mob doesn't put you in combat if you don't hit it.<\/li>\n        <li>Jumping increases the range of Whirlwind and Thunder Clap.<\/li>\n        <li>Don't use Demoralizing Shout or Thunder Clap on mobs that mostly cast.<\/li>\n      <\/ul>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"warrior-guide-arms-fury\">\n      <summary><h3>Arms or Fury instead?<\/h3><\/summary>\n      <p>Arms stays in Battle Stance for Overpower, Rends everything that lives 9+ seconds and uses Sweeping Strikes on two mobs; it has no self-healing, so it suits a duo with a healer. Fury dual-wields from 20, sustains itself with Gore Drinker from 31, and comes online around 36. Both orders are in the talent checklist tabs.<\/p>\n    <\/details>\n    <details class=\"gpanel wide\" data-key=\"warrior-guide-dungeons\">\n      <summary><h3>Dungeons by level<\/h3><\/summary>\n      <div class=\"steps\">\n        <div class=\"step\"><span class=\"lv\">12–14<\/span><p>Hall of Thanes (Alliance) or Ragefire Chasm (Horde)<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">16–18<\/span><p>Deadmines (Alliance) or Ruins of Lordaeron (Horde)<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">18–20<\/span><p>Wailing Caverns<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">20–26<\/span><p>Shadowfang Keep · The Stockade · Excavation Site: Wetlands · Blackfathom Deeps<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">26–30<\/span><p>City of Dalaran · Razorfen Kraul (28+)<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">30–40<\/span><p>Gnomeregan · Scarlet Monastery wings · The Drowned City (36+)<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">40–50<\/span><p>Krol'Dok Stronghold · Razorfen Downs · Uldaman · Zul'Farrak · Maraudon · Alcaz Prison (48+)<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">50–60<\/span><p>Sunken Temple · Blackrock Depths · Lower Blackrock Spire · Blackmaw Hold · then Shaper's Terrace, Upper Blackrock Spire, Dire Maul, Scholomance and Stratholme at 58+<\/p><\/div>\n      <\/div>\n      <p class=\"why\">Since the Nov 8 hotfix, dungeon mobs give 50% more experience. Pick up every quest for a dungeon before you go in. Raids open Dec 9.<\/p>\n    <\/details>\n\n  <\/div>\n  "}, {"id": "macros", "label": "Copy them exactly", "h2": "Warrior macros", "html": "\n  <p class=\"sdesc\">5 macros, written exactly as they go in the game's macro window. One wrong letter and a macro does nothing, so copy them with the button.<\/p>\n  <div class=\"guide\">\n    <details class=\"gpanel wide\" data-key=\"macros-how-to-add-one\">\n      <summary><h3>How to add one<\/h3><\/summary>\n      <ol class=\"howto\">\n        <li>Type <code>/macro<\/code>, open the tab with this character's name, and click New.<\/li>\n        <li>Type the <b>macro name<\/b> as shown (16 characters at most) and pick the red question mark icon, so the button shows the spell's own icon.<\/li>\n        <li>Copy the <b>macro text<\/b> in exactly, line breaks included. Spell names must match your spellbook letter for letter: capitals, spaces and apostrophes.<\/li>\n        <li>Drag the macro onto your action bar.<\/li>\n      <\/ol>\n      <ul class=\"mtips\">\n        <li><span class=\"ph\">Highlighted words<\/span> are placeholders: replace them with the exact name of your own item.<\/li>\n        <li><b>Ctrl<\/b> means hold Ctrl as you press the button. <b>MO<\/b> means mouseover: it casts on whatever is under your mouse, and on your target when nothing is.<\/li>\n        <li>Leave rank numbers off and the macro always casts your highest rank, so you never have to re-drag spells after training.<\/li>\n        <li>The level tag is when the spell becomes available. Make the macro then, or it will just show a question mark.<\/li>\n      <\/ul>\n    <\/details>\n    <details class=\"gpanel macset\" data-key=\"macros-fighting\">\n      <summary><h3>Fighting<\/h3><\/summary>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Charge<\/b><span class=\"lvl\">Lv 4<\/span><\/div><button class=\"copy\" id=\"copy-wr1\" data-for=\"wr1\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"wr1\">#showtooltip Charge\n/startattack\n/cast Battle Stance\n/cast Charge<\/pre>\n        <p class=\"why\">From Mobalytics' Arms guide. In Defensive Stance the first press swaps stance; press again to Charge. From 25 Vanguard lets Protection Charge in Defensive Stance, so you can drop that line.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Heroic Strike<\/b><span class=\"lvl\">Lv 1<\/span><\/div><button class=\"copy\" id=\"copy-wr2\" data-for=\"wr2\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"wr2\">#showtooltip Heroic Strike\n/cast Heroic Strike\n/startattack<\/pre>\n        <p class=\"why\">Also starts your auto attack.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Revenge Block<\/b><span class=\"lvl\">Lv 16<\/span><\/div><button class=\"copy\" id=\"copy-wr3\" data-for=\"wr3\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"wr3\">#showtooltip Revenge\n/startattack\n/cast Shield Block\n/cast Revenge<\/pre>\n        <p class=\"why\">Ahlaundoh's: Shield Block and Revenge on one button. Not 100% efficient, but far fewer presses.<\/p><\/div>\n    <\/details>\n    <details class=\"gpanel macset\" data-key=\"macros-stances\">\n      <summary><h3>Stances &amp; interrupts<\/h3><\/summary>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Berserker Rage<\/b><span class=\"lvl\">Lv 30<\/span><\/div><button class=\"copy\" id=\"copy-wr4\" data-for=\"wr4\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"wr4\">#showtooltip Berserker Rage\n/cast [stance:1/2] Berserker Stance; Berserker Rage<\/pre>\n        <p class=\"why\">Swaps to Berserker Stance if you're not in it, otherwise casts Berserker Rage. Stance 1 is Battle, 2 Defensive, 3 Berserker.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Interrupt<\/b><span class=\"lvl\">Lv 38<\/span><\/div><button class=\"copy\" id=\"copy-wr5\" data-for=\"wr5\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"wr5\">#showtooltip [stance:1/2] Shield Bash; [stance:3] Pummel\n/cast [equipped: Shield, stance:1/2] Shield Bash; [noequipped: shield, stance:1/2] Berserker Stance; [stance:3] Pummel<\/pre>\n        <p class=\"why\">Ahlaundoh's one-button interrupt: Shield Bash with a shield, otherwise into Berserker Stance for Pummel. Shield Bash alone works from 12.<\/p><\/div>\n    <\/details>\n  <\/div>\n  "}, {"id": "notes", "label": "Read before you commit", "h2": "Caveats &amp; sources", "html": "\n  <div class=\"notes\">\n<div class=\"note\"><h3>Guides disagree on stats<\/h3><p>Ahlaundoh puts Spirit first for questing (more health regen, less downtime); Kargoz puts Strength first for Protection. Both agree Spirit matters less in dungeons.<\/p><\/div>\n<div class=\"note\"><h3>Old racial text in some guides<\/h3><p>Kargoz's Oct 14 guide lists a Human sword racial, 10% Troll regen and 1% Skyborne haste. Forever's racials are Ruthless, 20% and 2%; this page uses Talents Forever's numbers.<\/p><\/div>\n<div class=\"note\"><h3>Beta-era levels<\/h3><p>Spell levels and talent text come from Talents Forever's read of the beta client (data from Nov 10). The beta stopped at 30, so guides' 31–60 advice is less tested.<\/p><\/div>\n  <\/div>\n  <h3 style=\"margin:28px 0 12px\">Sources<\/h3>\n  <ul class=\"sources\">\n    <li><a href=\"https://mobalytics.gg/wow-forever/classes/warrior-leveling-guide\" target=\"_blank\" rel=\"noopener\">Ahlaundoh: Warrior Leveling Guide 1–60 (Mobalytics, Nov 12)<\/a><\/li>\n    <li><a href=\"https://mobalytics.gg/wow-forever/profile/kargoz/classes/1-60-protection-warrior-leveling-guide-weapons-talents-rotation-macros\" target=\"_blank\" rel=\"noopener\">Kargoz: 1–60 Protection Warrior Leveling Guide (Mobalytics, Oct 14)<\/a><\/li>\n    <li><a href=\"https://mobalytics.gg/wow-forever/classes/arms-warrior-guide\" target=\"_blank\" rel=\"noopener\">Mobalytics: Arms Warrior guide (macros)<\/a><\/li>\n    <li><a href=\"https://www.warcrafttavern.com/forever/guides/warrior-leveling/\" target=\"_blank\" rel=\"noopener\">Warcraft Tavern: Warrior leveling (class quests)<\/a><\/li>\n    <li><a href=\"https://talentsforever.com/export/warrior.json\" target=\"_blank\" rel=\"noopener\">Talents Forever: Warrior data export (talents, spells, racials)<\/a><\/li>\n    <li><a href=\"https://www.warcrafttavern.com/forever/news/class-economy-changes-wow-forever-hotfixes-for-november-10/\" target=\"_blank\" rel=\"noopener\">Warcraft Tavern: Nov 10 hotfixes (Sweeping Strikes fix)<\/a><\/li>\n  <\/ul>\n  "}]}, "paladin": {"key": "paladin", "name": "Paladin", "color": "#F48CBA", "ink": "#B0567F", "roles": ["Tank", "Healer", "Melee"], "races": [{"race": "Human", "new": false}, {"race": "Dwarf", "new": false}, {"race": "Undead", "new": true}], "blurb": "Holy Strike comes at level 6. Seals stay active after Judgement, so there's less recasting. Consecration is baseline, and Seal of Fury lets Judgement taunt. Unsealed Wrath (Twist of Light's Oct 30 replacement) stores your seal for a burst. Salvation is now separate from your Blessings.", "specs": [["Holy", "Holy Shock heals or hurts, and Oath of Light boosts your heals on one sworn ally. Light's Vigil is the 31-point talent."], ["Protection", "Seal of Fury is the tank seal, and judging it taunts. Holy Shield and Templar's Bulwark keep you up; Shieldsworn lets Holy Strike hit with your shield."], ["Retribution", "Two-hander. Holy Strike from level 6, Vengeance and Champion of the Light for damage, and Unsealed Wrath stores your seal for a burst."]], "general": "Seals stay active after Judgement, so there's less recasting. Consecration and Blessing of Kings are trainable, and Salvation is separate from your Blessings.", "lvl": [["Retribution", 40.5], ["Protection", 34], ["Holy", 25.5]], "first": ["Benediction 5/5", "Conviction 5/5"], "at60": "Ret 41% · Prot 32% · Holy 27%. Top build: Retribution 8/8/35.", "builds": {"wda": {"cols": ["Levels 10–29 · Retribution", "Levels 30–40 · Retribution", "Levels 41–60 · 18 into Holy"], "rows": [[0, "5/5", "Deflection", 10, 14, 5, "+5% parry, so fewer hits to heal back"], [0, "2/2", "Improved Judgement", 15, 16, 2, "Judgement every 8 sec instead of 10"], [0, "3/3", "Conviction", 17, 19, 3, "+6% crit, which feeds Vengeance at 30"], [0, "2/2", "Pursuit of Justice", 20, 21, 2, "15% faster running, mount included"], [0, "1/1", "Seal of Command", 22, 22, 1, "your main seal from here"], [0, "2/3", "Sanctified Judgement", 23, 24, 2, ""], [0, "1/1", "Sacred Arbiter", 25, 25, 1, "Holy Strike hits harder"], [0, "3/3", "Two-Handed Weapon Specialization", 26, 28, 3, "more physical and Holy damage with a two-hander"], [0, "3/3", "Sanctified Judgement", 29, 29, 1, "each Judgement refunds 60% of your seal's cost"], [1, "3/3", "Vengeance", 30, 32, 3, "crits give +3% damage for 30 sec, stacking 5 times; needs Seal of Command"], [1, "1/1", "Repentance", 33, 33, 1, "6 sec incapacitate on a humanoid"], [1, "1/3", "Vindication", 34, 34, 1, ""], [1, "5/5", "Champion of the Light", 35, 39, 5, "60% of your Intellect becomes spell damage; makes Hammer of Wrath instant"], [1, "1/1", "Unsealed Wrath", 40, 40, 1, "stores up to 3 copies of your seal, released when you hit with a different seal"], [2, "5/5", "Divine Strength", 41, 45, 5, "+10% Strength"], [2, "2/2", "Reverence", 46, 47, 2, "part of your mana regen continues while casting"], [2, "3/5", "Improved Seals", 48, 50, 3, ""], [2, "2/2", "Holy Conduit", 51, 52, 2, "40% cheaper Consecration, Exorcism and Hammer of Wrath"], [2, "5/5", "Improved Seals", 53, 54, 2, "+15% seal and Judgement damage"], [2, "2/2", "Purifying Power", 55, 56, 2, "shorter Exorcism cooldown"], [2, "2/2", "Divine Precision", 57, 58, 2, ""], [2, "3/3", "Vindication", 59, 60, 2, "back in Retribution"]], "name": "Retribution", "sub": "We Ding Again"}}, "spells": [[1, "Seal of Righteousness, Holy Light, Devotion Aura"], [4, "Blessing of Might, Judgement"], [6, "Holy Strike, Divine Protection"], [8, "Hammer of Justice"], [10, "Seal of Fury, Blessing of Protection, Lay on Hands"], [12, "Redemption (quest)"], [14, "Blessing of Wisdom"], [16, "Retribution Aura, Righteous Fury"], [18, "Blessing of Freedom"], [20, "Kings, Consecration, Exorcism, Flash of Light"], [22, "Concentration Aura"], [26, "Salvation"], [30, "Seal of Light, Divine Intervention"], [33, "Repentance (talent)"], [34, "Divine Shield"], [38, "Seal of Wisdom"], [40, "Blessing of Light"], [42, "Cleanse"], [44, "Hammer of Wrath"]], "weapons": [[11, "Steady Bastard Sword", "Durotar quest"], [15, "Forsaken Greataxe", "Ruins of Lordaeron quest"], [16, "Axe of Orgrimmar", "Ragefire Chasm quest"], [18, "Smite's Mighty Hammer or Taskmaster Axe", "Deadmines"], [24, "Heavehammer", "Excavation Site quest"], [29, "Manual Crowd Pummeler, Corpsemaker or Felbough Arm", "Gnomeregan / RFK / Dalaran"], [39, "Mograine's Might", "Scarlet Monastery"], [50, "Princess Theradras' Scepter", "Maraudon"], [58, "Legionite Glaive or Arcanite Reaper", "Blacksmithing"]], "now": [{"type": "steps", "label": "How to play", "items": [[1, 3, "Seal of Righteousness and auto attack"], [1, 60, "Devotion Aura on"], [4, 19, "Blessing of Might on yourself"], [4, 60, "Judgement whenever it's ready"], [6, 60, "Holy Strike on cooldown"], [14, 19, "Drinking a lot? Swap to Wisdom"], [16, 60, "Retribution Aura for 2–3 mobs"], [20, 60, "Kings; Consecration on 2–4 mobs"], [22, 60, "Hammer of Justice, then Judgement"], [33, 60, "Repentance + Judgement on humanoids"], [40, 60, "Unsealed Wrath burst"], [44, 60, "Hammer of Wrath under 20%"]]}, {"type": "train"}, {"type": "weapon", "label": "Two-hander", "none": "Starter weapon"}], "opts": [{"t": "Retribution", "s": "We Ding Again's 10–60 build · 18/0/33", "p": "<b>10–19:<\/b> Deflection 5/5, Improved Judgement 2/2, Conviction 3/3. <b>20–29:<\/b> Pursuit of Justice 2/2, Seal of Command, Sanctified Judgement 3/3, Sacred Arbiter, Two-Handed Weapon Specialization 3/3. <b>30–40:<\/b> Vengeance 3/3, Repentance, Vindication 1/3, Champion of the Light 5/5, Unsealed Wrath. <b>41–60:<\/b> 18 points into Holy, then Vindication 3/3. Protection and Holy are the other options."}], "keyspells": "", "sections": [{"id": "paladin-guide", "label": "Undead Paladin · Horde", "h2": "Retribution leveling guide", "html": "\n  <p class=\"sdesc\">Combined from <a href=\"https://www.warcrafttavern.com/forever/guides/paladin-leveling/\" target=\"_blank\" rel=\"noopener\">Warcraft Tavern<\/a> and <a href=\"https://www.method.gg/wow-forever/wow-forever-paladin-leveling-guide-and-talents\" target=\"_blank\" rel=\"noopener\">Method<\/a> leveling guides, Warcraft Tavern's <a href=\"https://www.warcrafttavern.com/forever/guides/retribution-paladin/\" target=\"_blank\" rel=\"noopener\">Retribution guide<\/a>, <a href=\"https://wow.gg/guides/wow-forever-retribution-paladin-beta\" target=\"_blank\" rel=\"noopener\">WoW.gg<\/a> level-60 notes, the <a href=\"https://www.method.gg/wow-forever/the-best-weapons-in-wow-forever-from-levels-1-30\" target=\"_blank\" rel=\"noopener\">Method weapon list<\/a>, and <a href=\"https://www.youtube.com/@WeDingAgain\" target=\"_blank\" rel=\"noopener\">We Ding Again<\/a>'s 10–60 Retribution video for the talent order and play tips. Weapons are filtered to what a Horde character can get.<\/p>\n  <div class=\"guide\">\n\n    <details class=\"gpanel wide\" id=\"talents\" data-key=\"paladin-guide-talent-order\" open>\n      <summary><h3>Talent order <small>checklist · 51 points · 18/0/33 at 60<\/small><\/h3><\/summary>\n      <p class=\"why\">Tick each row as you spend the points. Gold rows are due at your level; the outlined row is your next point.<\/p>\n      <div id=\"talents-app\"><\/div>\n      <p class=\"why\">This replaces the older Benediction-first path, which was planned on the tree before Blizzard's <a href=\"https://epiccarry.com/blogs/?p=44316\" target=\"_blank\" rel=\"noopener\">Oct 30 rework<\/a> (Twist of Light became Unsealed Wrath and several talents changed rows and ranks). With the Well-Rested and Talented legacy point, every step arrives 5 levels sooner. Dual spec opens at 40: put a tank or heal spec in the second slot and leave this one alone.<\/p>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"paladin-guide-how-it-plays-by-level\" open>\n      <summary><h3>How it plays, by level<\/h3><\/summary>\n      <div class=\"steps\">\n        <div class=\"step\"><span class=\"lv\">Lv 1<\/span><p>Seal of Righteousness and auto attack. Devotion Aura stays on.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Lv 4<\/span><p>Blessing of Might on yourself (Blessings last an hour now). Judgement whenever it's ready: your seal stays on after it.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Lv 6<\/span><p>Holy Strike: 10 sec cooldown, costs almost nothing. A fight is seal up, run in, Judgement and Holy Strike when they light up, and let the swings do the rest.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Lv 14<\/span><p>Still drinking a lot? Swap Might for Blessing of Wisdom.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Lv 16<\/span><p>Devotion Aura solo; Retribution Aura when you pull two or three.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Lv 20<\/span><p>Kings replaces Might (now trained, +10% all stats). Consecration only with 2–4 mobs that will live through it: only the first four take full damage and it costs a lot of mana. Pull Undead and demons with Exorcism from 30 yards.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Lv 22<\/span><p>Seal of Command. Hammer of Justice, then Judgement: Command's Judgement does double damage to a stunned mob.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Lv 33<\/span><p>Repentance and Judgement together for the same double damage on humanoids (Repent Judge macro).<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Lv 40<\/span><p>Unsealed Wrath burst: start in Seal of Command, swing three times, then Seal of Righteousness and keep hitting.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Lv 44<\/span><p>Hammer of Wrath under 20% health, instant with Champion of the Light. Finishes mobs and catches runners.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Mana<\/span><p>If the next swing kills the mob anyway, leave your buttons alone. End a fight with spare mana? Spend it on Holy Light and pull the next one at full health.<\/p><\/div>\n      <\/div>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"paladin-guide-a-normal-pull\">\n      <summary><h3>A normal pull <small>40 and up<\/small><\/h3><\/summary>\n      <ol class=\"talents\">\n        <li>Kings and Devotion Aura already on.<\/li>\n        <li>Seal of Command.<\/li>\n        <li>Exorcism first if it's Undead or a demon.<\/li>\n        <li>Judgement and Holy Strike whenever they're up.<\/li>\n        <li>Seal of Righteousness after three swings.<\/li>\n        <li>Hammer of Wrath once it drops under 20%.<\/li>\n      <\/ol>\n      <p class=\"why\">Two or three mobs: Consecration goes down first. One big mob hitting hard: stun it and get a Holy Light off.<\/p>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"paladin-guide-key-spells\">\n      <summary><h3>Key spells<\/h3><\/summary>\n      <div class=\"steps\">\n        <div class=\"step\"><span class=\"lv\">1–8<\/span><p>Seal of Righteousness, Holy Light, Devotion Aura · Blessing of Might, Judgement 4 · Holy Strike, Divine Protection 6 · Hammer of Justice 8<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">10–16<\/span><p>Seal of Fury, Blessing of Protection, Lay on Hands 10 · Redemption 12 (quest) · Blessing of Wisdom 14 · Retribution Aura, Righteous Fury 16<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">18–26<\/span><p>Blessing of Freedom 18 · Kings, Consecration, Exorcism, Flash of Light 20 · Concentration Aura 22 · Salvation 26<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">30–46<\/span><p>Seal of Light, Divine Intervention 30 · Repentance 33 (talent) · Divine Shield 34 · Seal of Wisdom 38 · Blessing of Light 40 · Cleanse 42 · Hammer of Wrath 44<\/p><\/div>\n      <\/div>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"paladin-guide-weapon-upgrades\">\n      <summary><h3>Weapon upgrades <small>two-hand<\/small><\/h3><\/summary>\n      <p>Slow, heavy two-handers boost Holy Strike and Seal of Command. Forever cut ability damage across the board, so weapon upgrades matter more than usual.<\/p>\n      <div class=\"steps\">\n        <div class=\"step\"><span class=\"lv\">11<\/span><p>Steady Bastard Sword, Durotar quest (Horde)<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">15<\/span><p>Forsaken Greataxe, Ruins of Lordaeron dungeon quest (Horde)<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">16<\/span><p>Axe of Orgrimmar, Ragefire Chasm dungeon quest (Horde)<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">18<\/span><p>Smite's Mighty Hammer or Taskmaster Axe, Deadmines<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">24<\/span><p>Heavehammer, Wetlands Excavation Site dungeon quest<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">29<\/span><p>Manual Crowd Pummeler (Gnomeregan), Corpsemaker (Razorfen Kraul) or Felbough Arm (Dalaran, polearm)<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">39<\/span><p>Mograine's Might, Scarlet Monastery<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">~50<\/span><p>Princess Theradras' Scepter, Maraudon<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">58<\/span><p>Legionite Glaive (Blacksmithing), or Arcanite Reaper<\/p><\/div>\n      <\/div>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"paladin-guide-stats\">\n      <summary><h3>Stats<\/h3><\/summary>\n      <p><b>Leveling:<\/b> Strength and Spell Power, then Intellect once Champion of the Light is in at 35. Strength gives 2 Attack Power per point.<\/p>\n      <p><b>At 60 (WoW.gg):<\/b> weapon damage, Hit, Expertise, Strength, Spell Power.<\/p>\n      <p>Self-healing feels weak without +Healing gear, so carry potions when chain-pulling.<\/p>\n      <p><b>Numbers at 60:<\/b> Command's Judgement on a stunned mob shows about 400 before talents, +15% from Improved Seals. Exorcism hits Undead for about 500.<\/p>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"paladin-guide-undead-horde-notes\">\n      <summary><h3>Undead &amp; Horde notes<\/h3><\/summary>\n      <ul>\n        <li>Undead Paladins get their own starting area with exclusive quests.<\/li>\n        <li>Horde Paladin trainers are in Tirisfal Glades: Deathknell, Brill and Bandarion Keep.<\/li>\n        <li><b>12:<\/b> the Horde Redemption quest is A Lesson in Divinity, around Tirisfal. Get it before your first dungeon, because the group will ask.<\/li>\n        <li><b>20:<\/b> don't skip the class quest. Undead get their own version, it's easier from about 22, and the two-hander reward lasts until about 30.<\/li>\n        <li>Two-handed swords and polearms train with Archibald in Undercity (polearms from 20). Two-handed maces are in Thunder Bluff, axes in Orgrimmar.<\/li>\n        <li>Will of the Forsaken breaks fear, charm and sleep, which is great for a melee class.<\/li>\n      <\/ul>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"paladin-guide-when-a-pull-goes-wrong\">\n      <summary><h3>When a pull goes wrong<\/h3><\/summary>\n      <ul>\n        <li><b>Divine Protection or Divine Shield<\/b> buys time. Divine Shield is 10 sec of immunity and you still hit at half damage. They share Forbearance, so there's a minute between them.<\/li>\n        <li><b>Lay on Hands<\/b> is a full heal that takes all your mana. It's back every 20 min now, so use it whenever you're low and out of mana.<\/li>\n        <li><b>Blessing of Freedom<\/b> plus Pursuit of Justice gets you out of a slow.<\/li>\n        <li>Bubbles stop fall damage too: bubble and jump off the cliff.<\/li>\n        <li><b>Casters:<\/b> no interrupt, so Hammer of Justice stops the cast. <b>Runners:<\/b> no slow, so Hammer of Wrath from 44.<\/li>\n        <li>Hammer of Justice is also your panic button for a safe Holy Light.<\/li>\n      <\/ul>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"paladin-guide-training-legacy-points-dungeons\">\n      <summary><h3>Training, Legacy points &amp; dungeons<\/h3><\/summary>\n      <ul>\n        <li><b>Train every rank:<\/b> both seals, Holy Strike, Holy Light, Exorcism.<\/li>\n        <li><b>Can wait:<\/b> Blessing of Might once you have Kings, the resistance auras, Turn Undead, Redemption ranks.<\/li>\n        <li><b>Legacy points:<\/b> first five in Thrill of Adventure (non-gray kills out in the world give health and mana back), then Well-Rested and Talented.<\/li>\n        <li><b>Dungeons:<\/b> mobs give fairly little XP in Forever, so pick up every quest for a dungeon before going in.<\/li>\n        <li>The biggest upgrade you'll feel is a new two-hander.<\/li>\n      <\/ul>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"paladin-guide-professions\">\n      <summary><h3>Professions<\/h3><\/summary>\n      <ul>\n        <li><b>Blacksmithing + Mining:<\/b> every guide's pick. Blacksmithing is the easy way to mail with Spell Power, and the Legionite Glaive later<\/li>\n        <li><b>First Aid + Cooking:<\/b> they don't take a profession slot<\/li>\n      <\/ul>\n    <\/details>\n\n  <\/div>\n  "}, {"id": "macros", "label": "Copy them exactly", "h2": "Paladin macros", "html": "\n  <p class=\"sdesc\">12 macros for your Paladin, written exactly as they go in the game's macro window. One wrong letter and a macro does nothing, so copy them with the button.<\/p>\n  <div class=\"guide\">\n    <details class=\"gpanel wide\" data-key=\"macros-how-to-add-one\">\n      <summary><h3>How to add one<\/h3><\/summary>\n      <ol class=\"howto\">\n        <li>Type <code>/macro<\/code>, open the tab with this character's name, and click New.<\/li>\n        <li>Type the <b>macro name<\/b> as shown (16 characters at most) and pick the red question mark icon, so the button shows the spell's own icon.<\/li>\n        <li>Copy the <b>macro text<\/b> in exactly, line breaks included. Spell names must match your spellbook letter for letter: capitals, spaces and apostrophes.<\/li>\n        <li>Drag the macro onto your action bar.<\/li>\n      <\/ol>\n      <ul class=\"mtips\">\n        <li><span class=\"ph\">Highlighted words<\/span> are placeholders: replace them with the exact name of your own item.<\/li>\n        <li><b>Ctrl<\/b> means hold Ctrl as you press the button. <b>MO<\/b> means mouseover: it casts on whatever is under your mouse, and on your target when nothing is.<\/li>\n        <li>Leave rank numbers off and the macro always casts your highest rank, so you never have to re-drag spells after training.<\/li>\n        <li>The level tag is when the spell becomes available. Make the macro then, or it will just show a question mark.<\/li>\n      <\/ul>\n    <\/details>\n    <details class=\"gpanel macset\" data-key=\"macros-fighting\">\n      <summary><h3>Fighting<\/h3><\/summary>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Judge Strike<\/b><span class=\"lvl\">Lv 6<\/span><\/div><button class=\"copy\" id=\"copy-pa1\" data-for=\"pa1\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"pa1\">#showtooltip Holy Strike\n/startattack\n/cast Judgement\n/cast Holy Strike<\/pre>\n        <p class=\"why\">Judgement when it's ready, then Holy Strike. Judgement is off the global cooldown in Forever, so both fire on one press.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Seal Swap<\/b><span class=\"lvl\">Lv 22<\/span><\/div><button class=\"copy\" id=\"copy-pa2\" data-for=\"pa2\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"pa2\">#showtooltip [mod:ctrl] Seal of Righteousness; Seal of Command\n/cast [mod:ctrl] Seal of Righteousness; Seal of Command<\/pre>\n        <p class=\"why\">Seal of Command with a slow two-hander, Ctrl for Seal of Righteousness.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Wrath Judge<\/b><span class=\"lvl\">Lv 44<\/span><\/div><button class=\"copy\" id=\"copy-pa3\" data-for=\"pa3\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"pa3\">#showtooltip Hammer of Wrath\n/cast Judgement\n/cast Hammer of Wrath<\/pre>\n        <p class=\"why\">Execute: Judgement rides along with Hammer of Wrath.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>HoJ MO<\/b><span class=\"lvl\">Lv 8<\/span><\/div><button class=\"copy\" id=\"copy-pa4\" data-for=\"pa4\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"pa4\">#showtooltip Hammer of Justice\n/stopcasting\n/cast [@mouseover,harm,nodead][] Hammer of Justice<\/pre>\n        <p class=\"why\">Stuns the mob under your mouse, or your target, cancelling any cast first.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Stun Judge<\/b><span class=\"lvl\">Lv 22<\/span><\/div><button class=\"copy\" id=\"copy-pa11\" data-for=\"pa11\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"pa11\">#showtooltip Hammer of Justice\n/cast Hammer of Justice\n/cast Judgement<\/pre>\n        <p class=\"why\">Stun, then Judgement in the same press. With Seal of Command up, Judgement does double damage to a stunned mob.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Repent Judge<\/b><span class=\"lvl\">Lv 33<\/span><\/div><button class=\"copy\" id=\"copy-pa12\" data-for=\"pa12\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"pa12\">#showtooltip Repentance\n/cast Repentance\n/cast Judgement<\/pre>\n        <p class=\"why\">The We Ding Again macro. Judgement is off the global cooldown, so it lands while the humanoid is still out and Command's Judgement hits for double.<\/p><\/div>\n        \n    <\/details>\n    <details class=\"gpanel macset\" data-key=\"macros-healing-defence\">\n      <summary><h3>Healing & defence<\/h3><\/summary>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Flash MO<\/b><span class=\"lvl\">Lv 20<\/span><\/div><button class=\"copy\" id=\"copy-pa5\" data-for=\"pa5\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"pa5\">#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Flash of Light<\/pre>\n        <p class=\"why\">Heals whoever is under your mouse, then your friendly target, then you.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Holy Light MO<\/b><span class=\"lvl\">Lv 1<\/span><\/div><button class=\"copy\" id=\"copy-pa6\" data-for=\"pa6\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"pa6\">#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Holy Light<\/pre>\n        <p class=\"why\">The big heal, same targeting.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Bubble<\/b><span class=\"lvl\">Lv 34<\/span><\/div><button class=\"copy\" id=\"copy-pa7\" data-for=\"pa7\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"pa7\">#showtooltip Divine Shield\n/stopcasting\n/cast Divine Shield<\/pre>\n        <p class=\"why\">Cancels your cast and bubbles. Heal yourself inside it with the next press of Holy Light MO.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Lay on Hands<\/b><span class=\"lvl\">Lv 10<\/span><\/div><button class=\"copy\" id=\"copy-pa8\" data-for=\"pa8\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"pa8\">#showtooltip Lay on Hands\n/cast [@mouseover,help,nodead][help,nodead][@player] Lay on Hands<\/pre>\n        <p class=\"why\">Full heal on whoever is under your mouse, or you. Costs all your mana.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Cleanse MO<\/b><span class=\"lvl\">Lv 42<\/span><\/div><button class=\"copy\" id=\"copy-pa9\" data-for=\"pa9\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"pa9\">#showtooltip Cleanse\n/cast [@mouseover,help,nodead][help,nodead][@player] Cleanse<\/pre>\n        <p class=\"why\">Removes poison, disease or magic, same targeting.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Might<\/b><span class=\"lvl\">Lv 4<\/span><\/div><button class=\"copy\" id=\"copy-pa10\" data-for=\"pa10\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"pa10\">#showtooltip Blessing of Might\n/cast [help,nodead][@player] Blessing of Might<\/pre>\n        <p class=\"why\">Blesses your friendly target, or you if nothing friendly is targeted.<\/p><\/div>\n        \n    <\/details>\n    <div class=\"gpanel wide\">\n      <p class=\"why\">Built from the guides on this page and the Forever macro lists on <a href=\"https://rankedboost.com/world-of-warcraft/forever/macros/\" target=\"_blank\" rel=\"noopener\">RankedBoost<\/a> (Nov 7) and <a href=\"https://kami-labs.fr/en/wow-forever/macros-wow-forever-9-classes/\" target=\"_blank\" rel=\"noopener\">Kami Labs<\/a>, checked against the spells your guides confirm exist in Forever. Ideas using removed spells, such as Tiger's Fury, were left out. Syntax follows the <a href=\"https://warcraft.wiki.gg/wiki/Macro_conditionals\" target=\"_blank\" rel=\"noopener\">macro conditionals reference<\/a>.<\/p>\n    <\/div>\n  <\/div>\n  "}, {"id": "notes", "label": "Read before you commit", "h2": "Caveats &amp; sources", "html": "\n  <div class=\"notes\">\n<div class=\"note\"><h3>Beta numbers, live game<\/h3><p>All numbers come from the final beta build (70425). The game launched Nov 4, so check anything important in game. Blizzard can still retune live.<\/p><\/div>\n<div class=\"note\"><h3>Racials corrected Nov 5<\/h3><p>The first version of the Forever Roster Planner had several wrong racials, including Earth Fury for Dwarves (it's Artisan's Precision, +1% hit), Ruthless at 2% (it's 1%) and Wind Blessed at 3% (it's 2%). The table now matches Talents Forever and DonTheCrown's guide.<\/p><\/div>\n<div class=\"note\"><h3>Popularity isn't power<\/h3><p>Spec shares count what people plan in a calculator. Icy Veins also advises picking a playstyle you'll enjoy rather than chasing the strongest class, since tuning keeps shifting.<\/p><\/div>\n<div class=\"note\"><h3>Paladin tree reworked Oct 30<\/h3><p>The talent order now follows We Ding Again's 10–60 build, made on the live tree. The spec split and first points in the class card are beta calculator counts from before the <a href=\"https://epiccarry.com/blogs/?p=44316\" target=\"_blank\" rel=\"noopener\">rework<\/a>, so Benediction and Twist of Light there are out of date.<\/p><\/div>\n  <\/div>\n  <h3 style=\"margin:28px 0 12px\">Sources<\/h3>\n  <ul class=\"sources\">\n    <li><a href=\"https://www.warcrafttavern.com/forever/guides/paladin-leveling/\" target=\"_blank\" rel=\"noopener\">Warcraft Tavern: Paladin leveling<\/a><\/li>\n    <li><a href=\"https://www.warcrafttavern.com/forever/guides/retribution-paladin/\" target=\"_blank\" rel=\"noopener\">Warcraft Tavern: Retribution Paladin<\/a><\/li>\n    <li><a href=\"https://www.method.gg/wow-forever/wow-forever-paladin-leveling-guide-and-talents\" target=\"_blank\" rel=\"noopener\">Method: Paladin leveling guide & talents (Oct 10)<\/a><\/li>\n    <li><a href=\"https://wow.gg/guides/wow-forever-retribution-paladin-beta\" target=\"_blank\" rel=\"noopener\">WoW.gg: Retribution Paladin (Nov 4)<\/a><\/li>\n    <li><a href=\"https://www.youtube.com/@WeDingAgain\" target=\"_blank\" rel=\"noopener\">We Ding Again: The Only Retribution Paladin Build You Need for WoW Forever<\/a><\/li>\n    <li><a href=\"https://www.method.gg/wow-forever/the-best-weapons-in-wow-forever-from-levels-1-30\" target=\"_blank\" rel=\"noopener\">Method: best weapons from levels 1–30 (Nov 6)<\/a><\/li>\n    <li><a href=\"https://talentsforever.com/racials\" target=\"_blank\" rel=\"noopener\">Talents Forever: races, classes and racials<\/a><\/li>\n    <li><a href=\"https://talentsforever.com/popular\" target=\"_blank\" rel=\"noopener\">Talents Forever: most popular builds<\/a><\/li>\n    <li><a href=\"https://talentsforever.com/leveling\" target=\"_blank\" rel=\"noopener\">Talents Forever: leveling builds<\/a><\/li>\n    <li><a href=\"https://talentsforever.com/guides\" target=\"_blank\" rel=\"noopener\">Talents Forever: what changed since Classic<\/a><\/li>\n    <li><a href=\"https://hyjal.cc/racials\" target=\"_blank\" rel=\"noopener\">Hyjal: racial abilities<\/a><\/li>\n    <li><a href=\"https://www.icy-veins.com/wow-forever/news/racial-and-class-tuning-new-features-and-options-massive-wow-forever-beta-development-notes-october-15th/\" target=\"_blank\" rel=\"noopener\">Icy Veins: Oct 15 beta development notes<\/a><\/li>\n    <li><a href=\"https://www.icy-veins.com/wow-forever/news/your-favorite-race-was-just-changed-in-wow-forever/\" target=\"_blank\" rel=\"noopener\">Icy Veins: every race changed<\/a><\/li>\n    <li><a href=\"https://www.icy-veins.com/wow-forever/choosing-your-main\" target=\"_blank\" rel=\"noopener\">Icy Veins: choosing your class<\/a><\/li>\n  <\/ul>\n  "}]}, "hunter": {"key": "hunter", "name": "Hunter", "color": "#AAD372", "ink": "#5E7F35", "roles": ["Ranged", "Melee"], "races": [{"race": "Human", "new": true}, {"race": "Dwarf", "new": false}, {"race": "Night Elf", "new": false}, {"race": "Skyborne (High Order)", "new": true}, {"race": "Orc", "new": false}, {"race": "Tauren", "new": false}, {"race": "Troll", "new": false}, {"race": "Skyborne (Windshaper)", "new": true}], "blurb": "Beast Mastery adds Summon Hawk. Marksmanship has a no-pet Lone Wolf path. Survival is now a real melee spec with Strider Kick and trap support. Auto Shot needs 0.5 sec standing still, and all traps share one 30-sec cooldown (Nov 2 notes). Aimed Shot is trained at 20, not a talent. Pets take stats from your gear and have 115% health (Nov 10).", "specs": [["Beast Mastery", "Adds Summon Hawk. Pets take stats from your gear and have 115% health (Nov 10)."], ["Marksmanship", "Has a no-pet Lone Wolf path; skip Lone Wolf while leveling."], ["Survival", "Now a real melee spec, with Strider Kick and trap support. Harder early."]], "general": "Auto Shot needs 0.5 sec standing still, all traps share one 30-sec cooldown, and Aimed Shot is trained at 20, not a talent.", "lvl": [["Survival", 43.9], ["Marksmanship", 29.3], ["Beast Mastery", 26.7]], "first": ["Improved Tracking 5/5", "Savage Strikes 2/2", "Survivalist 3/5"], "at60": "Survival 47% · MM 27% · BM 26%. Top build: Survival 5/11/35.", "builds": {"video": {"name": "Beast Mastery", "sub": "video guide · after Nov 10–11", "cols": ["Beast Mastery, levels 10–40", "Then Marksmanship, 41–60"], "rows": [[0, "5/5", "Deadly Aspects", 10, 14, 5, ""], [0, "2/2", "Focused Fire", 15, 16, 2, ""], [0, "2/2", "Improved Revive Pet", 17, 18, 2, ""], [0, "1/1", "Endurance Training", 19, 19, 1, ""], [0, "2/2", "Pathfinding", 20, 21, 2, "third row, needs 10 points"], [0, "1/1", "Bestial Swiftness", 22, 22, 1, ""], [0, "2/5", "Unleashed Fury", 23, 24, 2, ""], [0, "1/1", "Summon Hawk", 25, 25, 1, "higher ranks from the trainer"], [0, "5/5", "Unleashed Fury", 26, 28, 3, "+15% pet and hawk damage"], [0, "1/5", "Ferocity", 29, 29, 1, ""], [0, "1/2", "Bestial Discipline", 30, 30, 1, "makes Spirit worth having"], [0, "1/1", "Intimidation", 31, 31, 1, "pet stun"], [0, "2/2", "Bestial Discipline", 32, 32, 1, ""], [0, "5/5", "Ferocity", 33, 36, 4, "+10% pet and hawk crit"], [0, "3/5", "Frenzy", 37, 39, 3, "60% chance on a pet crit"], [0, "1/1", "Bestial Wrath", 40, 40, 1, ""], [1, "5/5", "Lethal Attacks", 41, 45, 5, "+5% crit, pet copies it"], [1, "5/5", "Careful Aim", 46, 50, 5, "AP equal to your Intellect"], [1, "2/2", "Rapid Killing", 51, 52, 2, ""], [1, "3 pts", "Efficiency", 53, 55, 3, "cheaper shots"], [1, "1/1", "Trueshot Aura", 56, 56, 1, "higher ranks from the trainer"], [1, "4/5", "Mortal Shots", 57, 60, 4, ""]]}, "feor": {"name": "Feor's order", "sub": "Nov 7 · before the hawk buff", "cols": ["Beast Mastery, levels 10–40", "Then Marksmanship, 41–60"], "rows": [[0, "5/5", "Deadly Aspects", 10, 14, 5, ""], [0, "2/2", "Focused Fire", 15, 16, 2, ""], [0, "2/2", "Improved Revive Pet", 17, 18, 2, ""], [0, "1/1", "Endurance Training", 19, 19, 1, ""], [0, "2/2", "Pathfinding", 20, 21, 2, ""], [0, "1/1", "Bestial Swiftness", 22, 22, 1, ""], [0, "2/5", "Unleashed Fury", 23, 24, 2, ""], [0, "1/1", "Summon Hawk", 25, 25, 1, ""], [0, "4/5", "Unleashed Fury", 26, 27, 2, ""], [0, "2/5", "Ferocity", 28, 29, 2, ""], [0, "1/1", "Intimidation", 30, 30, 1, ""], [0, "2/2", "Bestial Discipline", 31, 32, 2, ""], [0, "5/5", "Ferocity", 33, 35, 3, ""], [0, "4/5", "Frenzy", 36, 39, 4, ""], [0, "1/1", "Bestial Wrath", 40, 40, 1, ""], [1, "5/5", "Lethal Attacks", 41, 45, 5, ""], [1, "5/5", "Careful Aim", 46, 50, 5, ""], [1, "2/2", "Rapid Killing", 51, 52, 2, ""], [1, "3/3", "Hawk Eye", 53, 55, 3, "range"], [1, "1/1", "Trueshot Aura", 56, 56, 1, ""], [1, "4/5", "Mortal Shots", 57, 60, 4, ""]]}}, "spells": [[4, "Serpent Sting"], [6, "Arcane Shot, Hunter's Mark"], [8, "Concussive Shot"], [10, "Pet quest (Taming the Beast), Aspect of the Hawk, Call Pet"], [12, "Mend Pet, Wing Clip"], [16, "Mongoose Bite, Immolation Trap"], [18, "Multi-Shot"], [20, "Aimed Shot, Aspect of the Cheetah, Freezing Trap"], [24, "Track Hidden, Beast Lore"], [26, "Rapid Fire"], [28, "Frost Trap"], [30, "Feign Death"], [32, "Flare"], [34, "Explosive Trap"], [36, "Viper Sting"], [40, "Aspect of the Pack, Volley, mail armor"], [46, "Aspect of the Wild"]], "weapons": [[6, "Hornwood Recurve Bow", "vendor"], [11, "Laminated Recurve Bow", "vendor"], [13, "Harvester's Pestslayer", "Westfall quest"], [16, "Calibrated Blunderbuss", "Hall of Thanes quest"], [19, "Venomstrike", "Wailing Caverns"], [22, "Naga Heartpiercer or Fallenroot Longbow", "Blackfathom Deeps"], [25, "Raptor's End", "Wetlands quest chain"], [26, "Gravespike Repeater or Concealed Hand Crossbow", "Dalaran / Stockade"], [28, "Golemsight Long Gun", "Excavation Site"], [30, "Master Hunter's Bow or Quilboar Blaster", "Stranglethorn / Razorfen Kraul"]], "now": [{"type": "train"}, {"type": "steps", "label": "Go to", "none": "Feor's route ends at 40", "items": [[1, 10, "Starting zone · buy a Hornwood Recurve Bow"], [10, 10, "Pet quest at your trainer"], [11, 11, "Buy a Laminated Recurve Bow"], [12, 12, "Train Mend Pet and Wing Clip"], [12, 13, "Hall of Thanes dungeon"], [16, 18, "The Deadmines (chest reward)"], [17, 19, "Wailing Caverns · Leader of the Fangs"], [20, 20, "Trainer: Aspect of the Cheetah"], [20, 25, "Quest in Ashenvale"], [22, 24, "The Stockade"], [23, 27, "Raptor's End chain, Wetlands"], [24, 28, "Blackfathom Deeps"], [24, 28, "Excavation Site, Wetlands"], [28, 32, "City of Dalaran"], [29, 33, "Gnomeregan"], [30, 30, "Trainer: Feign Death"], [30, 35, "Nesingwary quests, Stranglethorn"]]}, {"type": "weapon", "label": "Ranged weapon", "none": "Starter bow"}, {"type": "tame"}], "opts": [{"t": "Beast Mastery", "s": "video order, Nov 14 · ends 31/20/0", "p": "Opens with Deadly Aspects 5/5, Focused Fire 2/2, Improved Revive Pet 2/2. Summon Hawk at 25, Unleashed Fury 5/5 by 28, Intimidation at 31, Bestial Wrath at 40, then Marksmanship to 60."}, {"t": "Survival", "s": "43.9% of calculator leveling builds", "p": "First points: Improved Tracking 5/5, Savage Strikes 2/2, Survivalist 3/5. Melee-focused, with traps and Strider Kick; harder early."}, {"t": "Marksmanship", "s": "29.3%", "p": "Has a no-pet Lone Wolf path; don't take Lone Wolf while leveling."}], "keyspells": "", "sections": [{"id": "changes", "label": "Updated Nov 14", "h2": "What changed since launch", "html": "\n  <p class=\"sdesc\">Any Hunter guide recorded before Nov 10 is missing these, and many older ones were wrong even before that.<\/p>\n  <div class=\"scroll\"><table><thead><tr><th>When<\/th><th>Change<\/th><th>What it means for you<\/th><\/tr><\/thead><tbody>\n    <tr><td class=\"mono\">Nov 2<\/td><td>All traps share one 30-sec cooldown (beta had separate fire and frost cooldowns)<\/td><td>One trap every 30 sec. Traps work in combat.<\/td><\/tr>\n    <tr><td class=\"mono\">Nov 2<\/td><td>Untraining a pet no longer removes its Faster/Slower Attack passive<\/td><td>Untrain freely; the attack speed stays.<\/td><\/tr>\n    <tr><td class=\"mono\">Nov 10<\/td><td>Pet health 115% of normal; a bug had it at 150%<\/td><td>Still tougher than normal, but it dies faster than launch week. Watch Mend Pet.<\/td><\/tr>\n    <tr><td class=\"mono\">Nov 10<\/td><td>Summon Hawk costs 11% of base mana at every rank, same as Arcane Shot; hawk melee about 80% stronger<\/td><td>Hawks are worth casting again. Low ranks no longer save mana.<\/td><\/tr>\n    <tr><td class=\"mono\">Nov 11<\/td><td>Volley stops when you move and no longer triggers procs (per the video guide)<\/td><td>Stand still for it from 40.<\/td><\/tr>\n  <\/tbody><\/table><\/div>\n  <div class=\"guide\" style=\"margin-top:16px\">\n    <details class=\"gpanel\" data-key=\"changes-shared-cooldowns\">\n      <summary><h3>Shared cooldowns<\/h3><\/summary>\n      <div class=\"steps\">\n        <div class=\"step\"><span class=\"lv\">6 s<\/span><p><b>Arcane Shot<\/b> (6) and <b>Summon Hawk<\/b> (25). Not Aimed Shot any more.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">6 s<\/span><p><b>Aimed Shot<\/b> (20, 2-sec cast) and <b>Multi-Shot<\/b> (18).<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">30 s<\/span><p>Every trap, fire or frost.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">None<\/span><p><b>Volley<\/b> (40).<\/p><\/div>\n      <\/div>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"changes-old-guides-are-wrong-if-they\">\n      <summary><h3>Old guides are wrong if they…<\/h3><\/summary>\n      <ul>\n        <li>Spend a talent point on Aimed Shot. Every Hunter trains it at 20.<\/li>\n        <li>Take Pathfinding with only 5 points spent. It's in the third row, so you need 10.<\/li>\n        <li>Say one fire and one frost trap at once. That's beta.<\/li>\n        <li>Say to skip hawks for Arcane Shot. That was true until Nov 10.<\/li>\n        <li>Treat your pet like Classic. It takes stats from your gear now (<a href=\"#pet\">see Pet<\/a>).<\/li>\n      <\/ul>\n    <\/details>\n  <\/div>\n  "}, {"id": "hunter-guide", "label": "Night Elf Hunter", "h2": "Beast Mastery leveling guide", "html": "\n  <p class=\"sdesc\">Built on Feor's <a href=\"https://mobalytics.gg/wow-forever/classes/hunter-leveling-guide\" target=\"_blank\" rel=\"noopener\">Hunter leveling guide on Mobalytics<\/a> (updated Nov 7), which levels Beast Mastery and finishes in Marksmanship at 31/20/0. The talent order now follows a newer video build (switched Nov 14); the leveling route, dungeons and weapons are still Feor's. Gaps are filled from <a href=\"https://www.warcrafttavern.com/forever/guides/hunter-leveling/\" target=\"_blank\" rel=\"noopener\">Warcraft Tavern<\/a>, <a href=\"https://www.method.gg/wow-forever/wow-forever-hunter-leveling-guide-and-talents\" target=\"_blank\" rel=\"noopener\">Method<\/a> and the <a href=\"https://www.method.gg/wow-forever/the-best-weapons-in-wow-forever-from-levels-1-30\" target=\"_blank\" rel=\"noopener\">Method weapon list<\/a>. Feor rates Night Elf the best Hunter race on either faction, mostly for Elune's Light: 10% crit for 15 sec that also boosts your pet.<\/p>\n  <div class=\"guide\">\n\n    <details class=\"gpanel wide\" id=\"talents\" data-key=\"hunter-guide-talent-order\" open>\n      <summary><h3>Talent order <small>checklist · 51 points · ends at 31/20/0<\/small><\/h3><\/summary>\n      <p class=\"why\">Tick each row as you spend the points. Gold rows are due at your level; the outlined row is your next point. Switch tabs to see Feor's older order.<\/p>\n      <div id=\"talents-app\"><\/div>\n    <\/details>\n    <details class=\"gpanel wide\" id=\"talent-compare\" data-key=\"hunter-guide-why-this-order-and-how-feor-s-differed\">\n      <summary><h3>Why this order, and how Feor's differed <small>both end 31/20/0<\/small><\/h3><\/summary>\n      <p>You switched to this order on Nov 14. It comes from a Hunter video guide recorded after the Nov 10–11 hotfixes and matches Feor's Nov 7 order everywhere except these five rows:<\/p>\n      <div class=\"scroll\"><table><thead><tr><th>Talent<\/th><th>Your plan (video, above)<\/th><th>Feor's old order (Nov 7)<\/th><\/tr><\/thead><tbody>\n        <tr><td><b>Unleashed Fury<\/b><\/td><td>5/5: two at 23–24, three at 26–28<\/td><td>4/5, done by 27<\/td><\/tr>\n        <tr><td><b>Ferocity<\/b><\/td><td>1 at 29, 5/5 by 36<\/td><td>2 at 28–29, 5/5 by 35<\/td><\/tr>\n        <tr><td><b>Intimidation / Bestial Discipline<\/b><\/td><td>Bestial Discipline 30, Intimidation 31, Bestial Discipline 32<\/td><td>Intimidation 30, Bestial Discipline 31–32<\/td><\/tr>\n        <tr><td><b>Frenzy<\/b><\/td><td>3 points, 37–39 (60% proc)<\/td><td>4/5, 36–39<\/td><\/tr>\n        <tr><td><b>Marksmanship 53–55<\/b><\/td><td>Efficiency 3 (cheaper shots)<\/td><td>Hawk Eye 3/3 (range)<\/td><\/tr>\n      <\/tbody><\/table><\/div>\n      <p><b>Why:<\/b> Unleashed Fury and Ferocity also boost hawks, and Feor wrote his order before the Nov 10 hawk buff. Efficiency beats Hawk Eye now that your shots and hawks cost a share of base mana. Both orders meet at 32, so a point already spent on Intimidation at 30 is fine. The rest of the guide below (levels, dungeons, weapons) is still Feor's.<\/p>\n      <ul>\n        <li><b>Deadly Aspects:<\/b> with Aspect of the Hawk, Auto Shot has a 10% chance to make you shoot 30% faster for 12 sec.<\/li>\n        <li><b>Unleashed Fury 5/5:<\/b> +15% damage for your pet and hawks. <b>Ferocity 5/5:<\/b> +10% crit for both.<\/li>\n        <li><b>Bestial Discipline:<\/b> 25% of mana regen keeps going while you cast, 50% at 2/2.<\/li>\n        <li><b>Intimidation:<\/b> pet's next attack stuns 3 sec, has +100% crit and pulls the mob back to it.<\/li>\n        <li><b>Bestial Wrath:<\/b> +50% pet damage for 18 sec, 2 min cooldown; only death stops the pet.<\/li>\n        <li><b>Lethal Attacks:<\/b> +5% crit, which your pet copies. <b>Careful Aim:<\/b> attack power equal to all your Intellect. <b>Rapid Killing:<\/b> Rapid Fire back 2 min sooner, and the shot after a kill hits harder.<\/li>\n        <li>The talents give only rank 1 of Summon Hawk and Trueshot Aura. Higher ranks come from the trainer, so don't skip visits.<\/li>\n        <li>With the <b>Talented<\/b> legacy perk, everything comes up to 5 levels earlier.<\/li>\n      <\/ul>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"hunter-guide-rotation\" open>\n      <summary><h3>Rotation<\/h3><\/summary>\n      <div class=\"steps\">\n        <div class=\"step\"><span class=\"lv\">Before<\/span><p>Hunter's Mark the target and get some distance.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Lv 1–9<\/span><p>Auto Shot and Arcane Shot (6) above all else, Serpent Sting (4) after, Concussive Shot (8) to keep distance. Move away between Auto Shots so the mob never touches you.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Elite<\/span><p>Open with Hunter's Mark and Aimed Shot (20), then Arcane Shot, then Serpent Sting. If it reaches you, Wing Clip and weave in a Raptor Strike. Toggling the pet's Growl lets the mob bounce between you.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Pull<\/span><p>From 10, send the pet first and let it land a few hits so the mob stays on it. Keep Aspect of the Hawk on; Deadly Aspects only works with it.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Hawk<\/span><p><b>Updated Nov 14.<\/b> From 25: Hawk, Hawk, Arcane Shot, then recast the first hawk just before it leaves. They share a 6-sec cooldown, so every press is a hawk or an Arcane Shot. Since the Nov 10 hotfix both cost 11% of base mana at every rank and hawks hit about 80% harder in melee, so Feor's Nov 7 advice to skip hawks is out of date.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Fillers<\/span><p>Aimed Shot (2-sec cast) when it's ready, or Multi-Shot for packs; they share a 6-sec cooldown. Serpent Sting only on things that will live a while. Stand still 0.5 sec for Auto Shot, move between shots.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Adds<\/span><p>Drop Freezing Trap at your feet; the first mob in is frozen up to 10 sec (longer at higher ranks). Don't hit it, damage breaks it. Your next trap is 30 sec away. Mend Pet when the pet drops below half.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">8 yd<\/span><p>Ranged attacks don't work inside 8 yards. Wing Clip, step back, shoot. Feign Death (30) drops you out of a pull gone wrong; save Bestial Wrath (40) for elites, rares and bad pulls.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Mana<\/span><p>Arcane Shot, Multi-Shot and hawks cost a share of base mana. On easy mobs let Auto Shot and the pet do the work, and drink between pulls.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Bug<\/span><p>If a hawk hits once and flies back, your pet is set to Passive. Put it on Assist or Defensive (player reports).<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Cheetah<\/span><p>Once you have Aspect of the Cheetah (20), it's often easier to turn Growl off, kite the mob yourself and let the pet kill it.<\/p><\/div>\n      <\/div>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"hunter-guide-fastest-leveling-two-at-a-time\">\n      <summary><h3>Fastest leveling: two at a time<\/h3><\/summary>\n      <p>The goal is to keep both your Auto Shot and melee swing timers busy at all times, with one or two mobs always on their way to you.<\/p>\n      <ul>\n        <li>Auto Shot one mob, then pick the next; your following Auto Shot goes to the new one.<\/li>\n        <li>Melee (Raptor Strike) the mob closest to you, shoot the one further away.<\/li>\n        <li>Serpent Sting both once you have it, though it eats mana. Arcane and Concussive Shot them.<\/li>\n        <li>Wing Clip spaces them out. If they stack up, Multi-Shot (18) is very efficient.<\/li>\n        <li>From 10, use the pet as a second damage source: on its own mob, or finishing a low one while you shoot.<\/li>\n      <\/ul>\n    <\/details>\n    <details class=\"gpanel wide\" data-key=\"hunter-guide-level-walkthrough\">\n      <summary><h3>Level walkthrough <small>Feor · 1–40<\/small><\/h3><\/summary>\n      <div class=\"steps\">\n        <div class=\"step\"><span class=\"lv\">1–10<\/span><p>Buy a Hornwood Recurve Bow as soon as you leave the starting zone. Arcane Shot at 6 is your first big spell; if you're racing, you can skip training until then. Concussive Shot at 8. At 10, go straight to your trainer for the pet quest; it's your biggest power spike. Visit the weapon masters for every weapon skill you might use.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">11<\/span><p>Buy a Laminated Recurve Bow, or as soon as you can afford it.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">12<\/span><p>Train your next key spell (Mend Pet and Wing Clip both arrive at 12). Keep your pet's abilities ranked up; it's the biggest thing that speeds leveling.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">12–13<\/span><p>Hall of Thanes is the first Alliance dungeon, good for a break when quest mobs are contested.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Gun<\/span><p>Alliance can get a gun from a quest chain that starts with a Dark Iron Map, dropped by the Dark Iron Spy in Dun Morogh. You need the map to unlock the chain. <i>Gun name to confirm.<\/i><\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Solo<\/span><p>If you'd rather keep questing, a solid vendor weapon is sold in Westfall and Loch Modan (also The Barrens and Silverpine). <i>Weapon name to confirm.<\/i><\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">16–18<\/span><p>The Deadmines: no ranged weapons, but a quest there rewards a good chest piece. <i>Item name to confirm.<\/i><\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">17–19<\/span><p>Wailing Caverns: a decent bow can drop, but don't farm for it; vendor bows are fine until quest weapons later. Pick up the Leader of the Fangs quest if you go.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">20<\/span><p>Go straight to your trainer for Aspect of the Cheetah: faster travel and easier kiting. Train your pet's new ability rank at the pet trainer too.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">20+<\/span><p>As a Night Elf, head straight into Ashenvale and quest there.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">~25<\/span><p><b>Raptor's End:<\/b> the Alliance bow quest chain in the Wetlands at Whelgar's Excavation Site. It opens at 22, has you kill raptors from 22 to 27, and ends with a level 29 raptor. It's hard at 22, so aim for around 25. This bow lasts a long time.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">22–24<\/span><p>Stockade: a ranged weapon drops (likely the Concealed Hand Crossbow), and it's a quick run. Good leather DPS pieces that last a long time, plus a guaranteed quest reward. <i>Item names to confirm.<\/i><\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">24–28<\/span><p>Blackfathom Deeps: two decent bows (likely Naga Heartpiercer and Fallenroot Longbow), not worth chasing. Doing its quests gives you two chances at one.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">24–28<\/span><p>Excavation Site: a strong ranged weapon for its level, 2.5 speed with +6 Agility (likely the Golemsight Long Gun).<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">28–32<\/span><p>City of Dalaran: the chase item is a melee weapon (likely Felbough Arm), not the ranged one. Two other great Hunter items drop from the same boss as it, so that boss gives you a 2 in 3 chance at something strong. <i>Item names to confirm.<\/i><\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">30<\/span><p>Train Feign Death right away. It's great in the open world and in dungeons; when you're skipping mobs, use it to shake them off and keep moving.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">30+<\/span><p>In Stranglethorn Vale, do the Hunter mastery quests at Nesingwary's Expedition. The end of the chain gives a solid ranged weapon (the Master Hunter's Bow, from the Big Game Hunter quest) and a second reward. <i>Second reward to confirm.<\/i><\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">29–33<\/span><p>Gnomeregan is Feor's main dungeon pick here, especially for Alliance. A guaranteed quest reward lasts a long time, and there are two chase items; one is a gun from a rare spawn, so it's a long shot. <i>Item names to confirm.<\/i><\/p><\/div>\n      <\/div>\n      <p class=\"why\">Feor's view on dungeons: run each once for the quests and their rewards and XP, but don't farm them for gear. He hasn't written 41–60 yet; the talent order above still covers those levels.<\/p>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"hunter-guide-pet\">\n      <summary><h3>Pet<\/h3><\/summary>\n      <p>Pets were rebuilt for Forever: they take stats from your gear, every family has its own ability, and teaching works through ranks and loyalty. <a href=\"#pet\">Full pet guide<\/a> · <a href=\"#beasts\">Beasts worth taming<\/a><\/p>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"hunter-guide-key-spells\">\n      <summary><h3>Key spells<\/h3><\/summary>\n      <div class=\"steps\">\n        <div class=\"step\"><span class=\"lv\">4–8<\/span><p>Serpent Sting 4 · Arcane Shot, Hunter's Mark 6 · Concussive Shot 8. To save gold, you can skip training until Arcane Shot at 6.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">10<\/span><p>Tame Beast quest (Teldrassil for Night Elves), Aspect of the Hawk, Call Pet. Your biggest power spike.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">12–18<\/span><p>Mend Pet, Wing Clip 12 · Mongoose Bite, Immolation Trap 16 · Multi-Shot 18<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">20<\/span><p>Aimed Shot (trained, not a talent; 2-sec cast, shares a 6-sec cooldown with Multi-Shot), Aspect of the Cheetah, Freezing Trap<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">24–30<\/span><p>Track Hidden 24 · Rapid Fire 26 · Frost Trap 28 · Feign Death 30<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">32–46<\/span><p>Flare 32 · Explosive Trap 34 · Viper Sting 36 · Aspect of the Pack, Volley, mail armor 40 · Aspect of the Wild 46<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Volley<\/span><p>No cooldown in Forever. Since the Nov 11 hotfix it stops when you move and no longer triggers procs.<\/p><\/div>\n      <\/div>\n      <p class=\"why\">Class training from 1 to 60 costs about 207 gold, the same for every class. Don't spend gold on spells you won't use. Most of your damage is Auto Shot and Arcane Shot, and saving gold gets your mount sooner.<\/p>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"hunter-guide-ranged-weapons\">\n      <summary><h3>Ranged weapons<\/h3><\/summary>\n      <p>Auto Shot is free damage, so ranged DPS matters most.<\/p>\n      <div class=\"steps\">\n        <div class=\"step\"><span class=\"lv\">~6<\/span><p>Hornwood Recurve Bow, from a vendor as soon as you leave the starting zone<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">11<\/span><p>Laminated Recurve Bow, from a vendor. Buy it as soon as you can afford it<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">13<\/span><p>Harvester's Pestslayer, Westfall quest<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">16<\/span><p>Calibrated Blunderbuss (new), from the Hall of Thanes quest Old Ironforge Incursion. You can pick it up at 9, but it's a level 16 dungeon quest, so bring a group<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">19<\/span><p>Venomstrike, from Lord Serpentis in Wailing Caverns. Still the best-known upgrade at this level<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">~25<\/span><p>Raptor's End, Wetlands quest chain at Whelgar's Excavation Site (Alliance). Lasts a long time<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">22–23<\/span><p>Naga Heartpiercer or Fallenroot Longbow, Blackfathom Deeps<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">26<\/span><p>Gravespike Repeater (Dalaran) or Concealed Hand Crossbow (Stockade)<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">28<\/span><p>Golemsight Long Gun (new), from the last boss of the Excavation Site in the Wetlands<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">30<\/span><p>Master Hunter's Bow (Big Game Hunter quest, end of the Nesingwary mastery chain in Stranglethorn), Quilboar Blaster (new, Razorfen Kraul quests, both factions) or Booty Bay Bruiser's Buckshot (Booty Bay, Honored)<\/p><\/div>\n      <\/div>\n      <p class=\"why\">Keep a quiver or ammo pouch and keep ammo stocked. The new reagent bag slot doesn't take a quiver.<\/p>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"hunter-guide-melee-weapons-trainers\">\n      <summary><h3>Melee weapons &amp; trainers<\/h3><\/summary>\n      <ul>\n        <li>Prefer two-handers over one-handers. They have better stats and make Raptor Strike hit harder.<\/li>\n        <li><b>Darnassus:<\/b> daggers, fist weapons, staves<\/li>\n        <li><b>Stormwind:<\/b> swords, two-handed swords, staves<\/li>\n        <li><b>Ironforge:<\/b> two-handed axes and maces, staves<\/li>\n        <li>For Survival: Impaling Harpoon (polearm, Deadmines, 17), Corpsemaker or Felbough Arm (29), Legionite Glaive at 60. Polearm training unlocks at 20.<\/li>\n      <\/ul>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"hunter-guide-stats\">\n      <summary><h3>Stats<\/h3><\/summary>\n      <ul>\n        <li><b>Agility<\/b> first: damage and crit for you and your pet<\/li>\n        <li><b>Crit counts twice:<\/b> your pet copies all of your crit chance<\/li>\n        <li><b>Mail at 40:<\/b> your pet takes about 30% of your armor, so it gets tougher too<\/li>\n        <li><b>Attack Power<\/b> next, unless a piece has a lot more AP than Agility<\/li>\n        <li><b>Stamina<\/b> for you and the pet, so you can pull more<\/li>\n        <li><b>Spirit<\/b> once you have Bestial Discipline (31)<\/li>\n        <li><b>Intellect<\/b> helps long fights and levels weapon skill faster, and counts more than in Classic once Careful Aim (46–50) turns it into attack power<\/li>\n        <li>Crit and Hit are rare early; raw stats win. You'd want 5% hit to never miss same-level mobs<\/li>\n      <\/ul>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"hunter-guide-professions-camp\">\n      <summary><h3>Professions &amp; camp<\/h3><\/summary>\n      <ul>\n        <li><b>Skinning:<\/b> extra gold from all the beasts you kill, and the <b>Camp Chair<\/b> at 20 skill gives you and your pet 2% crit<\/li>\n        <li><b>Leatherworking:<\/b> gear upgrades and, most importantly, better quivers and ammo pouches, which make Auto Shot fire faster<\/li>\n        <li><b>First Aid<\/b> and <b>Cooking<\/b> are must-haves: bandages heal you or the pet without mana, and food gives +5% XP from kills<\/li>\n        <li><b>Camp Tent:<\/b> rested XP once an hour; pairs with the Camp Chair<\/li>\n      <\/ul>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"hunter-guide-consumables\">\n      <summary><h3>Consumables<\/h3><\/summary>\n      <ul>\n        <li>Any cheap XP food works, even low-level: Smoked Bear Meat, Crispy Bat Wing, Longjaw Mud Snapper and so on<\/li>\n        <li>Health and mana potions are the useful buys. Elixirs from the Auction House usually aren't worth the gold early<\/li>\n      <\/ul>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"hunter-guide-tips-mistakes\">\n      <summary><h3>Tips &amp; mistakes<\/h3><\/summary>\n      <ul>\n        <li>Keep Claw and Bite up to date on your pet.<\/li>\n        <li>Don't lean on dungeons. Queue while questing or grinding.<\/li>\n        <li>Grinding is the Hunter's strength. If you're short on quests, kill things on the way.<\/li>\n        <li>Eat XP food before long kill quests; it's 10 seconds for 5% more XP.<\/li>\n        <li>Don't take Lone Wolf while leveling, don't use Cheetah or Pack in combat, and don't Scare Beast near other packs.<\/li>\n        <li>Ignore any build that spends a talent point on Aimed Shot or takes Pathfinding with only 5 points in the tree. Those are pre-launch.<\/li>\n        <li>Don't let your pet go hungry or run out of ammo. Open Beast Training whenever your pet gains loyalty, so training points don't sit unspent.<\/li>\n        <li>In a group, turn off your pet's Growl when someone else is tanking.<\/li>\n      <\/ul>\n    <\/details>\n    \n    <details class=\"gpanel\" data-key=\"hunter-guide-respecs-dual-spec\">\n      <summary><h3>Respecs &amp; dual spec<\/h3><\/summary>\n      <ul>\n        <li>Change talents at your class trainer in a major city. It's cheap if you haven't reset in a while, and the price climbs fast if you keep doing it.<\/li>\n        <li>Under 30 with points outside Beast Mastery? Reset now: it's 20 points at most (25 with Talented), and Summon Hawk is worth it.<\/li>\n        <li>Took Intimidation at 30 instead of Bestial Discipline? Fine, both orders meet at 32.<\/li>\n        <li><b>Dual Specialization<\/b> at 40 keeps a second build. Blizzard hasn't posted its price.<\/li>\n      <\/ul>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"hunter-guide-survival-instead\">\n      <summary><h3>Survival instead?<\/h3><\/summary>\n      <p>Survival is still the most-planned spec in the calculator. Its key talents (Strider Kick, Expose Prey and Resourcefulness by 30, Lacerating Strikes at 40) come later, so early levels are harder and you stay in melee. <a href=\"https://wow.gg/guides/wow-forever-survival-hunter-beta\" target=\"_blank\" rel=\"noopener\">WoW.gg<\/a> puts melee weapon damage and Hit first for Survival at 60.<\/p>\n    <\/details>\n\n  <\/div>\n  "}, {"id": "pet", "label": "Rebuilt for Forever", "h2": "Your pet", "html": "\n  <p class=\"sdesc\">Getting it, how it scales, family abilities and how to teach it. From the Hunter video guide you shared (recorded after the Nov 10–11 hotfixes), checked against Blizzard's notes. Numbers marked as player tests aren't official.<\/p>\n  <div class=\"guide\">\n    <details class=\"gpanel\" data-key=\"pet-getting-your-pet\">\n      <summary><h3>Getting your pet <small>level 10<\/small><\/h3><\/summary>\n      <div class=\"steps\">\n        <div class=\"step\"><span class=\"lv\">Quest<\/span><p>Your class trainer gives <b>Taming the Beast<\/b> (in Teldrassil for Night Elves). You tame a few beasts in a row, then <b>Training the Beast<\/b> unlocks pet training.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Rules<\/span><p>You can only tame a beast of your own level or lower. Taming takes a while and drops your armor to 0, so clear the area, or lay a Freezing Trap or pull at max range with Concussive Shot first.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Feed<\/span><p>Feed it right away: a new pet starts unhappy. Unhappy deals 75% damage, happy deals 125%. Happiness and loyalty are both still in the game.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Stable<\/span><p>Buy both stable slots: the first is 1 silver, the second 5 gold. Keep one free; you need it to teach your pet.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Trainer<\/span><p>Train Growl, Great Stamina and Natural Armor at 10. Higher Growl ranks and passives come from the pet trainer in town. Mend Pet arrives at 12.<\/p><\/div>\n      <\/div>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"pet-how-your-pet-scales\">\n      <summary><h3>How your pet scales<\/h3><\/summary>\n      <p>Your gear makes your pet stronger (Blizzard), and player buffs that raise stats no longer work on pets. Players measured what carries over:<\/p>\n      <table class=\"wt\"><thead><tr><th>From you<\/th><th>Pet gets<\/th><\/tr><\/thead><tbody>\n        <tr><td>Crit chance<\/td><td>all of it<\/td><\/tr>\n        <tr><td>Armor<\/td><td>~30%<\/td><\/tr>\n        <tr><td>Attack power<\/td><td>~10%<\/td><\/tr>\n        <tr><td>Health (Nov 10)<\/td><td>115% of normal<\/td><\/tr>\n      <\/tbody><\/table>\n      <p class=\"why\">So crit on your gear counts twice, and mail at 40 makes your pet tougher too. A bug gave pets 150% health until the Nov 10 hotfix, so pets die faster now than launch week.<\/p>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"pet-attack-speed\">\n      <summary><h3>Attack speed<\/h3><\/summary>\n      <ul>\n        <li>Every pet swings every 2.0 sec, then its own passive, <b>Faster Attack<\/b> or <b>Slower Attack<\/b>, sets it to the speed that beast had in Classic.<\/li>\n        <li>So the beast you tame still decides how fast your pet hits. You can't train speed onto it.<\/li>\n        <li>Since the Nov 2 notes, untraining your pet no longer removes that passive.<\/li>\n        <li>Player tests say a faster pet does more damage right now. Blizzard hasn't said whether that's intended.<\/li>\n      <\/ul>\n    <\/details>\n    <details class=\"gpanel wide\" data-key=\"pet-family-abilities\">\n      <summary><h3>Family abilities <small>one unique per family<\/small><\/h3><\/summary>\n      <div class=\"scroll\"><table><thead><tr><th>Family<\/th><th>Unique ability<\/th><th>What it does<\/th><\/tr><\/thead><tbody>\n        <tr><td><b>Cat<\/b><\/td><td>Prowl<\/td><td>Stealth. Cats are still the top damage pet: Claw, Bite, fast swings, Dash at pet level 30.<\/td><\/tr>\n        <tr><td><b>Wolf<\/b><\/td><td>Furious Howl<\/td><td>Raises your party's melee attack power.<\/td><\/tr>\n        <tr><td><b>Bear<\/b><\/td><td>Swipe<\/td><td>Hits up to three enemies.<\/td><\/tr>\n        <tr><td><b>Carrion Bird<\/b><\/td><td>Demoralizing Screech<\/td><td>Damages and lowers the attack power of enemies in melee range for 30 sec. A bit less damage than a cat, but tankier.<\/td><\/tr>\n        <tr><td><b>Boar<\/b><\/td><td>Charge<\/td><td>Charges and roots the target; next pet attack gets more attack power.<\/td><\/tr>\n        <tr><td><b>Turtle<\/b><\/td><td>Shell Shield<\/td><td>Halves damage taken for 12 sec; swings slower but each hit lands harder.<\/td><\/tr>\n        <tr><td><b>Spider<\/b><\/td><td>Web<\/td><td>Roots the target.<\/td><\/tr>\n        <tr><td><b>Tallstrider<\/b><\/td><td>Dust Cloud<\/td><td>Lowers the target's armor (Blizzard's class deep dive).<\/td><\/tr>\n        <tr><td><b>Fox<\/b> <span class=\"chg\">New<\/span><\/td><td>Trickster's Dance<\/td><td>More dodge and faster attacks for 12 sec.<\/td><\/tr>\n      <\/tbody><\/table><\/div>\n      <p class=\"why\">No source confirms that Swipe or the Screech make several enemies attack your pet. Swipe makes threat by hitting them; the Screech is defense. <b>Growl<\/b>, which every pet knows, is what holds a monster's attention, and it works on one target.<\/p>\n    <\/details>\n    <details class=\"gpanel wide\" data-key=\"pet-teaching-your-pet\">\n      <summary><h3>Teaching your pet<\/h3><\/summary>\n      <div class=\"cols\">\n        <div>\n          <span class=\"label\">How ranks work<\/span>\n          <ul>\n            <li>Ranks unlock with your <b>pet's<\/b> level. Bite and Claw get a new rank at pet level 1, 8, 16, 24, then every 8 levels (32, 40, 48, 56).<\/li>\n            <li>A wild beast that knows a rank can teach it.<\/li>\n            <li>Training points come from your pet's loyalty, which grows slowly. A pet can have 4 active abilities.<\/li>\n            <li>Beast Lore (24) shows what a wild beast knows, but players say it isn't always reliable. Check a list before you tame.<\/li>\n            <li>Dash or Dive unlock at pet level 30.<\/li>\n            <li>You don't need every rank. Upgrade Bite or Claw when a teacher is on your way.<\/li>\n          <\/ul>\n        <\/div>\n        <div>\n          <span class=\"label\">Example: your cat needs Claw rank 3<\/span>\n          <ol class=\"talents\">\n            <li>Put your cat in the stable.<\/li>\n            <li>Tame a beast that knows Claw 3, around level 16. Your cat must be 16 too, or it can't learn that rank.<\/li>\n            <li>Fight with the new beast until a yellow message says you learned the ability.<\/li>\n            <li>Abandon the teacher, take your cat back out, open Beast Training and spend training points.<\/li>\n          <\/ol>\n          <p class=\"why\">As a Night Elf, a Strigid Hunter (owl) in Teldrassil teaches Claw rank 2.<\/p>\n        <\/div>\n      <\/div>\n    <\/details>\n  <\/div>\n  "}, {"id": "beasts", "label": "Rare or not", "h2": "Beasts worth taming", "html": "\n  <p class=\"sdesc\">A rare beast isn't stronger because it's rare: family and attack speed are what matter. Lower swing time is faster. You can't tame anything above your level. <span class=\"chg\">Night Elf route<\/span> marks the ones along a Night Elf's path through Teldrassil, Darkshore and Ashenvale.<\/p>\n  <div class=\"fchips\" id=\"beastchips\"><span class=\"label\">Show<\/span><button class=\"chipbtn\" data-f=\"all\" aria-pressed=\"true\">All<\/button><button class=\"chipbtn\" data-f=\"now\" aria-pressed=\"false\">Can tame now<\/button><button class=\"chipbtn\" data-f=\"path\" aria-pressed=\"false\">Night Elf route<\/button><\/div>\n  <div class=\"scroll\"><table><thead><tr><th>Beast<\/th><th>Family<\/th><th>Level<\/th><th>Where<\/th><th>Swing<\/th><th>Why<\/th><\/tr><\/thead><tbody>\n    <tr class=\"racegroup\"><td colspan=\"6\">Alliance zones<\/td><\/tr>\n    <tr><td><b>Ghostfang<\/b> <span class=\"kind\">Rare · new<\/span><\/td><td>Cat<\/td><td class=\"mono\">10<\/td><td>Eastern Dun Morogh<\/td><td class=\"mono\">—<\/td><td>New rare cat<\/td><\/tr>\n    <tr><td><b>Matriarch Bristlefur<\/b> <span class=\"kind\">Rare<\/span><\/td><td>Bear<\/td><td class=\"mono\">—<\/td><td>Elwynn Forest<\/td><td class=\"mono\">—<\/td><td>Rare bear<\/td><\/tr>\n    <tr><td><b>Elmpaw<\/b> <span class=\"kind\">Rare elite<\/span><\/td><td>Bear<\/td><td class=\"mono\">—<\/td><td>Elwynn Forest<\/td><td class=\"mono\">—<\/td><td>Elite bear<\/td><\/tr>\n    <tr><td><b>Nightscreech<\/b> <span class=\"kind\">Rare · new<\/span> <span class=\"chg\">Night Elf route<\/span><\/td><td>Owl<\/td><td class=\"mono\">—<\/td><td>Teldrassil<\/td><td class=\"mono\">—<\/td><td>Tame it for its looks<\/td><\/tr>\n    <tr><td><b>Moonstalker Runt<\/b> <span class=\"chg\">Night Elf route<\/span><\/td><td>Cat<\/td><td class=\"mono\">—<\/td><td>Darkshore<\/td><td class=\"mono\">1.3 s<\/td><td>Speed, early<\/td><\/tr>\n    <tr class=\"racegroup\"><td colspan=\"6\">Skyborne start · Zephras Isle<\/td><\/tr>\n    <tr><td><b>Mystmane<\/b> <span class=\"kind\">Rare<\/span><\/td><td>Bear<\/td><td class=\"mono\">13<\/td><td>Zephras Isle<\/td><td class=\"mono\">1.6 s<\/td><td>Fastest bear<\/td><\/tr>\n    <tr><td><b>Ornery Galestrider<\/b><\/td><td>Tallstrider<\/td><td class=\"mono\">—<\/td><td>Zephras Isle<\/td><td class=\"mono\">1.3 s<\/td><td>Fast; the first foxes live here too<\/td><\/tr>\n    <tr class=\"racegroup\"><td colspan=\"6\">Horde zones<\/td><\/tr>\n    <tr><td><b>Shalma<\/b> <span class=\"kind\">Rare · new<\/span><\/td><td>Cat<\/td><td class=\"mono\">9<\/td><td>Echo Isles, Durotar<\/td><td class=\"mono\">—<\/td><td>New rare cat<\/td><\/tr>\n    <tr><td><b>The Rake<\/b> <span class=\"kind\">Rare<\/span><\/td><td>Cat<\/td><td class=\"mono\">10<\/td><td>Mulgore<\/td><td class=\"mono\">1.2 s<\/td><td>Fast cat at 10<\/td><\/tr>\n    <tr><td><b>Death Flayer<\/b> <span class=\"kind\">Rare<\/span><\/td><td>Scorpid<\/td><td class=\"mono\">11<\/td><td>Durotar<\/td><td class=\"mono\">1.6 s<\/td><td>Fastest scorpid<\/td><\/tr>\n    <tr><td><b>Coldrasp<\/b> <span class=\"kind\">Rare · new<\/span><\/td><td>Wolf<\/td><td class=\"mono\">12<\/td><td>Whispering Forest, Tirisfal Glades<\/td><td class=\"mono\">1.5 s<\/td><td>Ghostly blue; already knows Furious Howl<\/td><\/tr>\n    <tr class=\"racegroup\"><td colspan=\"6\">Everyone<\/td><\/tr>\n    <tr><td><b>Mist Howler<\/b> <span class=\"kind\">Rare<\/span> <span class=\"chg\">Night Elf route<\/span><\/td><td>Wolf<\/td><td class=\"mono\">22<\/td><td>Ashenvale<\/td><td class=\"mono\">1.3 s<\/td><td>Fast wolf where you'll be questing at 20+<\/td><\/tr>\n    <tr><td><b>Gray Fox<\/b><\/td><td>Fox<\/td><td class=\"mono\">~22<\/td><td>Duskwood<\/td><td class=\"mono\">—<\/td><td>Easiest fox to reach<\/td><\/tr>\n    <tr><td><b>Humar the Pridelord<\/b> <span class=\"kind\">Rare elite<\/span><\/td><td>Cat<\/td><td class=\"mono\">23<\/td><td>The Barrens<\/td><td class=\"mono\">—<\/td><td>Rare elite cat<\/td><\/tr>\n    <tr><td><b>Starving Mountain Lion<\/b><\/td><td>Cat<\/td><td class=\"mono\">~23<\/td><td>Hillsbrad Foothills<\/td><td class=\"mono\">1.2 s<\/td><td>Common, so no waiting for a spawn<\/td><\/tr>\n    <tr><td><b>Broken Tooth<\/b> <span class=\"kind\">Rare<\/span><\/td><td>Cat<\/td><td class=\"mono\">37<\/td><td>Badlands<\/td><td class=\"mono\">1.0 s<\/td><td>Still the fastest pet in the game. Expect other Hunters camping it<\/td><\/tr>\n  <\/tbody><\/table><\/div>\n  <p class=\"why\" style=\"margin-top:10px\">Players report that some Zephras Isle beasts can forget their abilities after a relog; it looks like a bug. Swing times and levels are from the video guide; a dash means it didn't give one.<\/p>\n  "}, {"id": "pvp", "label": "Rulesets &amp; control", "h2": "PvP", "html": "\n  <p class=\"sdesc\">Blizzard says Hunters can't stun or interrupt, so your control comes from other places.<\/p>\n  <div class=\"guide\">\n    <details class=\"gpanel\" data-key=\"pvp-your-control-toolkit\">\n      <summary><h3>Your control toolkit<\/h3><\/summary>\n      <div class=\"steps\">\n        <div class=\"step\"><span class=\"lv\">8<\/span><p>Concussive Shot slows a target for 4 sec.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">20<\/span><p>Freezing Trap, but players have to walk into it.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">30–31<\/span><p>Intimidation is your pet's stun, at 31 in your build.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">32<\/span><p>Flare reveals stealthed players in an area you target, for 30 sec.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">36<\/span><p>Viper Sting drains a caster's mana.<\/p><\/div>\n      <\/div>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"pvp-watch-out\">\n      <summary><h3>Watch out<\/h3><\/summary>\n      <ul>\n        <li>Feign Death has a 30-sec cooldown, and it can miss.<\/li>\n        <li>Aspect of the Cheetah dazes you for 4 sec when you take damage. Turn it off the moment someone attacks you (the <b>Drop Cheetah<\/b> macro).<\/li>\n        <li>On a PvP ruleset, Blizzard says you're almost always at risk of being attacked, and you can only create characters for one faction there.<\/li>\n        <li>As a Night Elf, Shadowmeld gets you out of sight and Elune's Light adds 10% crit for you and your pet.<\/li>\n      <\/ul>\n    <\/details>\n  <\/div>\n  "}, {"id": "macros", "label": "Copy them exactly", "h2": "Hunter macros", "html": "\n  <p class=\"sdesc\">11 macros, written exactly as they go in the game's macro window. One wrong letter and a macro does nothing, so copy them with the button.<\/p>\n  <div class=\"guide\">\n    <details class=\"gpanel wide\" data-key=\"macros-how-to-add-one\">\n      <summary><h3>How to add one<\/h3><\/summary>\n      <ol class=\"howto\">\n        <li>Type <code>/macro<\/code>, open the tab with this character's name, and click New.<\/li>\n        <li>Type the <b>macro name<\/b> as shown (16 characters at most) and pick the red question mark icon, so the button shows the spell's own icon.<\/li>\n        <li>Copy the <b>macro text<\/b> in exactly, line breaks included. Spell names must match your spellbook letter for letter: capitals, spaces and apostrophes.<\/li>\n        <li>Drag the macro onto your action bar.<\/li>\n      <\/ol>\n      <ul class=\"mtips\">\n        <li><span class=\"ph\">Highlighted words<\/span> are placeholders: replace them with the exact name of your own item.<\/li>\n        <li><b>Ctrl<\/b> means hold Ctrl as you press the button. <b>MO<\/b> means mouseover: it casts on whatever is under your mouse, and on your target when nothing is.<\/li>\n        <li>Leave rank numbers off and the macro always casts your highest rank, so you never have to re-drag spells after training.<\/li>\n        <li>The level tag is when the spell becomes available. Make the macro then, or it will just show a question mark.<\/li>\n      <\/ul>\n    <\/details>\n    <details class=\"gpanel macset\" data-key=\"macros-fighting\">\n      <summary><h3>Fighting<\/h3><\/summary>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Arcane + Pet<\/b><span class=\"lvl\">Lv 6<\/span><\/div><button class=\"copy\" id=\"copy-hu1\" data-for=\"hu1\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"hu1\">#showtooltip Arcane Shot\n/petattack\n/cast Arcane Shot<\/pre>\n        <p class=\"why\">Sends your pet in with every Arcane Shot, so it picks up the mob first. From 10, once you have a pet.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Hawk + Pet<\/b><span class=\"lvl\">Lv 25<\/span><\/div><button class=\"copy\" id=\"copy-hu6\" data-for=\"hu6\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"hu6\">#showtooltip Summon Hawk\n/petattack\n/cast Summon Hawk<\/pre>\n        <p class=\"why\">Sends your pet in with each hawk. Hawks share a 6-sec cooldown with Arcane Shot, so alternate this with Arcane + Pet: Hawk, Hawk, Arcane. If a hawk hits once and flies back, your pet is on Passive.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Raptor Bite<\/b><span class=\"lvl\">Lv 16<\/span><\/div><button class=\"copy\" id=\"copy-hu2\" data-for=\"hu2\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"hu2\">#showtooltip Raptor Strike\n/startattack\n/cast Mongoose Bite\n/cast Raptor Strike<\/pre>\n        <p class=\"why\">Uses Mongoose Bite when a dodge lights it up, otherwise queues Raptor Strike. For when a mob reaches you.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Burst<\/b><span class=\"lvl\">Lv 26<\/span><\/div><button class=\"copy\" id=\"copy-hm4\" data-for=\"hm4\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"hm4\">#showtooltip Rapid Fire\n/cast Rapid Fire\n/cast Elune's Light<\/pre>\n        <p class=\"why\">Rapid Fire plus Elune's Light (+10% crit for you and your pet). From Feor's guide.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Aspects<\/b><span class=\"lvl\">Lv 20<\/span><\/div><button class=\"copy\" id=\"copy-hu3\" data-for=\"hu3\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"hu3\">#showtooltip\n/cast [mod:ctrl] Aspect of the Monkey; [combat] Aspect of the Hawk; Aspect of the Cheetah<\/pre>\n        <p class=\"why\">Hawk in combat, Cheetah out of combat, Monkey with Ctrl. Stops you fighting in Cheetah by accident.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Drop Cheetah<\/b><span class=\"lvl\">Lv 20<\/span><\/div><button class=\"copy\" id=\"copy-hm3\" data-for=\"hm3\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"hm3\">/cancelaura Aspect of the Cheetah<\/pre>\n        <p class=\"why\">Cancels Cheetah with no global cooldown. Bind it somewhere easy.<\/p><\/div>\n        \n    <\/details>\n    <details class=\"gpanel macset\" data-key=\"macros-pet\">\n      <summary><h3>Pet<\/h3><\/summary>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Pet Heal<\/b><span class=\"lvl\">Lv 12<\/span><\/div><button class=\"copy\" id=\"copy-hm1\" data-for=\"hm1\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"hm1\">/cast [target=pet,dead] Revive Pet; [target=pet,exists] Mend Pet; Revive Pet<\/pre>\n        <p class=\"why\">Heals your pet if it's alive and revives it if not.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Feed Pet<\/b><span class=\"lvl\">Lv 10<\/span><\/div><button class=\"copy\" id=\"copy-hu4\" data-for=\"hu4\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"hu4\">#showtooltip Feed Pet\n/cast Feed Pet\n/use <span class=\"ph\">Tough Jerky<\/span><\/pre>\n        <p class=\"why\">Feeds your pet in one press. Replace the food with what you carry; cats eat meat and fish.<\/p><\/div>\n        \n    <\/details>\n    <details class=\"gpanel macset\" data-key=\"macros-escape-control\">\n      <summary><h3>Escape & control<\/h3><\/summary>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Feign Death<\/b><span class=\"lvl\">Lv 30<\/span><\/div><button class=\"copy\" id=\"copy-hm2\" data-for=\"hm2\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"hm2\">#showtooltip\n/stopcasting\n/cast Feign Death<\/pre>\n        <p class=\"why\">Stops a cast so Feign Death goes off when you need it.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Freeze Trap<\/b><span class=\"lvl\">Lv 20<\/span><\/div><button class=\"copy\" id=\"copy-hu5\" data-for=\"hu5\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"hu5\">#showtooltip Freezing Trap\n/stopattack\n/petfollow\n/cast Freezing Trap<\/pre>\n        <p class=\"why\">Stops your attacks and calls the pet back so neither breaks the trap. All traps share one 30-sec cooldown, so make it count.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Safe Scatter<\/b><span class=\"lvl\">Talent<\/span><\/div><button class=\"copy\" id=\"copy-hm5\" data-for=\"hm5\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"hm5\">#showtooltip Scatter Shot\n/stopattack\n/stopcasting\n/cast Scatter Shot\n/stopattack<\/pre>\n        <p class=\"why\">Stops your own attacks so they don't break the Scatter. From Feor's guide; only if you take Scatter Shot.<\/p><\/div>\n        \n    <\/details>\n    <div class=\"gpanel wide\">\n      <p class=\"why\">Built from the guides on this page and the Forever macro lists on <a href=\"https://rankedboost.com/world-of-warcraft/forever/macros/\" target=\"_blank\" rel=\"noopener\">RankedBoost<\/a> (Nov 7) and <a href=\"https://kami-labs.fr/en/wow-forever/macros-wow-forever-9-classes/\" target=\"_blank\" rel=\"noopener\">Kami Labs<\/a>, checked against the spells your guides confirm exist in Forever. Ideas using removed spells, such as Tiger's Fury, were left out. Syntax follows the <a href=\"https://warcraft.wiki.gg/wiki/Macro_conditionals\" target=\"_blank\" rel=\"noopener\">macro conditionals reference<\/a>.<\/p>\n    <\/div>\n  <\/div>\n  "}, {"id": "notes", "label": "Read before you commit", "h2": "Caveats &amp; sources", "html": "\n  <div class=\"notes\">\n<div class=\"note\"><h3>Beta numbers, live game<\/h3><p>All numbers come from the final beta build (70425). The game launched Nov 4, so check anything important in game. Blizzard can still retune live.<\/p><\/div>\n<div class=\"note\"><h3>Racials corrected Nov 5<\/h3><p>The first version of the Forever Roster Planner had several wrong racials, including Earth Fury for Dwarves (it's Artisan's Precision, +1% hit), Ruthless at 2% (it's 1%) and Wind Blessed at 3% (it's 2%). The table now matches Talents Forever and DonTheCrown's guide.<\/p><\/div>\n<div class=\"note\"><h3>Popularity isn't power<\/h3><p>Spec shares count what people plan in a calculator. Icy Veins also advises picking a playstyle you'll enjoy rather than chasing the strongest class, since tuning keeps shifting.<\/p><\/div>\n<div class=\"note\"><h3>Summon Hawk buffed Nov 10<\/h3><p>Feor's Nov 7 update said Summon Hawk was weaker than Arcane Shot. The Nov 10 hotfix made both cost 11% of base mana at every rank and made hawks hit about 80% harder in melee, so hawks are back in the rotation: Hawk, Hawk, Arcane Shot.<\/p><\/div>\n<div class=\"note\"><h3>Player tests, not official<\/h3><p>The pet scaling split (all crit, ~30% armor, ~10% attack power), faster pets doing more damage, Beast Lore being unreliable, the Passive-pet hawk bug and the Zephras relog bug all come from players, not Blizzard. If your tooltip says something different, trust the tooltip.<\/p><\/div>\n<div class=\"note\"><h3>Raids open Dec 9<\/h3><p>No raids until December 9, so there's time to find a fast beast and level it.<\/p><\/div>\n  <\/div>\n  <h3 style=\"margin:28px 0 12px\">Sources<\/h3>\n  <ul class=\"sources\">\n    <li><a href=\"https://mobalytics.gg/wow-forever/classes/hunter-leveling-guide\" target=\"_blank\" rel=\"noopener\">Feor: Hunter Leveling Guide 1–60 (Mobalytics, Nov 7)<\/a><\/li>\n    <li>Hunter video guide you shared (transcript, recorded after the Nov 11 hotfixes)<\/li>\n    <li><a href=\"https://us.forums.blizzard.com/en/wow/t/2360696/9\" target=\"_blank\" rel=\"noopener\">Blizzard: Forever development notes, updated Nov 2<\/a><\/li>\n    <li><a href=\"https://www.warcrafttavern.com/forever/news/class-economy-changes-wow-forever-hotfixes-for-november-10/\" target=\"_blank\" rel=\"noopener\">Warcraft Tavern: Nov 10 hotfixes<\/a><\/li>\n    <li><a href=\"https://kami-labs.fr/en/wow-forever/familiers-chasseur-demoniste-wow-forever/\" target=\"_blank\" rel=\"noopener\">Kami Labs: Hunter pet health hotfix<\/a><\/li>\n    <li><a href=\"https://worldofwarcraft.blizzard.com/news/24301515\" target=\"_blank\" rel=\"noopener\">Blizzard: Class deep dive, Hunter and Druid<\/a><\/li>\n    <li><a href=\"https://www.warcrafttavern.com/forever/guides/hunter-leveling/\" target=\"_blank\" rel=\"noopener\">Warcraft Tavern: Hunter leveling<\/a><\/li>\n    <li><a href=\"https://www.method.gg/wow-forever/wow-forever-hunter-leveling-guide-and-talents\" target=\"_blank\" rel=\"noopener\">Method: Hunter leveling guide & talents (Oct 21)<\/a><\/li>\n    <li><a href=\"https://wow.gg/guides/wow-forever-survival-hunter-beta\" target=\"_blank\" rel=\"noopener\">WoW.gg: Survival Hunter (Nov 4)<\/a><\/li>\n    <li><a href=\"https://www.method.gg/wow-forever/the-best-weapons-in-wow-forever-from-levels-1-30\" target=\"_blank\" rel=\"noopener\">Method: best weapons from levels 1–30 (Nov 6)<\/a><\/li>\n    <li><a href=\"https://talentsforever.com/racials\" target=\"_blank\" rel=\"noopener\">Talents Forever: races, classes and racials<\/a><\/li>\n    <li><a href=\"https://talentsforever.com/popular\" target=\"_blank\" rel=\"noopener\">Talents Forever: most popular builds<\/a><\/li>\n    <li><a href=\"https://talentsforever.com/leveling\" target=\"_blank\" rel=\"noopener\">Talents Forever: leveling builds<\/a><\/li>\n    <li><a href=\"https://talentsforever.com/guides\" target=\"_blank\" rel=\"noopener\">Talents Forever: what changed since Classic<\/a><\/li>\n    <li><a href=\"https://hyjal.cc/racials\" target=\"_blank\" rel=\"noopener\">Hyjal: racial abilities<\/a><\/li>\n    <li><a href=\"https://www.icy-veins.com/wow-forever/news/racial-and-class-tuning-new-features-and-options-massive-wow-forever-beta-development-notes-october-15th/\" target=\"_blank\" rel=\"noopener\">Icy Veins: Oct 15 beta development notes<\/a><\/li>\n    <li><a href=\"https://www.icy-veins.com/wow-forever/news/your-favorite-race-was-just-changed-in-wow-forever/\" target=\"_blank\" rel=\"noopener\">Icy Veins: every race changed<\/a><\/li>\n    <li><a href=\"https://www.icy-veins.com/wow-forever/choosing-your-main\" target=\"_blank\" rel=\"noopener\">Icy Veins: choosing your class<\/a><\/li>\n  <\/ul>\n  "}]}, "rogue": {"key": "rogue", "name": "Rogue", "color": "#FFF468", "ink": "#8A7F1A", "roles": ["Melee"], "races": [{"race": "Human", "new": false}, {"race": "Dwarf", "new": false}, {"race": "Night Elf", "new": false}, {"race": "Gnome", "new": false}, {"race": "Skyborne (High Order)", "new": true}, {"race": "Orc", "new": false}, {"race": "Undead", "new": false}, {"race": "Troll", "new": false}, {"race": "Skyborne (Windshaper)", "new": true}], "blurb": "Assassination gets Mutilate and a Venom finisher. Combat's Restless Blades lets finishers shorten Adrenaline Rush, Blade Flurry, Sprint, Evasion and Vanish. Subtlety expands bleed and Backstab play. Lock picking, Pick Pocket, Sap and Distract are unchanged.", "specs": [["Assassination", "Mutilate at 30 and a new Venom finisher at 40 make it a real poison spec."], ["Combat", "Restless Blades lets finishers shorten Adrenaline Rush, Blade Flurry, Sprint, Evasion and Vanish. Riposte at 20, Blade Flurry at 30."], ["Subtlety", "Expands bleed and Backstab play, built around Stealth openers. The most-planned leveling spec in the calculator."]], "general": "Lock picking, Pick Pocket, Sap and Distract are unchanged.", "lvl": [["Subtlety", 38.5], ["Combat", 31.8], ["Assassination", 29.7]], "first": ["Camouflage 5/5", "Opportunity 2/2", "Improved Ambush 3/3"], "at60": "Sub 46% · Assn 29% · Combat 25%. Top build: Combat 18/32/0.", "builds": {"wda": {"cols": ["Levels 10–32", "Levels 33–60"], "rows": [[0, "2/2", "Remorseless Attacks", 10, 11, 2, "Assassination tree. After a kill, your next Sinister Strike gets +40% crit if you reach the next mob within 20 sec"], [0, "2/2", "Efficient Strikes", 12, 13, 2, "Sinister Strike costs 5 less"], [0, "3/3", "Coup de Grace", 14, 16, 3, "+20% Eviscerate, the first talent you really notice"], [0, "3/3", "Deflection", 17, 19, 3, "only taken to open Riposte"], [0, "2/3", "Precision", 20, 21, 2, "miss less"], [0, "1/1", "Riposte", 22, 22, 1, "swap with Endurance if you'd rather have that first"], [0, "2/2", "Endurance", 23, 24, 2, "Evasion and Sprint from 5 min to 2 min"], [0, "3/3", "Precision", 25, 25, 1, "level not given in the video; filled in so the build adds up to 51"], [0, "1/2", "Composure", 26, 26, 1, "first hit on full energy costs 5 less"], [0, "1/1", "Flawless Execution", 27, 27, 1, "Eviscerate from 35 energy to 20"], [0, "3/3", "Aggression", 28, 30, 3, "+15% Sinister Strike and Eviscerate"], [0, "1/2", "Weapon Expertise", 31, 31, 1, ""], [0, "1/1", "Blade Flurry", 32, 32, 1, "the closest thing to area damage"], [1, "2/2", "Weapon Expertise", 33, 33, 1, ""], [1, "2/2", "Dual Wield Specialization", 34, 35, 2, "+50% off-hand damage, which also helps Shank"], [1, "5/5", "Hack and Slash", 36, 40, 5, "5% chance of an extra attack with a sword or axe"], [1, "1/5", "Flash of Steel", 41, 41, 1, "to reach Adrenaline Rush"], [1, "1/1", "Adrenaline Rush", 42, 42, 1, "double energy regen for 15 sec, 5 min cooldown"], [1, "5/5", "Flash of Steel", 43, 46, 4, "with Shank rank 2 at 44, about 40 energy back every 8 sec"], [1, "2/2", "Composure", 47, 47, 1, "first hit now costs 20 (45 at the start)"], [1, "5/5", "Malice", 48, 52, 5, "needed before Lethality"], [1, "3/3", "Improved Slice and Dice", 53, 55, 3, "lasts longer"], [1, "2/2", "Lethality", 56, 57, 2, "bigger Sinister Strike crits"], [1, "3/3", "Ruthlessness", 58, 60, 3, "finishers can add a combo point"]], "name": "Combat, no stealth", "sub": "We Ding Again"}, "don": {"cols": ["Combat first", "Then Assassination, and finish Combat"], "rows": [[0, "2/2", "Efficient Strikes", 10, 11, 2, "cheaper Sinister Strike"], [0, "3/3", "Coup de Grace", 12, 14, 3, "more finisher damage"], [0, "2/3", "Precision", 15, 16, 2, "hit chance"], [0, "3/3", "Deflection", 17, 19, 3, "parry; only works on melee hits from the front"], [0, "1/1", "Riposte", 20, 20, 1, "after a parry, out-hits Sinister Strike, costs less and disarms"], [0, "3/3", "Precision", 21, 21, 1, "final point, 3% hit"], [0, "2/2", "Endurance", 22, 23, 2, "Sprint and Evasion more often"], [0, "1/2", "Improved Sprint", 24, 24, 1, "chance to break slows"], [0, "1/1", "Flawless Execution", 25, 25, 1, "cheaper Eviscerate"], [0, "2/2", "Weapon Expertise", 26, 27, 2, "about 4% more hits land on enemies facing you"], [0, "2/3", "Aggression", 28, 29, 2, "more Sinister Strike and Eviscerate damage"], [0, "1/1", "Blade Flurry", 30, 30, 1, "hits a second target, +20% attack speed"], [0, "2/2", "Dual Wield Specialization", 31, 32, 2, "stronger off hand, which also boosts Shank"], [0, "2/5", "Hack and Slash", 33, 34, 2, "swords or axes are likely best"], [0, "5/5", "Flash of Steel", 35, 39, 5, "turns Shank into a big energy generator"], [0, "1/1", "Adrenaline Rush", 40, 40, 1, "Combat capstone, 5 min cooldown"], [1, "5/5", "Malice", 41, 45, 5, "+5% crit"], [1, "3/3", "Ruthlessness", 46, 48, 3, "free combo points"], [1, "2/3", "Improved Slice and Dice", 49, 50, 2, ""], [1, "2/2", "Lethality", 51, 52, 2, "bigger crits from skills"], [1, "5/5", "Hack and Slash", 53, 55, 3, "final 3 points"], [1, "3/3", "Aggression", 56, 56, 1, "final point"], [1, "3/3", "Improved Slice and Dice", 57, 57, 1, "final point"], [1, "2/2", "Improved Expose Armor", 58, 59, 2, "for high-armor targets"], [1, "1/5", "Improved Poisons", 60, 60, 1, "or flex into Blood Splatter or Cold Blood"]], "name": "DonTheCrown's order", "sub": "16/35/0"}}, "spells": [[6, "Sinister Strike"], [10, "Dual Wield, Slice and Dice, Sprint"], [20, "Poisons"], [22, "Vanish, Distract"], [24, "Shank"], [26, "Cheap Shot"], [30, "Kidney Shot"], [34, "Blind"], [40, "Mount training first"], [44, "Shank rank 2"]], "weapons": [[10, "Blade of Cunning", "class quest"], [13, "Durgen's Crescent Axe", "Hall of Thanes"], [15, "Meathook Slicer", "Ruins of Lordaeron"], [17, "Cell Keeper's Claws or Butcher's Slicer", "Shadowfang Keep"], [19, "Cruel Barb", "Deadmines"], [23, "Meteor Shard", "Shadowfang Keep"], [25, "Hamhock's Cleaver", "Stockade"], [30, "Pronged Reaver or Bloody Brass Knuckles", "Razorfen Kraul / Scarlet Monastery"]], "now": [{"type": "steps", "label": "How to play", "items": [[1, 9, "Sinister Strike to 3–4 points, then Eviscerate"], [10, 17, "Buy Dual Wield and Slice and Dice first"], [18, 21, "Poised: full energy makes your opener cheaper"], [22, 23, "Riposte after a parry (Riposte SS macro)"], [24, 60, "Shank every time it's up"], [30, 60, "Slice and Dice at 2 combo points"], [32, 60, "Blade Flurry at the start of a fight"], [42, 60, "Adrenaline Rush for elites and bad pulls"]]}, {"type": "train"}, {"type": "steps", "label": "Quests", "none": "No class quest right now", "items": [[10, 14, "Class quest chain · Blade of Cunning"], [20, 24, "Poison quest, Westfall (he waits for 23–24)"], [20, 24, "The Horn of Xelthos, Shadowfang Keep"], [28, 32, "The Eye of Bhossca · Ruby-Adorned Blade"]]}, {"type": "weapon", "label": "Weapon", "none": "Starter weapons"}], "opts": [{"t": "Combat", "s": "DonTheCrown · ends 16/35/0 · using his gear lists, not his talents", "p": "Opens with Efficient Strikes 2/2, Coup de Grace 3/3, Precision 2/3, Deflection 3/3. Riposte at 20, Blade Flurry at 30, then Flash of Steel and the Adrenaline Rush capstone before moving into Assassination."}, {"t": "Combat, no stealth", "s": "We Ding Again · ends 15/36/0", "p": "Two points in Remorseless Attacks first, then Combat. Walks straight up to mobs, adds Composure for cheaper first hits, and skips Improved Sprint, Improved Expose Armor and Improved Poisons. <a href=\"#wda-guide\">Full guide below.<\/a>"}, {"t": "Subtlety", "s": "38.5% of calculator leveling builds", "p": "First points: Camouflage 5/5, Opportunity 2/2, Improved Ambush 3/3. The most popular plan in the Talents Forever calculator, built around Stealth openers."}, {"t": "Assassination", "s": "29.7%", "p": "First points: Malice 5/5, Ruthlessness 3/3, Murder 2/2. Mutilate (30) and the new Venom finisher (40) make it a real poison spec."}], "keyspells": "Sap, Slice and Dice, Sprint 10 · Ambush 18 · Poisons 20 · Vanish 22 · Shank 24 · Cheap Shot 26 · Kidney Shot 30 · Blind 34", "sections": [{"id": "rogue-guide", "label": "Gnome Rogue", "h2": "Combat leveling guide", "html": "\n  <p class=\"sdesc\">Condensed from <a href=\"https://mobalytics.gg/wow-forever/profile/donthecrown/classes/donthecrown-rogue-leveling\" target=\"_blank\" rel=\"noopener\">DonTheCrown's Mobalytics guide<\/a>, updated Nov 4. Combat's damage leans on auto attacks, Sinister Strike, Eviscerate and the new Shank, and Energy regen keeps downtime low.<\/p>\n  <div class=\"guide\">\n\n    <details class=\"gpanel wide\" data-key=\"rogue-guide-talent-order\">\n      <summary><h3>Talent order <small>51 points · ends at 16/35/0<\/small><\/h3><\/summary>\n      <div class=\"cols\">\n        <div><span class=\"label\">Combat first<\/span>\n          <ol class=\"talents\">\n            <li><span class=\"rk\">2/2<\/span><b>Efficient Strikes<\/b> <span class=\"why\">· cheaper Sinister Strike<\/span><\/li>\n            <li><span class=\"rk\">3/3<\/span><b>Coup de Grace<\/b> <span class=\"why\">· more finisher damage<\/span><\/li>\n            <li><span class=\"rk\">2/3<\/span><b>Precision<\/b> <span class=\"why\">· hit chance<\/span><\/li>\n            <li><span class=\"rk\">3/3<\/span><b>Deflection<\/b> <span class=\"why\">· parry; only works on melee hits from the front<\/span><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Riposte<\/b> <span class=\"why\">· level 20; after a parry, out-hits Sinister Strike, costs less and disarms<\/span><\/li>\n            <li><span class=\"rk\">3/3<\/span><b>Precision<\/b> <span class=\"why\">· final point, 3% hit<\/span><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Endurance<\/b> <span class=\"why\">· Sprint and Evasion more often<\/span><\/li>\n            <li><span class=\"rk\">1/2<\/span><b>Improved Sprint<\/b> <span class=\"why\">· chance to break slows<\/span><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Flawless Execution<\/b> <span class=\"why\">· cheaper Eviscerate<\/span><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Weapon Expertise<\/b> <span class=\"why\">· about 4% more hits land on enemies facing you<\/span><\/li>\n            <li><span class=\"rk\">2/3<\/span><b>Aggression<\/b> <span class=\"why\">· more Sinister Strike and Eviscerate damage<\/span><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Blade Flurry<\/b> <span class=\"why\">· level 30; hits a second target, +20% attack speed<\/span><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Dual Wield Specialization<\/b> <span class=\"why\">· stronger off hand, which also boosts Shank<\/span><\/li>\n            <li><span class=\"rk\">2/5<\/span><b>Hack and Slash<\/b> <span class=\"why\">· swords or axes are likely best<\/span><\/li>\n            <li><span class=\"rk\">5/5<\/span><b>Flash of Steel<\/b> <span class=\"why\">· turns Shank into a big energy generator<\/span><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Adrenaline Rush<\/b> <span class=\"why\">· Combat capstone, 5 min cooldown<\/span><\/li>\n          <\/ol>\n        <\/div>\n        <div><span class=\"label\">Then Assassination, and finish Combat<\/span>\n          <ol class=\"talents\" start=\"17\">\n            <li><span class=\"rk\">5/5<\/span><b>Malice<\/b> <span class=\"why\">· +5% crit<\/span><\/li>\n            <li><span class=\"rk\">3/3<\/span><b>Ruthlessness<\/b> <span class=\"why\">· free combo points<\/span><\/li>\n            <li><span class=\"rk\">2/3<\/span><b>Improved Slice and Dice<\/b><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Lethality<\/b> <span class=\"why\">· bigger crits from skills<\/span><\/li>\n            <li><span class=\"rk\">5/5<\/span><b>Hack and Slash<\/b> <span class=\"why\">· final 3 points<\/span><\/li>\n            <li><span class=\"rk\">3/3<\/span><b>Aggression<\/b> <span class=\"why\">· final point<\/span><\/li>\n            <li><span class=\"rk\">3/3<\/span><b>Improved Slice and Dice<\/b> <span class=\"why\">· final point<\/span><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Improved Expose Armor<\/b> <span class=\"why\">· for high-armor targets<\/span><\/li>\n            <li><span class=\"rk\">1/5<\/span><b>Improved Poisons<\/b> <span class=\"why\">· or flex into Blood Splatter or Cold Blood<\/span><\/li>\n          <\/ol>\n        <\/div>\n      <\/div>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"rogue-guide-rotation-by-level\">\n      <summary><h3>Rotation by level<\/h3><\/summary>\n      <div class=\"steps\">\n        <div class=\"step\"><span class=\"lv\">Lv 1+<\/span><p>Pull with two Throws. Sinister Strike twice, then Slice and Dice. Keep building with Sinister Strike, then finish with Eviscerate, or with Slice and Dice if the fight will run long or you're chaining pulls.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Lv 20<\/span><p>Riposte lights up after you parry. It costs 10 energy and is off the global cooldown. The Riposte SS macro folds it into Sinister Strike.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Lv 24<\/span><p>Shank costs 5 and returns 15 energy on a 10 sec cooldown. Press it whenever you have room for 10+ energy, and spend first so you don't cap. With Flash of Steel, leave room for 40+.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Lv 26<\/span><p>Open with Stealth, Cheap Shot, then Slice and Dice. Aggro mobs as you stealth so they run to you.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Lv 30<\/span><p>Blade Flurry plus Evasion (both 2 min with Endurance) handles 2–4 mobs. Build combo points on the toughest one for a big Eviscerate.<\/p><\/div>\n      <\/div>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"rogue-guide-staying-alive\">\n      <summary><h3>Staying alive<\/h3><\/summary>\n      <ul>\n        <li>Evasion only dodges attacks from the front, so keep enemies in front of you.<\/li>\n        <li>Gouge gives you a window to bandage. With Crippling Poison, a Gouge lets you escape almost anything.<\/li>\n        <li>Vanish drops combat, but damage over time or area damage breaks Stealth. Faerie Fire blocks it too.<\/li>\n        <li>Early Stealth is slow. Mostly use it to sneak past enemies.<\/li>\n        <li>Sprint gets you out of trouble or just speeds up travel.<\/li>\n      <\/ul>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"rogue-guide-gear-stats\">\n      <summary><h3>Gear &amp; stats<\/h3><\/summary>\n      <p>Aim for 5–8% hit early. Score gear with these weights, and let Stamina break close calls when you're solo.<\/p>\n      <div class=\"scroll\" style=\"width:max-content;max-width:100%\"><table class=\"wt\"><thead><tr><th>Stat<\/th><th>Weight<\/th><\/tr><\/thead><tbody>\n        <tr><td>Attack Power<\/td><td>1<\/td><\/tr>\n        <tr><td>Agility<\/td><td>1.8<\/td><\/tr>\n        <tr><td>Strength<\/td><td>1 (1.1 with Kings)<\/td><\/tr>\n        <tr><td>Hit chance, per 1%<\/td><td>18<\/td><\/tr>\n        <tr><td>Crit chance, per 1%<\/td><td>23<\/td><\/tr>\n      <\/tbody><\/table><\/div>\n      <p>Weapons: a slow main hand, since Sinister Strike uses weapon damage, and a faster off hand. In Deadmines, Cruel Barb goes in the main hand over Thief's Blade.<\/p>\n      <p>Poisons unlock at 20 through a class quest. Use Instant Poison on both weapons while leveling, and Deadly Poison in the off hand for dungeons. Thistle Tea gives 100 energy, so use it when you're near empty.<\/p>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"rogue-guide-weapon-trainers\">\n      <summary><h3>Weapon trainers <small>Alliance<\/small><\/h3><\/summary>\n      <ul>\n        <li><b>Darnassus<\/b> <span class=\"mono\">(57.6, 46.6)<\/span>: bows, fist weapons<\/li>\n        <li><b>Stormwind<\/b> <span class=\"mono\">(63.8, 69)<\/span>: swords, crossbows<\/li>\n        <li><b>Ironforge<\/b> <span class=\"mono\">(61.6, 89.6)<\/span>: axes, maces, fist weapons, guns, crossbows (two trainers)<\/li>\n      <\/ul>\n      <p>Hack and Slash favours swords and axes, so Stormwind or Ironforge is worth the trip.<\/p>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"rogue-guide-weapon-upgrades\">\n      <summary><h3>Weapon upgrades <small>one-hand<\/small><\/h3><\/summary>\n      <div class=\"steps\">\n        <div class=\"step\"><span class=\"lv\">13<\/span><p>Durgen's Crescent Axe, Hall of Thanes<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">15<\/span><p>Meathook Slicer (dagger), Ruins of Lordaeron<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">17–18<\/span><p>Cell Keeper's Claws (fist) or Butcher's Slicer (sword), Shadowfang Keep<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">19<\/span><p>Cruel Barb (sword), Deadmines: DonTheCrown's main-hand pick<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">23<\/span><p>Meteor Shard (dagger), Shadowfang Keep<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">25<\/span><p>Hamhock's Cleaver (axe), Stockade<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">30<\/span><p>Pronged Reaver (axe, Razorfen Kraul) or Bloody Brass Knuckles (fist, Scarlet Monastery)<\/p><\/div>\n      <\/div>\n      <p>Slow main hand, faster off hand. Hack and Slash favours swords and axes. From the <a href=\"https://www.method.gg/wow-forever/the-best-weapons-in-wow-forever-from-levels-1-30\" target=\"_blank\" rel=\"noopener\">Method weapon list<\/a>, which stops at 30 for now.<\/p>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"rogue-guide-training-priorities\">\n      <summary><h3>Training priorities<\/h3><\/summary>\n      <ul>\n        <li><b>High:<\/b> 6 Sinister Strike · 10 Slice and Dice, Sprint · 20 poisons · 22 Vanish, Distract · 24 Shank · 26 Cheap Shot · 30 Kidney Shot · 34 Blind (full toolkit) · 44 Shank rank 2 (+20 energy)<\/li>\n        <li><b>Skippable when short on gold:<\/b> Gouge and Kick ranks only add damage.<\/li>\n        <li><b>At 40:<\/b> buy mount training and your mount first, then class skills.<\/li>\n      <\/ul>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"rogue-guide-professions-legacy-points\">\n      <summary><h3>Professions &amp; Legacy Points<\/h3><\/summary>\n      <ul>\n        <li>Skin everything in your starting zone, then train Leatherworking in your first city. Craft Handstitched Leather Pants and Belt, Embossed Leather Cloak and Gloves, Light Leather Bracers, plus Light Leather Armor Kits.<\/li>\n        <li>Stock up on Camp Tents: up to 5% rested XP, once an hour.<\/li>\n        <li>First Aid is a must for bandages and healing potions. Cooking gives 5% XP food and Basic Campfires for camp buffs.<\/li>\n        <li>Mostly ignore Leatherworking until your 50s. Swapping it for Mining at 60 is an option.<\/li>\n        <li><b>Legacy Points:<\/b> put your first 5 into Thrill of Adventure, which restores 5% of max health per kill.<\/li>\n      <\/ul>\n    <\/details>\n\n    \n\n  <\/div>\n  "}, {"id": "wda-guide", "label": "Gnome Rogue · talent build", "h2": "No-stealth Combat sword guide", "html": "\n  <p class=\"sdesc\">From We Ding Again's video <a href=\"https://youtu.be/6Xli6yNb7Ew\" target=\"_blank\" rel=\"noopener\">The Only Rogue Leveling Build You Need (WoW Forever 1-60)<\/a>. One Combat sword build all the way to 60, played the lazy way: walk up to a mob and hit it, no stealth. He made it after Blizzard moved many rogue talents two days before launch. He plays an Undead (Horde), so the faction-specific steps are marked.<\/p>\n  <div class=\"guide\">\n\n    <details class=\"gpanel wide\" id=\"talents\" data-key=\"wda-guide-talent-order\" open>\n      <summary><h3>Talent order <small>checklist · 51 points · ends at 15/36/0<\/small><\/h3><\/summary>\n      <p class=\"why\">Tick each row as you spend the points. Gold rows are due at your level; the outlined row is your next point. Switch tabs to tick DonTheCrown's order instead.<\/p>\n      <div id=\"talents-app\"><\/div>\n      <p class=\"why\">Levels from 48 on follow his order one point per level. With the Talented legacy points (below), talent points start at level 5, so each step comes earlier. Ranks checked against the Forever talent list on Warcraft Wiki.<\/p>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"wda-guide-how-he-plays-it\" open>\n      <summary><h3>How he plays it<\/h3><\/summary>\n      <div class=\"steps\">\n        <div class=\"step\"><span class=\"lv\">Lv 1+<\/span><p>Sinister Strike to 3 or 4 combo points, then Eviscerate. Points vanish when the mob dies, so if it's nearly dead, finish with what you have instead of chasing 5.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Lv 10<\/span><p>Buy Dual Wield and Slice and Dice before anything else. A second weapon is the biggest jump you'll get for a long time.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Lv 18<\/span><p>New passive, Poised: full energy out of combat makes your next ability cost 10 less. Walking up to one mob at a time, you get it almost every pull.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Lv 22<\/span><p>Riposte: after a parry, 10 energy for 1.5× weapon damage and a 6 sec disarm. Put it on one key with Sinister Strike (the Riposte SS macro). He'd set that up even if you ignore everything else.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Lv 24<\/span><p>Shank: costs 5, gives 15 back, can't miss, 10 sec cooldown. Press it every time it's up.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Lv 30<\/span><p>Walk up, press the key. At 2 combo points, Slice and Dice (12 sec, +20% attack speed; whatever's left carries to the next mob). Shank on cooldown, back to the key until 5 points, then Eviscerate. Skip Slice and Dice if the mob is nearly dead at 2 points.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Lv 32<\/span><p>Blade Flurry: 25 energy, +20% attack speed and hits a second mob for 15 sec. Press the key first, then Blade Flurry at the start of any fight it's ready, even on one mob. It shares the 2 min cooldown with Evasion and Sprint, so they line up on big pulls.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Lv 42<\/span><p>Adrenaline Rush is kept for elites, rares and pulls that got bigger than planned.<\/p><\/div>\n      <\/div>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"wda-guide-cost-of-your-first-hit\">\n      <summary><h3>Cost of your first hit <small>on full energy<\/small><\/h3><\/summary>\n      <p>Energy comes back at about 10 a second whatever you do, so cheaper buttons mean less waiting. This is why he takes Composure.<\/p>\n      <div class=\"scroll\" style=\"width:max-content;max-width:100%\"><table class=\"wt\"><thead><tr><th>Step<\/th><th>Sinister Strike<\/th><\/tr><\/thead><tbody>\n        <tr><td>Start<\/td><td>45<\/td><\/tr>\n        <tr><td>Efficient Strikes (12–13)<\/td><td>40<\/td><\/tr>\n        <tr><td>Poised (18)<\/td><td>30<\/td><\/tr>\n        <tr><td>Composure 1/2 (26)<\/td><td>25<\/td><\/tr>\n        <tr><td>Composure 2/2 (47)<\/td><td>20<\/td><\/tr>\n      <\/tbody><\/table><\/div>\n      <p>Eviscerate drops from 35 to 20 with Flawless Execution at 27. At 5 points it goes from about 60 damage at level 8 to about 1,300 at 60 before crits, and he sees crits around 2,600 on the tooltip.<\/p>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"wda-guide-when-a-pull-goes-wrong\">\n      <summary><h3>When a pull goes wrong<\/h3><\/summary>\n      <ul>\n        <li>Evasion straight away: 50% dodge for 15 sec. With Endurance it's up every 2 min, so use it on any pull that looks like it'll hurt.<\/li>\n        <li>Blade Flurry if there are two of them, and Kick anything casting.<\/li>\n        <li>From 34, Blind the last one and bandage while it wanders off. You stay in combat in PvE, but the bandage still works.<\/li>\n        <li>Still going badly: Vanish (22) gets you out.<\/li>\n        <li>Keep a stack of Blinding Powder and Flash Powder.<\/li>\n        <li>Use Sprint between quests whenever it's up, until you have a mount.<\/li>\n      <\/ul>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"wda-guide-weapons-poisons\">\n      <summary><h3>Weapons &amp; poisons<\/h3><\/summary>\n      <ul>\n        <li>Drop the starting dagger as soon as you can. Sinister Strike uses weapon damage, so a slow weapon with a big top end hits much harder.<\/li>\n        <li>Axes work straight away. Swords and maces need a weapon trainer first.<\/li>\n        <li>He sticks with swords for Hack and Slash, which now gives something for every weapon type, so a better mace doesn't need a respec.<\/li>\n        <li>Instant and Deadly Poison got twice the attack power scaling for launch. He keeps Instant Poison on both weapons, with a left/right-click macro (Poison LR in Macros).<\/li>\n      <\/ul>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"wda-guide-class-quests\">\n      <summary><h3>Class quests<\/h3><\/summary>\n      <div class=\"steps\">\n        <div class=\"step\"><span class=\"lv\">10<\/span><p>Class quest chain. The route depends on your start zone (his is the Undead one), but they all end on the dagger <b>Blade of Cunning<\/b>. It's better than anything you'll have, so it goes in the off hand once you have a sword.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">20<\/span><p>Poison quest. <b>Alliance version is in Westfall:<\/b> Sap a level 23 and pick the lock on his chest. Train Pick Pocket and get 75 Lockpicking before you go. He leaves it until 23–24, since a level 23 elite is rough with no heals.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">20<\/span><p>A letter signed \"C\" starts <b>The Horn of Xelthos<\/b>: solo into Shadowfang Keep, Pick Pocket two keys and steal the horn. The one place he stealths. SFK is in Silverpine, Horde country, so plan the trip.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">~30<\/span><p>The chain continues with <b>The Eye of Bhossca<\/b> (solo, in Scarlet Monastery) and ends on the rogue-only sword <b>Ruby-Adorned Blade<\/b>. He showed his other sword targets on screen; they aren't in the transcript.<\/p><\/div>\n      <\/div>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"wda-guide-what-he-leaves-out\">\n      <summary><h3>What he leaves out<\/h3><\/summary>\n      <ul>\n        <li>No stealth on normal mobs, so no Ambush or Garrote. Backstab needs a dagger, and Rupture is mostly wasted because mobs die first.<\/li>\n        <li>He doesn't buy new ranks of those either. Training the whole class costs over 200 gold by 60.<\/li>\n        <li>Pick Pocket only for class quests.<\/li>\n        <li>He still stealths up to an elite and opens with Cheap Shot, because a 4 sec stun is worth the walk.<\/li>\n        <li>He skips Subtlety's Ambush build: it looks great, but it means stealthing every mob and getting behind it with a dagger for 60 levels.<\/li>\n      <\/ul>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"wda-guide-professions-legacy-points\">\n      <summary><h3>Professions &amp; Legacy Points<\/h3><\/summary>\n      <ul>\n        <li>First Aid and Cooking on a class with no heals: a bandage is quicker than food, and buff food gives extra XP in Forever.<\/li>\n        <li>Main professions: Skinning and Leatherworking, to make your own leveling gear.<\/li>\n        <li><b>Legacy Points<\/b> (16 per character; the first usually comes when your first character hits 25): 5 Thrill of Adventure (5% health back over 10 sec per kill), 5 Well-Rested, 5 Talented (talent points from level 5), 1 Field Medicine (5 sec less between bandages).<\/li>\n        <li>He skips Reagent Economy (saves buying Dust of Decay and vials) because it needs 10 points in its own tree first.<\/li>\n      <\/ul>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"wda-guide-race\">\n      <summary><h3>Race<\/h3><\/summary>\n      <p>He says there's next to nothing in it: most guides say Orc for Horde and Gnome or Night Elf for Alliance. He went Undead for Cannibalize and Touch of the Grave, which cut downtime on a class with no heals. Gnome is one of the usual Alliance picks, so nothing changes for a Gnome.<\/p>\n    <\/details>\n\n  <\/div>\n  "}, {"id": "compare", "label": "Pick an approach", "h2": "DonTheCrown vs We Ding Again", "html": "\n  <p class=\"sdesc\">Both are Combat sword builds with Riposte, Blade Flurry, Flash of Steel and Adrenaline Rush. Most of the 51 points match. These are the differences.<\/p>\n  <div class=\"scroll\"><table>\n    <thead><tr><th><\/th><th>DonTheCrown<\/th><th>We Ding Again<\/th><\/tr><\/thead>\n    <tbody>\n      <tr><th>Final split<\/th><td>16/35/0<\/td><td>15/36/0<\/td><\/tr>\n      <tr><th>First points<\/th><td>Straight into Combat (Efficient Strikes)<\/td><td>2 in Remorseless Attacks, then Combat<\/td><\/tr>\n      <tr><th>Riposte<\/th><td>Level 20<\/td><td>Level 22<\/td><\/tr>\n      <tr><th>Only in this build<\/th><td>Improved Sprint 1, Improved Expose Armor 2, Improved Poisons 1<\/td><td>Remorseless Attacks 2, Composure 2<\/td><\/tr>\n      <tr><th>Pulling<\/th><td>Two Throws; from 26, Stealth into Cheap Shot<\/td><td>Walk up and hit; stealth only for elites and the Horn of Xelthos<\/td><\/tr>\n      <tr><th>Poisons<\/th><td>Instant on both; Deadly in the off hand for dungeons<\/td><td>Instant on both<\/td><\/tr>\n      <tr><th>Legacy Points<\/th><td>First 5 in Thrill of Adventure<\/td><td>All 16 planned: Thrill, Well-Rested, Talented, Field Medicine<\/td><\/tr>\n      <tr><th>Trainer gold<\/th><td>Priority list; Gouge and Kick ranks skippable<\/td><td>Also skips Ambush, Garrote, Backstab and Rupture ranks<\/td><\/tr>\n      <tr><th>Best extras<\/th><td>Stat weights, weapon trainers, weapon upgrades 13–30<\/td><td>Energy-cost math, bad-pull plan, class quest route<\/td><\/tr>\n    <\/tbody>\n  <\/table><\/div>\n  <div class=\"pick\" style=\"margin-top:16px\"><div class=\"label\">Your pick · Nov 11<\/div><b>We Ding Again's talents, DonTheCrown's gear, weapon and trainer lists.<\/b> For solo questing, We Ding Again's talent order fits better. Remorseless Attacks and Composure pay off on every pull when you chain mobs. DonTheCrown's Improved Expose Armor and Improved Poisons matter more in groups. His gear, weapon and trainer panels are still the better reference either way. They mix fine: use one build's talents and the other's gear lists.<\/div>\n  "}, {"id": "macros", "label": "Copy them exactly", "h2": "Rogue macros", "html": "\n  <p class=\"sdesc\">10 macros, written exactly as they go in the game's macro window. One wrong letter and a macro does nothing, so copy them with the button.<\/p>\n  <div class=\"guide\">\n    <details class=\"gpanel wide\" data-key=\"macros-how-to-add-one\">\n      <summary><h3>How to add one<\/h3><\/summary>\n      <ol class=\"howto\">\n        <li>Type <code>/macro<\/code>, open the tab with this character's name, and click New.<\/li>\n        <li>Type the <b>macro name<\/b> as shown (16 characters at most) and pick the red question mark icon, so the button shows the spell's own icon.<\/li>\n        <li>Copy the <b>macro text<\/b> in exactly, line breaks included. Spell names must match your spellbook letter for letter: capitals, spaces and apostrophes.<\/li>\n        <li>Drag the macro onto your action bar.<\/li>\n      <\/ol>\n      <ul class=\"mtips\">\n        <li><span class=\"ph\">Highlighted words<\/span> are placeholders: replace them with the exact name of your own item.<\/li>\n        <li><b>Ctrl<\/b> means hold Ctrl as you press the button. <b>MO<\/b> means mouseover: it casts on whatever is under your mouse, and on your target when nothing is.<\/li>\n        <li>Leave rank numbers off and the macro always casts your highest rank, so you never have to re-drag spells after training.<\/li>\n        <li>The level tag is when the spell becomes available. Make the macro then, or it will just show a question mark.<\/li>\n      <\/ul>\n    <\/details>\n    <details class=\"gpanel macset\" data-key=\"macros-fighting\">\n      <summary><h3>Fighting<\/h3><\/summary>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Riposte SS<\/b><span class=\"lvl\">Lv 22<\/span><\/div><button class=\"copy\" id=\"copy-m1\" data-for=\"m1\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"m1\">#showtooltip Sinister Strike\n/startattack\n/cast Riposte\n/cast Sinister Strike<\/pre>\n        <p class=\"why\">Riposte when a parry lights it up, Sinister Strike otherwise. Riposte is off the global cooldown, so both can fire.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Opener<\/b><span class=\"lvl\">Lv 26<\/span><\/div><button class=\"copy\" id=\"copy-ro1\" data-for=\"ro1\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"ro1\">#showtooltip\n/cast [stealth] Cheap Shot; Sinister Strike<\/pre>\n        <p class=\"why\">Cheap Shot from Stealth, Sinister Strike after. One key for the start of every pull.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Pick Cheap<\/b><span class=\"lvl\">Lv 26<\/span><\/div><button class=\"copy\" id=\"copy-m2\" data-for=\"m2\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"m2\">#showtooltip Cheap Shot\n/cast Pick Pocket\n/cast Cheap Shot<\/pre>\n        <p class=\"why\">Picks pockets, then opens. A missed Pick Pocket pulls you out of Stealth. From DonTheCrown's guide.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Focus Kick<\/b><span class=\"lvl\">Lv 12<\/span><\/div><button class=\"copy\" id=\"copy-ro2\" data-for=\"ro2\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"ro2\">#showtooltip Kick\n/cast [@focus,harm,nodead][] Kick<\/pre>\n        <p class=\"why\">Kicks your focus target, or your current target if no focus is set. Set a focus with /focus.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Feint Evasion<\/b><span class=\"lvl\">Lv 16<\/span><\/div><button class=\"copy\" id=\"copy-ro3\" data-for=\"ro3\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"ro3\">#showtooltip\n/cast [mod:ctrl] Evasion; Feint<\/pre>\n        <p class=\"why\">Feint to drop threat in groups. Hold Ctrl for Evasion.<\/p><\/div>\n        \n    <\/details>\n    <details class=\"gpanel macset\" data-key=\"macros-escape-control\">\n      <summary><h3>Escape & control<\/h3><\/summary>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Sap Blind<\/b><span class=\"lvl\">Lv 34<\/span><\/div><button class=\"copy\" id=\"copy-ro4\" data-for=\"ro4\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"ro4\">#showtooltip\n/cast [stealth] Sap; Blind<\/pre>\n        <p class=\"why\">Sap from Stealth, Blind otherwise. Blind needs Blinding Powder. Before 34, it only Saps.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Vanish<\/b><span class=\"lvl\">Lv 22<\/span><\/div><button class=\"copy\" id=\"copy-ro5\" data-for=\"ro5\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"ro5\">#showtooltip Vanish\n/stopattack\n/cast Vanish<\/pre>\n        <p class=\"why\">Stops your auto attack first so you don't swing straight back out of Stealth.<\/p><\/div>\n        \n    <\/details>\n    <details class=\"gpanel macset\" data-key=\"macros-poisons\">\n      <summary><h3>Poisons<\/h3><\/summary>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Poison MH<\/b><span class=\"lvl\">Lv 20<\/span><\/div><button class=\"copy\" id=\"copy-ro6\" data-for=\"ro6\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"ro6\">#showtooltip\n/use <span class=\"ph\">Instant Poison<\/span>\n/use 16\n/click StaticPopup1Button1<\/pre>\n        <p class=\"why\">Coats your main hand (slot 16) and clicks Yes on the replace prompt.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Poison OH<\/b><span class=\"lvl\">Lv 20<\/span><\/div><button class=\"copy\" id=\"copy-ro7\" data-for=\"ro7\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"ro7\">#showtooltip\n/use <span class=\"ph\">Instant Poison<\/span>\n/use 17\n/click StaticPopup1Button1<\/pre>\n        <p class=\"why\">The same for your off hand (slot 17).<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Poison LR<\/b><span class=\"lvl\">Lv 20<\/span><\/div><button class=\"copy\" id=\"copy-ro8\" data-for=\"ro8\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"ro8\">#showtooltip\n/use <span class=\"ph\">Instant Poison<\/span>\n/use [btn:2] 17; 16\n/click StaticPopup1Button1<\/pre>\n        <p class=\"why\">One button for both: left-click coats the main hand, right-click the off hand. We Ding Again uses this setup; his exact text was only on screen, so this version is written to match the two above.<\/p><\/div>\n        <p class=\"why\">Poisons come in ranks with their own item names, such as <b>Instant Poison II<\/b>. Type the exact name of the poison in your bags; a different rank won't be found.<\/p>\n    <\/details>\n    <div class=\"gpanel wide\">\n      <p class=\"why\">Built from the guides on this page and the Forever macro lists on <a href=\"https://rankedboost.com/world-of-warcraft/forever/macros/\" target=\"_blank\" rel=\"noopener\">RankedBoost<\/a> (Nov 7) and <a href=\"https://kami-labs.fr/en/wow-forever/macros-wow-forever-9-classes/\" target=\"_blank\" rel=\"noopener\">Kami Labs<\/a>, checked against the spells your guides confirm exist in Forever. Ideas using removed spells, such as Tiger's Fury, were left out. Syntax follows the <a href=\"https://warcraft.wiki.gg/wiki/Macro_conditionals\" target=\"_blank\" rel=\"noopener\">macro conditionals reference<\/a>.<\/p>\n    <\/div>\n  <\/div>\n  "}, {"id": "notes", "label": "Read before you commit", "h2": "Caveats &amp; sources", "html": "\n  <div class=\"notes\">\n<div class=\"note\"><h3>Beta numbers, live game<\/h3><p>All numbers come from the final beta build (70425). The game launched Nov 4, so check anything important in game. Blizzard can still retune live.<\/p><\/div>\n<div class=\"note\"><h3>Racials corrected Nov 5<\/h3><p>The first version of the Forever Roster Planner had several wrong racials, including Earth Fury for Dwarves (it's Artisan's Precision, +1% hit), Ruthless at 2% (it's 1%) and Wind Blessed at 3% (it's 2%). The table now matches Talents Forever and DonTheCrown's guide.<\/p><\/div>\n<div class=\"note\"><h3>Pre-launch talent shuffle<\/h3><p>We Ding Again says Blizzard moved many rogue talents two days before launch, so builds saved before then may be out of date. DonTheCrown's guide was updated Nov 4, launch day.<\/p><\/div>\n<div class=\"note\"><h3>Popularity isn't power<\/h3><p>Spec shares count what people plan in a calculator. Icy Veins also advises picking a playstyle you'll enjoy rather than chasing the strongest class, since tuning keeps shifting.<\/p><\/div>\n  <\/div>\n  <h3 style=\"margin:28px 0 12px\">Sources<\/h3>\n  <ul class=\"sources\">\n    <li><a href=\"https://mobalytics.gg/wow-forever/profile/donthecrown/classes/donthecrown-rogue-leveling\" target=\"_blank\" rel=\"noopener\">DonTheCrown: Rogue Leveling, Everything You Need to Know (Mobalytics, Nov 4)<\/a><\/li>\n    <li><a href=\"https://youtu.be/6Xli6yNb7Ew\" target=\"_blank\" rel=\"noopener\">We Ding Again: The Only Rogue Leveling Build You Need (WoW Forever 1-60), YouTube<\/a><\/li>\n    <li><a href=\"https://conquestcapped.com/guides/wow-forever/wow-forever-rogue-weapon-quest/\" target=\"_blank\" rel=\"noopener\">Conquest Capped: Rogue weapon quest (Horn of Xelthos, Eye of Bhossca)<\/a><\/li>\n    <li><a href=\"https://warcraft.wiki.gg/wiki/Rogue_abilities_(Forever)\" target=\"_blank\" rel=\"noopener\">Warcraft Wiki: Rogue abilities and talent ranks (Forever)<\/a><\/li>\n    <li><a href=\"https://www.method.gg/wow-forever/the-best-weapons-in-wow-forever-from-levels-1-30\" target=\"_blank\" rel=\"noopener\">Method: best weapons from levels 1–30 (Nov 6)<\/a><\/li>\n    <li><a href=\"https://talentsforever.com/racials\" target=\"_blank\" rel=\"noopener\">Talents Forever: races, classes and racials<\/a><\/li>\n    <li><a href=\"https://talentsforever.com/popular\" target=\"_blank\" rel=\"noopener\">Talents Forever: most popular builds<\/a><\/li>\n    <li><a href=\"https://talentsforever.com/leveling\" target=\"_blank\" rel=\"noopener\">Talents Forever: leveling builds<\/a><\/li>\n    <li><a href=\"https://talentsforever.com/guides\" target=\"_blank\" rel=\"noopener\">Talents Forever: what changed since Classic<\/a><\/li>\n    <li><a href=\"https://hyjal.cc/racials\" target=\"_blank\" rel=\"noopener\">Hyjal: racial abilities<\/a><\/li>\n    <li><a href=\"https://www.icy-veins.com/wow-forever/news/racial-and-class-tuning-new-features-and-options-massive-wow-forever-beta-development-notes-october-15th/\" target=\"_blank\" rel=\"noopener\">Icy Veins: Oct 15 beta development notes<\/a><\/li>\n    <li><a href=\"https://www.icy-veins.com/wow-forever/news/your-favorite-race-was-just-changed-in-wow-forever/\" target=\"_blank\" rel=\"noopener\">Icy Veins: every race changed<\/a><\/li>\n  <\/ul>\n  "}]}, "priest": {"key": "priest", "name": "Priest", "color": "#C9CED6", "ink": "#5D6670", "roles": ["Healer", "Ranged"], "races": [{"race": "Human", "new": false}, {"race": "Dwarf", "new": false}, {"race": "Night Elf", "new": false}, {"race": "Gnome", "new": true}, {"race": "Undead", "new": false}, {"race": "Troll", "new": false}], "blurb": "Discipline gets Penance, which heals or damages, and leans on shields and damage. Holy rewards using its whole kit. Shadow's Devouring Plague cooldown dropped to 24 sec and Vampiric Embrace to 30 sec. Each race adds two unique Priest spells.", "specs": [["Discipline", "Penance heals or damages, and the spec leans on shields and damage. The relaxed, wand-friendly way to level."], ["Holy", "Rewards using its whole kit, with Prayer of Mending at 40. Best if you'll level mostly in dungeons."], ["Shadow", "Shadow Word: Death is new, Devouring Plague's cooldown dropped to 24 sec and Vampiric Embrace to 30 sec. Shadowform is the big spike."]], "general": "Each race adds two unique Priest spells.", "lvl": [["Discipline", 47.8], ["Shadow", 33.4], ["Holy", 18.8]], "first": ["Power in Light 5/5", "Twin Disciplines 5/5"], "at60": "Shadow 55% · Disc 29% · Holy 16%. Top build: Shadow 14/0/37.", "builds": {"shadow": {"cols": ["Shadow, levels 10–42", "Discipline and Holy, 43–60"], "rows": [[0, "2/2", "Wand Specialization", 10, 11, 2, "your wand is most of your damage for 20 levels"], [0, "5/5", "Spirit Tap", 12, 16, 5, "double Spirit after a kill; very strong"], [0, "2/2", "Improved Shadow Word: Pain", 17, 18, 2, "mobs start outliving the DoT"], [0, "2/2", "Shadow Reach", 19, 20, 2, "36 yd range, more casting before they reach you"], [0, "1/5", "Shadow Focus", 21, 21, 1, "hit, and a point toward the next row"], [0, "1/1", "Mind Flay", 22, 22, 1, "Shadow's bread and butter"], [0, "2/2", "Improved Mind Flay", 23, 24, 2, ""], [0, "3/5", "Shadow Focus", 25, 26, 2, "skip Improved Mind Blast here"], [0, "1/1", "Vampiric Embrace", 27, 27, 1, "heals you through melee hits"], [0, "3/3", "Shadow Weaving", 28, 30, 3, "+10% damage once stacked"], [0, "4/5", "Shadow Focus", 31, 31, 1, ""], [0, "1/1", "Silence", 32, 32, 1, "use it on every caster"], [0, "2/2", "Devouring Contagion", 33, 34, 2, "half-price Plague that spreads on death"], [0, "5/5", "Shadow Focus", 35, 35, 1, ""], [0, "1/5", "Improved Mind Blast", 36, 36, 1, "or Dark Inspiration; unlocks the next row"], [0, "2/2", "Early Demise", 37, 38, 2, "Shadow Word: Death crits below 20%"], [0, "3/5", "Darkness", 39, 41, 3, "or respec at 40 to get Shadowform 2 levels early"], [0, "1/1", "Shadowform", 42, 42, 1, "your biggest power spike"], [1, "5/5", "Darkness", 43, 44, 2, ""], [1, "3/3", "Twilight Focus", 45, 47, 3, "cast while being hit; optional"], [1, "5/5", "Twin Disciplines", 48, 52, 5, "your DoTs, Death and Mind Flay"], [1, "3/5", "Mental Strength", 53, 55, 3, "unlocks the next row"], [1, "3/3", "Meditation", 56, 58, 3, "mana regen while casting"], [1, "1/1", "Inner Focus", 59, 59, 1, "free, extra crit; use on Death or Mind Blast"], [1, "4/5", "Mental Strength", 60, 60, 1, "anywhere at 60"]], "name": "Shadow", "sub": "Twicks"}, "disc_dungeon": {"name": "Discipline · dungeons", "sub": "Wowhead · Voulk", "cols": ["Discipline, levels 10–35", "Holy, then Discipline, 36–60"], "rows": [[0, "2/2", "Wand Specialization", 10, 11, 2, "+25% wand damage"], [0, "3/5", "Twin Disciplines", 12, 14, 3, "+5% to your instant spells"], [0, "5/5", "Mental Strength", 15, 19, 5, "+10% Intellect"], [0, "1/3", "Holy Precision", 20, 20, 1, "Holy spell hit"], [0, "3/3", "Meditation", 21, 23, 3, "50% of mana regen while casting"], [0, "1/1", "Inner Focus", 24, 24, 1, "next spell free, +25% crit"], [0, "3/3", "Improved Power Word: Shield", 25, 27, 3, "+20% shield"], [0, "1/1", "Soul Warding", 28, 28, 1, "Shield 4 sec sooner and 15% cheaper"], [0, "4/5", "Twin Disciplines", 29, 29, 1, "+5% to your instant spells"], [0, "1/1", "Penance", 30, 30, 1, "heals or hurts"], [0, "5/5", "Renewed Hope", 31, 35, 5, "more crit on shielded targets"], [1, "5/5", "Holy Specialization", 36, 40, 5, "+5% Holy crit"], [1, "5/5", "Divine Fury", 41, 45, 5, "faster Heal, Greater Heal, Smite, Holy Fire"], [1, "1/1", "Holy Nova", 46, 46, 1, ""], [1, "3/3", "Inspiration", 47, 49, 3, "crit heals raise the tank's armor"], [1, "1/3", "Improved Renew", 50, 50, 1, "+15% Renew"], [1, "3/3", "Improved Healing", 51, 53, 3, "cheaper heals"], [1, "3/3", "Divine Aegis", 54, 56, 3, "a shield on crit heals"], [1, "5/5", "Twin Disciplines", 57, 57, 1, "+5% to your instant spells"], [1, "1/1", "Power Infusion", 58, 58, 1, "the Discipline capstone"], [1, "2/3", "Mental Agility", 59, 60, 2, "cheaper instants"]]}, "disc_raid": {"name": "Discipline · raid", "sub": "Wowhead · Voulk", "cols": ["Discipline, levels 10–40", "Holy, 41–60"], "rows": [[0, "5/5", "Twin Disciplines", 10, 14, 5, "+5% to your instant spells"], [0, "5/5", "Mental Strength", 15, 19, 5, "+10% Intellect"], [0, "3/3", "Meditation", 20, 22, 3, "50% of mana regen while casting"], [0, "3/3", "Improved Power Word: Shield", 23, 25, 3, "+20% shield"], [0, "1/1", "Inner Focus", 26, 26, 1, "next spell free, +25% crit"], [0, "1/1", "Soul Warding", 27, 27, 1, "Shield 4 sec sooner and 15% cheaper"], [0, "2/3", "Mental Agility", 28, 29, 2, "cheaper instants"], [0, "1/1", "Penance", 30, 30, 1, "heals or hurts"], [0, "5/5", "Renewed Hope", 31, 35, 5, "more crit on shielded targets"], [0, "3/3", "Divine Aegis", 36, 38, 3, "a shield on crit heals"], [0, "3/3", "Mental Agility", 39, 39, 1, "cheaper instants"], [0, "1/1", "Power Infusion", 40, 40, 1, "the Discipline capstone"], [1, "5/5", "Holy Specialization", 41, 45, 5, "+5% Holy crit"], [1, "5/5", "Divine Fury", 46, 50, 5, "faster Heal, Greater Heal, Smite, Holy Fire"], [1, "3/3", "Inspiration", 51, 53, 3, "crit heals raise the tank's armor"], [1, "2/3", "Improved Renew", 54, 55, 2, "+15% Renew"], [1, "3/3", "Improved Healing", 56, 58, 3, "cheaper heals"], [1, "3/3", "Improved Renew", 59, 59, 1, "+15% Renew"], [1, "1/3", "Blessed Recovery", 60, 60, 1, "last point"]]}}, "spells": [[1, "Smite, Lesser Heal, Power Word: Fortitude"], [4, "Shadow Word: Pain"], [6, "Power Word: Shield"], [8, "Renew, Fade"], [10, "Mind Blast, Resurrection, race spell (quest)"], [12, "Inner Fire"], [14, "Psychic Scream, Cure Disease"], [16, "Heal"], [18, "Dispel Magic"], [20, "Devouring Plague, Flash Heal, Holy Fire, Fear Ward, Mind Soothe, Shackle Undead, race spell (quest)"], [22, "Mind Vision"], [24, "Mana Burn"], [30, "Divine Spirit, Shadow Protection, Prayer of Healing, Mind Control"], [32, "Shadow Word: Death"], [40, "Greater Heal, Dual Talent Specialization"], [48, "Prayer of Fortitude"], [60, "Prayer of Spirit"]], "weapons": [[5, "Lesser Magic Wand", "Enchanters"], [13, "Greater Magic Wand", "Enchanters"], [15, "Sizzle Stick", "Wailing Caverns quest"], [16, "Staff of Westfall / Gnarled Necromancer's Staff", "Deadmines / Ruins of Lordaeron"], [22, "Gravestone Scepter, Healer's Staff", "BFD quest / Excavation Site"], [27, "Wand of Eventide", "BoE world drop"]], "now": [{"type": "steps", "label": "How to play", "items": [[1, 9, "Shield, Smite to pull, Shadow Word: Pain, wand"], [10, 21, "Pull with Mind Blast, Shadow Word: Pain, wand"], [20, 60, "Devouring Plague when mana allows"], [22, 60, "Mind Flay 2–3 times until your shield breaks"], [32, 60, "Shadow Word: Death below 20%"], [42, 60, "Stay in Shadowform"]]}, {"type": "train"}, {"type": "weapon", "label": "Wand & staff"}, {"type": "steps", "label": "Quests & dungeons", "items": [[6, 9, "Starting-zone Priest quest: green chest"], [10, 11, "Race spell quest in your capital"], [20, 21, "Second race spell quest"], [40, 41, "Mount (90g) or dual spec (50g)"], [50, 52, "\"Cenarion Aid\" before Sunken Temple"], [12, 14, "Hall of Thanes or Ragefire Chasm"], [16, 18, "Deadmines or Ruins of Lordaeron"], [18, 20, "Wailing Caverns"], [20, 26, "SFK, Stockade, Excavation Site or BFD"], [26, 30, "City of Dalaran, Razorfen Kraul"], [30, 40, "Gnomeregan, Scarlet Monastery, Drowned City"], [40, 50, "Krol'Dok, RFD, Uldaman, ZF, Maraudon"], [50, 60, "Sunken Temple, BRD, LBRS, Blackmaw Hold"]]}], "opts": [{"t": "Shadow", "s": "Twicks · ends 15/3/33", "p": "Wand Specialization and Spirit Tap first, Mind Flay and Improved Mind Flay by 24, Vampiric Embrace 27, Silence 32, Shadowform 42, then Twilight Focus, Twin Disciplines and Meditation."}, {"t": "Discipline (Wowhead)", "s": "Voulk · dungeons 33/18/0 · raid 31/20/0", "p": "Voulk's PvE Discipline builds, each with a full 10–60 order: the dungeon build (close to his leveling build) and a raid healing build. Both are tabs in the talent checklist."}, {"t": "Discipline", "s": "the relaxed option", "p": "Warcraft Tavern's wand-focused path: shield yourself, wand, keep your DoT up. Penance arrives at 30 and heals or hurts. Method suggests Discipline early and Shadow for 40–60."}, {"t": "Holy", "s": "for dungeon-heavy leveling", "p": "Best if you'll spend most of your leveling in dungeons; solo kill times are slow."}, {"t": "Dual spec from 40", "s": "50 gold", "p": "Keep Shadow for questing and add a healing spec for dungeons."}], "keyspells": "Shadow Word: Pain 4 · Power Word: Shield 6 · Renew, Fade 8 · Mind Blast, first race spell 10 · Inner Fire 12 · Psychic Scream 14 · Dispel Magic 18 · Devouring Plague, Flash Heal, second race spell 20 · Mind Flay 22 (talent) · Shadow Word: Death 32 · Shadowform 42 (talent)", "sections": [{"id": "priest-guide", "label": "Your Priest · Shadow leveling", "h2": "Shadow leveling guide", "html": "\n  <p class=\"sdesc\">Built on <a href=\"https://mobalytics.gg/wow-forever/classes/priest-leveling-guide\" target=\"_blank\" rel=\"noopener\">Twicks' Priest Leveling Guide<\/a> (Mobalytics, Nov 13), which gives a full 10–60 Shadow order with a reason for every point. Wands and spec notes also from <a href=\"https://www.warcrafttavern.com/forever/guides/priest-leveling/\" target=\"_blank\" rel=\"noopener\">Warcraft Tavern<\/a>; race spells and levels from Talents Forever.<\/p>\n  <div class=\"guide\">\n\n    <details class=\"gpanel wide\" id=\"talents\" data-key=\"priest-guide-talent-order\" open>\n      <summary><h3>Talent order <small>checklist · 51 points · Shadow and Discipline tabs<\/small><\/h3><\/summary>\n      <p class=\"why\">Tick each row as you spend the points. Gold rows are due at your level; the outlined row is your next point.<\/p>\n      <div id=\"talents-app\"><\/div>\n      <p class=\"why\">All three orders are checked against Forever's trees. On the Shadow tab, Shadowform needs 30 Shadow points, which this order reaches at 42. Twicks notes you can respec at 40, skipping Wand Specialization, to get Shadowform 2 levels early, but much of your damage still comes from the wand then.<\/p>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"priest-guide-rotation\" open>\n      <summary><h3>Rotation by level<\/h3><\/summary>\n      <div class=\"steps\">\n        <div class=\"step\"><span class=\"lv\">Before<\/span><p>Power Word: Fortitude and Inner Fire up. Divine Spirit from 30, Shadow Protection against Shadow casters. Make sure you have health and mana for the next mob.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">1–9<\/span><p>Power Word: Shield right before the pull, Smite to pull, Shadow Word: Pain, then wand it down. Wanding keeps your mana ticking (the 5-second rule).<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">10–21<\/span><p>Pull with Mind Blast instead of Smite, then Shadow Word: Pain and the wand. Spend spare mana on Smite only if you won't need it for the next pull.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">22–31<\/span><p>Mind Blast, Shadow Word: Pain, Devouring Plague and Vampiric Embrace (step back during each global cooldown), then Mind Flay 2–3 times until the mob is about to break your shield. Finish with the wand.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">32+<\/span><p>Shadow Word: Death on anything under 20%. Wand to 20%, then Death.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">42+<\/span><p>Same order in Shadowform. Pop Elune's Light, Eureka! or Berserking if your race has one.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Mind Flay<\/span><p>Don't channel it while you're being hit and pushed back; wand instead.<\/p><\/div>\n      <\/div>\n    <\/details>\n    <details class=\"gpanel wide\" data-key=\"priest-guide-race-spells\">\n      <summary><h3>Race Priest spells <small>quests at 10 and 20<\/small><\/h3><\/summary>\n      <div class=\"scroll\"><table class=\"racials\"><thead><tr><th>Race<\/th><th>Level 10<\/th><th>Level 20<\/th><\/tr><\/thead><tbody>\n<tr><td>Human<\/td><td>Divine Grace<\/td><td>Feedback<\/td><\/tr>\n<tr><td>Dwarf<\/td><td>Desperate Prayer<\/td><td>Chastise<\/td><\/tr>\n<tr><td>Night Elf<\/td><td>Starshards<\/td><td>Elune's Grace<\/td><\/tr>\n<tr><td>Gnome<\/td><td>Confounding Flash<\/td><td>Contingency Plan<\/td><\/tr>\n<tr><td>Undead<\/td><td>Touch of Weakness<\/td><td>Dark Sacrifice<\/td><\/tr>\n<tr><td>Troll<\/td><td>Hex of Weakness<\/td><td>Shadowguard<\/td><\/tr>\n      <\/tbody><\/table><\/div>\n      <p class=\"why\">Get the quest from your race's capital (Stormwind, Ironforge, Darnassus, Undercity or Orgrimmar). Starshards is worth casting while leveling when you have distance.<\/p>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"priest-guide-wands\">\n      <summary><h3>Wands &amp; staves <small>Alliance / Horde<\/small><\/h3><\/summary>\n      <div class=\"steps\">\n        <div class=\"step\"><span class=\"lv\">5<\/span><p>Lesser Magic Wand, made by Enchanters<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">12–14<\/span><p>Deepblaze (Hall of Thanes) / Staff of Orgrimmar (Ragefire Chasm)<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">13<\/span><p>Greater Magic Wand, made by Enchanters<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">15–20<\/span><p>Sizzle Stick, Wailing Caverns quest; Crescent Staff from the same dungeon<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">16–18<\/span><p>Staff of Westfall (Deadmines) / Gnarled Necromancer's Staff (Ruins of Lordaeron)<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">22–26<\/span><p>Gravestone Scepter (Blackfathom Deeps quest) and Healer's Staff (Excavation Site: Wetlands)<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">27<\/span><p>Wand of Eventide, a bind-on-equip world drop<\/p><\/div>\n      <\/div>\n      <p class=\"why\">Get a wand as early as you can: Wand Specialization makes it most of your damage until Shadowform. Train Staff or Dagger skill before equipping one.<\/p>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"priest-guide-key-spells\">\n      <summary><h3>Key spells<\/h3><\/summary>\n      <div class=\"steps\">\n        <div class=\"step\"><span class=\"lv\">1–8<\/span><p>Smite, Lesser Heal, Power Word: Fortitude 1 · Shadow Word: Pain 4 · Power Word: Shield 6 · Renew, Fade 8<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">10–18<\/span><p>Mind Blast, Resurrection 10 · Inner Fire 12 · Psychic Scream, Cure Disease 14 · Heal 16 · Dispel Magic 18 (big spike, with PW:S and SW:P rank 3)<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">20–28<\/span><p>Devouring Plague, Flash Heal, Holy Fire, Fear Ward, Mind Soothe, Shackle Undead 20 · Mana Burn 24 · rank 2 Mind Flay and Plague at 28<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">30–60<\/span><p>Divine Spirit, Shadow Protection, Mind Control 30 · Shadow Word: Death 32 · Greater Heal, dual spec 40 · Prayer of Fortitude 48 · Prayer of Spirit 60<\/p><\/div>\n      <\/div>\n      <p class=\"why\">Twicks' training stops: 18, 20, 28, then 32, 36 and 40. Skip Mind Vision; Fear Ward can wait. Shackle Undead becomes vital in the Plaguelands.<\/p>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"priest-guide-stats\">\n      <summary><h3>Stats<\/h3><\/summary>\n      <ul>\n        <li><b>Spell Power<\/b> first: Forever lowered base spell damage to make room for it<\/li>\n        <li><b>Spirit<\/b> next: Spirit Tap and Meditation turn it into a lot of mana<\/li>\n        <li><b>Intellect<\/b>, then <b>Stamina<\/b> (Fortitude and your shield pad your health)<\/li>\n        <li>Crit, hit, haste and MP5 are rare while leveling; crit is best of them with Shadowform<\/li>\n      <\/ul>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"priest-guide-professions\">\n      <summary><h3>Professions<\/h3><\/summary>\n      <ul>\n        <li><b>Enchanting<\/b> first: Lesser and Greater Magic Wands at 5 and 13 carry your early damage<\/li>\n        <li><b>Tailoring<\/b> pairs with it: strong cloth, and cloth comes from mobs, so no gathering needed<\/li>\n        <li><b>Cooking:<\/b> Well Fed food gives +5% XP from kills<\/li>\n        <li>Skip First Aid if you tailor: both eat cloth, and you can heal yourself<\/li>\n      <\/ul>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"priest-guide-tips\">\n      <summary><h3>Tips &amp; mistakes<\/h3><\/summary>\n      <ul>\n        <li>Buy each new tier of water; you don't need food.<\/li>\n        <li>Psychic Scream can run mobs into more mobs. Use it carefully.<\/li>\n        <li>Fade only matters in groups; it does nothing solo.<\/li>\n        <li>DoTs and HoTs update as they tick in Forever, so buffs mid-fight count.<\/li>\n        <li>Dispel Magic has no cooldown in Forever, and Priests are the only magic dispellers until Paladins get one at 42.<\/li>\n        <li>Mount at 40 costs 90 gold at your race's city, 100 anywhere else.<\/li>\n      <\/ul>\n    <\/details>\n    <details class=\"gpanel wide\" data-key=\"priest-guide-dungeons\">\n      <summary><h3>Dungeons by level<\/h3><\/summary>\n      <div class=\"steps\">\n        <div class=\"step\"><span class=\"lv\">12–14<\/span><p>Hall of Thanes (Alliance) or Ragefire Chasm (Horde)<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">16–18<\/span><p>Deadmines (Alliance) or Ruins of Lordaeron (Horde)<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">18–20<\/span><p>Wailing Caverns<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">20–26<\/span><p>Shadowfang Keep · The Stockade · Excavation Site: Wetlands · Blackfathom Deeps<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">26–30<\/span><p>City of Dalaran · Razorfen Kraul (28+)<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">30–40<\/span><p>Gnomeregan · Scarlet Monastery wings · The Drowned City (36+)<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">40–50<\/span><p>Krol'Dok Stronghold · Razorfen Downs · Uldaman · Zul'Farrak · Maraudon · Alcaz Prison (48+)<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">50–60<\/span><p>Sunken Temple · Blackrock Depths · Lower Blackrock Spire · Blackmaw Hold · then Shaper's Terrace, Upper Blackrock Spire, Dire Maul, Scholomance and Stratholme at 58+<\/p><\/div>\n      <\/div>\n      <p class=\"why\">Since the Nov 8 hotfix, dungeon mobs give 50% more experience. Pick up every quest for a dungeon before you go in. Raids open Dec 9.<\/p>\n    <\/details>\n\n  <\/div>\n  "}, {"id": "macros", "label": "Copy them exactly", "h2": "Priest macros", "html": "\n  <p class=\"sdesc\">6 macros, written exactly as they go in the game's macro window. One wrong letter and a macro does nothing, so copy them with the button.<\/p>\n  <div class=\"guide\">\n    <details class=\"gpanel wide\" data-key=\"macros-how-to-add-one\">\n      <summary><h3>How to add one<\/h3><\/summary>\n      <ol class=\"howto\">\n        <li>Type <code>/macro<\/code>, open the tab with this character's name, and click New.<\/li>\n        <li>Type the <b>macro name<\/b> as shown (16 characters at most) and pick the red question mark icon, so the button shows the spell's own icon.<\/li>\n        <li>Copy the <b>macro text<\/b> in exactly, line breaks included. Spell names must match your spellbook letter for letter: capitals, spaces and apostrophes.<\/li>\n        <li>Drag the macro onto your action bar.<\/li>\n      <\/ol>\n      <ul class=\"mtips\">\n        <li><span class=\"ph\">Highlighted words<\/span> are placeholders: replace them with the exact name of your own item.<\/li>\n        <li><b>Ctrl<\/b> means hold Ctrl as you press the button. <b>MO<\/b> means mouseover: it casts on whatever is under your mouse, and on your target when nothing is.<\/li>\n        <li>Leave rank numbers off and the macro always casts your highest rank, so you never have to re-drag spells after training.<\/li>\n        <li>The level tag is when the spell becomes available. Make the macro then, or it will just show a question mark.<\/li>\n      <\/ul>\n    <\/details>\n    <details class=\"gpanel macset\" data-key=\"macros-healing\">\n      <summary><h3>Healing<\/h3><\/summary>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Flash Heal MO<\/b><span class=\"lvl\">Lv 20<\/span><\/div><button class=\"copy\" id=\"copy-pr1\" data-for=\"pr1\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"pr1\">#showtooltip Flash Heal\n/cast [@mouseover,help,nodead][help,nodead][@player] Flash Heal<\/pre>\n        <p class=\"why\">From Mobalytics' Discipline guide: heals whoever is under your mouse, otherwise your friendly target, otherwise you.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Shield MO<\/b><span class=\"lvl\">Lv 6<\/span><\/div><button class=\"copy\" id=\"copy-pr2\" data-for=\"pr2\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"pr2\">#showtooltip Power Word: Shield\n/cast [@mouseover,help,nodead][help,nodead][@player] Power Word: Shield<\/pre>\n        <p class=\"why\">The same pattern, so you can shield yourself without dropping your enemy target.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Renew MO<\/b><span class=\"lvl\">Lv 8<\/span><\/div><button class=\"copy\" id=\"copy-pr3\" data-for=\"pr3\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"pr3\">#showtooltip Renew\n/cast [@mouseover,help,nodead][help,nodead][@player] Renew<\/pre>\n        <p class=\"why\"><\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Dispel MO<\/b><span class=\"lvl\">Lv 18<\/span><\/div><button class=\"copy\" id=\"copy-pr4\" data-for=\"pr4\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"pr4\">#showtooltip Dispel Magic\n/cast [@mouseover,help,nodead][help,nodead][@player] Dispel Magic<\/pre>\n        <p class=\"why\">Removes a magic debuff from a friend or yourself.<\/p><\/div>\n    <\/details>\n    <details class=\"gpanel macset\" data-key=\"macros-shadow\">\n      <summary><h3>Shadow<\/h3><\/summary>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Wand<\/b><span class=\"lvl\">Lv 5<\/span><\/div><button class=\"copy\" id=\"copy-pr5\" data-for=\"pr5\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"pr5\">#showtooltip Shoot\n/cast !Shoot<\/pre>\n        <p class=\"why\">From Mobalytics' Shadow guide. The ! stops a second press from turning your wand off.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>SW Pain MO<\/b><span class=\"lvl\">Lv 4<\/span><\/div><button class=\"copy\" id=\"copy-pr6\" data-for=\"pr6\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"pr6\">#showtooltip Shadow Word: Pain\n/cast [@mouseover,harm,nodead][] Shadow Word: Pain<\/pre>\n        <p class=\"why\">DoTs a second mob without retargeting.<\/p><\/div>\n    <\/details>\n  <\/div>\n  "}, {"id": "notes", "label": "Read before you commit", "h2": "Caveats &amp; sources", "html": "\n  <div class=\"notes\">\n<div class=\"note\"><h3>Discipline or Shadow?<\/h3><p>Calculator users mostly plan Discipline for leveling, while every current 1–60 guide checked levels Shadow. If you'd rather heal more and wand, Warcraft Tavern's Discipline path is the relaxed alternative.<\/p><\/div>\n<div class=\"note\"><h3>Shadowform at 42, not 40<\/h3><p>Shadowform needs 30 Shadow points; Twicks' order reaches it at 42 because Wand Specialization comes first. A respec at 40 gets it sooner.<\/p><\/div>\n<div class=\"note\"><h3>Binding Heal is gone<\/h3><p>Blizzard's Nov 2 notes removed it; Holy Binding, a Holy talent, took its place. Older guides may still mention it.<\/p><\/div>\n  <\/div>\n  <h3 style=\"margin:28px 0 12px\">Sources<\/h3>\n  <ul class=\"sources\">\n    <li><a href=\"https://www.wowhead.com/forever/guide/classes/priest/discipline/talent-builds-pve-healer\" target=\"_blank\" rel=\"noopener\">Voulk: Best Discipline Priest Talent Tree Builds (Wowhead, Nov 4)<\/a><\/li>\n    <li><a href=\"https://mobalytics.gg/wow-forever/classes/priest-leveling-guide\" target=\"_blank\" rel=\"noopener\">Twicks: Priest Leveling Guide 1–60 (Mobalytics, Nov 13)<\/a><\/li>\n    <li><a href=\"https://www.warcrafttavern.com/forever/guides/priest-leveling/\" target=\"_blank\" rel=\"noopener\">Warcraft Tavern: Priest leveling (wands, specs, race spells)<\/a><\/li>\n    <li><a href=\"https://mobalytics.gg/wow-forever/classes/discipline-priest-guide\" target=\"_blank\" rel=\"noopener\">Mobalytics: Discipline Priest guide (Flash Heal macro)<\/a><\/li>\n    <li><a href=\"https://mobalytics.gg/wow-forever/classes/shadow-priest-guide\" target=\"_blank\" rel=\"noopener\">Mobalytics: Shadow Priest guide (wand macro)<\/a><\/li>\n    <li><a href=\"https://www.method.gg/wow-forever/wow-forever-priest-leveling-guide-and-talents\" target=\"_blank\" rel=\"noopener\">Method: Priest leveling guide &amp; talents<\/a><\/li>\n    <li><a href=\"https://talentsforever.com/export/priest.json\" target=\"_blank\" rel=\"noopener\">Talents Forever: Priest data export (talents, spells, racials)<\/a><\/li>\n  <\/ul>\n  "}]}, "shaman": {"key": "shaman", "name": "Shaman", "color": "#0070DD", "ink": "#0058AD", "roles": ["Healer", "Melee", "Ranged"], "races": [{"race": "Dwarf", "new": true}, {"race": "Orc", "new": false}, {"race": "Tauren", "new": false}, {"race": "Troll", "new": false}, {"race": "Skyborne (Windshaper)", "new": true}], "blurb": "Elemental builds around Lava Burst with Flame Shock. Enhancement links melee hits to Lightning spells. Restoration adds Riptide. Grace of Air, Strength of Earth, Windfury and Flametongue totems are now raid-wide. On Alliance, only Dwarves can be Shamans.", "specs": [["Elemental", "Builds around Lava Burst, now the 21-point talent and stronger on Flame Shocked targets. Elemental Mastery is back at 31."], ["Enhancement", "Links melee hits to Lightning spells, with Stormstrike at 25. The most popular leveling spec by far."], ["Restoration", "Adds Riptide, and Water Shield now procs from any spell crit."]], "general": "Grace of Air, Strength of Earth, Windfury and Flametongue totems are now raid-wide. On Alliance, only Dwarves can be Shamans.", "lvl": [["Enhancement", 61.8], ["Restoration", 21.8], ["Elemental", 16.4]], "first": ["Thundering Strikes 5/5", "Mental Dexterity 3/3", "Improved Ghost Wolf 2/2"], "at60": "Enh 46% · Ele 38% · Resto 16%. Top build: Enhancement 18/33/0.", "builds": {"nick": {"cols": ["Enhancement, levels 10–32", "Restoration for mana, then back to Enhancement"], "rows": [[0, "5/5", "Thundering Strikes", 10, 14, 5, "crit"], [0, "3/3", "Mental Dexterity", 15, 17, 3, "Intellect gives Attack Power"], [0, "2/5", "Ancestral Knowledge", 18, 19, 2, "to move down the tree"], [0, "1/1", "Shamanistic Focus", 20, 20, 1, "much cheaper shocks"], [0, "3/3", "Elemental Weapons", 21, 23, 3, "stronger imbues"], [0, "1/3", "Anticipation", 24, 24, 1, "or a third Ancestral Knowledge"], [0, "1/1", "Stormstrike", 25, 25, 1, "your biggest power spike"], [0, "2/2", "Improved Ghost Wolf", 26, 27, 2, ""], [0, "2/5", "Flurry", 28, 29, 2, ""], [0, "2/2", "Improved Stormstrike", 30, 31, 2, "50% mana regen, and dodges or parries reset Stormstrike"], [0, "1/1", "Spirit Weapons", 32, 32, 1, "parry, resets Stormstrike, more defense"], [1, "5/5", "Tidal Focus", 33, 37, 5, "hit, and the path to Mindfulness"], [1, "3/3", "Mindfulness", 38, 40, 3, "another 50% mana regen"], [1, "2/5", "Totemic Focus", 41, 42, 2, "filler"], [1, "1/1", "Water Shield", 43, 43, 1, "near-endless mana"], [1, "3/5", "Flurry", 44, 44, 1, ""], [1, "2/2", "Mental Quickness", 45, 46, 2, ""], [1, "5/5", "Maelstrom Weapon", 47, 51, 5, "does nothing until the 5th point"], [1, "1/1", "Rage of the Farseer", 52, 52, 1, "personal Bloodlust, 3 min"], [1, "5/5", "Flurry", 53, 54, 2, ""], [1, "5/5", "Concussion", 55, 59, 5, "Elemental"], [1, "1/3", "Elemental Devastation", 60, 60, 1, "about 9% melee crit, nearly always up"]], "name": "Enhancement", "sub": "NickTew"}, "wave": {"cols": ["Levels 10–40", "Levels 41–60"], "rows": [[0, "5/5", "Thundering Strikes", 10, 14, 5, "Enhancement"], [0, "5/5", "Improved Healing Wave", 15, 19, 5, ""], [0, "5/5", "Tidal Focus", 20, 24, 5, ""], [0, "1/1", "Water Shield", 25, 25, 1, ""], [0, "5/5", "Ancestral Knowledge", 26, 30, 5, "Enhancement"], [0, "2/2", "Improved Ghost Wolf", 31, 32, 2, ""], [0, "1/1", "Shamanistic Focus", 33, 33, 1, ""], [0, "2/3", "Elemental Weapons", 34, 35, 2, ""], [0, "3/3", "Mindfulness", 36, 38, 3, "Restoration"], [0, "1/3", "Healing Focus", 39, 39, 1, ""], [0, "1/1", "Stormstrike", 40, 40, 1, ""], [1, "5/5", "Tidal Mastery", 41, 45, 5, ""], [1, "1/1", "Mana Tide Totem", 46, 46, 1, ""], [1, "3/3", "Healing Way", 47, 49, 3, ""], [1, "1/1", "Nature's Swiftness", 50, 50, 1, "instant Healing Wave"], [1, "5/5", "Purification", 51, 55, 5, ""], [1, "1/1", "Riptide", 56, 56, 1, "next Chain Heal on that target heals 25% more"], [1, "4/5", "Toughness", 57, 60, 4, "Enhancement"]], "name": "Wavebreaker hybrid", "sub": "Resto + Enhancement"}}, "spells": [[1, "Lightning Bolt, Healing Wave, Rockbiter Weapon"], [4, "Earth Shock, Stoneskin Totem (quest)"], [6, "Earthbind Totem"], [8, "Lightning Shield, Stoneclaw Totem"], [10, "Flame Shock, Flametongue Weapon, Strength of Earth Totem, Searing Totem (quest)"], [12, "Fire Nova, Purge, Ancestral Spirit"], [16, "Cure Poison"], [18, "Tremor Totem"], [20, "Ghost Wolf, Frost Shock, Frostbrand Weapon, Lesser Healing Wave, Healing Stream Totem (quest), Call of the Elements, Totemic Recall"], [22, "Totemic Projection, Cure Disease, Poison Cleansing Totem, Water Breathing"], [24, "Frost Resistance Totem"], [26, "Magma Totem, Mana Spring Totem, Far Sight"], [28, "Flametongue Totem, Fire Resistance Totem, Water Walking"], [30, "Windfury Weapon, Reincarnation, Astral Recall, Grounding Totem, Nature Resistance Totem"], [32, "Chain Lightning, Windfury Totem"], [34, "Sentry Totem"], [36, "Windwall Totem"], [38, "Disease Cleansing Totem"], [40, "Chain Heal, riding, Dual Talent Specialization"], [42, "Grace of Air Totem"]], "weapons": [[10, "Coldridge Hammer", "Dun Morogh quest"], [12, "Ironforge Greathammer", "Hall of Thanes quest"], [18, "Smite's Mighty Hammer", "Deadmines"], [23, "Graverobber's Shovel", "Stockade"], [26, "Heavehammer", "Excavation Site quest"], [28, "Defender of Dalaran", "City of Dalaran quest"], [29, "Corpsemaker or Manual Crowd Pummeler", "Razorfen Kraul / Gnomeregan"], [35, "Abandoned Ferocity", "Desolace chain"], [37, "Ravager", "Scarlet Monastery"], [38, "Bonebiter", "Scarlet Monastery quest"], [39, "Mograine's Might", "Scarlet Monastery"], [44, "The Rockpounder", "Uldaman"], [50, "Princess Theradras' Scepter", "Maraudon"], [52, "Enchanted Battlehammer", "Blacksmithing"], [54, "Enchanted Azsharite Felbane Staff", "quest"], [58, "Arcanite Reaper", "Blacksmithing, Bind on Equip"], [60, "Forest Defender's Axe", "Blacksmithing, Bind on Equip"]], "now": [{"type": "steps", "label": "How to play", "items": [[1, 9, "2–3 Lightning Bolts, then Earth Shock"], [1, 9, "Keep Lightning Shield up"], [10, 24, "Flame Shock to pull"], [10, 24, "Searing Totem before melee"], [10, 24, "Earth Shock casters"], [25, 60, "Stormstrike on cooldown"], [25, 60, "Earth Shock on cooldown"], [25, 60, "Fire Nova only on 4+"]]}, {"type": "train"}, {"type": "steps", "label": "Quests", "none": "No class quest right now", "items": [[4, 9, "Call of Earth · Anvilmar"], [10, 19, "Call of Fire · Loch Modan, group up"], [20, 29, "Call of Water · long chain"], [30, 39, "Call of Air · Arathi Highlands"], [40, 40, "Dual spec unlocks · save gold"]]}, {"type": "weapon", "label": "Two-hander", "none": "Starter weapon"}], "opts": [{"t": "Enhancement", "s": "NickTew · ends 6/34/11", "p": "Thundering Strikes 5/5 and Mental Dexterity 3/3 first, Stormstrike at 25, Improved Stormstrike at 30–31, then Restoration for Tidal Focus, Mindfulness and Water Shield before finishing Enhancement. His Full Enhance First variant takes Maelstrom Weapon and Rage of the Farseer first instead. 61.8% of calculator leveling builds are Enhancement."}, {"t": "Restoration", "s": "21.8%", "p": "First points: Improved Healing Wave 5/5, Mindfulness 3/3, Tidal Focus 2/5. Riptide is new. Water Shield now procs from any spell crit, and Mana Tide gained a rank at 38."}, {"t": "Resto/Enhancement hybrid", "s": "Wavebreaker · 0/20/31", "p": "Heals dungeons and quests in melee on one set of talents, with Stormstrike at 40 and Riptide at 56. Slower solo than Enhancement. <a href=\"#shaman-guide\">Full order in the guide.<\/a>"}, {"t": "Dual spec from 40", "s": "the plan for both", "p": "Level with NickTew's order, then at 40 keep Enhancement for questing and add a full Restoration spec (0/10/41) for dungeons. <a href=\"#shaman-guide\">Dual-spec plan in the guide.<\/a>"}, {"t": "Elemental", "s": "16.4%", "p": "First points: Convection 5/5, Concussion 5/5. Lava Burst is now the 21-point talent and hits harder on Flame Shocked targets. Elemental Mastery returned as the 31-point talent."}], "keyspells": "Searing &amp; Strength of Earth totems 10 · Flametongue Weapon 10 · Stormstrike 25 (talent) · Windfury Weapon 30 · Windfury Totem 32", "sections": [{"id": "shaman-guide", "label": "Dwarf Shaman", "h2": "Enhancement leveling guide", "html": "\n  <p class=\"sdesc\">Built on NickTew's <a href=\"https://mobalytics.gg/wow-forever/classes/shaman-leveling-guide-nicktew\" target=\"_blank\" rel=\"noopener\">Shaman leveling guide on Mobalytics<\/a> (updated Nov 7), which levels Enhancement with a dip into Restoration for mana, ending at 6/34/11. He recommends leveling Enhancement even if you plan to play Elemental or Restoration at 60. Gaps are filled from <a href=\"https://www.warcrafttavern.com/forever/guides/shaman-leveling/\" target=\"_blank\" rel=\"noopener\">Warcraft Tavern<\/a>, <a href=\"https://www.method.gg/wow-forever/wow-forever-shaman-leveling-guide-and-talents\" target=\"_blank\" rel=\"noopener\">Method<\/a> and the <a href=\"https://www.method.gg/wow-forever/the-best-weapons-in-wow-forever-from-levels-1-30\" target=\"_blank\" rel=\"noopener\">Method weapon list<\/a>. Dwarf is the only Alliance Shaman, and NickTew puts all races within 1% damage.<\/p>\n  <div class=\"guide\">\n\n    <details class=\"gpanel wide\" id=\"talents\" data-key=\"shaman-guide-talent-order\" open>\n      <summary><h3>Talent order <small>checklist · 51 points · ends at 6/34/11<\/small><\/h3><\/summary>\n      <p class=\"why\">Tick each row as you spend the points. Gold rows are due at your level; the outlined row is your next point. The Wavebreaker tab is the hybrid alternative further down.<\/p>\n      <div id=\"talents-app\"><\/div>\n      <p class=\"why\"><b>Always take Stormstrike at 25.<\/b> NickTew warns against guides that rush Water Shield; that delays Stormstrike to 35 and every mob takes 25+ seconds. Whether Water Shield at 43 beats going straight to Maelstrom Weapon is untested; he'll update after launch.<\/p>\n    <\/details>\n    <details class=\"gpanel wide\" data-key=\"shaman-guide-alternative-full-enhance-first\">\n      <summary><h3>Alternative: Full Enhance First <small>same 6/34/11 build, different order<\/small><\/h3><\/summary>\n      <p>Levels 10–32 are identical. From 33, this order gets Maelstrom Weapon and Rage of the Farseer before Mindfulness and Water Shield. You do more damage and get your fun buttons sooner, but have more downtime from less mana. NickTew thinks it's slightly worse for now and says not to sweat the difference. If Blizzard buffs Maelstrom Weapon as expected, this version could pull ahead early on.<\/p>\n      <div class=\"cols\">\n        <div><span class=\"label\">Levels 33–45<\/span>\n          <ol class=\"talents\" start=\"12\">\n            <li><span class=\"rk\">2/5<\/span><b>Tidal Focus<\/b> <span class=\"why\">· 33–34<\/span><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Mental Quickness<\/b> <span class=\"why\">· 35–36<\/span><\/li>\n            <li><span class=\"rk\">5/5<\/span><b>Maelstrom Weapon<\/b> <span class=\"why\">· 37–41<\/span><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Rage of the Farseer<\/b> <span class=\"why\">· 42<\/span><\/li>\n            <li><span class=\"rk\">5/5<\/span><b>Flurry<\/b> <span class=\"why\">· 43–45<\/span><\/li>\n          <\/ol>\n        <\/div>\n        <div><span class=\"label\">Levels 46–60<\/span>\n          <ol class=\"talents\" start=\"17\">\n            <li><span class=\"rk\">5/5<\/span><b>Tidal Focus<\/b> <span class=\"why\">· 46–48<\/span><\/li>\n            <li><span class=\"rk\">3/3<\/span><b>Mindfulness<\/b> <span class=\"why\">· 49–51<\/span><\/li>\n            <li><span class=\"rk\">2/5<\/span><b>Totemic Focus<\/b> <span class=\"why\">· 52–53<\/span><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Water Shield<\/b> <span class=\"why\">· 54<\/span><\/li>\n            <li><span class=\"rk\">5/5<\/span><b>Concussion<\/b> <span class=\"why\">· 55–59<\/span><\/li>\n            <li><span class=\"rk\">1/3<\/span><b>Elemental Devastation<\/b> <span class=\"why\">· 60<\/span><\/li>\n          <\/ol>\n        <\/div>\n      <\/div>\n      <p class=\"why\"><b>Rotation differences in this version:<\/b> from 25, drop Searing Totem before melee on every pull, and use Fire Nova on 3+ targets instead of 4+. In dungeons, Fire Nova is the main mana spend on 3+ mobs, and you can use Flametongue Totem instead of Searing when there's more than one other melee.<\/p>\n    <\/details>\n\n    <details class=\"gpanel wide\" data-key=\"shaman-guide-alternative-wavebreaker-hybrid\">\n      <summary><h3>Alternative: Wavebreaker hybrid <small>Restoration + Enhancement · 51 points · 0/20/31<\/small><\/h3><\/summary>\n      <p>A Restoration healer with Stormstrike: you quest in melee and heal dungeons with the same talents, no respec. From Drakanthos' <a href=\"https://www.wowhead.com/forever/guide/wavebreaker-shaman-hybrid-guide-for-wow-forever-35074\" target=\"_blank\" rel=\"noopener\">Wavebreaker Shaman Hybrid guide on Wowhead<\/a>. <a href=\"https://www.wowhead.com/forever/talent-calc/shaman/v2-0550020210401-5030500115013151_t5/1B2AEj1CFjhhp2ChKnPqRs1mmmm\" target=\"_blank\" rel=\"noopener\">Open in the Wowhead calculator<\/a><\/p>\n      <div class=\"cols\">\n        <div><span class=\"label\">Levels 10–40<\/span>\n          <ol class=\"talents\">\n            <li><span class=\"rk\">5/5<\/span><b>Thundering Strikes<\/b> <span class=\"why\">· 10–14; Enhancement<\/span><\/li>\n            <li><span class=\"rk\">5/5<\/span><b>Improved Healing Wave<\/b> <span class=\"why\">· 15–19<\/span><\/li>\n            <li><span class=\"rk\">5/5<\/span><b>Tidal Focus<\/b> <span class=\"why\">· 20–24<\/span><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Water Shield<\/b> <span class=\"why\">· 25<\/span><\/li>\n            <li><span class=\"rk\">5/5<\/span><b>Ancestral Knowledge<\/b> <span class=\"why\">· 26–30; Enhancement<\/span><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Improved Ghost Wolf<\/b> <span class=\"why\">· 31–32<\/span><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Shamanistic Focus<\/b> <span class=\"why\">· 33<\/span><\/li>\n            <li><span class=\"rk\">2/3<\/span><b>Elemental Weapons<\/b> <span class=\"why\">· 34–35<\/span><\/li>\n            <li><span class=\"rk\">3/3<\/span><b>Mindfulness<\/b> <span class=\"why\">· 36–38; Restoration<\/span><\/li>\n            <li><span class=\"rk\">1/3<\/span><b>Healing Focus<\/b> <span class=\"why\">· 39<\/span><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Stormstrike<\/b> <span class=\"why\">· 40<\/span><\/li>\n          <\/ol>\n        <\/div>\n        <div><span class=\"label\">Levels 41–60<\/span>\n          <ol class=\"talents\" start=\"12\">\n            <li><span class=\"rk\">5/5<\/span><b>Tidal Mastery<\/b> <span class=\"why\">· 41–45<\/span><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Mana Tide Totem<\/b> <span class=\"why\">· 46<\/span><\/li>\n            <li><span class=\"rk\">3/3<\/span><b>Healing Way<\/b> <span class=\"why\">· 47–49<\/span><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Nature's Swiftness<\/b> <span class=\"why\">· 50; instant Healing Wave<\/span><\/li>\n            <li><span class=\"rk\">5/5<\/span><b>Purification<\/b> <span class=\"why\">· 51–55<\/span><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Riptide<\/b> <span class=\"why\">· 56; next Chain Heal on that target heals 25% more<\/span><\/li>\n            <li><span class=\"rk\">4/5<\/span><b>Toughness<\/b> <span class=\"why\">· 57–60; Enhancement<\/span><\/li>\n          <\/ol>\n        <\/div>\n      <\/div>\n      <div class=\"steps\">\n        <div class=\"step\"><span class=\"lv\">Quest<\/span><p>Water Shield, Flametongue on your weapon, Searing Totem. Flame Shock and melee, Earth Shock casters. From 40, Stormstrike on cooldown, then Earth Shock or Lightning Bolt. Heal between pulls; Water Shield refunds mana when you're hit.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Dungeon<\/span><p>Mana Spring and Healing Stream Totem, Water Shield up, Healing Wave on the tank. Nature's Swiftness for emergencies, Mana Tide on long fights. From 56, Riptide the tank before Chain Heal.<\/p><\/div>\n      <\/div>\n      <p class=\"why\"><b>Before you commit:<\/b> it's a user-submitted guide last updated Oct 20, before launch, and the author still wanted to test Water Shield's mana return and Stormstrike with a one-hand mace and shield in game. It also delays Stormstrike to 40, which NickTew warns makes solo kills slow. It implies one-hand and shield rather than a two-hander. Good for grouping and dungeons; slower solo than NickTew's build.<\/p>\n    <\/details>\n\n    <details class=\"gpanel wide\" data-key=\"shaman-guide-dual-spec-plan\">\n      <summary><h3>Dual-spec plan <small>fast solo questing and a real healer<\/small><\/h3><\/summary>\n      <p>Dual Talent Specialization comes at 40 and gives you two talent sets to switch between. Before that you have one set, so level with NickTew's order above: Stormstrike at 25 keeps questing fast, and its Tidal Focus and Mindfulness points from 33 help your mana when you heal a dungeon.<\/p>\n      <div class=\"steps\">\n        <div class=\"step\"><span class=\"lv\">10–39<\/span><p>NickTew's order. Heal early dungeons with Healing Wave and Healing Stream Totem; they're forgiving.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Spec 1<\/span><p><b>Questing:<\/b> NickTew's Enhancement, 6/34/11, with a two-hander.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Spec 2<\/span><p><b>Dungeons:<\/b> full Restoration, 0/10/41, with a one-hander and a shield. The level-30 Air chain gives you the Elementalist's Guard shield whichever weapon you pick, so take Rage of the Storm and you still get a healing shield.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Gold<\/span><p>The cost isn't announced. Season of Discovery charged 50 gold, and riding is 100 gold at the same level, so 40 is a heavy gold level. Save up from your 30s.<\/p><\/div>\n      <\/div>\n      <div class=\"cols\">\n        <div><span class=\"label\">Spec 2 at 40 · 31 points, all Restoration<\/span>\n          <ol class=\"talents\">\n            <li><span class=\"rk\">5/5<\/span><b>Improved Healing Wave<\/b> <span class=\"why\">· faster Healing Wave<\/span><\/li>\n            <li><span class=\"rk\">5/5<\/span><b>Tidal Focus<\/b> <span class=\"why\">· cheaper heals, +hit<\/span><\/li>\n            <li><span class=\"rk\">3/3<\/span><b>Mindfulness<\/b> <span class=\"why\">· mana regen while casting<\/span><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Water Shield<\/b><\/li>\n            <li><span class=\"rk\">1/3<\/span><b>Healing Focus<\/b> <span class=\"why\">· fewer pushbacks<\/span><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Mana Tide Totem<\/b><\/li>\n            <li><span class=\"rk\">5/5<\/span><b>Tidal Mastery<\/b> <span class=\"why\">· healing crit<\/span><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Nature's Swiftness<\/b> <span class=\"why\">· instant emergency heal<\/span><\/li>\n            <li><span class=\"rk\">3/3<\/span><b>Healing Way<\/b> <span class=\"why\">· Healing Wave heals more<\/span><\/li>\n            <li><span class=\"rk\">5/5<\/span><b>Purification<\/b> <span class=\"why\">· +10% healing<\/span><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Riptide<\/b> <span class=\"why\">· heal over time; Chain Heal on that target heals 25% more<\/span><\/li>\n          <\/ol>\n        <\/div>\n        <div><span class=\"label\">Spec 2, levels 41–60<\/span>\n          <ol class=\"talents\" start=\"12\">\n            <li><span class=\"rk\">5/5<\/span><b>Ancestral Knowledge<\/b> <span class=\"why\">· 41–45; Enhancement, +Intellect<\/span><\/li>\n            <li><span class=\"rk\">5/5<\/span><b>Thundering Strikes<\/b> <span class=\"why\">· 46–50; Enhancement, crit for spells too<\/span><\/li>\n            <li><span class=\"rk\">5/5<\/span><b>Totemic Focus<\/b> <span class=\"why\">· 51–55; cheaper totems<\/span><\/li>\n            <li><span class=\"rk\">5/5<\/span><b>Restorative Totems<\/b> <span class=\"why\">· 56–60; stronger Mana Spring and Healing Stream<\/span><\/li>\n          <\/ol>\n          <p class=\"why\">Spec 2 from <a href=\"https://leprestore.com/guides/world-of-warcraft-forever/wow-forever-restoration-shaman-guide-best-builds-race-professions/\" target=\"_blank\" rel=\"noopener\">LePrestore's Restoration Shaman guide<\/a> (updated Nov 4); every talent, rank and row checked against <a href=\"https://talentsforever.com/shaman/talents\" target=\"_blank\" rel=\"noopener\">Talents Forever<\/a>. If you'd rather never switch specs, the Wavebreaker hybrid above is the one-set option.<\/p>\n        <\/div>\n      <\/div>\n      <p class=\"why\">Switch specs out of combat, then press the matching gear macro, Healer Gear or Quest Gear, from the macros.<\/p>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"shaman-guide-what-changed-for-shaman\">\n      <summary><h3>What changed for Shaman<\/h3><\/summary>\n      <ul>\n        <li>Stormstrike comes at 25 and has a 6 sec cooldown, down from 12.<\/li>\n        <li>Improved Ghost Wolf works indoors.<\/li>\n        <li>Fire Nova pulses in 10 yd around your active fire totem.<\/li>\n        <li>Windfury Totem now stacks with weapon imbues.<\/li>\n        <li>Maelstrom Weapon makes Lightning Bolt part of the rotation.<\/li>\n        <li>Water Shield gives 2% mana per globe, when you're hit or land a crit.<\/li>\n        <li>Totemic Projection moves your totems; every totem buff is now raid-wide.<\/li>\n      <\/ul>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"shaman-guide-rotation\" open>\n      <summary><h3>Rotation<\/h3><\/summary>\n      <div class=\"steps\">\n        <div class=\"step\"><span class=\"lv\">1–10<\/span><p>Pull with 2–3 Lightning Bolts, Earth Shock on cooldown, keep Lightning Shield up.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">10–24<\/span><p>Lightning Shield before the pull. Flame Shock to pull, unless it's a caster you'd rather interrupt with Earth Shock. Searing Totem before melee. Fire Nova on 3+ targets. Earth Shock on cooldown.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">25–60<\/span><p>Lightning Shield if mana allows, Stormstrike on cooldown, Earth Shock on cooldown. Fire Nova only on 4+ targets, with Searing Totem down. Lightning Bolt first whenever you have 5 Maelstrom stacks. Rage of the Farseer whenever it helps.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Mana<\/span><p>Cast your spells at the start of the fight, then finish on auto attacks so regen kicks back in 5 sec after your last spell. Once you have Improved Stormstrike and Mindfulness, you regen fully in combat and this stops mattering.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Dungeon<\/span><p>4+ mobs: Searing Totem, Fire Nova on cooldown, Stormstrike every 15 sec for the regen (or on cooldown with spare mana), auto attack. Earth Shock to interrupt fears and heals, or as a taunt when tanking. Magma Totem only for 3+ mobs that will live 15+ sec; it's very expensive.<\/p><\/div>\n      <\/div>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"shaman-guide-weapon-imbues\">\n      <summary><h3>Weapon imbues<\/h3><\/summary>\n      <p><b>Before 30:<\/b> NickTew says use Flametongue Weapon unless you're tanking, then Rockbiter. Method disagreed, rating Rockbiter higher for its Attack Power, so try both on your first few pulls.<\/p>\n      <p><b>From 30:<\/b> Windfury Weapon is far better than either. In a group with another melee, drop Windfury Totem and switch your weapon to Flametongue.<\/p>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"shaman-guide-weapon-upgrades\">\n      <summary><h3>Weapon upgrades <small>two-hand<\/small><\/h3><\/summary>\n      <p>Nothing matters as much as your weapon: the slowest, hardest-hitting two-hander you can get. Stormstrike damage was normalized, so one-hand and shield works if you like it, but NickTew finds it noticeably worse.<\/p>\n      <div class=\"steps\">\n        <div class=\"step\"><span class=\"lv\">10<\/span><p>Coldridge Hammer, Dun Morogh quest<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">12–15<\/span><p>Ironforge Greathammer, Old Ironforge Incursion quest, Hall of Thanes<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">18<\/span><p>Smite's Mighty Hammer, Mr. Smite in the Deadmines<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">23<\/span><p>Graverobber's Shovel, Stockade<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">26–30<\/span><p>Heavehammer, Prehistoric Prism quest, Wetlands Excavation Site<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">28–32<\/span><p>Defender of Dalaran, Heart of Disruption quest, City of Dalaran<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">29<\/span><p>Corpsemaker (Overlord Ramtusk, Razorfen Kraul) or Manual Crowd Pummeler (Gnomeregan)<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">35–40<\/span><p>Abandoned Ferocity, Khan Jehn quest chain in Desolace. Needs Honored with the Gelkis and is long<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">37<\/span><p>Ravager, Herod in the Scarlet Monastery Armory<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">38–40<\/span><p>Bonebiter, In the Name of the Light quest, Scarlet Monastery<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">39<\/span><p>Mograine's Might, Scarlet Monastery<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">44<\/span><p>The Rockpounder, Archaedas in Uldaman: 42.7 DPS<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">~50<\/span><p>Princess Theradras' Scepter, Maraudon<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">52<\/span><p>Enchanted Battlehammer, crafted by Blacksmiths (plan from a Stratholme quest): 48.3 DPS<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">~54<\/span><p>Enchanted Azsharite Felbane Staff, Enchanted Azsharite Fel Weaponry quest: 46.6 DPS. Level is an estimate<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">58<\/span><p>Arcanite Reaper, crafted by Blacksmiths; Bind on Equip, so buy one: 53.8 DPS<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">60<\/span><p>Forest Defender's Axe, crafted by Blacksmiths; Bind on Equip: 61.5 DPS<\/p><\/div>\n      <\/div>\n      <p class=\"why\"><b>Rage of the Storm:<\/b> it's not the Call of Air reward itself. Finishing Call of Air at 30 opens a long chain: an item from the last boss of Razorfen Kraul, 20 totems from Dustwallow Marsh, Desolace, Swamp of Sorrows and the Badlands, then a level-40 elite in Thousand Needles. You pick one weapon (Rage of the Storm is the Enhancement one: 35.6 DPS, 10% more Stormstrike damage) and get a shield too. NickTew says it takes forever and doesn't recommend it.<\/p>\n      <p class=\"why\">Thorium Greatmace (50) and a few others are Blacksmith-only, so they're left out.<\/p>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"shaman-guide-stats-gear\">\n      <summary><h3>Stats &amp; gear<\/h3><\/summary>\n      <ul>\n        <li><b>Strength:<\/b> best stat, 2 Attack Power per point<\/li>\n        <li><b>Intellect:<\/b> 1.5 Attack Power per point with Mental Dexterity, plus spell crit and mana. Close to Strength, and your top stat once you have Water Shield<\/li>\n        <li><b>Attack Power:<\/b> half as good as Strength<\/li>\n        <li><b>Agility:<\/b> crit for attacks and spells, but less per point<\/li>\n        <li><b>Spirit<\/b> is minor; <b>Spell Power<\/b> is weak for Shaman right now<\/li>\n        <li>Leatherworking crafts are good; otherwise buy <b>of the Gorilla<\/b> gear (Strength + Intellect). Don't go with zero Stamina.<\/li>\n      <\/ul>\n      <p class=\"why\">This order matches Warcraft Tavern's. Method put Agility first; NickTew's is the newest and most detailed.<\/p>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"shaman-guide-totems\">\n      <summary><h3>Totems<\/h3><\/summary>\n      <ul>\n        <li><b>Searing<\/b> is the only totem worth its mana while questing. Constant totems drain your mana and cost uptime<\/li>\n        <li>Use the rest for elites, bosses or fights longer than 40 sec<\/li>\n        <li><b>Windfury<\/b> is great in dungeons but expensive; <b>Grace of Air<\/b> is good but also expensive<\/li>\n        <li><b>Strength of Earth<\/b> is weak early but cheap with a 30 yd range, fine to pre-place<\/li>\n        <li><b>Earthbind<\/b> and Frost Shock for kiting; <b>Stoneclaw<\/b> when you pull too many<\/li>\n        <li><b>Tremor<\/b> ticks every 4 sec: drop it right after a fear lands, not before<\/li>\n        <li><b>Mana Spring<\/b> only pays back if you stay near it 20+ sec<\/li>\n        <li>Totemic Projection is too expensive to use regularly<\/li>\n      <\/ul>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"shaman-guide-totem-class-quests\">\n      <summary><h3>Totem &amp; class quests <small>Dwarf<\/small><\/h3><\/summary>\n      <ul>\n        <li><b>4, Call of Earth:<\/b> Teo Hammerstorm in Anvilmar. Two Iceclaw Bear Pendants from Frostmane Troll Whelps, then drink the Earth Sapta at the spirit stone on the mountain. Gives Stoneskin Totem.<\/li>\n        <li><b>10, Call of Fire:<\/b> Bruegs Kindleborn, in a cave near the Loch Modan tunnel. Braldir Ashmantle on a Loch Modan peak wants Fire Tar (Tunnel Rat Geomancers, Silver Stream Mine) and a Reagent Pouch (Stonesplinter Seers). Those troggs go up to 14, so group up. Gives Searing Totem.<\/li>\n        <li><b>20, Call of Water:<\/b> Norric Lochthane in Loch Modan. Long: fill waterskins for Hervdana Saegrund (Wetlands waterfall), at Stonewatch Falls in Redridge and at the lake by Astranaar in Ashenvale, then fight at the Forgotten Shrine by Stendel's Pond in Westfall. Gives Healing Stream Totem.<\/li>\n        <li><b>30, Call of Air:<\/b> from your trainer, to Veyric Thundervein in Arathi Highlands. Climb the narrow path up the mountain by the Shard of Myzrael. Opens the Rage of the Storm chain.<\/li>\n        <li>Keep totem items in your bags; you can't cast that element without them<\/li>\n      <\/ul>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"shaman-guide-key-spells\">\n      <summary><h3>Key spells <small>first rank<\/small><\/h3><\/summary>\n      <div class=\"steps\">\n        <div class=\"step\"><span class=\"lv\">1–8<\/span><p>Lightning Bolt, Healing Wave, Rockbiter Weapon 1 · Earth Shock, Stoneskin Totem (quest) 4 · Earthbind Totem 6 · Lightning Shield, Stoneclaw Totem 8<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">10–18<\/span><p>Flame Shock, Flametongue Weapon, Strength of Earth Totem, Searing Totem (quest) 10 · Fire Nova (new), Purge, Ancestral Spirit 12 · Cure Poison 16 · Tremor Totem 18<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">20–28<\/span><p>Ghost Wolf, Frost Shock, Frostbrand Weapon, Lesser Healing Wave, Healing Stream Totem (quest), Call of the Elements, Totemic Recall 20 · Totemic Projection, Cure Disease, Poison Cleansing Totem, Water Breathing 22 · Frost Resistance Totem 24 · Magma Totem, Mana Spring Totem, Far Sight 26 · Flametongue Totem, Fire Resistance Totem, Water Walking 28<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">30–42<\/span><p>Windfury Weapon, Reincarnation, Astral Recall, Grounding Totem, Nature Resistance Totem 30 · Chain Lightning, Windfury Totem 32 · Sentry Totem 34 · Windwall Totem 36 · Disease Cleansing Totem 38 · Chain Heal, riding, Dual Talent Specialization 40 · Grace of Air Totem 42<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">44–60<\/span><p>Nothing new; trainer visits are higher ranks only.<\/p><\/div>\n      <\/div>\n      <p class=\"why\">Call of the Elements lets you drop up to four totems at once; you get two more totem sets at 30 and 40. Talent spells (Stormstrike, Water Shield, Mana Tide, Nature's Swiftness, Riptide, Rage of the Farseer) come from your talent order. Talents Forever calls the 22 spell Totemic Call; Warcraft Tavern calls it Totemic Projection.<\/p>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"shaman-guide-consumables-camp\">\n      <summary><h3>Consumables &amp; camp<\/h3><\/summary>\n      <ul>\n        <li><b>Longjaw Mud Snapper:<\/b> +10 Attack Power and +5% XP<\/li>\n        <li>The best Coarse Sharpening Stone or Weightstone for your level<\/li>\n        <li>Health and mana potions; Elixir of Ogre Strength, Elixir of Wisdom, Lesser Mageblood, Strength and Intellect scrolls when cheap<\/li>\n        <li><b>Camp buffs, best first:<\/b> Mana Well (Alchemy), Fish Bowl (Fishing, 8% stats), Lodestone (Mining), Sharpening Wheel (Blacksmithing), Incense Candle, Camp Chair (Skinning, 2% crit)<\/li>\n        <li><b>Camp Tent<\/b> (Leatherworking) on cooldown for 5% rested XP<\/li>\n      <\/ul>\n    <\/details>\n    \n    <details class=\"gpanel\" data-key=\"shaman-guide-professions\">\n      <summary><h3>Professions<\/h3><\/summary>\n      <ul>\n        <li><b>Leatherworking + Skinning:<\/b> leveling gear and the Camp Tent; the Camp Chair from Skinning<\/li>\n        <li><b>Cooking<\/b> for XP food and camps; <b>First Aid<\/b> for bandages<\/li>\n        <li>Alchemy, Fishing and Mining have the strongest camp buffs if you'd rather<\/li>\n      <\/ul>\n    <\/details>\n\n  <\/div>\n  "}, {"id": "macros", "label": "Copy them exactly", "h2": "Shaman macros", "html": "\n  <p class=\"sdesc\">17 macros, written exactly as they go in the game's macro window. One wrong letter and a macro does nothing, so copy them with the button.<\/p>\n  <div class=\"guide\">\n    <details class=\"gpanel wide\" data-key=\"macros-how-to-add-one\">\n      <summary><h3>How to add one<\/h3><\/summary>\n      <ol class=\"howto\">\n        <li>Type <code>/macro<\/code>, open the tab with this character's name, and click New.<\/li>\n        <li>Type the <b>macro name<\/b> as shown (16 characters at most) and pick the red question mark icon, so the button shows the spell's own icon.<\/li>\n        <li>Copy the <b>macro text<\/b> in exactly, line breaks included. Spell names must match your spellbook letter for letter: capitals, spaces and apostrophes.<\/li>\n        <li>Drag the macro onto your action bar.<\/li>\n      <\/ol>\n      <ul class=\"mtips\">\n        <li><span class=\"ph\">Highlighted words<\/span> are placeholders: replace them with the exact name of your own item.<\/li>\n        <li><b>Ctrl<\/b> means hold Ctrl as you press the button. <b>MO<\/b> means mouseover: it casts on whatever is under your mouse, and on your target when nothing is.<\/li>\n        <li>Leave rank numbers off and the macro always casts your highest rank, so you never have to re-drag spells after training.<\/li>\n        <li>The level tag is when the spell becomes available. Make the macro then, or it will just show a question mark.<\/li>\n      <\/ul>\n    <\/details>\n    <details class=\"gpanel macset\" data-key=\"macros-fighting\">\n      <summary><h3>Fighting<\/h3><\/summary>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Stormstrike<\/b><span class=\"lvl\">Lv 25<\/span><\/div><button class=\"copy\" id=\"copy-sh1\" data-for=\"sh1\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"sh1\">#showtooltip Stormstrike\n/startattack\n/cast [mod:ctrl] Rage of the Farseer\n/cast Stormstrike<\/pre>\n        <p class=\"why\">Stormstrike and keep swinging. Hold Ctrl to fire Rage of the Farseer first (talent, 3 min). If Rage of the Farseer uses the global cooldown, press again for the Stormstrike.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Shock Pull<\/b><span class=\"lvl\">Lv 10<\/span><\/div><button class=\"copy\" id=\"copy-sh2\" data-for=\"sh2\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"sh2\">#showtooltip [mod:ctrl] Earth Shock; Flame Shock\n/startattack\n/cast [mod:ctrl] Earth Shock; Flame Shock<\/pre>\n        <p class=\"why\">Pull with Flame Shock and start swinging. Hold Ctrl for Earth Shock, for casters you want to interrupt.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Bolt Chain<\/b><span class=\"lvl\">Lv 32<\/span><\/div><button class=\"copy\" id=\"copy-sh3\" data-for=\"sh3\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"sh3\">#showtooltip [mod:ctrl] Chain Lightning; Lightning Bolt\n/cast [mod:ctrl] Chain Lightning; Lightning Bolt<\/pre>\n        <p class=\"why\">Lightning Bolt when Maelstrom Weapon hits 5 stacks. Hold Ctrl for Chain Lightning on a pack.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Wolf Frost<\/b><span class=\"lvl\">Lv 20<\/span><\/div><button class=\"copy\" id=\"copy-sh4\" data-for=\"sh4\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"sh4\">#showtooltip Frost Shock\n/cancelaura Ghost Wolf\n/cast Frost Shock<\/pre>\n        <p class=\"why\">Drops Ghost Wolf and Frost Shocks a runner in one press.<\/p><\/div>\n        \n    <\/details>\n    <details class=\"gpanel macset\" data-key=\"macros-interrupts-mouseover\">\n      <summary><h3>Interrupts & mouseover<\/h3><\/summary>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>ES Interrupt<\/b><span class=\"lvl\">Lv 4<\/span><\/div><button class=\"copy\" id=\"copy-sm1\" data-for=\"sm1\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"sm1\">#showtooltip\n/stopcasting\n/cast [@mouseover,harm,nodead][] Earth Shock<\/pre>\n        <p class=\"why\">Stops a cast like Healing Wave so the interrupt goes off. Hits the mob under your mouse, or your target.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>ES Rank 1<\/b><span class=\"lvl\">Lv 4<\/span><\/div><button class=\"copy\" id=\"copy-sm2\" data-for=\"sm2\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"sm2\">#showtooltip\n/stopcasting\n/cast [@mouseover,harm,nodead][] Earth Shock(Rank 1)<\/pre>\n        <p class=\"why\">The same interrupt at rank 1, for a fraction of the mana. Type the rank exactly as shown: Earth Shock(Rank 1), no space before the bracket.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Flame Shock MO<\/b><span class=\"lvl\">Lv 10<\/span><\/div><button class=\"copy\" id=\"copy-sm3\" data-for=\"sm3\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"sm3\">#showtooltip\n/cast [@mouseover,harm,nodead][] Flame Shock<\/pre>\n        <p class=\"why\">Dots a second mob without retargeting.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Frost Shock MO<\/b><span class=\"lvl\">Lv 20<\/span><\/div><button class=\"copy\" id=\"copy-sm4\" data-for=\"sm4\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"sm4\">#showtooltip\n/cast [@mouseover,harm,nodead][] Frost Shock<\/pre>\n        <p class=\"why\">Slows the mob under your mouse, or your target.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Purge MO<\/b><span class=\"lvl\">Lv 12<\/span><\/div><button class=\"copy\" id=\"copy-sh5\" data-for=\"sh5\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"sh5\">#showtooltip Purge\n/cast [@mouseover,harm,nodead][] Purge<\/pre>\n        <p class=\"why\">Strips a buff from the mob under your mouse, or your target.<\/p><\/div>\n        \n    <\/details>\n    <details class=\"gpanel macset\" data-key=\"macros-healing\">\n      <summary><h3>Healing<\/h3><\/summary>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Heal Wave MO<\/b><span class=\"lvl\">Lv 1<\/span><\/div><button class=\"copy\" id=\"copy-sm5\" data-for=\"sm5\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"sm5\">#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Healing Wave<\/pre>\n        <p class=\"why\">Heals whoever is under your mouse, then your friendly target, then you. Never casts on an enemy.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Lesser Wave MO<\/b><span class=\"lvl\">Lv 20<\/span><\/div><button class=\"copy\" id=\"copy-sh6\" data-for=\"sh6\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"sh6\">#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Lesser Healing Wave<\/pre>\n        <p class=\"why\">The fast heal, with the same targeting.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Riptide MO<\/b><span class=\"lvl\">Resto<\/span><\/div><button class=\"copy\" id=\"copy-sh7\" data-for=\"sh7\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"sh7\">#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Riptide<\/pre>\n        <p class=\"why\">Restoration talent, new in Forever. Same targeting.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Chain Heal MO<\/b><span class=\"lvl\">Lv 40<\/span><\/div><button class=\"copy\" id=\"copy-sh8\" data-for=\"sh8\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"sh8\">#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Chain Heal<\/pre>\n        <p class=\"why\">Group heal for dungeons, same targeting.<\/p><\/div>\n        \n    <\/details>\n    <details class=\"gpanel macset\" data-key=\"macros-totems-gear\">\n      <summary><h3>Totems & gear<\/h3><\/summary>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Totem Project<\/b><span class=\"lvl\">Talent<\/span><\/div><button class=\"copy\" id=\"copy-sm6\" data-for=\"sm6\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"sm6\">#showtooltip\n/cast [@cursor] Totemic Projection<\/pre>\n        <p class=\"why\">Moves your totems to the cursor. Expensive, so not for every pull.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Dungeon Totems<\/b><span class=\"lvl\">Lv 32<\/span><\/div><button class=\"copy\" id=\"copy-sh9\" data-for=\"sh9\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"sh9\">#showtooltip\n/castsequence reset=combat Searing Totem, Windfury Totem, Strength of Earth Totem<\/pre>\n        <p class=\"why\">Press three times to drop all three. It starts from Searing Totem again after combat ends. Each totem needs its totem item in your bags.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Healer Gear<\/b><span class=\"lvl\">Any<\/span><\/div><button class=\"copy\" id=\"copy-sm7\" data-for=\"sm7\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"sm7\">/equip <span class=\"ph\">Your Healing Weapon<\/span>\n/equip Elementalist's Guard<\/pre>\n        <p class=\"why\">One-hander and shield for healing. Switch specs out of combat, then press it.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Quest Gear<\/b><span class=\"lvl\">Any<\/span><\/div><button class=\"copy\" id=\"copy-sm8\" data-for=\"sm8\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"sm8\">/equip <span class=\"ph\">Your Two-Hander<\/span><\/pre>\n        <p class=\"why\">Back to the two-hander for Enhancement.<\/p><\/div>\n        \n    <\/details>\n    <div class=\"gpanel wide\">\n      <p class=\"why\">Built from the guides on this page and the Forever macro lists on <a href=\"https://rankedboost.com/world-of-warcraft/forever/macros/\" target=\"_blank\" rel=\"noopener\">RankedBoost<\/a> (Nov 7) and <a href=\"https://kami-labs.fr/en/wow-forever/macros-wow-forever-9-classes/\" target=\"_blank\" rel=\"noopener\">Kami Labs<\/a>, checked against the spells your guides confirm exist in Forever. Ideas using removed spells, such as Tiger's Fury, were left out. Syntax follows the <a href=\"https://warcraft.wiki.gg/wiki/Macro_conditionals\" target=\"_blank\" rel=\"noopener\">macro conditionals reference<\/a>.<\/p>\n    <\/div>\n  <\/div>\n  "}, {"id": "notes", "label": "Read before you commit", "h2": "Caveats &amp; sources", "html": "\n  <div class=\"notes\">\n<div class=\"note\"><h3>Beta numbers, live game<\/h3><p>All numbers come from the final beta build (70425). The game launched Nov 4, so check anything important in game. Blizzard can still retune live.<\/p><\/div>\n<div class=\"note\"><h3>Racials corrected Nov 5<\/h3><p>The first version of the Forever Roster Planner had several wrong racials, including Earth Fury for Dwarves (it's Artisan's Precision, +1% hit), Ruthless at 2% (it's 1%) and Wind Blessed at 3% (it's 2%). The table now matches Talents Forever and DonTheCrown's guide.<\/p><\/div>\n<div class=\"note\"><h3>Popularity isn't power<\/h3><p>Spec shares count what people plan in a calculator. Icy Veins also advises picking a playstyle you'll enjoy rather than chasing the strongest class, since tuning keeps shifting.<\/p><\/div>\n  <\/div>\n  <h3 style=\"margin:28px 0 12px\">Sources<\/h3>\n  <ul class=\"sources\">\n    <li><a href=\"https://mobalytics.gg/wow-forever/classes/shaman-leveling-guide-nicktew\" target=\"_blank\" rel=\"noopener\">NickTew: Shaman Leveling Guide 1–60 (Mobalytics, Nov 7)<\/a><\/li>\n    <li><a href=\"https://www.warcrafttavern.com/forever/guides/shaman-leveling/\" target=\"_blank\" rel=\"noopener\">Warcraft Tavern: Shaman leveling<\/a><\/li>\n    <li><a href=\"https://www.warcrafttavern.com/forever/guides/enhancement-shaman/\" target=\"_blank\" rel=\"noopener\">Warcraft Tavern: Enhancement Shaman<\/a><\/li>\n    <li><a href=\"https://leprestore.com/guides/world-of-warcraft-forever/wow-forever-restoration-shaman-guide-best-builds-race-professions/\" target=\"_blank\" rel=\"noopener\">LePrestore: Restoration Shaman guide (Nov 4)<\/a><\/li>\n    <li><a href=\"https://talentsforever.com/shaman/talents\" target=\"_blank\" rel=\"noopener\">Talents Forever: Shaman talent trees<\/a><\/li>\n    <li><a href=\"https://kami-labs.fr/en/wow-forever/wow-forever-niveau-40-monture-double-specialisation/\" target=\"_blank\" rel=\"noopener\">Kami Labs: level 40 mount and dual spec<\/a><\/li>\n    <li><a href=\"https://www.warcrafttavern.com/forever/guides/dwarf-shaman-totem-quests/\" target=\"_blank\" rel=\"noopener\">Warcraft Tavern: Dwarf Shaman totem quests<\/a><\/li>\n    <li><a href=\"https://talentsforever.com/shaman/abilities\" target=\"_blank\" rel=\"noopener\">Talents Forever: Shaman abilities by level<\/a><\/li>\n    <li><a href=\"https://allthings.how/wow-forever-shaman-abilities/\" target=\"_blank\" rel=\"noopener\">Allthings.how: every Shaman ability by level (Nov 8)<\/a><\/li>\n    <li><a href=\"https://classicwowforever.com/weapons/shaman/\" target=\"_blank\" rel=\"noopener\">Classic WoW Forever: Shaman weapons 1–60 (Nov 8)<\/a><\/li>\n    <li><a href=\"https://timesaver.gg/blog/wow-forever-enhancement-shaman-leveling-weapons\" target=\"_blank\" rel=\"noopener\">Timesaver.gg: Enhancement leveling two-handers (Nov 4)<\/a><\/li>\n    <li><a href=\"https://kami-labs.fr/en/wow-forever/wow-forever-chaman-quete-arme-niveau-30/\" target=\"_blank\" rel=\"noopener\">Kami Labs: the Shaman level-30 weapon chain<\/a><\/li>\n    <li><a href=\"https://www.wowhead.com/forever/guide/wavebreaker-shaman-hybrid-guide-for-wow-forever-35074\" target=\"_blank\" rel=\"noopener\">Drakanthos: Wavebreaker Shaman Hybrid guide (Wowhead, Oct 20)<\/a><\/li>\n    <li><a href=\"https://www.method.gg/wow-forever/wow-forever-shaman-leveling-guide-and-talents\" target=\"_blank\" rel=\"noopener\">Method: Shaman leveling guide & talents (Nov 3)<\/a><\/li>\n    <li><a href=\"https://www.method.gg/wow-forever/the-best-weapons-in-wow-forever-from-levels-1-30\" target=\"_blank\" rel=\"noopener\">Method: best weapons from levels 1–30 (Nov 6)<\/a><\/li>\n    <li><a href=\"https://talentsforever.com/shaman/leveling\" target=\"_blank\" rel=\"noopener\">Talents Forever: Shaman leveling<\/a><\/li>\n    <li><a href=\"https://talentsforever.com/racials\" target=\"_blank\" rel=\"noopener\">Talents Forever: races, classes and racials<\/a><\/li>\n    <li><a href=\"https://talentsforever.com/popular\" target=\"_blank\" rel=\"noopener\">Talents Forever: most popular builds<\/a><\/li>\n    <li><a href=\"https://talentsforever.com/leveling\" target=\"_blank\" rel=\"noopener\">Talents Forever: leveling builds<\/a><\/li>\n    <li><a href=\"https://talentsforever.com/guides\" target=\"_blank\" rel=\"noopener\">Talents Forever: what changed since Classic<\/a><\/li>\n    <li><a href=\"https://hyjal.cc/racials\" target=\"_blank\" rel=\"noopener\">Hyjal: racial abilities<\/a><\/li>\n    <li><a href=\"https://www.icy-veins.com/wow-forever/news/racial-and-class-tuning-new-features-and-options-massive-wow-forever-beta-development-notes-october-15th/\" target=\"_blank\" rel=\"noopener\">Icy Veins: Oct 15 beta development notes<\/a><\/li>\n    <li><a href=\"https://www.icy-veins.com/wow-forever/news/your-favorite-race-was-just-changed-in-wow-forever/\" target=\"_blank\" rel=\"noopener\">Icy Veins: every race changed<\/a><\/li>\n    <li><a href=\"https://www.icy-veins.com/wow-forever/choosing-your-main\" target=\"_blank\" rel=\"noopener\">Icy Veins: choosing your class<\/a><\/li>\n  <\/ul>\n  "}]}, "mage": {"key": "mage", "name": "Mage", "color": "#3FC7EB", "ink": "#1B7F99", "roles": ["Ranged"], "races": [{"race": "Human", "new": false}, {"race": "Gnome", "new": false}, {"race": "Skyborne (High Order)", "new": true}, {"race": "Orc", "new": true}, {"race": "Undead", "new": false}, {"race": "Troll", "new": false}], "blurb": "Arcane Blast was redesigned to stack spell damage from Intellect, and Arcane Wrath is a new talent. Frost Blast (level 24) replaces down-ranked Frostbolt. Fire's Heating Up speeds Pyroblast. Frostfire Bolt comes at 40. Slows were cut back, so AoE kiting is harder than in Classic.", "specs": [["Arcane", "Arcane Blast was redesigned to stack spell damage from Intellect, and Arcane Wrath is a new talent. Strong cooldowns, weak early."], ["Fire", "Heating Up speeds Pyroblast. Longest range and good single target, but the weakest AoE."], ["Frost", "Ice Lance and Fingers of Frost add burst, and Frost Blast replaces down-ranked Frostbolt. The beginner-friendly leveling pick."]], "general": "Frostfire Bolt comes at 40. Slows were cut back, so AoE kiting is harder than in Classic.", "lvl": [["Frost", 49.5], ["Arcane", 30.5], ["Fire", 20.1]], "first": ["Improved Frostbolt 5/5", "Ice Shards 5/5"], "at60": "Frost 37% · Fire 32% · Arcane 31%. Top build: Arcane 47/4/0.", "builds": {"frost": {"cols": ["Frost, levels 10–48", "Arcane, 49–60"], "rows": [[0, "5/5", "Improved Frostbolt", 10, 14, 5, "faster Frostbolt"], [0, "3/3", "Precision", 15, 17, 3, "fewer resists"], [0, "2/3", "Frostbite", 18, 19, 2, "Chill effects can freeze"], [0, "1/1", "Ice Lance", 20, 20, 1, "burst on frozen targets"], [0, "4/5", "Ice Shards", 21, 24, 4, "bigger crits"], [0, "1/1", "Ice Block", 25, 25, 1, "emergency button"], [0, "3/3", "Shatter", 26, 28, 3, "crits on frozen targets"], [0, "5/5", "Ice Shards", 29, 29, 1, ""], [0, "2/2", "Fingers of Frost", 30, 31, 2, "procs make Ice Lance hit as if frozen"], [0, "1/1", "Cold Snap", 32, 32, 1, "resets your Frost cooldowns"], [0, "2/3", "Improved Cone of Cold", 33, 34, 2, ""], [0, "5/5", "Winter's Chill", 35, 39, 5, "boosts Cone of Cold damage"], [0, "1/1", "Ice Barrier", 40, 40, 1, "absorb shield and more Frost damage"], [0, "3/3", "Improved Cone of Cold", 41, 41, 1, ""], [0, "3/3", "Frostbite", 42, 42, 1, ""], [0, "3/3", "Frost Channeling", 43, 45, 3, "cheaper Frost spells"], [0, "3/3", "Improved Blizzard", 46, 48, 3, "Blizzard slows; he takes it if you'll do dungeons"], [1, "5/5", "Improved Channeling", 49, 53, 5, "Arcane points toward Missile Barrage"], [1, "1/2", "Missile Barrage", 54, 54, 1, "free Arcane Missiles procs"], [1, "2/2", "Arcane Subtlety", 55, 56, 2, "fewer resists"], [1, "4/5", "Arcane Concentration", 57, 60, 4, "free-mana procs; his choice for 57–60"]], "name": "Frost", "sub": "Asuna_qt"}, "arcane_iv": {"name": "Arcane", "sub": "Icy Veins · Farmerfarms", "cols": ["Arcane, levels 10–42", "Fire, then Precision, 43–60"], "rows": [[0, "2/2", "Wand Specialization", 10, 11, 2, "+25% wand damage"], [0, "3/5", "Improved Channeling", 12, 14, 3, "less pushback on Missiles and Blast"], [0, "2/2", "Missile Barrage", 15, 16, 2, "free, faster Arcane Missiles procs"], [0, "3/5", "Arcane Concentration", 17, 19, 3, "Clearcasting procs"], [0, "1/1", "Arcane Blast", 20, 20, 1, "stacks spell damage from Intellect"], [0, "2/3", "Precision", 21, 22, 2, "fewer resists (Frost tree)"], [0, "5/5", "Improved Channeling", 23, 24, 2, "less pushback on Missiles and Blast"], [0, "5/5", "Arcane Concentration", 25, 26, 2, "Clearcasting procs"], [0, "1/1", "Arcane Wrath", 27, 27, 1, "big burst nuke"], [0, "3/3", "Arcane Meditation", 28, 30, 3, "mana regen while casting"], [0, "1/2", "Arcane Subtlety", 31, 31, 1, "flat damage vs no resistance"], [0, "1/1", "Presence of Mind", 32, 32, 1, "next spell instant"], [0, "5/5", "Arcane Mind", 33, 37, 5, "more mana and crit"], [0, "3/3", "Arcane Instability", 38, 40, 3, "+damage and crit"], [0, "2/2", "Arcane Subtlety", 41, 41, 1, "flat damage vs no resistance"], [0, "1/1", "Arcane Power", 42, 42, 1, "the Arcane capstone"], [1, "5/5", "Incineration", 43, 47, 5, "more Arcane Blast crit"], [1, "5/5", "Accelerant", 48, 52, 5, "faster Arcane Wrath"], [1, "2/2", "Improved Fire Blast", 53, 54, 2, "shorter Fire Blast cooldown"], [1, "2/5", "Ignite", 55, 56, 2, "crits burn"], [1, "1/1", "Pyroblast", 57, 57, 1, "burst opener"], [1, "1/1", "Heating Up", 58, 58, 1, "Fire Blast into instant Pyroblast"], [1, "3/5", "Ignite", 59, 59, 1, "crits burn"], [1, "3/3", "Precision", 60, 60, 1, "fewer resists (Frost tree)"]]}}, "spells": [[1, "Fireball, Frost Armor, Arcane Intellect"], [4, "Frostbolt, Conjure Water"], [6, "Fire Blast, Conjure Food"], [8, "Arcane Missiles, Polymorph"], [10, "Frost Nova"], [12, "Slow Fall, Dampen Magic"], [14, "Arcane Explosion"], [16, "Flamestrike"], [18, "Remove Lesser Curse, Amplify Magic"], [20, "Blink, Evocation, Blizzard, Mana Shield, Fire Ward, teleports"], [22, "Frost Ward, Scorch"], [24, "Counterspell"], [26, "Cone of Cold"], [28, "Conjure Mana Agate"], [30, "Ice Armor"], [34, "Mage Armor"], [38, "Conjure Mana Jade"], [40, "Frostfire Bolt, portals, Dual Talent Specialization"], [48, "Conjure Mana Citrine"], [50, "Teleport: Dalaran (Alliance), more portals"], [56, "Arcane Brilliance"], [58, "Conjure Mana Ruby"]], "weapons": [[5, "Lesser Magic Wand", "Enchanters"], [13, "Greater Magic Wand", "Enchanters"], [15, "Sizzle Stick", "Wailing Caverns quest"], [16, "Staff of Westfall / Gnarled Necromancer's Staff", "Deadmines / Ruins of Lordaeron"], [22, "Gravestone Scepter", "Blackfathom Deeps quest"]], "now": [{"type": "steps", "label": "How to play", "items": [[1, 3, "Fireball, Fire Blast, wand"], [4, 19, "Frostbolt; Frost Nova to reposition"], [20, 60, "Ice Lance on frozen targets"], [20, 60, "Blizzard on safe packs"], [30, 60, "Fingers of Frost: cancel and Ice Lance"], [40, 60, "Keep Ice Barrier up"], [54, 60, "Missile Barrage: Arcane Missiles"]]}, {"type": "train"}, {"type": "weapon", "label": "Wand & staff"}, {"type": "steps", "label": "Water to buy", "items": [[5, 14, "Ice Cold Milk"], [15, 24, "Melon Juice"], [25, 34, "Sweet Nectar"], [35, 44, "Moonberry Juice"], [45, 55, "Morning Glory Dew"]]}, {"type": "steps", "label": "Quests & dungeons", "items": [[10, 11, "Mage quest chain (staff or off-hand)"], [15, 16, "Mage robe quest chain"], [26, 27, "Mage robe quest chain"], [40, 41, "Mount (90g) or dual spec (50g)"], [12, 14, "Hall of Thanes or Ragefire Chasm"], [16, 18, "Deadmines or Ruins of Lordaeron"], [18, 20, "Wailing Caverns"], [20, 26, "SFK, Stockade, Excavation Site or BFD"], [26, 30, "City of Dalaran, Razorfen Kraul"], [30, 40, "Gnomeregan, Scarlet Monastery, Drowned City"], [40, 50, "Krol'Dok, RFD, Uldaman, ZF, Maraudon"], [50, 60, "Sunken Temple, BRD, LBRS, Blackmaw Hold"]]}], "opts": [{"t": "Frost", "s": "Asuna_qt · ends 12/0/39", "p": "Improved Frostbolt, Precision and Frostbite first, Ice Lance at 20, Ice Shards and Shatter by 29, Fingers of Frost 30, Winter's Chill 35–39, Ice Barrier 40, then Improved Blizzard and Arcane for Missile Barrage."}, {"t": "Arcane (Icy Veins)", "s": "Farmerfarms · ends 31/17/3", "p": "Icy Veins' Arcane leveling build: Arcane Blast into Missile Barrage procs, Arcane Power at 42, then a Fire dip for Incineration, Accelerant and Heating Up. It's the Arcane tab in the talent checklist."}, {"t": "Frost AoE", "s": "Asuna_qt · ends 18/0/33", "p": "For pulling packs: Precision, Frost Warding, Improved Frost Nova, Permafrost and Improved Blizzard by 23. Frost Nova, then Flamestrike and Cone of Cold."}, {"t": "Fire", "s": "Asuna_qt · ends 17/31/3", "p": "Accelerant, Ignite, Pyroblast with Heating Up, Master of Elements. Longest range and good single target, but the weakest AoE and more mana trouble."}, {"t": "Arcane", "s": "Asuna_qt · ends 36/12/3", "p": "Arcane Blast stacks spell damage from Intellect; Arcane Wrath and Missile Barrage procs. Strong cooldowns, weak early, all hard casts."}], "keyspells": "Frostbolt, Conjure Water 4 · Fire Blast, Conjure Food 6 · Arcane Missiles, Polymorph 8 · Frost Nova 10 · Arcane Explosion 14 · Flamestrike 16 · Remove Lesser Curse 18 · Blink, Evocation, Blizzard, teleports 20 · Counterspell 24 · Cone of Cold 26 · Ice Armor 30 · Mage Armor 34 · Frostfire Bolt, portals 40", "sections": [{"id": "mage-guide", "label": "Your Mage · Frost leveling", "h2": "Frost leveling guide", "html": "\n  <p class=\"sdesc\">Built on <a href=\"https://mobalytics.gg/wow-forever/classes/mage-leveling-guide\" target=\"_blank\" rel=\"noopener\">Asuna_qt's Mage Leveling Guide<\/a> (Mobalytics, Nov 4, launch day), which has full 10–60 orders for Frost, Frost AoE, Fire and Arcane. Class quests and wands from <a href=\"https://www.warcrafttavern.com/forever/guides/mage-leveling/\" target=\"_blank\" rel=\"noopener\">Warcraft Tavern<\/a>; spell levels from Talents Forever.<\/p>\n  <div class=\"guide\">\n\n    <details class=\"gpanel wide\" id=\"talents\" data-key=\"mage-guide-talent-order\" open>\n      <summary><h3>Talent order <small>checklist · 51 points · Frost and Arcane tabs<\/small><\/h3><\/summary>\n      <p class=\"why\">Tick each row as you spend the points. Gold rows are due at your level; the outlined row is your next point.<\/p>\n      <div id=\"talents-app\"><\/div>\n      <p class=\"why\">Both orders are checked against Forever's trees. For the Frost tab, Asuna says the order is flexible: if you want more AoE control for dungeons, drop Ice Shards, Frostbite or the Cone of Cold points for Improved Blizzard (or Permafrost) earlier, or grab Improved Channeling and Missile Barrage early.<\/p>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"mage-guide-rotation\" open>\n      <summary><h3>Rotation<\/h3><\/summary>\n      <div class=\"steps\">\n        <div class=\"step\"><span class=\"lv\">Always<\/span><p>Arcane Intellect and Frost Armor up (Ice Armor from 30). Always be casting, but keep mana for Frost Nova and Blink.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">1–3<\/span><p>Fireball and Fire Blast, then wand when you're low on mana.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">4–19<\/span><p>Frostbolt is your main spell, Fire Blast while moving. Frost Nova to reposition, Polymorph to take a dangerous mob out of the fight.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">20+<\/span><p>Frostbolt until a proc. Frostbite freeze: cast Ice Lance after your next Frostbolt so both hit the frozen target. No procs? Frost Nova, then Ice Lance.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">30+<\/span><p>Fingers of Frost proc: cancel your cast and Ice Lance, or Frostbolt will eat the proc.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">40+<\/span><p>Keep Ice Barrier up. Out of mana: a mana gem, a Mana Potion, Evocation, then the wand.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">AoE<\/span><p>Blizzard when it's safe to channel; otherwise Cone of Cold and Arcane Explosion. Frost Nova, then Flamestrike, then Cone of Cold for Shatter burst. Precasting Flamestrike pulls huge threat in groups.<\/p><\/div>\n      <\/div>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"mage-guide-wands\">\n      <summary><h3>Wands &amp; staves <small>Alliance / Horde<\/small><\/h3><\/summary>\n      <div class=\"steps\">\n        <div class=\"step\"><span class=\"lv\">5<\/span><p>Lesser Magic Wand, made by Enchanters; Asuna calls it incredible for its level<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">10–26<\/span><p>Class quests at 10, 15 and 26 give staves, off-hands, robes and wands<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">13<\/span><p>Greater Magic Wand, made by Enchanters<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">15–20<\/span><p>Sizzle Stick (Wailing Caverns quest) and Crescent Staff from the same dungeon<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">16–18<\/span><p>Staff of Westfall (Deadmines) / Gnarled Necromancer's Staff (Ruins of Lordaeron)<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">22–26<\/span><p>Gravestone Scepter, Blackfathom Deeps quest<\/p><\/div>\n      <\/div>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"mage-guide-quests\">\n      <summary><h3>Class quests <small>Alliance / Horde<\/small><\/h3><\/summary>\n      <ul>\n        <li><b>10:<\/b> Speak with Belann → Boughs in the Wind → Mirror Lake → Mage-tastic Gizmonitor / Speak with Un'thuwa → Ju-ju Heaps → The Balnir Farmstead<\/li>\n        <li><b>15:<\/b> Report to Jennea → Investigate the Blue Recluse → Gathering Materials → Manaweave Robe / Report to Anastasia → Investigate the Alchemist Shop → Gathering Materials → Spellfire Robe<\/li>\n        <li><b>26:<\/b> High Sorcerer Andromath → Ur's Treatise on Shadow Magic → Pristine Spider Silk → Astral Knot Garment / Speak with Deino → Waters of Xavian → Laughing Sisters → Nether-lace Garment<\/li>\n      <\/ul>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"mage-guide-key-spells\">\n      <summary><h3>Key spells<\/h3><\/summary>\n      <div class=\"steps\">\n        <div class=\"step\"><span class=\"lv\">1–8<\/span><p>Fireball, Frost Armor, Arcane Intellect 1 · Frostbolt, Conjure Water 4 · Fire Blast, Conjure Food 6 · Arcane Missiles, Polymorph 8<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">10–18<\/span><p>Frost Nova 10 · Slow Fall, Dampen Magic 12 · Arcane Explosion 14 · Flamestrike 16 · Remove Lesser Curse, Amplify Magic 18<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">20–28<\/span><p>Blink, Evocation, Blizzard, Mana Shield, Fire Ward, city teleports 20 · Frost Ward, Scorch 22 · Counterspell 24 · Cone of Cold 26 · Conjure Mana Agate 28<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">30–60<\/span><p>Ice Armor 30 · Mage Armor 34 · Frostfire Bolt, portals, dual spec 40 · Teleport: Dalaran (Alliance) 50 · Arcane Brilliance 56<\/p><\/div>\n      <\/div>\n      <p class=\"why\">Frost Blast, a weaker Frostbolt, is there to slow enemies. Portals need a Rune of Portals from a reagent vendor, and people will ask for them after dungeons.<\/p>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"mage-guide-stats\">\n      <summary><h3>Stats<\/h3><\/summary>\n      <ul>\n        <li><b>Spell hit<\/b> up to 17%, though you won't find much while leveling<\/li>\n        <li><b>Spell Power<\/b> (or Frost damage), then <b>crit<\/b>, then haste<\/li>\n        <li><b>Intellect<\/b>, <b>Spirit<\/b>, then <b>Stamina<\/b><\/li>\n        <li>In practice while leveling: Spell Power and Intellect, with some Stamina<\/li>\n      <\/ul>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"mage-guide-professions\">\n      <summary><h3>Professions<\/h3><\/summary>\n      <ul>\n        <li><b>Tailoring + Enchanting:<\/b> strong cloth, some of it best-in-slot at 60, and Enchanting makes your early wands and disenchants what you sew<\/li>\n        <li><b>First Aid<\/b> is extra important: Mages can't heal themselves<\/li>\n        <li><b>Cooking:<\/b> Well Fed food gives +5% XP from kills<\/li>\n        <li><b>Engineering<\/b> is the fun alternative: bombs and gadgets, expensive without Mining<\/li>\n      <\/ul>\n    <\/details>\n    <details class=\"gpanel\" data-key=\"mage-guide-tips\">\n      <summary><h3>Tips &amp; mistakes<\/h3><\/summary>\n      <ul>\n        <li>Conjure food and water between pulls; buy the vendor water in the Now panel for the early levels.<\/li>\n        <li>Polymorph heals its target, so use it to take a mob out, not to pause a damaged one.<\/li>\n        <li>Remove Lesser Curse matters in groups; few classes can decurse.<\/li>\n        <li>Mage Armor (34) is for long fights and dungeons; Ice Armor for questing where melee hits you.<\/li>\n        <li>Hold your AoE until the tank has the pack.<\/li>\n        <li>Ice Lance has an 8 sec cooldown in Forever, and slows were cut back, so AoE kiting is harder than in Classic.<\/li>\n      <\/ul>\n    <\/details>\n    <details class=\"gpanel wide\" data-key=\"mage-guide-dungeons\">\n      <summary><h3>Dungeons by level<\/h3><\/summary>\n      <div class=\"steps\">\n        <div class=\"step\"><span class=\"lv\">12–14<\/span><p>Hall of Thanes (Alliance) or Ragefire Chasm (Horde)<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">16–18<\/span><p>Deadmines (Alliance) or Ruins of Lordaeron (Horde)<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">18–20<\/span><p>Wailing Caverns<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">20–26<\/span><p>Shadowfang Keep · The Stockade · Excavation Site: Wetlands · Blackfathom Deeps<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">26–30<\/span><p>City of Dalaran · Razorfen Kraul (28+)<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">30–40<\/span><p>Gnomeregan · Scarlet Monastery wings · The Drowned City (36+)<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">40–50<\/span><p>Krol'Dok Stronghold · Razorfen Downs · Uldaman · Zul'Farrak · Maraudon · Alcaz Prison (48+)<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">50–60<\/span><p>Sunken Temple · Blackrock Depths · Lower Blackrock Spire · Blackmaw Hold · then Shaper's Terrace, Upper Blackrock Spire, Dire Maul, Scholomance and Stratholme at 58+<\/p><\/div>\n      <\/div>\n      <p class=\"why\">Since the Nov 8 hotfix, dungeon mobs give 50% more experience. Pick up every quest for a dungeon before you go in. Raids open Dec 9.<\/p>\n    <\/details>\n\n  <\/div>\n  "}, {"id": "macros", "label": "Copy them exactly", "h2": "Mage macros", "html": "\n  <p class=\"sdesc\">5 macros, written exactly as they go in the game's macro window. One wrong letter and a macro does nothing, so copy them with the button.<\/p>\n  <div class=\"guide\">\n    <details class=\"gpanel wide\" data-key=\"macros-how-to-add-one\">\n      <summary><h3>How to add one<\/h3><\/summary>\n      <ol class=\"howto\">\n        <li>Type <code>/macro<\/code>, open the tab with this character's name, and click New.<\/li>\n        <li>Type the <b>macro name<\/b> as shown (16 characters at most) and pick the red question mark icon, so the button shows the spell's own icon.<\/li>\n        <li>Copy the <b>macro text<\/b> in exactly, line breaks included. Spell names must match your spellbook letter for letter: capitals, spaces and apostrophes.<\/li>\n        <li>Drag the macro onto your action bar.<\/li>\n      <\/ol>\n      <ul class=\"mtips\">\n        <li><span class=\"ph\">Highlighted words<\/span> are placeholders: replace them with the exact name of your own item.<\/li>\n        <li><b>Ctrl<\/b> means hold Ctrl as you press the button. <b>MO<\/b> means mouseover: it casts on whatever is under your mouse, and on your target when nothing is.<\/li>\n        <li>Leave rank numbers off and the macro always casts your highest rank, so you never have to re-drag spells after training.<\/li>\n        <li>The level tag is when the spell becomes available. Make the macro then, or it will just show a question mark.<\/li>\n      <\/ul>\n    <\/details>\n    <details class=\"gpanel macset\" data-key=\"macros-control\">\n      <summary><h3>Control<\/h3><\/summary>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Polymorph MO<\/b><span class=\"lvl\">Lv 8<\/span><\/div><button class=\"copy\" id=\"copy-mg1\" data-for=\"mg1\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"mg1\">#showtooltip Polymorph\n/cast [@mouseover,harm,nodead][] Polymorph<\/pre>\n        <p class=\"why\">Sheeps the mob under your mouse, so you keep your main target.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Counterspell MO<\/b><span class=\"lvl\">Lv 24<\/span><\/div><button class=\"copy\" id=\"copy-mg2\" data-for=\"mg2\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"mg2\">#showtooltip Counterspell\n/cast [@mouseover,harm,nodead][] Counterspell<\/pre>\n        <p class=\"why\">Interrupts a caster without retargeting.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Wand<\/b><span class=\"lvl\">Lv 5<\/span><\/div><button class=\"copy\" id=\"copy-mg3\" data-for=\"mg3\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"mg3\">#showtooltip Shoot\n/cast !Shoot<\/pre>\n        <p class=\"why\">The ! stops a second press from turning your wand off.<\/p><\/div>\n    <\/details>\n    <details class=\"gpanel macset\" data-key=\"macros-utility\">\n      <summary><h3>Buffs &amp; utility<\/h3><\/summary>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Intellect MO<\/b><span class=\"lvl\">Lv 1<\/span><\/div><button class=\"copy\" id=\"copy-mg4\" data-for=\"mg4\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"mg4\">#showtooltip Arcane Intellect\n/cast [@mouseover,help,nodead][help,nodead][@player] Arcane Intellect<\/pre>\n        <p class=\"why\">Buffs whoever is under your mouse, your friendly target, or you.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Decurse MO<\/b><span class=\"lvl\">Lv 18<\/span><\/div><button class=\"copy\" id=\"copy-mg5\" data-for=\"mg5\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"mg5\">#showtooltip Remove Lesser Curse\n/cast [@mouseover,help,nodead][help,nodead][@player] Remove Lesser Curse<\/pre>\n        <p class=\"why\"><\/p><\/div>\n    <\/details>\n  <\/div>\n  "}, {"id": "notes", "label": "Read before you commit", "h2": "Caveats &amp; sources", "html": "\n  <div class=\"notes\">\n<div class=\"note\"><h3>Launch-day guide<\/h3><p>Asuna's guide is dated Nov 4 and its Frost path hasn't changed since; no Mage changes appear in the Nov 10 hotfixes.<\/p><\/div>\n<div class=\"note\"><h3>Ice Barrier numbers vary<\/h3><p>The guide says Ice Barrier adds 3% damage while the talent tooltip lists a bigger Frost damage bonus. Check the tooltip in game.<\/p><\/div>\n<div class=\"note\"><h3>Teleport: Dalaran<\/h3><p>Talents Forever's data gives it to Alliance races only at 50, and the trainer doesn't sell it; where it's learned isn't known yet.<\/p><\/div>\n  <\/div>\n  <h3 style=\"margin:28px 0 12px\">Sources<\/h3>\n  <ul class=\"sources\">\n    <li><a href=\"https://www.icy-veins.com/wow-forever/arcane-mage-leveling\" target=\"_blank\" rel=\"noopener\">Farmerfarms: Arcane Mage Leveling Guide (Icy Veins, Nov 4)<\/a><\/li>\n    <li><a href=\"https://mobalytics.gg/wow-forever/classes/mage-leveling-guide\" target=\"_blank\" rel=\"noopener\">Asuna_qt: Mage Leveling Guide 1–60 (Mobalytics, Nov 4)<\/a><\/li>\n    <li><a href=\"https://www.warcrafttavern.com/forever/guides/mage-leveling/\" target=\"_blank\" rel=\"noopener\">Warcraft Tavern: Mage leveling (class quests, wands, specs)<\/a><\/li>\n    <li><a href=\"https://www.method.gg/wow-forever/wow-forever-mage-leveling-guide-and-talents\" target=\"_blank\" rel=\"noopener\">Method: Mage leveling guide &amp; talents<\/a><\/li>\n    <li><a href=\"https://talentsforever.com/export/mage.json\" target=\"_blank\" rel=\"noopener\">Talents Forever: Mage data export (talents, spells, racials)<\/a><\/li>\n  <\/ul>\n  "}]}, "warlock": {"key": "warlock", "name": "Warlock", "color": "#8788EE", "ink": "#4E4FB8", "roles": ["Ranged"], "races": [{"race": "Human", "new": false}, {"race": "Gnome", "new": false}, {"race": "Orc", "new": false}, {"race": "Undead", "new": false}, {"race": "Troll", "new": true}], "blurb": "Affliction DoTs can crit, Bane of Agony no longer takes the Curse slot, and Pandemic and Soul Siphon reward stacking effects before draining. Demonology pets scale with your stats, and Demonic Pact keeps a Sacrifice buff while another demon is out. Destruction adds Incinerate and Bane of Havoc.", "specs": [["Affliction", "DoTs can crit, Bane of Agony no longer takes the Curse slot, and Pandemic and Soul Siphon reward stacking effects before draining."], ["Demonology", "Pets scale with your stats, and Demonic Pact keeps a Sacrifice buff while another demon is out."], ["Destruction", "Adds Incinerate and Bane of Havoc. Every guide rates it the slowest for leveling."]], "general": "Life Tap and Drain Life trade health and mana back and forth, and Ritual of Summoning is the only way to summon players.", "lvl": [["Affliction", 43.5], ["Demonology", 35.9], ["Destruction", 20.6]], "first": ["Improved Corruption 5/5", "Suppression 5/5"], "at60": "Demo 40% · Aff 39% · Destro 21%. Top build: Affliction 35/11/0.", "builds": {"wt": {"cols": ["Levels 10–40", "Levels 41–60"], "rows": [[0, "5/5", "Improved Corruption", 10, 14, 5, "instant Corruption"], [0, "5/5", "Suppression", 15, 19, 5, "+5% spell hit"], [0, "5/5", "Unholy Power", 20, 24, 5, "Demonology, stronger demon"], [0, "2/2", "Demonic Energies", 25, 26, 2, "Demonology"], [0, "3/3", "Improved Drains", 27, 29, 3, ""], [0, "1/1", "Amplify Curse", 30, 30, 1, ""], [0, "2/2", "Improved Bane of Agony", 31, 32, 2, ""], [0, "2/2", "Improved Life Tap", 33, 34, 2, ""], [0, "3/3", "Pandemic", 35, 37, 3, "DoT and drain crits deal double damage"], [0, "3/3", "Soul Siphon", 38, 40, 3, ""], [1, "5/5", "Malevolence", 41, 45, 5, "+5% crit on Shadow spells, DoTs included"], [1, "5/5", "Shadow Mastery", 46, 50, 5, ""], [1, "1/1", "Siphon Life", 51, 51, 1, "damage that heals you"], [1, "3/3", "Fel Concentration", 52, 54, 3, "fewer drain pushbacks"], [1, "2/2", "Nightfall", 55, 56, 2, "Corruption can make your next Shadow Bolt instant"], [1, "4/5", "Improved Shadow Bolt", 57, 60, 4, "Destruction"]], "name": "Affliction", "sub": "Warcraft Tavern"}}, "spells": [[1, "Shadow Bolt, Immolate, Imp, Demon Skin"], [4, "Corruption, Curse of Weakness"], [6, "Life Tap"], [8, "Fear, Bane of Agony"], [10, "Voidwalker, Drain Soul, Create Healthstone"], [12, "Health Funnel"], [14, "Curse of Recklessness, Drain Life"], [18, "Searing Pain, Create Soulstone"], [20, "Succubus or Incubus, Demon Armor, Ritual of Summoning, Curse of the Elements"], [22, "Eye of Kilrogg"], [24, "Drain Mana"], [26, "Curse of Tongues"], [28, "Banish, Create Firestone"], [30, "Felhunter, Subjugate Demon, Hellfire"], [36, "Create Spellstone"], [40, "Felsteed, Howl of Terror, Dual Talent Specialization"], [42, "Death Coil"], [50, "Inferno"], [60, "Dreadsteed, Bane of Doom"]], "weapons": [[5, "Lesser Magic Wand", "Enchanters"], [13, "Greater Magic Wand", "Enchanters"], [20, "Gravestone Scepter and a Soran'ruk staff or orb", "BFD quest / class quest"], [22, "Staff of the Shade", "Razorfen Kraul rare"], [39, "White Obsidian", "wand"], [43, "Peacekeeper", "wand"], [51, "Wand of Biting Cold", "wand"]], "now": [{"type": "steps", "label": "How to play", "items": [[1, 3, "Shadow Bolt, Immolate, finish in melee"], [4, 7, "Corruption and Immolate, then wand"], [8, 9, "Pull with Bane of Agony"], [10, 29, "Demon in first, DoTs from range, wand"], [30, 60, "Drain Life to finish"], [30, 60, "Life Tap or Drain Life by health vs mana"], [41, 60, "Add Siphon Life"], [41, 60, "Shadow Bolt only on Nightfall"]]}, {"type": "train"}, {"type": "steps", "label": "Demons & quests", "items": [[1, 9, "Imp · starting-zone quest"], [10, 19, "Voidwalker · The Slaughtered Lamb"], [20, 29, "Succubus or Incubus · Stormwind"], [20, 24, "Soran'ruk · BFD and SFK fragments"], [30, 39, "Felhunter · Seeking Strahad"], [40, 59, "Felsteed · short quest"], [60, 60, "Dreadsteed · long chain"]]}, {"type": "weapon", "label": "Wand & weapon", "none": "No wand yet"}], "opts": [{"t": "Affliction", "s": "Warcraft Tavern · ends 40/7/4", "p": "Improved Corruption 5/5 and Suppression 5/5 first, then Unholy Power and Demonic Energies in Demonology for a stronger demon, Improved Drains and Amplify Curse by 30, Pandemic and Soul Siphon by 40, then Malevolence, Shadow Mastery and Nightfall. 43.5% of calculator leveling builds are Affliction."}, {"t": "Demonology", "s": "35.9%", "p": "Warcraft Tavern levels Affliction to 27, then respecs. Demonic Brand lets your Succubus or Incubus hold threat while doing most of the damage; Demonic Pact comes at 40."}, {"t": "Destruction", "s": "20.6%", "p": "The best fit for Eureka!, since its damage is direct casts, but every guide rates it the weakest for leveling: more mana, more drinking. Better saved for dungeons."}], "keyspells": "Corruption 4 · Life Tap 6 · Fear, Bane of Agony 8 · Voidwalker, Drain Soul 10 · Drain Life 14 · Succubus or Incubus, Demon Armor 20 · Felhunter 30 · Felsteed 40", "sections": [{"id": "warlock-guide", "label": "Gnome Warlock", "h2": "Affliction leveling guide", "html": "\n  <p class=\"sdesc\">Built on <a href=\"https://www.warcrafttavern.com/forever/guides/warlock-leveling/\" target=\"_blank\" rel=\"noopener\">Warcraft Tavern's Warlock leveling guide<\/a>, the only one with a full 10–60 talent order, which ends at 40/7/4. Gaps are filled from <a href=\"https://conquestcapped.com/guides/wow-forever/wow-forever-warlock-leveling/\" target=\"_blank\" rel=\"noopener\">ConquestCapped<\/a> (Oct 28), <a href=\"https://www.method.gg/wow-forever/wow-forever-warlock-leveling-guide-and-talents\" target=\"_blank\" rel=\"noopener\">Method<\/a> (Oct 17), Warcraft Tavern's <a href=\"https://www.warcrafttavern.com/forever/guides/affliction-warlock/\" target=\"_blank\" rel=\"noopener\">Affliction guide<\/a> (Nov 1) and <a href=\"https://wow.gg/guides/wow-forever-affliction-warlock-beta\" target=\"_blank\" rel=\"noopener\">WoW.gg<\/a> (Nov 4). All three leveling guides recommend Affliction.<\/p>\n  <div class=\"guide\">\n\n    <details class=\"gpanel wide\" id=\"talents\" data-key=\"warlock-guide-talent-order\" open>\n      <summary><h3>Talent order <small>checklist · 51 points · ends at 40/7/4<\/small><\/h3><\/summary>\n      <p class=\"why\">Tick each row as you spend the points. Gold rows are due at your level; the outlined row is your next point.<\/p>\n      <div id=\"talents-app\"><\/div>\n      <p class=\"why\">Warcraft Tavern gives the talents in level bands (10–19, 20–26, 27–30, 31–40, 41–60); the exact level for each point follows its listed order. <b>Check Soul Siphon at 38:<\/b> Warcraft Tavern's raid guide says it boosts Wrack, the 40-point talent this path skips. If the tooltip in game only mentions Wrack, put those 3 points into Malevolence early instead.<\/p>\n    <\/details>\n\n    <details class=\"gpanel wide\" data-key=\"warlock-guide-alternative-conquestcapped-s-faster-dot-start\">\n      <summary><h3>Alternative: ConquestCapped's faster DoT start <small>levels 10–30<\/small><\/h3><\/summary>\n      <p>Skips the Demonology detour and gets Pandemic and Nightfall far sooner, at the cost of a weaker demon early on. Its 20-point Affliction start:<\/p>\n      <div class=\"cols\">\n        <div>\n          <ol class=\"talents\">\n            <li><span class=\"rk\">5/5<\/span><b>Improved Corruption<\/b> <span class=\"why\">· 10–14<\/span><\/li>\n            <li><span class=\"rk\">3/5<\/span><b>Suppression<\/b> <span class=\"why\">· 15–17<\/span><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Grim Reach<\/b> <span class=\"why\">· 18–19; longer Affliction range, new Oct 15<\/span><\/li>\n            <li><span class=\"rk\">3/3<\/span><b>Improved Drains<\/b> <span class=\"why\">· 20–22<\/span><\/li>\n          <\/ol>\n        <\/div>\n        <div>\n          <ol class=\"talents\" start=\"5\">\n            <li><span class=\"rk\">3/3<\/span><b>Pandemic<\/b> <span class=\"why\">· 23–25<\/span><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Nightfall<\/b> <span class=\"why\">· 26–27<\/span><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Amplify Curse<\/b> <span class=\"why\">· 28<\/span><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Improved Bane of Agony<\/b> <span class=\"why\">· 29–30<\/span><\/li>\n          <\/ol>\n        <\/div>\n      <\/div>\n      <p class=\"why\">It stops at 30; from 31, follow the Warcraft Tavern order and skip what you already have. Method's older (Oct 17) order also rushes Pandemic and lands on Wrack at 40.<\/p>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"warlock-guide-rotation-by-level\" open>\n      <summary><h3>Rotation by level<\/h3><\/summary>\n      <div class=\"steps\">\n        <div class=\"step\"><span class=\"lv\">1–4<\/span><p>Shadow Bolt, then Immolate while the bolt is in the air. Finish with melee.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">4–8<\/span><p>Corruption and Immolate, then the wand. Pick up the Blood Pact grimoire from the demon trainer at 4.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">8–10<\/span><p>Pull with Bane of Agony; it tags the mob instantly, which helps in busy zones. Then Corruption, Immolate, wand.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">10–30<\/span><p>Send the demon in first, then Bane of Agony and Corruption from range and Immolate as the mob closes. Wand it down; switch to Drain Life when you need health. Fight two at once: the demon tanks one, you DoT both.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">30+<\/span><p>Drain Life replaces the wand as your finisher. Life Tap when health is higher than mana, Drain Life when mana is higher than health. Fear a second mob while you finish the first.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">41+<\/span><p>Add Siphon Life to the DoTs. Once you have Nightfall, cast Shadow Bolt only when it's instant.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Eureka!<\/span><p>It doesn't touch DoTs. Pop it before a Shadow Bolt or two on a tough mob, or with Searing Pain.<\/p><\/div>\n      <\/div>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"warlock-guide-demons\">\n      <summary><h3>Demons<\/h3><\/summary>\n      <div class=\"steps\">\n        <div class=\"step\"><span class=\"lv\">1<\/span><p><b>Imp:<\/b> ranged damage and Blood Pact (Stamina). Falls behind once you have the Voidwalker.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">10<\/span><p><b>Voidwalker:<\/b> ConquestCapped's pick as the best leveling demon. It holds two mobs and heals itself, and Sacrifice gives a big emergency shield.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">20<\/span><p><b>Succubus or Incubus (Sayaad):<\/b> the most single-target damage and Warcraft Tavern's main demon from 20. Seduce controls a Humanoid in dungeons. ConquestCapped says the Incubus quest is easier.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">30<\/span><p><b>Felhunter:<\/b> Spell Lock interrupts and Devour Magic dispels. Best against casters and on PvP realms.<\/p><\/div>\n      <\/div>\n      <p class=\"why\">Keep the demon on passive and send it in yourself, so it never pulls extra mobs.<\/p>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"warlock-guide-class-quests\">\n      <summary><h3>Class quests <small>Alliance<\/small><\/h3><\/summary>\n      <ul>\n        <li><b>1, Imp:<\/b> starting-zone quest<\/li>\n        <li><b>10, Voidwalker:<\/b> the Gnome version is The Slaughtered Lamb<\/li>\n        <li><b>20, Succubus:<\/b> Devourer of Souls, Stormwind. <b>Incubus:<\/b> What Is Love?, Stormwind<\/li>\n        <li><b>20, Soran'ruk:<\/b> Orb or Staff of Soran'ruk, using fragments from Blackfathom Deeps and Shadowfang Keep<\/li>\n        <li><b>30, Felhunter:<\/b> Seeking Strahad, from any capital<\/li>\n        <li><b>40, Felsteed:<\/b> a short quest. <b>60, Dreadsteed:<\/b> a long chain<\/li>\n      <\/ul>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"warlock-guide-key-spells\">\n      <summary><h3>Key spells<\/h3><\/summary>\n      <div class=\"steps\">\n        <div class=\"step\"><span class=\"lv\">1–8<\/span><p>Shadow Bolt, Immolate, Imp, Demon Skin 1 · Corruption, Curse of Weakness 4 · Life Tap 6 · Fear, Bane of Agony 8<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">10–18<\/span><p>Voidwalker, Drain Soul, Create Healthstone 10 · Health Funnel 12 · Curse of Recklessness, Drain Life 14 · Searing Pain, Create Soulstone 18<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">20–28<\/span><p>Succubus or Incubus, Demon Armor, Ritual of Summoning, Curse of the Elements 20 · Eye of Kilrogg 22 · Drain Mana 24 · Curse of Tongues 26 · Banish, Create Firestone 28<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">30–60<\/span><p>Felhunter, Subjugate Demon, Hellfire 30 · Create Spellstone 36 · Felsteed, Howl of Terror, Dual Talent Specialization 40 · Death Coil 42 · Inferno 50 · Dreadsteed, Bane of Doom 60<\/p><\/div>\n      <\/div>\n      <p class=\"why\">Ritual of Summoning is the only way to summon players in Forever; meeting stones no longer do it.<\/p>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"warlock-guide-wands-weapons\">\n      <summary><h3>Wands &amp; weapons<\/h3><\/summary>\n      <p>Get a wand as early as you can: it's your finisher until 30 and saves a lot of mana. Wands now need 0.5 sec standing still before they fire.<\/p>\n      <div class=\"steps\">\n        <div class=\"step\"><span class=\"lv\">5<\/span><p>Lesser Magic Wand, made by Enchanters<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">13<\/span><p>Greater Magic Wand, made by Enchanters<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">20+<\/span><p>Gravestone Scepter, Blackfathom Deeps quest reward, good until about 40. Don't skip this dungeon<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">20<\/span><p>Staff of Soran'ruk (two-hander) or Orb of Soran'ruk (off-hand), class quest<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">22+<\/span><p>Staff of the Shade, a rare from Razorfen Kraul<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">39–51<\/span><p>White Obsidian 39 · Peacekeeper 43 · Wand of Biting Cold 51<\/p><\/div>\n      <\/div>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"warlock-guide-stats\">\n      <summary><h3>Stats<\/h3><\/summary>\n      <ul>\n        <li><b>Wand DPS<\/b> matters most until 30<\/li>\n        <li><b>Spell Power or Shadow damage<\/b> first after that<\/li>\n        <li><b>Spirit and Intellect<\/b> next; Spirit makes Life Tap return more mana<\/li>\n        <li><b>Stamina<\/b> after; Life Tap turns it into mana anyway<\/li>\n        <li>At 60, bosses need 17% hit. Suppression gives 5%, and your demon inherits your hit<\/li>\n      <\/ul>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"warlock-guide-professions\">\n      <summary><h3>Professions<\/h3><\/summary>\n      <ul>\n        <li><b>Tailoring + Enchanting:<\/b> the pick in both Method and Warcraft Tavern. Tailoring makes Shadow-damage cloth (Filigreed Shadow Gown for Affliction), and Enchanting makes your early wands and disenchants what you sew<\/li>\n        <li><b>Cooking:<\/b> Well Fed food gives +5% XP from kills<\/li>\n        <li><b>First Aid:<\/b> bandages, and Life Tap turns that health back into mana<\/li>\n        <li><b>Skinning<\/b> is the easy gold option, and its Camp Chair gives 2% crit<\/li>\n      <\/ul>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"warlock-guide-tips-mistakes\">\n      <summary><h3>Tips &amp; mistakes<\/h3><\/summary>\n      <ul>\n        <li>Life Tap while you walk, so you arrive at every pull on full mana.<\/li>\n        <li>Don't DoT something that's about to die.<\/li>\n        <li>Fear has a 20-yard range, and Curse of Recklessness breaks it early.<\/li>\n        <li>Banes are DoTs and Curses are utility, and you can have one of each on the same target.<\/li>\n        <li>Drain Soul can drop a shard on every tick. Use it on a mob your demon is tanking.<\/li>\n        <li>Soul Shards take bag space, but your shard bag fits the reagent slot.<\/li>\n        <li>Keep Demon Skin, later Demon Armor, up for the health regen.<\/li>\n      <\/ul>\n    <\/details>\n\n    \n\n    <details class=\"gpanel\" data-key=\"warlock-guide-gnome-honestly\">\n      <summary><h3>Gnome, honestly<\/h3><\/summary>\n      <p>Warcraft Tavern ranks Gnome last for Affliction at 60, because Eureka! skips DoTs. For leveling the gap is small: Expansive Mind still means fewer drinks, and Escape Artist gets you out of roots. If you ever want Eureka! to shine, that's Destruction, which hits with direct casts but levels the slowest.<\/p>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"warlock-guide-demonology-instead\">\n      <summary><h3>Demonology instead?<\/h3><\/summary>\n      <p>Level Affliction to 27, then respec: Unholy Power, Demonic Energies, Fel Vitality, Master Summoner, Improved Sayaad and Demonic Brand. Searing Pain brands the demon's target so your Sayaad keeps threat. Never Searing Pain before the brand is up; it pulls a lot of threat. Demonic Pact comes at 40, and Demonology is the most-planned spec at 60.<\/p>\n    <\/details>\n\n  <\/div>\n  "}, {"id": "macros", "label": "Copy them exactly", "h2": "Warlock macros", "html": "\n  <p class=\"sdesc\">12 macros, written exactly as they go in the game's macro window. One wrong letter and a macro does nothing, so copy them with the button.<\/p>\n  <div class=\"guide\">\n    <details class=\"gpanel wide\" data-key=\"macros-how-to-add-one\">\n      <summary><h3>How to add one<\/h3><\/summary>\n      <ol class=\"howto\">\n        <li>Type <code>/macro<\/code>, open the tab with this character's name, and click New.<\/li>\n        <li>Type the <b>macro name<\/b> as shown (16 characters at most) and pick the red question mark icon, so the button shows the spell's own icon.<\/li>\n        <li>Copy the <b>macro text<\/b> in exactly, line breaks included. Spell names must match your spellbook letter for letter: capitals, spaces and apostrophes.<\/li>\n        <li>Drag the macro onto your action bar.<\/li>\n      <\/ol>\n      <ul class=\"mtips\">\n        <li><span class=\"ph\">Highlighted words<\/span> are placeholders: replace them with the exact name of your own item.<\/li>\n        <li><b>Ctrl<\/b> means hold Ctrl as you press the button. <b>MO<\/b> means mouseover: it casts on whatever is under your mouse, and on your target when nothing is.<\/li>\n        <li>Leave rank numbers off and the macro always casts your highest rank, so you never have to re-drag spells after training.<\/li>\n        <li>The level tag is when the spell becomes available. Make the macro then, or it will just show a question mark.<\/li>\n      <\/ul>\n    <\/details>\n    <details class=\"gpanel macset\" data-key=\"macros-fighting\">\n      <summary><h3>Fighting<\/h3><\/summary>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Pet Bane<\/b><span class=\"lvl\">Lv 8<\/span><\/div><button class=\"copy\" id=\"copy-wm1\" data-for=\"wm1\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"wm1\">#showtooltip Bane of Agony\n/petattack\n/cast Bane of Agony<\/pre>\n        <p class=\"why\">Method's tip: send the demon first so the mob goes for it, not you.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Pet Bolt<\/b><span class=\"lvl\">Lv 1<\/span><\/div><button class=\"copy\" id=\"copy-wl1\" data-for=\"wl1\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"wl1\">#showtooltip Shadow Bolt\n/petfollow [mod:ctrl]\n/stopmacro [mod:ctrl]\n/petattack\n/cast Shadow Bolt<\/pre>\n        <p class=\"why\">Every Shadow Bolt also sends your demon in. Hold Ctrl to call the demon back and cast nothing.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Corruption MO<\/b><span class=\"lvl\">Lv 4<\/span><\/div><button class=\"copy\" id=\"copy-wm3\" data-for=\"wm3\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"wm3\">#showtooltip Corruption\n/cast [@mouseover,harm,nodead][] Corruption<\/pre>\n        <p class=\"why\">DoTs a second mob without retargeting.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Bane MO<\/b><span class=\"lvl\">Lv 8<\/span><\/div><button class=\"copy\" id=\"copy-wl2\" data-for=\"wl2\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"wl2\">#showtooltip Bane of Agony\n/cast [@mouseover,harm,nodead][] Bane of Agony<\/pre>\n        <p class=\"why\">The same for Bane of Agony.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Tap Drain<\/b><span class=\"lvl\">Lv 14<\/span><\/div><button class=\"copy\" id=\"copy-wl3\" data-for=\"wl3\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"wl3\">#showtooltip [mod:ctrl] Life Tap; Drain Life\n/cast [mod:ctrl] Life Tap; Drain Life<\/pre>\n        <p class=\"why\">Drain Life when mana is higher than health. Hold Ctrl to Life Tap when health is higher.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Eureka Bolt<\/b><span class=\"lvl\">Lv 1<\/span><\/div><button class=\"copy\" id=\"copy-wl4\" data-for=\"wl4\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"wl4\">#showtooltip Shadow Bolt\n/cast Eureka!\n/cast Shadow Bolt<\/pre>\n        <p class=\"why\">Eureka! doesn't boost DoTs, so it goes on Shadow Bolt. If Eureka! uses the global cooldown, press again for the bolt.<\/p><\/div>\n        \n    <\/details>\n    <details class=\"gpanel macset\" data-key=\"macros-control\">\n      <summary><h3>Control<\/h3><\/summary>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Focus Fear<\/b><span class=\"lvl\">Lv 8<\/span><\/div><button class=\"copy\" id=\"copy-wm2\" data-for=\"wm2\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"wm2\">#showtooltip Fear\n/cast [@focus,harm,nodead][] Fear<\/pre>\n        <p class=\"why\">Fears your focus, so you can juggle a second mob without losing your target. Set a focus with /focus.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Coil Howl<\/b><span class=\"lvl\">Lv 42<\/span><\/div><button class=\"copy\" id=\"copy-wl5\" data-for=\"wl5\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"wl5\">#showtooltip [mod:ctrl] Howl of Terror; Death Coil\n/stopcasting\n/cast [mod:ctrl] Howl of Terror; Death Coil<\/pre>\n        <p class=\"why\">Emergency Death Coil, cancelling your cast. Hold Ctrl for Howl of Terror (40).<\/p><\/div>\n        \n    <\/details>\n    <details class=\"gpanel macset\" data-key=\"macros-demons-items\">\n      <summary><h3>Demons & items<\/h3><\/summary>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>VW Sacrifice<\/b><span class=\"lvl\">Lv 16<\/span><\/div><button class=\"copy\" id=\"copy-wl6\" data-for=\"wl6\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"wl6\">#showtooltip Sacrifice\n/cast Sacrifice<\/pre>\n        <p class=\"why\">Puts the Voidwalker's shield on your main bar. Learned from a grimoire at the demon trainer.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Seduce Focus<\/b><span class=\"lvl\">Lv 20<\/span><\/div><button class=\"copy\" id=\"copy-wl7\" data-for=\"wl7\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"wl7\">#showtooltip Seduction\n/cast [@focus,harm,nodead][] Seduction<\/pre>\n        <p class=\"why\">Your Succubus or Incubus seduces your focus, or your target.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Spell Lock<\/b><span class=\"lvl\">Lv 30<\/span><\/div><button class=\"copy\" id=\"copy-wl8\" data-for=\"wl8\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"wl8\">#showtooltip Spell Lock\n/cast [@focus,harm,nodead][] Spell Lock<\/pre>\n        <p class=\"why\">Felhunter interrupt on your focus, or your target.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Healthstone<\/b><span class=\"lvl\">Lv 10<\/span><\/div><button class=\"copy\" id=\"copy-wl9\" data-for=\"wl9\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"wl9\">#showtooltip\n/use Major Healthstone\n/use Greater Healthstone\n/use Healthstone\n/use Lesser Healthstone\n/use Minor Healthstone<\/pre>\n        <p class=\"why\">Eats whichever Healthstone you carry. The extra lines just fail quietly.<\/p><\/div>\n        <p class=\"why\">Forever renamed the Succubus line to Sayaad. If <b>Seduction<\/b> isn't the name on your pet bar, use the name shown there.<\/p>\n    <\/details>\n    <div class=\"gpanel wide\">\n      <p class=\"why\">Built from the guides on this page and the Forever macro lists on <a href=\"https://rankedboost.com/world-of-warcraft/forever/macros/\" target=\"_blank\" rel=\"noopener\">RankedBoost<\/a> (Nov 7) and <a href=\"https://kami-labs.fr/en/wow-forever/macros-wow-forever-9-classes/\" target=\"_blank\" rel=\"noopener\">Kami Labs<\/a>, checked against the spells your guides confirm exist in Forever. Ideas using removed spells, such as Tiger's Fury, were left out. Syntax follows the <a href=\"https://warcraft.wiki.gg/wiki/Macro_conditionals\" target=\"_blank\" rel=\"noopener\">macro conditionals reference<\/a>.<\/p>\n    <\/div>\n  <\/div>\n  "}, {"id": "notes", "label": "Read before you commit", "h2": "Caveats &amp; sources", "html": "\n  <div class=\"notes\">\n<div class=\"note\"><h3>Guides disagree on early talents<\/h3><p>Warcraft Tavern takes Unholy Power and Demonic Energies at 20–26 for a stronger demon. ConquestCapped and Method rush Pandemic instead. Both work; the Warcraft Tavern order is the only full 10–60 path.<\/p><\/div>\n<div class=\"note\"><h3>Soul Siphon needs a tooltip check<\/h3><p>Warcraft Tavern's leveling path takes Soul Siphon 3/3 by 40 but never takes Wrack, while its raid guide describes Soul Siphon as a Wrack bonus. Read the tooltip at 38 before spending the points.<\/p><\/div>\n<div class=\"note\"><h3>Beta numbers, live game<\/h3><p>Spec shares and first points come from the Talents Forever calculator on the final beta build. The game launched Nov 4, and Blizzard can still retune live.<\/p><\/div>\n<div class=\"note\"><h3>Older Warlock data<\/h3><p>Calculator leveling counts were taken before Oct 15, when Malediction was replaced by Grim Reach (+10/20% Affliction spell range).<\/p><\/div>\n  <\/div>\n  <h3 style=\"margin:28px 0 12px\">Sources<\/h3>\n  <ul class=\"sources\">\n    <li><a href=\"https://www.warcrafttavern.com/forever/guides/warlock-leveling/\" target=\"_blank\" rel=\"noopener\">Warcraft Tavern: Warlock leveling<\/a><\/li>\n    <li><a href=\"https://www.warcrafttavern.com/forever/guides/affliction-warlock/\" target=\"_blank\" rel=\"noopener\">Warcraft Tavern: Affliction Warlock (Nov 1)<\/a><\/li>\n    <li><a href=\"https://conquestcapped.com/guides/wow-forever/wow-forever-warlock-leveling/\" target=\"_blank\" rel=\"noopener\">ConquestCapped: Warlock leveling (Oct 28)<\/a><\/li>\n    <li><a href=\"https://www.method.gg/wow-forever/wow-forever-warlock-leveling-guide-and-talents\" target=\"_blank\" rel=\"noopener\">Method: Warlock leveling guide &amp; talents (Oct 17)<\/a><\/li>\n    <li><a href=\"https://wow.gg/guides/wow-forever-affliction-warlock-beta\" target=\"_blank\" rel=\"noopener\">WoW.gg: Affliction Warlock (Nov 4)<\/a><\/li>\n    <li><a href=\"https://mobalytics.gg/wow-forever/classes/warlock-leveling-guide\" target=\"_blank\" rel=\"noopener\">Mobalytics: Warlock leveling guide<\/a> (couldn't be read; not used)<\/li>\n    <li><a href=\"https://talentsforever.com/racials\" target=\"_blank\" rel=\"noopener\">Talents Forever: races, classes and racials<\/a><\/li>\n    <li><a href=\"https://talentsforever.com/leveling\" target=\"_blank\" rel=\"noopener\">Talents Forever: leveling builds<\/a><\/li>\n    <li><a href=\"https://hyjal.cc/racials\" target=\"_blank\" rel=\"noopener\">Hyjal: racial abilities<\/a><\/li>\n  <\/ul>\n  "}]}, "druid": {"key": "druid", "name": "Druid", "color": "#FF7C0A", "ink": "#B35300", "roles": ["Tank", "Healer", "Melee", "Ranged"], "races": [{"race": "Night Elf", "new": false}, {"race": "Skyborne (High Order)", "new": true}, {"race": "Tauren", "new": false}, {"race": "Skyborne (Windshaper)", "new": true}], "blurb": "Balance gets Eclipse, which links Wrath and Starfire, and Starfire gained about 40% base damage before launch. Feral lost Berserk and Tiger's Fury; Primal Bite is the new Bear talent at 40, and form attacks now use your weapon's DPS. Restoration gets Wild Growth. Druids can now revive outside combat. Skyborne Druids have their own bear, cat and travel form models.", "specs": [["Balance", "Eclipse links Wrath and Starfire, and Starfire gained about 40% base damage before launch."], ["Feral", "Berserk and Tiger's Fury are gone; Primal Bite is the new Bear talent at 40, and form attacks use your weapon's DPS."], ["Restoration", "Gets Wild Growth at 40."]], "general": "Druids can now revive outside combat, and Skyborne Druids have their own bear, cat and travel forms.", "lvl": [["Feral", 45.4], ["Balance", 32.5], ["Restoration", 22.2]], "first": ["Ferocity 5/5", "Heart of the Wild 5/5"], "at60": "Feral 46% · Resto 29% · Balance 25%. Top build: Restoration 11/5/35.", "builds": {"bear": {"cols": ["Feral, levels 10–40", "Then Balance and Restoration, 41–60"], "rows": [[0, "5/5", "Ferocity", 10, 14, 5, "cheaper Maul, Swipe, Claw and Rake"], [0, "3/3", "Feral Instinct", 15, 17, 3, "+30% Swipe damage"], [0, "2/2", "Feral Swiftness", 18, 19, 2, "+30% Cat speed, ready for Cat at 20"], [0, "1/1", "Feral Charge", 20, 20, 1, "Bear gap-closer that interrupts casts"], [0, "2/2", "Sharpened Claws", 21, 22, 2, "+6% crit in form"], [0, "1/2", "Savage Fury", 23, 23, 1, ""], [0, "1/5", "Furor", 24, 24, 1, ""], [0, "3/3", "Predatory Strikes", 25, 27, 3, "Attack Power"], [0, "2/2", "Blood Frenzy", 28, 29, 2, "crits give more Rage and combo points"], [0, "1/1", "Leader of the Pack", 30, 30, 1, "+3% crit for the party"], [0, "2/2", "Natural Instinct", 31, 32, 2, "more crit damage and healing"], [0, "2/5", "Furor", 33, 33, 1, ""], [0, "2/2", "Savage Fury", 34, 34, 1, "finished"], [0, "5/5", "Rend and Tear", 35, 39, 5, "+15% damage on bleeding targets"], [0, "1/1", "Primal Bite", 40, 40, 1, "strong Bear attack that replaced Berserk"], [1, "5/5", "Genesis", 41, 45, 5, "Balance"], [1, "2/2", "Nature's Reach", 46, 47, 2, "Balance"], [1, "2/2", "Nature's Majesty", 48, 49, 2, "Balance; hit and crit"], [1, "5/5", "Heart of the Wild", 50, 54, 5, "Restoration"], [1, "5/5", "Naturalist", 55, 59, 5, "Restoration; +10% damage on everything"], [1, "3/5", "Furor", 60, 60, 1, "last point"]], "name": "Feral", "sub": "ends on the Bear build"}, "weave": {"cols": ["Resto core, levels 10–32", "Feral, then Balance, 33–60"], "rows": [[0, "5/5", "Furor", 10, 14, 5, "energy on shifting, the point of weaving. Skip Ferocity"], [0, "4/5", "Heart of the Wild", 15, 18, 4, "preps the Resto tree, since Nature's Focus is weak here"], [0, "2/2", "Feral Swiftness", 19, 20, 2, "ready for Cat at 20"], [0, "5/5", "Heart of the Wild", 21, 21, 1, ""], [0, "3/3", "Reflection", 22, 24, 3, "regen while casting. He now takes this before Naturalist"], [0, "2/5", "Naturalist", 25, 26, 2, "opens the next row"], [0, "1/1", "Bloom", 27, 27, 1, ""], [0, "5/5", "Naturalist", 28, 30, 3, "faster Healing Touch, +10% damage"], [0, "1/3", "Natural Shapeshifter", 31, 31, 1, "cheaper shifting. More is optional"], [0, "1/1", "Swiftmend", 32, 32, 1, "your emergency heal"], [1, "3/3", "Thick Hide", 33, 35, 3, "Cat is squishy, so this cuts downtime. His PvE pick (PvP servers take Brutal Impact 2/2 + Thick Hide 1/3)"], [1, "2/2", "Savage Fury", 36, 37, 2, "pure damage"], [1, "2/2", "Sharpened Claws", 38, 39, 2, "passive damage while you lack feral gear"], [1, "1/1", "Feral Charge", 40, 40, 1, "last in its row on a PvE server"], [1, "1/1", "Predatory Discipline", 41, 41, 1, "first point in the next row. Let energy build to about 50% before Ferocious Bite for bonus damage"], [1, "2/3", "Predatory Strikes", 42, 43, 2, "attack power, which matters in healer gear"], [1, "2/2", "Blood Frenzy", 44, 45, 2, ""], [1, "2/2", "Natural Instinct", 46, 47, 2, "healing from Intellect. He takes healing before the crit"], [1, "1/1", "Leader of the Pack", 48, 48, 1, ""], [1, "5/5", "Genesis", 49, 53, 5, "+10% to HoTs and bleeds, Rake and Rip included"], [1, "1/2", "Nature's Reach", 54, 54, 1, "some hit chance"], [1, "2/2", "Nature's Majesty", 55, 56, 2, ""], [1, "2/2", "Nature's Reach", 57, 57, 1, ""], [1, "1/3", "Moonglow", 58, 58, 1, ""], [1, "1/1", "Nature's Splendor", 59, 59, 1, "longer HoTs, so longer Cat windows"], [1, "3/3", "Predatory Strikes", 60, 60, 1, "the last point"]], "name": "RestoCat Weaver", "sub": "MMARKERS' 12 Nov order"}}, "spells": [], "weapons": [[15, "Segmented Spider Leg", "Ruins of Lordaeron"], [18, "Smite's Mighty Hammer", "Deadmines"], [23, "Graverobber's Shovel", "Stockade"], [29, "Manual Crowd Pummeler", "Gnomeregan"], [31, "Loksey's Training Stick", "Scarlet Monastery"], [39, "Mograine's Might", "Scarlet Monastery"], [42, "Grimlok's Charge", "Uldaman"], [50, "Princess Theradras' Scepter", "Maraudon"], [58, "Legionite Glaive", "crafted by Blacksmiths"]], "now": [{"type": "steps", "label": "Forms & quests", "none": "No form quest right now", "items": [[1, 9, "Levels 1–9 are slow · Bear arrives at 10"], [10, 13, "Bear Form quest · do it right away"], [10, 13, "Teleport: Moonglade"], [14, 19, "Lessons Anew, Moonglade · Cure Poison"], [20, 24, "Cat Form quest · go straight for it"]]}, {"type": "steps", "label": "How to play", "items": [[10, 60, "Bear: Enrage, then Maul or Swipe on 3+"], [20, 60, "Cat: Rake, Claw, Rip; Bite to finish"], [10, 60, "Faerie Fire is free in form"], [10, 60, "Heal in one burst, then shift back"]]}, {"type": "weapon", "label": "Weapon", "none": "Starter weapon"}], "opts": [{"t": "Feral", "s": "45.4% of leveling builds", "p": "First points: Ferocity 5/5, Heart of the Wild 5/5, then Genesis in Balance. Forms arrive at Bear 10, Cat 20, Travel 30, Dire Bear 40. Berserk and Tiger's Fury were removed before launch; Primal Bite is now the level-40 Feral talent."}, {"t": "Balance", "s": "32.5%", "p": "First points: Improved Wrath 5/5, Moonglow 3/3, Improved Moonfire 2/2. Eclipse ties Wrath and Starfire together."}, {"t": "Restoration", "s": "22.2%", "p": "First points: Nature's Focus 5/5, Naturalist 5/5. Wild Growth comes at 40. The most planned level-60 Druid build is Resto 11/5/35."}], "keyspells": "", "sections": [{"id": "druid-builds", "label": "Skyborne Druid", "h2": "Feral leveling guide &amp; saved builds", "html": "\n  <p class=\"sdesc\">Condensed from WoW Campfire's video <a href=\"https://youtu.be/lKp7eef8dlw\" target=\"_blank\" rel=\"noopener\">Levelling a Druid in WoW Forever? Watch this first<\/a>, checked against the launch talent tree. Its talent order finishes exactly on the saved Bear build. Druid changed a lot right before launch, so guides that mention Berserk or Tiger's Fury are out of date. If a tooltip in game disagrees, trust the tooltip.<\/p>\n  <div class=\"guide\">\n\n    <details class=\"gpanel wide\" id=\"talents\" data-key=\"druid-builds-talent-order\" open>\n      <summary><h3>Talent order <small>checklist · 51 points · ends at 9/32/10<\/small><\/h3><\/summary>\n      <p class=\"why\">Tick each row as you spend the points. Gold rows are due at your level; the outlined row is your next point. Switch tabs to tick the RestoCat Weaver order instead.<\/p>\n      <div id=\"talents-app\"><\/div>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"druid-builds-how-forms-work-now\">\n      <summary><h3>How forms work now<\/h3><\/summary>\n      <ul>\n        <li>Bear and Cat auto attacks use your weapon's DPS at a fixed speed, so weapon DPS is the only weapon number to compare.<\/li>\n        <li>Weightstones, enchants and potions all work in form. You can open doors and use objects in form too.<\/li>\n        <li>Bear is for groups. Cat is for spread-out or ranged mobs; it has no real AoE, so never take a pack in Cat.<\/li>\n        <li>Levels 1–9 are slow. It picks up once Bear arrives at 10.<\/li>\n      <\/ul>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"druid-builds-rotation\" open>\n      <summary><h3>Rotation<\/h3><\/summary>\n      <div class=\"steps\">\n        <div class=\"step\"><span class=\"lv\">Bear<\/span><p>Enrage, then Maul on one or two mobs, Swipe on three or more.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Cat<\/span><p>Keep Rake up, build with Claw, finish with Rip on anything that will live long enough. Use Ferocious Bite on something nearly dead.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Both<\/span><p>Faerie Fire is free in form, so keep using it. Keep Thorns up; early on it's a big share of your damage, more so against several mobs.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Heal<\/span><p>Spending mana pauses regen for 5 sec, so do all your healing in one burst, then shift back.<\/p><\/div>\n      <\/div>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"druid-builds-form-quests\">\n      <summary><h3>Form quests<\/h3><\/summary>\n      <ul>\n        <li><b>10, Bear:<\/b> do it right away; it's your biggest early power spike. Skyborne get <b>The Great Ursera Spirit<\/b>.<\/li>\n        <li><b>14:<\/b> Lessons Anew in Moonglade gives Cure Poison.<\/li>\n        <li><b>20, Cat:<\/b> go straight for it. Skyborne get <b>The Great Windborne Cat Spirit<\/b>.<\/li>\n        <li><b>Later:<\/b> Aquatic Form, also by quest.<\/li>\n        <li>Most run through Dendrite Starblaze in Moonglade, so Teleport: Moonglade (10) keeps them quick.<\/li>\n      <\/ul>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"druid-builds-weapon-upgrades\">\n      <summary><h3>Weapon upgrades <small>DPS first, by a lot<\/small><\/h3><\/summary>\n      <div class=\"steps\">\n        <div class=\"step\"><span class=\"lv\">15<\/span><p>Segmented Spider Leg, Ruins of Lordaeron<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">18<\/span><p>Smite's Mighty Hammer, Deadmines<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">23<\/span><p>Graverobber's Shovel, Stockade<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">29<\/span><p>Manual Crowd Pummeler, Gnomeregan: 29 DPS, +16 Strength. Heavehammer, from a Wetlands Excavation Site quest, is nearly as good.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">31<\/span><p>Loksey's Training Stick, Scarlet Monastery<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">39<\/span><p>Mograine's Might, Scarlet Monastery: a huge jump<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">42<\/span><p>Grimlok's Charge, Uldaman. It's a polearm, so train polearms first.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">~50<\/span><p>Princess Theradras' Scepter, Maraudon<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">58<\/span><p>Legionite Glaive, crafted by Blacksmiths<\/p><\/div>\n      <\/div>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"druid-builds-armor-stats\">\n      <summary><h3>Armor stats<\/h3><\/summary>\n      <p>Agility first, then Stamina, then Spirit. Spirit matters more after 30, when you heal more between fights. Wear leather, but take cloth when its stats are much better, since forms add plenty of armor.<\/p>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"druid-builds-dungeons-balance\">\n      <summary><h3>Dungeons &amp; Balance<\/h3><\/summary>\n      <ul>\n        <li>The leveling build already tanks dungeons, no respec. Bear threat was raised to 115% just before launch.<\/li>\n        <li>Growl to taunt, Swipe on groups, Primal Bite whenever it's up.<\/li>\n        <li>Before a big pull, put Regrowth and Rejuvenation on yourself, then Demoralizing Roar once you're in.<\/li>\n        <li>Rebirth at 20 brings someone back mid-fight.<\/li>\n        <li>Balance is a real option at range: Starfire got about 40% more base damage, and Wrath speeds up your next Starfire through Eclipse. Moonkin Form comes at 40 but needs a respec.<\/li>\n      <\/ul>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"druid-builds-common-mistakes\">\n      <summary><h3>Common mistakes<\/h3><\/summary>\n      <ul>\n        <li>Putting off the Bear Form quest.<\/li>\n        <li>Skipping weapon upgrades. If your damage feels bad, that's usually why.<\/li>\n        <li>Fighting groups in Cat Form.<\/li>\n        <li>Using Rip on something that's about to die.<\/li>\n        <li>Letting Thorns or Mark of the Wild drop.<\/li>\n      <\/ul>\n    <\/details>\n\n    <details class=\"gpanel wide\" data-key=\"druid-builds-your-saved-level-60-builds\">\n      <summary><h3>Saved level-60 builds<\/h3><\/summary>\n      <p>Made in Talents Forever on beta build 70755 with hotfixes (Nov 8). Bear and Cat share 49 of their 51 points, so switching between them is a 2-point respec.<\/p>\n    <\/details>\n\n    <details class=\"gpanel wide\" data-key=\"druid-builds-feral-bear-tank\">\n      <summary><h3>Feral · Bear (tank) <small>51 points · 9/32/10<\/small><\/h3><\/summary>\n      <p>Same Balance and Restoration points as the cat build. The bear version takes Primal Bite and a third point of Furor. <a href=\"https://talentsforever.com/druid/60/050022-5323000212300212501-055-QTSYZX1R1adefR1XgiBFElmR-12?b=70755h&amp;d=261108\" target=\"_blank\" rel=\"noopener\">Open in Talents Forever<\/a><\/p>\n      <div class=\"cols\">\n        <div><span class=\"label\">Balance · 9<\/span>\n          <ol class=\"talents\">\n            <li><span class=\"rk\">5/5<\/span><b>Genesis<\/b><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Nature's Majesty<\/b><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Nature's Reach<\/b><\/li>\n          <\/ol>\n        <\/div>\n        <div><span class=\"label\">Feral Combat · 32<\/span>\n          <ol class=\"talents\">\n            <li><span class=\"rk\">5/5<\/span><b>Ferocity<\/b><\/li>\n            <li><span class=\"rk\">3/3<\/span><b>Feral Instinct<\/b><\/li>\n            <li><span class=\"rk\">3/5<\/span><b>Furor<\/b><\/li>\n            <li><span class=\"rk\">5/5<\/span><b>Rend and Tear<\/b><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Feral Swiftness<\/b><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Sharpened Claws<\/b><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Savage Fury<\/b><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Feral Charge<\/b><\/li>\n            <li><span class=\"rk\">3/3<\/span><b>Predatory Strikes<\/b><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Blood Frenzy<\/b><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Natural Instinct<\/b><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Leader of the Pack<\/b><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Primal Bite<\/b><\/li>\n          <\/ol>\n        <\/div>\n        <div><span class=\"label\">Restoration · 10<\/span>\n          <ol class=\"talents\">\n            <li><span class=\"rk\">5/5<\/span><b>Heart of the Wild<\/b><\/li>\n            <li><span class=\"rk\">5/5<\/span><b>Naturalist<\/b><\/li>\n          <\/ol>\n        <\/div>\n      <\/div>\n    <\/details>\n\n    <details class=\"gpanel wide\" data-key=\"druid-builds-feral-cat-damage\">\n      <summary><h3>Feral · Cat (damage) <small>51 points · 9/32/10<\/small><\/h3><\/summary>\n      <p>Swaps the bear-only picks for Predatory Discipline and Shifting Power, with Furor at 2/5. <a href=\"https://talentsforever.com/druid/60/050022-52230002123012125001-055-QTSYZX1R1adefRXgBFElmcj-12?b=70755h&amp;d=261108\" target=\"_blank\" rel=\"noopener\">Open in Talents Forever<\/a><\/p>\n      <div class=\"cols\">\n        <div><span class=\"label\">Balance · 9<\/span>\n          <ol class=\"talents\">\n            <li><span class=\"rk\">5/5<\/span><b>Genesis<\/b><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Nature's Majesty<\/b><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Nature's Reach<\/b><\/li>\n          <\/ol>\n        <\/div>\n        <div><span class=\"label\">Feral Combat · 32<\/span>\n          <ol class=\"talents\">\n            <li><span class=\"rk\">5/5<\/span><b>Ferocity<\/b><\/li>\n            <li><span class=\"rk\">3/3<\/span><b>Feral Instinct<\/b><\/li>\n            <li><span class=\"rk\">2/5<\/span><b>Furor<\/b><\/li>\n            <li><span class=\"rk\">5/5<\/span><b>Rend and Tear<\/b><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Feral Swiftness<\/b><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Sharpened Claws<\/b><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Savage Fury<\/b><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Feral Charge<\/b><\/li>\n            <li><span class=\"rk\">3/3<\/span><b>Predatory Strikes<\/b><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Predatory Discipline<\/b><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Blood Frenzy<\/b><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Natural Instinct<\/b><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Leader of the Pack<\/b><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Shifting Power<\/b><\/li>\n          <\/ol>\n        <\/div>\n        <div><span class=\"label\">Restoration · 10<\/span>\n          <ol class=\"talents\">\n            <li><span class=\"rk\">5/5<\/span><b>Heart of the Wild<\/b><\/li>\n            <li><span class=\"rk\">5/5<\/span><b>Naturalist<\/b><\/li>\n          <\/ol>\n        <\/div>\n      <\/div>\n    <\/details>\n\n    <details class=\"gpanel wide\" data-key=\"druid-builds-restoration-healer\">\n      <summary><h3>Restoration (healer) <small>51 points · 11/0/40<\/small><\/h3><\/summary>\n      <p>Wild Growth capstone with Swiftmend, Nature's Swiftness and Bloom. No Feral points. <a href=\"https://talentsforever.com/druid/60/050222--5053135153113211-BFEknmqrsuvwp1zptyxDo-12?b=70755h&amp;d=261108\" target=\"_blank\" rel=\"noopener\">Open in Talents Forever<\/a><\/p>\n      <div class=\"cols\">\n        <div><span class=\"label\">Balance · 11<\/span>\n          <ol class=\"talents\">\n            <li><span class=\"rk\">5/5<\/span><b>Genesis<\/b><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Improved Moonfire<\/b><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Nature's Majesty<\/b><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Nature's Reach<\/b><\/li>\n          <\/ol>\n        <\/div>\n        <div><span class=\"label\">Feral Combat · 0<\/span><p class=\"why\">No points<\/p><\/div>\n        <div><span class=\"label\">Restoration · 40<\/span>\n          <ol class=\"talents\">\n            <li><span class=\"rk\">5/5<\/span><b>Nature's Focus<\/b><\/li>\n            <li><span class=\"rk\">5/5<\/span><b>Naturalist<\/b><\/li>\n            <li><span class=\"rk\">3/3<\/span><b>Reflection<\/b><\/li>\n            <li><span class=\"rk\">3/3<\/span><b>Subtlety<\/b><\/li>\n            <li><span class=\"rk\">1/3<\/span><b>Natural Shapeshifter<\/b><\/li>\n            <li><span class=\"rk\">5/5<\/span><b>Gift of Nature<\/b><\/li>\n            <li><span class=\"rk\">5/5<\/span><b>Tranquil Spirit<\/b><\/li>\n            <li><span class=\"rk\">3/3<\/span><b>Improved Rejuvenation<\/b><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Bloom<\/b><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Swiftmend<\/b><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Nature's Swiftness<\/b><\/li>\n            <li><span class=\"rk\">3/3<\/span><b>Living Spirit<\/b><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Improved Tranquility<\/b><\/li>\n            <li><span class=\"rk\">1/5<\/span><b>Improved Regrowth<\/b><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Wild Growth<\/b><\/li>\n          <\/ol>\n        <\/div>\n      <\/div>\n    <\/details>\n\n  <\/div>\n  "}, {"id": "restocat-weaver", "label": "Separate build", "h2": "Druid RestoCat Weaver", "html": "\n  <p class=\"sdesc\">From MMARKERS' videos, updated to his final version, <i><a href=\"https://www.youtube.com/watch?v=lyyCkSBLMb0\" target=\"_blank\" rel=\"noopener\">Best Hybrid Druid Leveling Build | Warcraft Forever<\/a><\/i> (12 Nov 2026). You heal dungeons as Restoration, and between heals you drop into Cat Form for damage, swapping to a feral weapon. He now expects to keep this build at level 60. This is the PvE-server version. It's kept apart from the Feral guide above; nothing there changes.<\/p>\n  <div class=\"guide\">\n\n    <details class=\"gpanel wide\" data-key=\"restocat-weaver-the-build\">\n      <summary><h3>The build <small>51 points · 11/24/16<\/small><\/h3><\/summary>\n      <p>Furor instead of Ferocity, Resto up to Swiftmend, then deep enough in Feral for Natural Instinct, then Genesis. PvE-server version: Thick Hide 3/3 (on a PvP server he takes Brutal Impact 2/2 and Thick Hide 1/3 instead). <a href=\"https://talentsforever.com/druid/60/05102201-0520030212301212-05531001001-Rl4Slnm2rmouVXZYca2dfeBF1EFCHa-12?b=70888h&amp;d=261115\" target=\"_blank\" rel=\"noopener\">Open in Talents Forever<\/a><\/p>\n      <div class=\"cols\">\n        <div><span class=\"label\">Balance · 11<\/span>\n          <ol class=\"talents\">\n            <li><span class=\"rk\">5/5<\/span><b>Genesis<\/b><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Nature's Majesty<\/b><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Nature's Reach<\/b><\/li>\n            <li><span class=\"rk\">1/3<\/span><b>Moonglow<\/b><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Nature's Splendor<\/b><\/li>\n          <\/ol>\n        <\/div>\n        <div><span class=\"label\">Feral Combat · 24<\/span>\n          <ol class=\"talents\">\n            <li><span class=\"rk\">5/5<\/span><b>Furor<\/b><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Feral Swiftness<\/b><\/li>\n            <li><span class=\"rk\">3/3<\/span><b>Thick Hide<\/b><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Sharpened Claws<\/b><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Savage Fury<\/b><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Feral Charge<\/b><\/li>\n            <li><span class=\"rk\">3/3<\/span><b>Predatory Strikes<\/b><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Predatory Discipline<\/b><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Blood Frenzy<\/b><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Natural Instinct<\/b><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Leader of the Pack<\/b><\/li>\n          <\/ol>\n        <\/div>\n        <div><span class=\"label\">Restoration · 16<\/span>\n          <ol class=\"talents\">\n            <li><span class=\"rk\">5/5<\/span><b>Heart of the Wild<\/b><\/li>\n            <li><span class=\"rk\">5/5<\/span><b>Naturalist<\/b><\/li>\n            <li><span class=\"rk\">3/3<\/span><b>Reflection<\/b><\/li>\n            <li><span class=\"rk\">1/3<\/span><b>Natural Shapeshifter<\/b><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Bloom<\/b><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Swiftmend<\/b><\/li>\n          <\/ol>\n        <\/div>\n      <\/div>\n    <\/details>\n\n    <details class=\"gpanel wide\" data-key=\"restocat-weaver-talent-order\">\n      <summary><h3>Talent order <small>his 12 Nov order, by level · PvE<\/small><\/h3><\/summary>\n      <div class=\"cols\">\n        <div><span class=\"label\">Resto core, levels 10–32<\/span>\n          <ol class=\"talents\">\n            <li><span class=\"rk\">5/5<\/span><b>Furor<\/b> <span class=\"why\">· 10–14; energy on shifting, the point of weaving. Skip Ferocity<\/span><\/li>\n            <li><span class=\"rk\">4/5<\/span><b>Heart of the Wild<\/b> <span class=\"why\">· 15–18; preps the Resto tree, since Nature's Focus is weak here<\/span><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Feral Swiftness<\/b> <span class=\"why\">· 19–20; ready for Cat at 20<\/span><\/li>\n            <li><span class=\"rk\">5/5<\/span><b>Heart of the Wild<\/b> <span class=\"why\">· 21<\/span><\/li>\n            <li><span class=\"rk\">3/3<\/span><b>Reflection<\/b> <span class=\"why\">· 22–24; regen while casting. He now takes this before Naturalist<\/span><\/li>\n            <li><span class=\"rk\">2/5<\/span><b>Naturalist<\/b> <span class=\"why\">· 25–26; opens the next row<\/span><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Bloom<\/b> <span class=\"why\">· 27<\/span><\/li>\n            <li><span class=\"rk\">5/5<\/span><b>Naturalist<\/b> <span class=\"why\">· 28–30; faster Healing Touch, +10% damage<\/span><\/li>\n            <li><span class=\"rk\">1/3<\/span><b>Natural Shapeshifter<\/b> <span class=\"why\">· 31; cheaper shifting. More is optional<\/span><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Swiftmend<\/b> <span class=\"why\">· 32; your emergency heal<\/span><\/li>\n          <\/ol>\n        <\/div>\n        <div><span class=\"label\">Feral, then Balance, 33–60<\/span>\n          <ol class=\"talents\" start=\"11\">\n            <li><span class=\"rk\">3/3<\/span><b>Thick Hide<\/b> <span class=\"why\">· 33–35; Cat is squishy, so this cuts downtime. His PvE pick (PvP servers take Brutal Impact 2/2 + Thick Hide 1/3)<\/span><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Savage Fury<\/b> <span class=\"why\">· 36–37; pure damage<\/span><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Sharpened Claws<\/b> <span class=\"why\">· 38–39; passive damage while you lack feral gear<\/span><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Feral Charge<\/b> <span class=\"why\">· 40; last in its row on a PvE server<\/span><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Predatory Discipline<\/b> <span class=\"why\">· 41; first point in the next row. Let energy build to about 50% before Ferocious Bite for bonus damage<\/span><\/li>\n            <li><span class=\"rk\">2/3<\/span><b>Predatory Strikes<\/b> <span class=\"why\">· 42–43; attack power, which matters in healer gear<\/span><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Blood Frenzy<\/b> <span class=\"why\">· 44–45<\/span><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Natural Instinct<\/b> <span class=\"why\">· 46–47; healing from Intellect. He takes healing before the crit<\/span><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Leader of the Pack<\/b> <span class=\"why\">· 48<\/span><\/li>\n            <li><span class=\"rk\">5/5<\/span><b>Genesis<\/b> <span class=\"why\">· 49–53; +10% to HoTs and bleeds, Rake and Rip included<\/span><\/li>\n            <li><span class=\"rk\">1/2<\/span><b>Nature's Reach<\/b> <span class=\"why\">· 54; some hit chance<\/span><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Nature's Majesty<\/b> <span class=\"why\">· 55–56<\/span><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Nature's Reach<\/b> <span class=\"why\">· 57<\/span><\/li>\n            <li><span class=\"rk\">1/3<\/span><b>Moonglow<\/b> <span class=\"why\">· 58<\/span><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Nature's Splendor<\/b> <span class=\"why\">· 59; longer HoTs, so longer Cat windows<\/span><\/li>\n            <li><span class=\"rk\">3/3<\/span><b>Predatory Strikes<\/b> <span class=\"why\">· 60; the last point<\/span><\/li>\n          <\/ol>\n        <\/div>\n      <\/div>\n      <p class=\"why\"><b>What changed (12 Nov):<\/b> same 51 points as before. Predatory Discipline moves from your last point up to 41 now that he rates it, Savage Fury comes before Sharpened Claws, Feral Charge goes last in its row on PvE, and Balance starts with a point of Nature's Reach. Levels 10–32 are unchanged. Already a point or two off? He says don't pay to respec at low level.<\/p>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"restocat-weaver-why-it-works\">\n      <summary><h3>Why it works<\/h3><\/summary>\n      <ul>\n        <li><b>Weapon DPS scaling:<\/b> Cat damage comes from your weapon's DPS, so a feral weapon swap gives real damage even in full healer gear.<\/li>\n        <li><b>Natural Instinct:<\/b> bonus healing and Intellect from deep Feral.<\/li>\n        <li><b>Nature's Splendor &amp; Genesis:<\/b> longer, stronger HoTs keep the group safe while you're in Cat.<\/li>\n        <li><b>Swiftmend:<\/b> instant recovery when you pop out.<\/li>\n        <li><b>Naturalist:<\/b> faster Healing Touch plus 10% damage.<\/li>\n      <\/ul>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"restocat-weaver-healer-first\">\n      <summary><h3>Healer first <small>when to go Cat<\/small><\/h3><\/summary>\n      <ul>\n        <li>Keep Regrowth on the tank at all times, Rejuvenation when needed, then shift.<\/li>\n        <li>Only shift if you'll stay in Cat long enough to earn back the mana. A 4–5 second window isn't worth it.<\/li>\n        <li>Big pull and the tank's at 70%? Stay out, heal, and wait for things to settle.<\/li>\n        <li>Big hitter or a heavy bleed on someone: pop out and heal.<\/li>\n        <li>Don't stand in cleaves for damage. More damage taken means more healing.<\/li>\n        <li>Mana low: auto attack out of form, let it recover, drink, try again next pull.<\/li>\n      <\/ul>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"restocat-weaver-mana\">\n      <summary><h3>Mana<\/h3><\/summary>\n      <ul>\n        <li>Mind the 5-second rule: casting pauses regen for 5 sec.<\/li>\n        <li>Reflection lets you regen during that window, so shifting gets much easier once you have it.<\/li>\n        <li>Spirit matters a lot here; it's what makes shifting in and out pay off.<\/li>\n        <li>Natural Shapeshifter cuts shift costs further, at the price of healing talents.<\/li>\n        <li>Clearcasting: shift out and spend it on a big heal if anyone needs one, otherwise use it on damage.<\/li>\n      <\/ul>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"restocat-weaver-cat-rotation\">\n      <summary><h3>Cat rotation<\/h3><\/summary>\n      <div class=\"steps\">\n        <div class=\"step\"><span class=\"lv\">Single<\/span><p>Claw to build. Rake if the target lives 9+ sec, Rip if it lives 12+ sec at 4–5 combo points, otherwise Ferocious Bite. Under 9 sec, just Claw.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Bite<\/span><p>From 41 (Predatory Discipline), let energy build to about 50% before Ferocious Bite. It doesn't spend the extra energy but still adds damage for it.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Armor<\/span><p>Bleeds ignore armor. Against shields, plate or crocodiles, favour Rake and Rip over Bite. Snakes and casters are low armor.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Multi<\/span><p>Rake several targets if they'll live long enough, otherwise Claw and finish. Combo points reset when you switch targets.<\/p><\/div>\n        <div class=\"step\"><span class=\"lv\">Cycle<\/span><p>HoTs out, Cat in, damage, repeat. Watch your mana the whole time.<\/p><\/div>\n      <\/div>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"restocat-weaver-gearing\">\n      <summary><h3>Gearing <small>updated 12 Nov<\/small><\/h3><\/summary>\n      <ul>\n        <li><b>Keep it simple:<\/b> Resto gear plus a feral weapon. That's enough to quest and to heal dungeons.<\/li>\n        <li><b>Your feral weapon matters most.<\/b> Always carry one alongside your healing weapons.<\/li>\n        <li><b>Leatherworking is optional now.<\/b> Auction house gear is cheap; buy the materials and have a leatherworker craft it if that's cheaper.<\/li>\n        <li>Dungeons will mostly drop healing gear, and good agility pieces are hard to find. When a strong feral piece comes along (a quest reward, say), take it.<\/li>\n        <li><b>Make hybrid pieces with cheap enchants:<\/b> e.g. +16 healing on a feral piece (his cost 10 silver), or +7 agility on healing gloves.<\/li>\n        <li>Early on, crafted leather like Barbaric Shoulders is still good. Two full sets is fine but not needed.<\/li>\n      <\/ul>\n    <\/details>\n\n    <details class=\"gpanel wide\" data-key=\"restocat-weaver-weapon-swap-macros\">\n      <summary><h3>Weapon swap macros<\/h3><\/summary>\n      <p>Your Cat-Weapon Swap and the Caster Swap, with MMARKERS' tips, are now with the rest of the <a href=\"#macros\">Druid macros<\/a>.<\/p>\n    <\/details>\n\n  <\/div>\n  "}, {"id": "macros", "label": "Copy them exactly", "h2": "Druid macros", "html": "\n  <p class=\"sdesc\">12 macros, written exactly as they go in the game's macro window. One wrong letter and a macro does nothing, so copy them with the button.<\/p>\n  <div class=\"guide\">\n    <details class=\"gpanel wide\" data-key=\"macros-how-to-add-one\">\n      <summary><h3>How to add one<\/h3><\/summary>\n      <ol class=\"howto\">\n        <li>Type <code>/macro<\/code>, open the tab with this character's name, and click New.<\/li>\n        <li>Type the <b>macro name<\/b> as shown (16 characters at most) and pick the red question mark icon, so the button shows the spell's own icon.<\/li>\n        <li>Copy the <b>macro text<\/b> in exactly, line breaks included. Spell names must match your spellbook letter for letter: capitals, spaces and apostrophes.<\/li>\n        <li>Drag the macro onto your action bar.<\/li>\n      <\/ol>\n      <ul class=\"mtips\">\n        <li><span class=\"ph\">Highlighted words<\/span> are placeholders: replace them with the exact name of your own item.<\/li>\n        <li><b>Ctrl<\/b> means hold Ctrl as you press the button. <b>MO<\/b> means mouseover: it casts on whatever is under your mouse, and on your target when nothing is.<\/li>\n        <li>Leave rank numbers off and the macro always casts your highest rank, so you never have to re-drag spells after training.<\/li>\n        <li>The level tag is when the spell becomes available. Make the macro then, or it will just show a question mark.<\/li>\n      <\/ul>\n    <\/details>\n    <details class=\"gpanel wide macset\" data-key=\"macros-weapon-swaps\">\n      <summary><h3>Weapon swaps<\/h3><\/summary>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Cat-Weapon Swap<\/b><span class=\"lvl\">Lv 20<\/span><\/div><button class=\"copy\" id=\"copy-rc1\" data-for=\"rc1\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"rc1\">#showtooltip Cat Form\n/cast [noform:3] Cat Form\n/equip <span class=\"ph\">damage weapon<\/span><\/pre>\n        <p class=\"why\">Your macro, word for word. Shifts to Cat and equips your feral weapon.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Caster Swap<\/b><span class=\"lvl\">Lv 20<\/span><\/div><button class=\"copy\" id=\"copy-rc2\" data-for=\"rc2\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"rc2\">/cancelform\n/equip <span class=\"ph\">Your Healing Weapon<\/span><\/pre>\n        <p class=\"why\">Leaves Cat and puts the healing weapon back on.<\/p><\/div>\n        <div class=\"macnote\"><b>Two words to change before Cat-Weapon Swap works<\/b><ul>\n<li><b>damage weapon<\/b>: type your weapon's exact name, spaces and apostrophes included, e.g. <code>/equip Smite's Mighty Hammer<\/code>. Left as is, you shift to Cat but nothing gets equipped.<\/li>\n<li><b>noform:3<\/b>: forms are numbered Bear, Aquatic, Cat, Travel, skipping any you haven't learned. Cat is 3 only once you have Aquatic Form; before that it's 2, so use <code>[noform:2]<\/code>. To check, go Cat and type <code>/run print(GetShapeshiftForm())<\/code>.<\/li>\n<\/ul><\/div>\n<ul class=\"mtips\">\n<li>Wait for the global cooldown before pressing a swap. Shift straight after an instant like Moonfire and the weapon won't swap.<\/li>\n<li>MMARKERS binds the swaps to Shift + scroll wheel, and keeps both weapons on his bar to see which is equipped.<\/li>\n<li>He doesn't auto-swap for Bear, since he often goes Bear defensively and doesn't want to lose healing.<\/li>\n<\/ul>\n    <\/details>\n    <details class=\"gpanel macset\" data-key=\"macros-healing-between-weaves\">\n      <summary><h3>Healing between weaves<\/h3><\/summary>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Regrowth MO<\/b><span class=\"lvl\">Lv 12<\/span><\/div><button class=\"copy\" id=\"copy-dr1\" data-for=\"dr1\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"dr1\">#showtooltip Regrowth\n/cancelform\n/cast [@mouseover,help,nodead][help,nodead][@player] Regrowth<\/pre>\n        <p class=\"why\">Leaves any form and heals whoever is under your mouse, then your friendly target, then you.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Rejuv MO<\/b><span class=\"lvl\">Lv 4<\/span><\/div><button class=\"copy\" id=\"copy-dr2\" data-for=\"dr2\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"dr2\">#showtooltip Rejuvenation\n/cancelform\n/cast [@mouseover,help,nodead][help,nodead][@player] Rejuvenation<\/pre>\n        <p class=\"why\">Same, for Rejuvenation.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Swiftmend MO<\/b><span class=\"lvl\">Talent<\/span><\/div><button class=\"copy\" id=\"copy-dr3\" data-for=\"dr3\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"dr3\">#showtooltip Swiftmend\n/cancelform\n/cast [@mouseover,help,nodead][help,nodead][@player] Swiftmend<\/pre>\n        <p class=\"why\">Your emergency heal when you pop out of Cat. RestoCat build, level 32.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Rebirth MO<\/b><span class=\"lvl\">Lv 20<\/span><\/div><button class=\"copy\" id=\"copy-dr4\" data-for=\"dr4\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"dr4\">#showtooltip Rebirth\n/cancelform\n/cast [@mouseover,help,dead][help,dead] Rebirth<\/pre>\n        <p class=\"why\">Combat res on the dead player under your mouse, or your target.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Innervate<\/b><span class=\"lvl\">Lv 40<\/span><\/div><button class=\"copy\" id=\"copy-dr5\" data-for=\"dr5\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"dr5\">#showtooltip Innervate\n/cast [@mouseover,help,nodead][@player] Innervate<\/pre>\n        <p class=\"why\">On the healer under your mouse, otherwise on you.<\/p><\/div>\n        \n    <\/details>\n    <details class=\"gpanel macset\" data-key=\"macros-bear\">\n      <summary><h3>Bear<\/h3><\/summary>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Bite + Maul<\/b><span class=\"lvl\">Lv 40<\/span><\/div><button class=\"copy\" id=\"copy-dr6\" data-for=\"dr6\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"dr6\">#showtooltip Primal Bite\n/startattack\n/cast Maul\n/cast Primal Bite<\/pre>\n        <p class=\"why\">Queues Maul on your next swing and fires Primal Bite. Maul is off the global cooldown, so both go out.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Growl MO<\/b><span class=\"lvl\">Lv 10<\/span><\/div><button class=\"copy\" id=\"copy-dr7\" data-for=\"dr7\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"dr7\">#showtooltip Growl\n/cast [@mouseover,harm,nodead][] Growl<\/pre>\n        <p class=\"why\">Taunts the mob under your mouse without losing your target.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Charge Bash<\/b><span class=\"lvl\">Lv 20<\/span><\/div><button class=\"copy\" id=\"copy-dr8\" data-for=\"dr8\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"dr8\">#showtooltip\n/cast Feral Charge\n/cast Bash<\/pre>\n        <p class=\"why\">Feral Charge from range, Bash up close. Both interrupt casters.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Bear Stay<\/b><span class=\"lvl\">Lv 10<\/span><\/div><button class=\"copy\" id=\"copy-dr9\" data-for=\"dr9\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"dr9\">#showtooltip\n/cast !Bear Form<\/pre>\n        <p class=\"why\">The ! means pressing it again won't drop you out of Bear. At 40, change it to !Dire Bear Form.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>Travel Stay<\/b><span class=\"lvl\">Lv 30<\/span><\/div><button class=\"copy\" id=\"copy-dr10\" data-for=\"dr10\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"dr10\">#showtooltip\n/cast !Travel Form<\/pre>\n        <p class=\"why\">Same idea for Travel Form, so a double press doesn't dismount you.<\/p><\/div>\n        \n    <\/details>\n    <div class=\"gpanel wide\">\n      <p class=\"why\">Built from the guides on this page and the Forever macro lists on <a href=\"https://rankedboost.com/world-of-warcraft/forever/macros/\" target=\"_blank\" rel=\"noopener\">RankedBoost<\/a> (Nov 7) and <a href=\"https://kami-labs.fr/en/wow-forever/macros-wow-forever-9-classes/\" target=\"_blank\" rel=\"noopener\">Kami Labs<\/a>, checked against the spells your guides confirm exist in Forever. Ideas using removed spells, such as Tiger's Fury, were left out. Syntax follows the <a href=\"https://warcraft.wiki.gg/wiki/Macro_conditionals\" target=\"_blank\" rel=\"noopener\">macro conditionals reference<\/a>.<\/p>\n    <\/div>\n  <\/div>\n  "}, {"id": "notes", "label": "Read before you commit", "h2": "Caveats &amp; sources", "html": "\n  <div class=\"notes\">\n<div class=\"note\"><h3>Beta numbers, live game<\/h3><p>All numbers come from the final beta build (70425). The game launched Nov 4, so check anything important in game. Blizzard can still retune live.<\/p><\/div>\n<div class=\"note\"><h3>Racials corrected Nov 5<\/h3><p>The first version of the Forever Roster Planner had several wrong racials, including Earth Fury for Dwarves (it's Artisan's Precision, +1% hit), Ruthless at 2% (it's 1%) and Wind Blessed at 3% (it's 2%). The table now matches Talents Forever and DonTheCrown's guide.<\/p><\/div>\n<div class=\"note\"><h3>Popularity isn't power<\/h3><p>Spec shares count what people plan in a calculator. Icy Veins also advises picking a playstyle you'll enjoy rather than chasing the strongest class, since tuning keeps shifting.<\/p><\/div>\n<div class=\"note\"><h3>Druid changed right before launch<\/h3><p>Berserk and Tiger's Fury were removed and Primal Bite took Berserk's place. The Feral spec split and first points in the class card come from beta calculator counts, before those changes.<\/p><\/div>\n  <\/div>\n  <h3 style=\"margin:28px 0 12px\">Sources<\/h3>\n  <ul class=\"sources\">\n    <li><a href=\"https://youtu.be/lKp7eef8dlw\" target=\"_blank\" rel=\"noopener\">WoW Campfire: Levelling a Druid in WoW Forever? Watch this first (YouTube)<\/a><\/li>\n    <li><a href=\"https://talentsforever.com/druid/60/050022-5323000212300212501-055-QTSYZX1R1adefR1XgiBFElmR-12?b=70755h&amp;d=261108\" target=\"_blank\" rel=\"noopener\">Talents Forever: your Feral Bear build<\/a><\/li>\n    <li><a href=\"https://talentsforever.com/druid/60/050022-52230002123012125001-055-QTSYZX1R1adefRXgBFElmcj-12?b=70755h&amp;d=261108\" target=\"_blank\" rel=\"noopener\">Talents Forever: your Feral Cat build<\/a><\/li>\n    <li><a href=\"https://talentsforever.com/druid/60/050222--5053135153113211-BFEknmqrsuvwp1zptyxDo-12?b=70755h&amp;d=261108\" target=\"_blank\" rel=\"noopener\">Talents Forever: your Restoration build<\/a><\/li>\n    <li><a href=\"https://www.youtube.com/watch?v=lyyCkSBLMb0\" target=\"_blank\" rel=\"noopener\">MMARKERS: Best Hybrid Druid Leveling Build | Warcraft Forever (YouTube, 12 Nov 2026)<\/a><\/li>\n    <li><a href=\"https://www.youtube.com/watch?v=_ZJ_nhUrtHY\" target=\"_blank\" rel=\"noopener\">MMARKERS: Resto/Feral Cat Weaving: The Hybrid Leveling Build | Warcraft Forever (YouTube, 6 Nov 2026)<\/a><\/li>\n    <li><a href=\"https://talentsforever.com/druid/60/05102201-0520030212301212-05531001001-Rl4Slnm2rmouVXZYca2dfeBF1EFCHa-12?b=70888h&amp;d=261115\" target=\"_blank\" rel=\"noopener\">Talents Forever: your RestoCat Weaver build<\/a><\/li>\n    <li><a href=\"https://talentsforever.com/racials\" target=\"_blank\" rel=\"noopener\">Talents Forever: races, classes and racials<\/a><\/li>\n    <li><a href=\"https://talentsforever.com/popular\" target=\"_blank\" rel=\"noopener\">Talents Forever: most popular builds<\/a><\/li>\n    <li><a href=\"https://talentsforever.com/leveling\" target=\"_blank\" rel=\"noopener\">Talents Forever: leveling builds<\/a><\/li>\n    <li><a href=\"https://talentsforever.com/guides\" target=\"_blank\" rel=\"noopener\">Talents Forever: what changed since Classic<\/a><\/li>\n    <li><a href=\"https://hyjal.cc/racials\" target=\"_blank\" rel=\"noopener\">Hyjal: racial abilities<\/a><\/li>\n    <li><a href=\"https://www.icy-veins.com/wow-forever/skyborne\" target=\"_blank\" rel=\"noopener\">Icy Veins: the Skyborne<\/a><\/li>\n    <li><a href=\"https://www.icy-veins.com/wow-forever/news/racial-and-class-tuning-new-features-and-options-massive-wow-forever-beta-development-notes-october-15th/\" target=\"_blank\" rel=\"noopener\">Icy Veins: Oct 15 beta development notes<\/a><\/li>\n  <\/ul>\n  "}]}}, "talents": {"warrior": [["Arms", [["Improved Heroic Strike", 3, 1, 1, ""], ["Deflection", 5, 1, 2, ""], ["Improved Rend", 3, 1, 3, ""], ["Improved Charge", 2, 2, 1, ""], ["Improved Tactical Mastery", 3, 2, 2, ""], ["Improved Overpower", 2, 2, 4, ""], ["Anger Management", 1, 3, 2, "Improved Tactical Mastery"], ["Deep Wounds", 3, 3, 3, "Improved Rend"], ["Spearing Strike", 1, 4, 1, ""], ["Two-Handed Weapon Specialization", 3, 4, 2, ""], ["Impale", 2, 4, 3, "Deep Wounds"], ["Bloodthrill", 2, 5, 1, ""], ["Sweeping Strikes", 1, 5, 2, ""], ["Weaponmaster", 5, 5, 3, ""], ["Improved Slam", 2, 6, 1, ""], ["Improved Hamstring", 3, 6, 3, ""], ["Mortal Strike", 1, 7, 2, "Sweeping Strikes"]]], ["Fury", [["Booming Voice", 5, 1, 2, ""], ["Cruelty", 5, 1, 3, ""], ["Lingering Rage", 5, 2, 2, ""], ["Unbridled Wrath", 5, 2, 3, ""], ["Furious Precision", 3, 3, 1, ""], ["Piercing Howl", 1, 3, 2, ""], ["Blood Craze", 3, 3, 3, ""], ["Enrage", 5, 3, 4, ""], ["Dual Wield Specialization", 5, 4, 1, ""], ["Reckless Swings", 1, 4, 2, ""], ["Improved Execute", 2, 4, 4, ""], ["Improved Berserker Rage", 2, 5, 1, ""], ["Death Wish", 1, 5, 2, ""], ["Gore Drinker", 2, 5, 3, "Blood Craze"], ["Improved Intercept", 2, 5, 4, ""], ["Improved Whirlwind", 2, 6, 1, ""], ["Flurry", 3, 6, 3, ""], ["Bloodthirst", 1, 7, 2, "Death Wish"]]], ["Protection", [["Improved Bloodrage", 2, 1, 1, ""], ["Shield Specialization", 5, 1, 2, ""], ["Iron Will", 5, 1, 3, ""], ["Anticipation", 5, 2, 1, ""], ["Improved Revenge", 3, 2, 3, ""], ["Improved Thunder Clap", 3, 2, 4, ""], ["Last Stand", 1, 3, 1, ""], ["Master of Defense", 2, 3, 2, "Shield Specialization"], ["Improved Disarm", 3, 3, 3, ""], ["Defiance", 3, 3, 4, ""], ["Improved Sunder Armor", 3, 4, 1, ""], ["Vanguard", 1, 4, 2, ""], ["Improved Shield Bash", 2, 4, 3, ""], ["Improved Shield Wall", 2, 5, 1, ""], ["Concussion Blow", 1, 5, 2, ""], ["Focused Rage", 3, 5, 3, ""], ["Bastion", 5, 6, 3, ""], ["Shield Slam", 1, 7, 2, "Concussion Blow"]]]], "paladin": [["Holy", [["Spiritual Focus", 5, 1, 2, ""], ["Divine Strength", 5, 1, 3, ""], ["Healing Light", 3, 2, 1, ""], ["Reverence", 2, 2, 2, ""], ["Improved Seals", 5, 2, 3, ""], ["Purifying Power", 2, 2, 4, ""], ["Divine Favor", 1, 3, 1, ""], ["Illumination", 5, 3, 2, "Reverence"], ["Holy Conduit", 2, 3, 3, ""], ["Divine Precision", 2, 4, 1, ""], ["Infusion of Light", 2, 4, 2, ""], ["Oath of Light", 1, 4, 3, ""], ["Consecrated Ground", 2, 5, 1, ""], ["Holy Shock", 1, 5, 2, ""], ["Boundless Light", 2, 5, 3, "Holy Shock"], ["Holy Power", 5, 6, 3, ""], ["Light's Vigil", 1, 7, 2, "Holy Shock"]]], ["Protection", [["Divine Intellect", 5, 1, 2, ""], ["Redoubt", 5, 1, 3, ""], ["Precision", 3, 2, 1, ""], ["Guardian's Favor", 2, 2, 2, ""], ["Sacred Duty", 2, 2, 4, ""], ["Templar's Bulwark", 1, 3, 1, ""], ["Improved Hammer of Justice", 3, 3, 2, ""], ["Shield Specialization", 2, 3, 3, "Redoubt"], ["Toughness", 5, 3, 4, ""], ["Swift Judgement", 1, 4, 1, "Templar's Bulwark"], ["Improved Righteous Fury", 3, 4, 2, ""], ["Anticipation", 5, 4, 3, ""], ["Stoicism", 2, 5, 1, ""], ["Holy Shield", 1, 5, 2, ""], ["Reckoning", 5, 5, 3, ""], ["Iron Creed", 3, 6, 3, ""], ["Shieldsworn", 1, 7, 2, "Holy Shield"]]], ["Retribution", [["Deflection", 5, 1, 2, ""], ["Benediction", 5, 1, 3, ""], ["Improved Judgement", 2, 2, 1, ""], ["Conviction", 3, 2, 2, ""], ["Sanctified Judgement", 3, 2, 3, ""], ["Vindication", 3, 3, 1, ""], ["Unyielding Faith", 2, 3, 2, ""], ["Seal of Command", 1, 3, 3, ""], ["Pursuit of Justice", 2, 3, 4, ""], ["Eye for an Eye", 2, 4, 1, ""], ["Sacred Arbiter", 1, 4, 2, ""], ["Two-Handed Weapon Specialization", 3, 4, 4, ""], ["Turn Evil", 2, 5, 1, ""], ["Repentance", 1, 5, 2, ""], ["Vengeance", 3, 5, 3, "Seal of Command"], ["Champion of the Light", 5, 6, 3, ""], ["Unsealed Wrath", 1, 7, 2, "Repentance"]]]], "hunter": [["Beast Mastery", [["Deadly Aspects", 5, 1, 2, ""], ["Endurance Training", 5, 1, 3, ""], ["Focused Fire", 2, 2, 1, ""], ["Improved Aspect of the Monkey", 3, 2, 2, ""], ["Improved Revive Pet", 2, 2, 3, ""], ["Pathfinding", 2, 3, 1, ""], ["Bestial Swiftness", 1, 3, 2, ""], ["Unleashed Fury", 5, 3, 3, ""], ["Improved Mend Pet", 2, 4, 1, ""], ["Ferocity", 5, 4, 3, ""], ["Summon Hawk", 1, 4, 4, ""], ["Spirit Bond", 2, 5, 1, ""], ["Intimidation", 1, 5, 2, "Bestial Swiftness"], ["Bestial Discipline", 2, 5, 4, ""], ["Frenzy", 5, 6, 3, "Ferocity"], ["Bestial Wrath", 1, 7, 2, "Intimidation"]]], ["Marksmanship", [["Hawk Eye", 3, 1, 1, ""], ["Improved Concussive Shot", 5, 1, 2, ""], ["Lethal Attacks", 5, 1, 3, ""], ["Improved Stings", 3, 2, 1, ""], ["Efficiency", 5, 2, 2, ""], ["Careful Aim", 5, 2, 3, ""], ["Rapid Killing", 2, 3, 1, ""], ["Improved Arcane Shot", 5, 3, 2, ""], ["Lone Wolf", 1, 3, 4, ""], ["Trueshot Aura", 1, 4, 2, ""], ["Mortal Shots", 5, 4, 3, "Careful Aim"], ["Rapid Recuperation", 2, 5, 1, "Rapid Killing"], ["Barrage", 3, 5, 3, ""], ["Scatter Shot", 1, 5, 4, ""], ["Ranged Weapon Specialization", 5, 6, 3, ""], ["Sniper Shot", 1, 7, 2, "Trueshot Aura"]]], ["Survival", [["Improved Tracking", 5, 1, 2, ""], ["Deflection", 5, 1, 3, ""], ["Entrapment", 5, 2, 1, ""], ["Savage Strikes", 2, 2, 2, ""], ["Survivalist", 5, 2, 3, ""], ["Improved Wing Clip", 3, 2, 4, ""], ["Clever Traps", 2, 3, 1, ""], ["Surefooted", 3, 3, 2, ""], ["Deterrence", 1, 3, 3, ""], ["Survival Tactics", 2, 4, 1, ""], ["Predator's Edge", 5, 4, 2, ""], ["Counterattack", 1, 4, 3, "Deterrence"], ["Resourcefulness", 2, 5, 1, ""], ["Expose Prey", 2, 5, 2, ""], ["Survivalist's Discipline", 2, 5, 3, ""], ["Strider Kick", 1, 5, 4, ""], ["Lightning Reflexes", 5, 6, 3, ""], ["Lacerating Strikes", 1, 7, 2, "Expose Prey"]]]], "rogue": [["Assassination", [["Improved Gouge", 3, 1, 1, ""], ["Remorseless Attacks", 2, 1, 2, ""], ["Malice", 5, 1, 3, ""], ["Ruthlessness", 3, 2, 1, ""], ["Improved Expose Armor", 2, 2, 2, ""], ["Improved Slice and Dice", 3, 2, 4, ""], ["Vigor", 2, 3, 1, ""], ["Blood Splatter", 1, 3, 2, ""], ["Lethality", 2, 3, 3, "Malice"], ["Vile Poisons", 5, 4, 1, ""], ["Cold Blood", 1, 4, 2, ""], ["Improved Poisons", 5, 4, 3, ""], ["Relentless Strikes", 5, 5, 1, ""], ["Venom", 1, 5, 2, ""], ["Improved Kidney Shot", 2, 5, 3, ""], ["Seal Fate", 3, 6, 3, ""], ["Mutilate", 1, 7, 2, "Venom"]]], ["Combat", [["Coup de Grace", 3, 1, 1, ""], ["Efficient Strikes", 2, 1, 2, ""], ["Lightning Reflexes", 5, 1, 3, ""], ["Puncturing Wounds", 3, 2, 1, ""], ["Deflection", 3, 2, 2, ""], ["Precision", 3, 2, 3, ""], ["Improved Sprint", 2, 2, 4, ""], ["Endurance", 2, 3, 1, ""], ["Riposte", 1, 3, 2, "Deflection"], ["Composure", 2, 3, 4, ""], ["Improved Kick", 2, 4, 1, ""], ["Flawless Execution", 1, 4, 2, ""], ["Weapon Expertise", 2, 4, 3, "Precision"], ["Aggression", 3, 4, 4, ""], ["Dual Wield Specialization", 2, 5, 1, ""], ["Blade Flurry", 1, 5, 2, ""], ["Hack and Slash", 5, 5, 3, ""], ["Flash of Steel", 5, 6, 3, ""], ["Adrenaline Rush", 1, 7, 2, "Blade Flurry"]]], ["Subtlety", [["Setup", 3, 1, 1, ""], ["Master of Deception", 3, 1, 2, ""], ["Opportunity", 5, 1, 3, ""], ["Dirty Deeds", 2, 2, 1, ""], ["Camouflage", 3, 2, 2, ""], ["Improved Ambush", 3, 2, 3, ""], ["Dirty Tricks", 2, 2, 4, ""], ["Initiative", 3, 3, 1, ""], ["Premeditation", 1, 3, 2, ""], ["Serrated Blades", 3, 3, 3, ""], ["Elusiveness", 2, 4, 1, ""], ["Ghostly Strike", 1, 4, 2, ""], ["Quick Getaway", 2, 4, 4, "Dirty Tricks"], ["Heightened Senses", 2, 5, 1, ""], ["Preparation", 1, 5, 2, ""], ["Hemorrhage", 1, 5, 3, "Serrated Blades"], ["Boot Knife", 5, 6, 3, ""], ["Death Mark", 1, 7, 2, "Preparation"]]]], "priest": [["Discipline", [["Power in Light", 5, 1, 1, ""], ["Wand Specialization", 2, 1, 2, ""], ["Twin Disciplines", 5, 1, 3, ""], ["Silent Resolve", 3, 2, 1, ""], ["Holy Precision", 3, 2, 2, ""], ["Mental Strength", 5, 2, 3, ""], ["Martyrdom", 2, 2, 4, ""], ["Mental Agility", 3, 3, 1, ""], ["Inner Focus", 1, 3, 2, ""], ["Improved Power Word: Shield", 3, 3, 3, ""], ["Meditation", 3, 3, 4, ""], ["Improved Inner Fire", 3, 4, 1, ""], ["Improved Mana Burn", 2, 4, 2, ""], ["Soul Warding", 1, 4, 3, "Improved Power Word: Shield"], ["Penance", 1, 5, 2, ""], ["Renewed Hope", 5, 5, 3, "Soul Warding"], ["Divine Aegis", 3, 6, 3, ""], ["Power Infusion", 1, 7, 2, "Penance"]]], ["Holy", [["Twilight Focus", 3, 1, 1, ""], ["Improved Renew", 3, 1, 2, ""], ["Holy Specialization", 5, 1, 3, ""], ["Spell Warding", 5, 2, 2, ""], ["Divine Fury", 5, 2, 3, ""], ["Holy Nova", 1, 3, 1, ""], ["Blessed Recovery", 3, 3, 2, ""], ["Inspiration", 3, 3, 4, ""], ["Holy Reach", 2, 4, 1, ""], ["Improved Healing", 3, 4, 2, ""], ["Searing Light", 2, 4, 3, "Divine Fury"], ["Holy Binding", 1, 4, 4, ""], ["Litany of Light", 2, 5, 1, ""], ["Spirit of Redemption", 1, 5, 2, ""], ["Spiritual Guidance", 5, 5, 3, ""], ["Spiritual Healing", 3, 6, 3, ""], ["Prayer of Mending", 1, 7, 2, "Spirit of Redemption"]]], ["Shadow", [["Shadow Focus", 5, 1, 1, ""], ["Blackout", 5, 1, 2, ""], ["Spirit Tap", 5, 1, 3, ""], ["Improved Mind Blast", 5, 2, 1, ""], ["Improved Shadow Word: Pain", 2, 2, 3, ""], ["Shadow Reach", 2, 2, 4, ""], ["Improved Psychic Scream", 2, 3, 2, "Blackout"], ["Mind Flay", 1, 3, 3, ""], ["Improved Mind Flay", 2, 3, 4, "Mind Flay"], ["Dark Inspiration", 5, 4, 1, ""], ["Vampiric Embrace", 1, 4, 2, ""], ["Shadow Weaving", 3, 4, 3, ""], ["Silence", 1, 5, 1, ""], ["Devouring Contagion", 2, 5, 3, ""], ["Early Demise", 2, 6, 1, ""], ["Darkness", 5, 6, 3, ""], ["Shadowform", 1, 7, 2, "Vampiric Embrace"]]]], "shaman": [["Elemental", [["Convection", 5, 1, 2, ""], ["Concussion", 5, 1, 3, ""], ["Elemental Devastation", 3, 2, 1, ""], ["Reverberation", 5, 2, 2, ""], ["Elemental Alacrity", 3, 2, 3, ""], ["Call of Flame", 3, 2, 4, ""], ["Elemental Focus", 1, 3, 1, ""], ["Elemental Warding", 3, 3, 2, ""], ["Trial by Fire", 2, 4, 1, ""], ["Eye of the Storm", 3, 4, 2, ""], ["Earthbound", 1, 4, 4, ""], ["Elemental Reach", 2, 5, 1, ""], ["Call of Thunder", 1, 5, 2, ""], ["Lightning Overload", 3, 5, 3, "Elemental Alacrity"], ["Elemental Fury", 5, 6, 3, "Lightning Overload"], ["Lightning Mastery", 1, 7, 2, "Call of Thunder"]]], ["Enhancement", [["Earth's Grasp", 2, 1, 1, ""], ["Thundering Strikes", 5, 1, 2, ""], ["Ancestral Knowledge", 5, 1, 3, ""], ["Guardian Totems", 2, 2, 1, ""], ["Mental Dexterity", 3, 2, 2, ""], ["Improved Lightning Shield", 3, 2, 3, ""], ["Elemental Weapons", 3, 3, 1, ""], ["Shamanistic Focus", 1, 3, 3, ""], ["Anticipation", 3, 3, 4, ""], ["Toughness", 5, 4, 1, ""], ["Flurry", 5, 4, 2, "Mental Dexterity"], ["Stormstrike", 1, 4, 3, ""], ["Improved Ghost Wolf", 2, 4, 4, ""], ["Spirit Weapons", 1, 5, 1, ""], ["Mental Quickness", 2, 5, 2, ""], ["Improved Stormstrike", 2, 5, 3, "Stormstrike"], ["Maelstrom Weapon", 5, 6, 3, ""], ["Rage of the Farseer", 1, 7, 2, "Mental Quickness"]]], ["Restoration", [["Improved Healing Wave", 5, 1, 2, ""], ["Tidal Focus", 5, 1, 3, ""], ["Mindfulness", 3, 2, 1, ""], ["Natural Grace", 3, 2, 2, ""], ["Totemic Focus", 5, 2, 3, ""], ["Improved Reincarnation", 2, 2, 4, ""], ["Ancestral Healing", 3, 3, 1, ""], ["Healing Focus", 3, 3, 2, ""], ["Water Shield", 1, 3, 3, ""], ["Tidal Mastery", 5, 4, 1, ""], ["Restorative Totems", 5, 4, 2, ""], ["Mana Tide Totem", 1, 4, 3, ""], ["Healing Way", 3, 5, 2, ""], ["Nature's Swiftness", 1, 5, 3, ""], ["Purification", 5, 6, 3, ""], ["Riptide", 1, 7, 2, "Healing Way"]]]], "mage": [["Arcane", [["Wand Specialization", 2, 1, 1, ""], ["Improved Channeling", 5, 1, 2, ""], ["Arcane Resilience", 3, 1, 3, ""], ["Arcane Subtlety", 2, 2, 1, ""], ["Magic Absorption", 2, 2, 2, ""], ["Arcane Concentration", 5, 2, 3, ""], ["Missile Barrage", 2, 2, 4, ""], ["Arcane Geometry", 2, 3, 1, ""], ["Arcane Impact", 3, 3, 2, ""], ["Arcane Blast", 1, 3, 4, ""], ["Arcane Shielding", 2, 4, 1, ""], ["Improved Counterspell", 2, 4, 2, ""], ["Arcane Meditation", 3, 4, 3, "Arcane Concentration"], ["Arcane Wrath", 1, 4, 4, "Arcane Blast"], ["Presence of Mind", 1, 5, 2, ""], ["Arcane Mind", 5, 5, 3, ""], ["Arcane Instability", 3, 6, 3, ""], ["Arcane Power", 1, 7, 2, "Presence of Mind"]]], ["Fire", [["Incineration", 5, 1, 2, ""], ["Accelerant", 5, 1, 3, ""], ["Ignite", 5, 2, 1, ""], ["Flame Throwing", 2, 2, 2, ""], ["Impact", 3, 2, 3, ""], ["Burning Soul", 3, 3, 1, ""], ["Improved Flamestrike", 3, 3, 2, ""], ["Pyroblast", 1, 3, 3, ""], ["Improved Fire Blast", 2, 3, 4, ""], ["Improved Scorch", 3, 4, 1, ""], ["Improved Fire Ward", 2, 4, 2, ""], ["Heating Up", 1, 4, 3, "Pyroblast"], ["Master of Elements", 3, 4, 4, ""], ["Critical Mass", 3, 5, 2, ""], ["Blast Wave", 1, 5, 3, ""], ["Fire Power", 3, 6, 3, ""], ["Combustion", 1, 7, 2, "Critical Mass"]]], ["Frost", [["Frost Warding", 2, 1, 1, ""], ["Improved Frostbolt", 5, 1, 2, ""], ["Precision", 3, 1, 3, ""], ["Ice Shards", 5, 2, 1, ""], ["Frostbite", 3, 2, 2, ""], ["Improved Frost Nova", 2, 2, 3, ""], ["Permafrost", 3, 2, 4, ""], ["Frost Channeling", 3, 3, 1, ""], ["Improved Blizzard", 3, 3, 2, ""], ["Ice Lance", 1, 3, 3, ""], ["Arctic Reach", 2, 4, 1, ""], ["Ice Block", 1, 4, 2, ""], ["Shatter", 3, 4, 4, ""], ["Improved Cone of Cold", 3, 5, 1, ""], ["Cold Snap", 1, 5, 2, ""], ["Fingers of Frost", 2, 5, 3, "Ice Lance"], ["Winter's Chill", 5, 6, 3, ""], ["Ice Barrier", 1, 7, 2, "Cold Snap"]]]], "warlock": [["Affliction", [["Improved Life Tap", 2, 1, 1, ""], ["Suppression", 5, 1, 2, ""], ["Improved Corruption", 5, 1, 3, ""], ["Grim Reach", 2, 2, 1, ""], ["Soul Harvest", 2, 2, 2, ""], ["Improved Drains", 3, 2, 3, ""], ["Improved Bane of Agony", 2, 3, 1, ""], ["Fel Concentration", 3, 3, 2, ""], ["Amplify Curse", 1, 3, 3, ""], ["Pandemic", 3, 3, 4, ""], ["Malevolence", 5, 4, 1, ""], ["Nightfall", 2, 4, 2, ""], ["Curse of Exhaustion", 1, 4, 3, "Amplify Curse"], ["Siphon Life", 1, 5, 2, ""], ["Soul Siphon", 3, 5, 3, ""], ["Shadow Mastery", 5, 6, 3, ""], ["Wrack", 1, 7, 2, "Siphon Life"]]], ["Demonology", [["Improved Health Funnel", 2, 1, 1, ""], ["Improved Imp", 3, 1, 2, ""], ["Demonic Embrace", 5, 1, 3, ""], ["Unholy Power", 5, 1, 4, ""], ["Demonic Aegis", 2, 2, 1, ""], ["Improved Voidwalker", 3, 2, 2, ""], ["Fel Vitality", 3, 2, 3, ""], ["Demonic Energies", 2, 2, 4, ""], ["Improved Sayaad", 3, 3, 1, ""], ["Demonic Sacrifice", 1, 3, 2, ""], ["Master Summoner", 2, 3, 3, ""], ["Decimation", 2, 4, 1, ""], ["Fel Domination", 1, 4, 3, "Master Summoner"], ["Demonic Brand", 3, 4, 4, ""], ["Improved Felhunter", 3, 5, 1, ""], ["Soul Link", 1, 5, 2, "Demonic Sacrifice"], ["Demonic Knowledge", 3, 5, 3, ""], ["Master Demonologist", 5, 6, 3, ""], ["Demonic Pact", 1, 7, 2, "Soul Link"]]], ["Destruction", [["Destructive Reach", 2, 1, 1, ""], ["Improved Shadow Bolt", 5, 1, 2, ""], ["Bane", 5, 1, 3, ""], ["Molten Skin", 5, 2, 1, ""], ["Cataclysm", 3, 2, 2, ""], ["Aftermath", 5, 2, 3, ""], ["Ruin", 5, 3, 2, ""], ["Shadowburn", 1, 3, 3, ""], ["Intensity", 3, 4, 1, ""], ["Agonizing Flames", 3, 4, 2, ""], ["Conflagrate", 1, 4, 3, ""], ["Pyroclasm", 2, 5, 1, "Intensity"], ["Bane of Havoc", 1, 5, 2, ""], ["Fire and Brimstone", 3, 5, 3, "Conflagrate"], ["Shadow and Flame", 5, 6, 3, ""], ["Incinerate", 1, 7, 2, "Bane of Havoc"]]]], "druid": [["Balance", [["Improved Wrath", 5, 1, 2, ""], ["Genesis", 5, 1, 3, ""], ["Moonglow", 3, 2, 1, ""], ["Improved Moonfire", 2, 2, 2, ""], ["Nature's Majesty", 2, 2, 3, ""], ["Nature's Reach", 2, 2, 4, ""], ["Improved Entangling Roots", 3, 3, 1, ""], ["Nature's Splendor", 1, 3, 3, "Nature's Majesty"], ["Insect Swarm", 1, 4, 1, ""], ["Vengeance", 5, 4, 2, "Improved Moonfire"], ["Improved Starfire", 5, 4, 3, ""], ["Overgrowth", 2, 5, 1, ""], ["Nature's Grace", 1, 5, 2, ""], ["Eclipse", 3, 5, 3, ""], ["Moonfury", 5, 6, 2, ""], ["Moonkin Form", 1, 7, 2, ""]]], ["Feral Combat", [["Ferocity", 5, 1, 2, ""], ["Furor", 5, 1, 3, ""], ["Feral Swiftness", 2, 2, 1, ""], ["Feral Instinct", 3, 2, 2, ""], ["Brutal Impact", 2, 2, 3, ""], ["Thick Hide", 3, 2, 4, ""], ["Shredding Attacks", 3, 3, 1, ""], ["Savage Fury", 2, 3, 2, ""], ["Feral Charge", 1, 3, 3, ""], ["Sharpened Claws", 2, 3, 4, ""], ["Predatory Strikes", 3, 4, 1, ""], ["Lacerate", 1, 4, 2, "Savage Fury"], ["Predatory Discipline", 1, 4, 3, ""], ["Blood Frenzy", 2, 4, 4, "Sharpened Claws"], ["Leader of the Pack", 1, 5, 2, ""], ["Natural Instinct", 2, 5, 4, ""], ["Rend and Tear", 5, 6, 1, "Predatory Strikes"], ["Natural Reaction", 5, 6, 4, ""], ["Primal Bite", 1, 7, 2, "Leader of the Pack"], ["Shifting Power", 1, 7, 3, "Predatory Discipline"]]], ["Restoration", [["Nature's Focus", 5, 1, 2, ""], ["Heart of the Wild", 5, 1, 3, ""], ["Naturalist", 5, 2, 1, ""], ["Reflection", 3, 2, 2, ""], ["Natural Shapeshifter", 3, 2, 3, ""], ["Subtlety", 3, 3, 2, ""], ["Gift of Nature", 5, 3, 3, ""], ["Bloom", 1, 3, 4, ""], ["Tranquil Spirit", 5, 4, 2, ""], ["Improved Rejuvenation", 3, 4, 3, ""], ["Swiftmend", 1, 4, 4, ""], ["Nature's Swiftness", 1, 5, 1, "Naturalist"], ["Living Spirit", 3, 5, 2, ""], ["Improved Tranquility", 2, 5, 4, ""], ["Improved Regrowth", 5, 6, 3, "Improved Rejuvenation"], ["Wild Growth", 1, 7, 2, "Living Spirit"]]]]}, "ivids": {"warrior": {"0": 0, "1": 1, "2": 2, "3": 3, "4": 4, "5": 5, "6": 6, "7": 7, "8": 8, "9": 9, "a": 10, "b": 11, "c": 12, "d": 13, "e": 14, "f": 15, "g": 16, "h": 17, "i": 18, "j": 19, "k": 20, "l": 21, "m": 22, "n": 23, "q": 24, "o": 25, "Q": 26, "r": 27, "s": 28, "t": 29, "w": 30, "u": 31, "p": 32, "v": 33, "x": 34, "y": 35, "z": 36, "A": 37, "B": 38, "C": 39, "D": 40, "E": 41, "F": 42, "G": 43, "H": 44, "I": 45, "J": 46, "K": 47, "L": 48, "M": 49, "N": 50, "O": 51, "P": 52}, "paladin": {"3": 0, "O": 1, "2": 2, "7": 3, "4": 4, "8": 5, "b": 6, "a": 7, "A": 8, "c": 9, "9": 10, "6": 11, "e": 12, "d": 13, "P": 14, "f": 15, "g": 16, "1": 17, "i": 18, "j": 19, "k": 20, "p": 21, "t": 22, "s": 23, "o": 24, "h": 25, "q": 26, "n": 27, "l": 28, "0": 29, "w": 30, "u": 31, "v": 32, "m": 33, "x": 34, "y": 35, "z": 36, "B": 37, "D": 38, "C": 39, "5": 40, "E": 41, "F": 42, "G": 43, "H": 44, "I": 45, "Q": 46, "K": 47, "J": 48, "L": 49, "N": 50}, "hunter": {"0": 0, "1": 1, "2": 2, "3": 3, "5": 4, "4": 5, "6": 6, "7": 7, "8": 8, "9": 9, "a": 10, "b": 11, "c": 12, "d": 13, "e": 14, "f": 15, "g": 16, "h": 17, "i": 18, "j": 19, "k": 20, "l": 21, "m": 22, "n": 23, "o": 24, "p": 25, "q": 26, "r": 27, "s": 28, "t": 29, "u": 30, "v": 31, "w": 32, "x": 33, "y": 34, "z": 35, "A": 36, "B": 37, "C": 38, "D": 39, "E": 40, "F": 41, "G": 42, "H": 43, "I": 44, "J": 45, "K": 46, "L": 47, "M": 48, "N": 49}, "rogue": {"0": 0, "1": 1, "2": 2, "3": 3, "7": 4, "5": 5, "4": 6, "c": 7, "8": 8, "9": 9, "a": 10, "b": 11, "R": 12, "g": 13, "e": 14, "f": 15, "d": 16, "h": 17, "i": 18, "j": 19, "k": 20, "l": 21, "m": 22, "p": 23, "n": 24, "o": 25, "6": 26, "q": 27, "r": 28, "v": 29, "w": 30, "S": 31, "t": 32, "u": 33, "s": 34, "x": 35, "B": 36, "z": 37, "A": 38, "L": 39, "y": 40, "E": 41, "D": 42, "F": 43, "J": 44, "K": 45, "C": 46, "G": 47, "O": 48, "I": 49, "M": 50, "N": 51, "P": 52, "Q": 53}, "priest": {"0": 0, "1": 1, "2": 2, "3": 3, "4": 4, "5": 5, "6": 6, "7": 7, "8": 8, "9": 9, "a": 10, "b": 11, "c": 12, "d": 13, "e": 14, "f": 15, "g": 16, "h": 17, "i": 18, "j": 19, "k": 20, "l": 21, "m": 22, "n": 23, "o": 24, "p": 25, "q": 26, "r": 27, "s": 28, "t": 29, "u": 30, "v": 31, "w": 32, "x": 33, "y": 34, "z": 35, "A": 36, "B": 37, "C": 38, "D": 39, "E": 40, "F": 41, "G": 42, "H": 43, "I": 44, "J": 45, "K": 46, "L": 47, "M": 48, "N": 49, "O": 50, "P": 51}, "shaman": {"0": 0, "1": 1, "2": 2, "3": 3, "4": 4, "5": 5, "6": 6, "7": 7, "8": 8, "9": 9, "a": 10, "b": 11, "c": 12, "d": 13, "e": 14, "f": 15, "g": 16, "h": 17, "i": 18, "j": 19, "k": 20, "m": 21, "n": 22, "o": 23, "p": 24, "q": 25, "r": 26, "s": 27, "l": 28, "t": 29, "u": 30, "v": 31, "w": 32, "x": 33, "y": 34, "z": 35, "A": 36, "B": 37, "C": 38, "D": 39, "E": 40, "F": 41, "G": 42, "H": 43, "I": 44, "J": 45, "K": 46, "L": 47, "M": 48, "N": 49}, "mage": {"0": 0, "2": 1, "3": 2, "4": 3, "5": 4, "6": 5, "7": 6, "8": 7, "9": 8, "a": 9, "b": 10, "c": 11, "d": 12, "e": 13, "f": 14, "g": 15, "h": 16, "i": 17, "k": 18, "l": 19, "m": 20, "n": 21, "o": 22, "p": 23, "q": 24, "r": 25, "j": 26, "s": 27, "t": 28, "u": 29, "v": 30, "w": 31, "x": 32, "y": 33, "z": 34, "A": 35, "B": 36, "C": 37, "D": 38, "E": 39, "F": 40, "G": 41, "H": 42, "I": 43, "J": 44, "K": 45, "L": 46, "M": 47, "N": 48, "O": 49, "P": 50, "Q": 51, "R": 52}, "warlock": {"0": 0, "1": 1, "2": 2, "3": 3, "4": 4, "5": 5, "6": 6, "7": 7, "8": 8, "9": 9, "a": 10, "b": 11, "c": 12, "d": 13, "e": 14, "f": 15, "g": 16, "h": 17, "i": 18, "j": 19, "k": 20, "l": 21, "m": 22, "n": 23, "o": 24, "p": 25, "q": 26, "r": 27, "s": 28, "t": 29, "u": 30, "v": 31, "w": 32, "x": 33, "y": 34, "z": 35, "A": 36, "B": 37, "C": 38, "D": 39, "E": 40, "F": 41, "G": 42, "H": 43, "I": 44, "J": 45, "K": 46, "L": 47, "M": 48, "N": 49, "O": 50, "P": 51}, "druid": {"0": 0, "1": 1, "2": 2, "3": 3, "4": 4, "5": 5, "6": 6, "7": 7, "8": 8, "9": 9, "a": 10, "b": 11, "c": 12, "d": 13, "e": 14, "f": 15, "g": 16, "h": 17, "i": 18, "j": 19, "k": 20, "l": 21, "m": 22, "n": 23, "o": 24, "p": 25, "s": 26, "r": 27, "q": 28, "t": 29, "v": 30, "w": 31, "y": 32, "x": 33, "z": 34, "u": 35, "A": 36, "B": 37, "C": 38, "D": 39, "E": 40, "F": 41, "G": 42, "H": 43, "I": 44, "J": 45, "K": 46, "L": 47, "M": 48, "N": 49, "O": 50, "P": 51}}, "races": {"Alliance": ["Human", "Dwarf", "Night Elf", "Gnome", "Skyborne (High Order)"], "Horde": ["Orc", "Undead", "Tauren", "Troll", "Skyborne (Windshaper)"]}, "racials": {"Human": [["Ruthless", "Passive", "+1% crit chance with all spells and attacks."], ["The Human Spirit", "Passive", "+10% Spirit."], ["Perception", "Active · 3 min", "Greatly increased stealth detection for 20 sec."], ["Will to Survive", "Active · 3 min", "Removes all stun effects."]], "Dwarf": [["Artisan's Precision", "Passive", "+1% hit chance with spells and attacks."], ["Big Game Hunter", "Passive", "+5% damage vs Beasts."], ["Stoneform", "Active · 3 min", "Removes and grants immunity to Bleed, Poison and Disease; −10% physical damage taken for 8 sec."], ["Find Treasure", "Active", "Shows nearby treasure on the minimap and sometimes increases treasure found."]], "Night Elf": [["Quickness", "Passive", "+1% dodge, +2% movement speed. Night Elf Rogues and Druids are harder to detect in Stealth (as if 1 level higher)."], ["Wisp Spirit", "Passive", "Wisp form on death, +75% movement speed."], ["Shadowmeld", "Active · 10 sec", "Stealth while still; 2 min cooldown if used in combat."], ["Elune's Light", "Active · 3 min", "+10% crit chance with spells and attacks for 15 sec."]], "Gnome": [["Expansive Mind", "Passive", "+5% maximum mana, rage or energy."], ["Engineering Specialization", "Passive", "Engineering devices fail or backfire 20% less often."], ["Escape Artist", "Active · 2 min", "Escape any movement-impairing effect, immune for 3 sec."], ["Eureka!", "Active · 2 min", "8 sec: non-periodic damaging abilities cost 10% less and deal 10% more. Priests also get it on non-periodic heals."]], "Skyborne (High Order)": [["Wind Blessed", "Passive", "+2% spell, melee and ranged haste."], ["Elemental Insight", "Passive", "+5% damage vs Elementals."], ["Read Leyline", "Active · 2 min", "+50% health and mana regen for 15 sec. Used at a Ley Line, it attunes you for 1 hour at +100%; lasts through death, ends when you enter a raid."], ["Walk on Air", "Active · 90 sec", "Steerable downward glide for 10 sec."]], "Orc": [["Hardiness", "Passive", "Stun durations on you −20%."], ["Command", "Passive", "+5% damage from Hunter and Warlock pets."], ["Blood Fury", "Active · 2 min", "+10% Attack Power and Spell Power for 15 sec."], ["Shatter Curse", "Active · 3 min", "Removes all Curses and Banes; −5% magic damage taken for 8 sec."]], "Undead": [["Touch of the Grave", "Passive", "Damaging spells and attacks can drain up to 5% of your max health from the target (30% chance for casters, 20% for Paladins, Rogues and Warriors). 15 sec internal cooldown."], ["Underwater Breathing", "Passive", "Breath lasts 300% longer."], ["Will of the Forsaken", "Active · 2 min", "Removes Charm, Fear and Sleep."], ["Cannibalize", "Active · 2 min", "Regenerate 7% health and mana every 2 sec for 10 sec from a Humanoid or Undead corpse."]], "Tauren": [["Endurance", "Passive", "+5% total health."], ["Plainsrunning", "Passive", "+2% movement speed every 5 sec of moving, up to +60%. Damage or standing still reduces it; no mounted bonus."], ["War Stomp", "Active · 90 sec", "Stuns up to 5 enemies within 8 yd for 2 sec."], ["Cultivation", "Active · 15 min", "Grow a harvestable copy of a nearby herb, no Herbalism needed."]], "Troll": [["Regeneration", "Passive", "+20% health regen; 20% of it continues in combat."], ["Beast Slaying", "Passive", "+5% damage vs Beasts."], ["Berserking", "Active · 3 min", "+10% cast and attack speed for 15 sec."], ["Rapid Regeneration", "Active · 3 min", "Channel: regenerate 50% of max health over 6 sec."]], "Skyborne (Windshaper)": [["Wind Blessed", "Passive", "+2% spell, melee and ranged haste."], ["Elemental Insight", "Passive", "+5% damage vs Elementals."], ["Skysight", "Active · 2 min", "+15% movement speed for 15 sec. Used at an elemental convergence, it charges you for 1 hour at +30%."], ["Walk on Air", "Active · 90 sec", "Steerable downward glide for 10 sec."]]}, "legacy": {"label": "Every character · account-wide", "h2": "Legacy System", "html": "\n  <p class=\"sdesc\">Forever's account-wide progression. You complete Legacy Challenges (an achievement-style list) to earn Legacy Points, and every character spends those points on its own perks in three Legacy Trees. These are separate from your 51 class talent points. Open it in game with <b>Y<\/b>. Numbers are from live-launch guides, cross-checked as of Nov 15.<\/p>\n  <div class=\"guide\">\n\n    <details class=\"gpanel wide\" data-key=\"legacy-how\">\n      <summary><h3>How it works <small>the short version<\/small><\/h3><\/summary>\n      <ul>\n        <li><b>Unlocks<\/b> with your first Legacy Point. For most people that's the first character to reach level 25. Reaching 150 in a crafting profession or exploring the whole world map also does it.<\/li>\n        <li><b>65 points to earn<\/b> at launch, 1 per challenge, shared by every character on your Battle.net account.<\/li>\n        <li><b>16 points to spend per character<\/b> at launch. Blizzard will raise this cap over time. Points aren't used up: every character gets its own 16 from the same account total.<\/li>\n        <li><b>One character can earn 29<\/b>, so you can reach 16 without alts, but your roster gets there much faster.<\/li>\n        <li><b>Challenges are first-time milestones.<\/b> A second character of the same class earns nothing for reaching the same level.<\/li>\n        <li><b>Rewards<\/b> come from your total points earned (15 / 25 / 40 / 55), not from what you spend. Claim them from Innkeeper Wiley in Ratchet, The Barrens.<\/li>\n        <li><b>Reset<\/b> at your own class trainer (\"I wish to unlearn my class or legacy talents\"). The first Legacy reset costs 10 gold, per character.<\/li>\n        <li><b>Hardcore<\/b> (not open yet): Hardcore challenges count everywhere, but normal-realm challenges don't carry into Hardcore.<\/li>\n      <\/ul>\n    <\/details>\n\n    <details class=\"gpanel wide\" data-key=\"legacy-tracker\" open>\n      <summary><h3>Your Legacy Points <small>tick what you've earned · saves with your planner<\/small><\/h3><\/summary>\n      <div class=\"tsum\" id=\"lgSum\"><\/div>\n      <div class=\"lgrewards\" id=\"lgRewards\"><\/div>\n      <div class=\"cols lgcols\" id=\"lgBox\">\n        <div><span class=\"label\">Classes <span class=\"mono colct\" data-lgc=\"c\"><\/span><\/span>\n          <p class=\"why lgnote\">Each class reaching 25, 45 and 60. Classes on your roster are marked.<\/p>\n          <div class=\"scroll\"><table class=\"lgt\"><thead><tr><th>Class<\/th><th>25<\/th><th>45<\/th><th>60<\/th><\/tr><\/thead><tbody>\n            <tr><th>Druid<\/th><td><input type=\"checkbox\" data-lg=\"c-druid-25\" aria-label=\"Druid level 25\"><\/td><td><input type=\"checkbox\" data-lg=\"c-druid-45\" aria-label=\"Druid level 45\"><\/td><td><input type=\"checkbox\" data-lg=\"c-druid-60\" aria-label=\"Druid level 60\"><\/td><\/tr>\n            <tr><th>Hunter<\/th><td><input type=\"checkbox\" data-lg=\"c-hunter-25\" aria-label=\"Hunter level 25\"><\/td><td><input type=\"checkbox\" data-lg=\"c-hunter-45\" aria-label=\"Hunter level 45\"><\/td><td><input type=\"checkbox\" data-lg=\"c-hunter-60\" aria-label=\"Hunter level 60\"><\/td><\/tr>\n            <tr><th>Paladin<\/th><td><input type=\"checkbox\" data-lg=\"c-paladin-25\" aria-label=\"Paladin level 25\"><\/td><td><input type=\"checkbox\" data-lg=\"c-paladin-45\" aria-label=\"Paladin level 45\"><\/td><td><input type=\"checkbox\" data-lg=\"c-paladin-60\" aria-label=\"Paladin level 60\"><\/td><\/tr>\n            <tr><th>Rogue<\/th><td><input type=\"checkbox\" data-lg=\"c-rogue-25\" aria-label=\"Rogue level 25\"><\/td><td><input type=\"checkbox\" data-lg=\"c-rogue-45\" aria-label=\"Rogue level 45\"><\/td><td><input type=\"checkbox\" data-lg=\"c-rogue-60\" aria-label=\"Rogue level 60\"><\/td><\/tr>\n            <tr><th>Shaman<\/th><td><input type=\"checkbox\" data-lg=\"c-shaman-25\" aria-label=\"Shaman level 25\"><\/td><td><input type=\"checkbox\" data-lg=\"c-shaman-45\" aria-label=\"Shaman level 45\"><\/td><td><input type=\"checkbox\" data-lg=\"c-shaman-60\" aria-label=\"Shaman level 60\"><\/td><\/tr>\n            <tr><th>Warlock<\/th><td><input type=\"checkbox\" data-lg=\"c-warlock-25\" aria-label=\"Warlock level 25\"><\/td><td><input type=\"checkbox\" data-lg=\"c-warlock-45\" aria-label=\"Warlock level 45\"><\/td><td><input type=\"checkbox\" data-lg=\"c-warlock-60\" aria-label=\"Warlock level 60\"><\/td><\/tr>\n            <tr><th>Mage<\/th><td><input type=\"checkbox\" data-lg=\"c-mage-25\" aria-label=\"Mage level 25\"><\/td><td><input type=\"checkbox\" data-lg=\"c-mage-45\" aria-label=\"Mage level 45\"><\/td><td><input type=\"checkbox\" data-lg=\"c-mage-60\" aria-label=\"Mage level 60\"><\/td><\/tr>\n            <tr><th>Priest<\/th><td><input type=\"checkbox\" data-lg=\"c-priest-25\" aria-label=\"Priest level 25\"><\/td><td><input type=\"checkbox\" data-lg=\"c-priest-45\" aria-label=\"Priest level 45\"><\/td><td><input type=\"checkbox\" data-lg=\"c-priest-60\" aria-label=\"Priest level 60\"><\/td><\/tr>\n            <tr><th>Warrior<\/th><td><input type=\"checkbox\" data-lg=\"c-warrior-25\" aria-label=\"Warrior level 25\"><\/td><td><input type=\"checkbox\" data-lg=\"c-warrior-45\" aria-label=\"Warrior level 45\"><\/td><td><input type=\"checkbox\" data-lg=\"c-warrior-60\" aria-label=\"Warrior level 60\"><\/td><\/tr>\n          <\/tbody><\/table><\/div>\n        <\/div>\n        <div><span class=\"label\">Crafting professions <span class=\"mono colct\" data-lgc=\"t\"><\/span><\/span>\n          <p class=\"why lgnote\">Skill 150, 225 and 300, once per profession across the account. Gathering doesn't count.<\/p>\n          <div class=\"scroll\"><table class=\"lgt\"><thead><tr><th>Profession<\/th><th>150<\/th><th>225<\/th><th>300<\/th><\/tr><\/thead><tbody>\n            <tr><th>Alchemy<\/th><td><input type=\"checkbox\" data-lg=\"t-alch-150\" aria-label=\"Alchemy 150\"><\/td><td><input type=\"checkbox\" data-lg=\"t-alch-225\" aria-label=\"Alchemy 225\"><\/td><td><input type=\"checkbox\" data-lg=\"t-alch-300\" aria-label=\"Alchemy 300\"><\/td><\/tr>\n            <tr><th>Blacksmithing<\/th><td><input type=\"checkbox\" data-lg=\"t-bs-150\" aria-label=\"Blacksmithing 150\"><\/td><td><input type=\"checkbox\" data-lg=\"t-bs-225\" aria-label=\"Blacksmithing 225\"><\/td><td><input type=\"checkbox\" data-lg=\"t-bs-300\" aria-label=\"Blacksmithing 300\"><\/td><\/tr>\n            <tr><th>Enchanting<\/th><td><input type=\"checkbox\" data-lg=\"t-ench-150\" aria-label=\"Enchanting 150\"><\/td><td><input type=\"checkbox\" data-lg=\"t-ench-225\" aria-label=\"Enchanting 225\"><\/td><td><input type=\"checkbox\" data-lg=\"t-ench-300\" aria-label=\"Enchanting 300\"><\/td><\/tr>\n            <tr><th>Engineering<\/th><td><input type=\"checkbox\" data-lg=\"t-eng-150\" aria-label=\"Engineering 150\"><\/td><td><input type=\"checkbox\" data-lg=\"t-eng-225\" aria-label=\"Engineering 225\"><\/td><td><input type=\"checkbox\" data-lg=\"t-eng-300\" aria-label=\"Engineering 300\"><\/td><\/tr>\n            <tr><th>Leatherworking<\/th><td><input type=\"checkbox\" data-lg=\"t-lw-150\" aria-label=\"Leatherworking 150\"><\/td><td><input type=\"checkbox\" data-lg=\"t-lw-225\" aria-label=\"Leatherworking 225\"><\/td><td><input type=\"checkbox\" data-lg=\"t-lw-300\" aria-label=\"Leatherworking 300\"><\/td><\/tr>\n            <tr><th>Tailoring<\/th><td><input type=\"checkbox\" data-lg=\"t-tail-150\" aria-label=\"Tailoring 150\"><\/td><td><input type=\"checkbox\" data-lg=\"t-tail-225\" aria-label=\"Tailoring 225\"><\/td><td><input type=\"checkbox\" data-lg=\"t-tail-300\" aria-label=\"Tailoring 300\"><\/td><\/tr>\n          <\/tbody><\/table><\/div>\n        <\/div>\n        <div><span class=\"label\">Dungeons, raids &amp; adventure <span class=\"mono colct\" data-lgc=\"dra\"><\/span><\/span>\n          <ul class=\"tick lgl\">\n            <li><label><input type=\"checkbox\" data-lg=\"d-novice\"><span><b>Novice Spelunker<\/b> <span class=\"why\">· final boss of every level 15–25 dungeon<\/span><\/span><\/label><\/li>\n            <li><label><input type=\"checkbox\" data-lg=\"d-exp\"><span><b>Experienced Spelunker<\/b> <span class=\"why\">· every level 26–45 dungeon<\/span><\/span><\/label><\/li>\n            <li><label><input type=\"checkbox\" data-lg=\"d-master\"><span><b>Master Spelunker<\/b> <span class=\"why\">· every level 46–60 dungeon<\/span><\/span><\/label><\/li>\n            <li><label><input type=\"checkbox\" data-lg=\"r-ony\"><span><b>Conqueror of the Lair<\/b> <span class=\"why\">· Onyxia<\/span><\/span><\/label><\/li>\n            <li><label><input type=\"checkbox\" data-lg=\"r-hyjal\"><span><b>Conqueror of the Wilds<\/b> <span class=\"why\">· all 13 Hyjal Summit bosses<\/span><\/span><\/label><\/li>\n            <li><label><input type=\"checkbox\" data-lg=\"r-barrow\"><span><b>Conqueror of the Deeps<\/b> <span class=\"why\">· all 8 Barrow Deeps bosses<\/span><\/span><\/label><\/li>\n            <li><label><input type=\"checkbox\" data-lg=\"a-explore\"><span><b>Explorer<\/b> <span class=\"why\">· explore the whole world map on one character<\/span><\/span><\/label><\/li>\n            <li><label><input type=\"checkbox\" data-lg=\"a-valthalak\"><span><b>Lord Valthalak<\/b> <span class=\"why\">· the dungeon-set questline, \"An Earnest Proposition\" to \"Saving the Best for Last\"<\/span><\/span><\/label><\/li>\n          <\/ul>\n        <\/div>\n        <div class=\"lgwide\"><span class=\"label\">PvP <span class=\"mono colct\" data-lgc=\"p\"><\/span><\/span>\n          <ul class=\"tick lgl lgpvp\">\n            <li><label><input type=\"checkbox\" data-lg=\"p-r3\"><span><b>PvP Rank 3<\/b><\/span><\/label><\/li>\n            <li><label><input type=\"checkbox\" data-lg=\"p-r7\"><span><b>PvP Rank 7<\/b><\/span><\/label><\/li>\n            <li><label><input type=\"checkbox\" data-lg=\"p-r10\"><span><b>PvP Rank 10<\/b><\/span><\/label><\/li>\n            <li><label><input type=\"checkbox\" data-lg=\"p-r13\"><span><b>PvP Rank 13<\/b><\/span><\/label><\/li>\n            <li><label><input type=\"checkbox\" data-lg=\"p-r14\"><span><b>PvP Rank 14<\/b><\/span><\/label><\/li>\n            <li><label><input type=\"checkbox\" data-lg=\"p-av\"><span><b>Exalted · Alterac Valley<\/b><\/span><\/label><\/li>\n            <li><label><input type=\"checkbox\" data-lg=\"p-ab\"><span><b>Exalted · Arathi Basin<\/b><\/span><\/label><\/li>\n            <li><label><input type=\"checkbox\" data-lg=\"p-wsg\"><span><b>Exalted · Warsong Gulch<\/b><\/span><\/label><\/li>\n            <li><label><input type=\"checkbox\" data-lg=\"p-di\"><span><b>Exalted · Darkspear Islands<\/b><\/span><\/label><\/li>\n            <li><label><input type=\"checkbox\" data-lg=\"p-foh4\"><span><b>Field of Honor · week 4<\/b> <span class=\"why\">· Season's Journey quest<\/span><\/span><\/label><\/li>\n            <li><label><input type=\"checkbox\" data-lg=\"p-foh7\"><span><b>Field of Honor · week 7<\/b><\/span><\/label><\/li>\n            <li><label><input type=\"checkbox\" data-lg=\"p-foh10\"><span><b>Field of Honor · week 10<\/b><\/span><\/label><\/li>\n          <\/ul>\n        <\/div>\n      <\/div>\n      <div class=\"tactions\"><button class=\"tbtn\" data-lgact=\"clear\">Clear Legacy ticks<\/button><\/div>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"legacy-tree-adventure\">\n      <summary><h3>Adventure tree <small>leveling &amp; open world<\/small><\/h3><\/summary>\n      <div class=\"scroll\"><table class=\"lgperk\"><thead><tr><th>Perk<\/th><th>Tier<\/th><th>Ranks<\/th><th>At max rank<\/th><\/tr><\/thead><tbody>\n        <tr><td>Well Rested<\/td><td>1<\/td><td class=\"mono\">5<\/td><td>Rested XP builds 20% faster and the rested cap is 20% higher (4% per rank)<\/td><\/tr>\n        <tr><td>Thrill of Adventure<\/td><td>1<\/td><td class=\"mono\">5<\/td><td>A killing blow restores 5% of max Health and Mana over 10 sec. Outdoors only<\/td><\/tr>\n        <tr><td>Talented<\/td><td>2 · needs Well Rested 5/5<\/td><td class=\"mono\">5<\/td><td>First talent point at level 5 instead of 10, so all 51 points by 55. Retroactive. Still 51 total<\/td><\/tr>\n        <tr><td>High Alert<\/td><td>2<\/td><td class=\"mono\">2<\/td><td>Detect stealth as if 2 levels higher. Not in battlegrounds<\/td><\/tr>\n        <tr><td>Field Guide<\/td><td>2<\/td><td class=\"mono\">3<\/td><td>Camp feature cooldown about 25% shorter (8% per rank)<\/td><\/tr>\n        <tr><td>Field Medicine<\/td><td>2<\/td><td class=\"mono\">2<\/td><td>Recently Bandaged 10 sec shorter. Outdoors only<\/td><\/tr>\n        <tr><td>Frequent Flier<\/td><td>3 · needs Field Guide 3/3<\/td><td class=\"mono\">1<\/td><td>Flight paths half price and 20% faster<\/td><\/tr>\n      <\/tbody><\/table><\/div>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"legacy-tree-resource\">\n      <summary><h3>Resourcefulness tree <small>endgame convenience<\/small><\/h3><\/summary>\n      <div class=\"scroll\"><table class=\"lgperk\"><thead><tr><th>Perk<\/th><th>Tier<\/th><th>Ranks<\/th><th>At max rank<\/th><\/tr><\/thead><tbody>\n        <tr><td>Gourmand<\/td><td>1<\/td><td class=\"mono\">3<\/td><td>Food buffs last twice as long (+33% per rank)<\/td><\/tr>\n        <tr><td>The Quick and the Dead<\/td><td>1<\/td><td class=\"mono\">2<\/td><td>10% faster while dead; helpful spells cost nothing for 2 min after you resurrect, or until combat<\/td><\/tr>\n        <tr><td>Reinforce<\/td><td>1<\/td><td class=\"mono\">5<\/td><td>40% less durability lost when you die<\/td><\/tr>\n        <tr><td>Diplomat<\/td><td>2<\/td><td class=\"mono\">5<\/td><td>+10% reputation with every faction<\/td><\/tr>\n        <tr><td>For Great Honor<\/td><td>2<\/td><td class=\"mono\">5<\/td><td>+10% Honor<\/td><\/tr>\n        <tr><td>Permanence<\/td><td>2 · needs Gourmand 3/3<\/td><td class=\"mono\">2<\/td><td>Long class buffs last 100% longer; camp rest benefits too<\/td><\/tr>\n        <tr><td>Reagent Economy<\/td><td>3 · needs Quick and the Dead 2/2<\/td><td class=\"mono\">1<\/td><td>Class abilities no longer need vendor-bought reagents<\/td><\/tr>\n      <\/tbody><\/table><\/div>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"legacy-tree-prof\">\n      <summary><h3>Professions tree <small>crafting, gathering, gold<\/small><\/h3><\/summary>\n      <div class=\"scroll\"><table class=\"lgperk\"><thead><tr><th>Perk<\/th><th>Tier<\/th><th>Ranks<\/th><th>At max rank<\/th><\/tr><\/thead><tbody>\n        <tr><td>Working Overtime<\/td><td>1<\/td><td class=\"mono\">5<\/td><td>+20% chance of a skill-up in any tradeskill, Lockpicking included<\/td><\/tr>\n        <tr><td>Bountiful Harvest<\/td><td>1<\/td><td class=\"mono\">5<\/td><td>Scarce Mining, Herbalism and Skinning materials twice as likely<\/td><\/tr>\n        <tr><td>Bartering<\/td><td>2<\/td><td class=\"mono\">2<\/td><td>10% off vendor items (not training, riding or repairs)<\/td><\/tr>\n        <tr><td>Master Chef<\/td><td>2<\/td><td class=\"mono\">5<\/td><td>50% chance of an extra Cooking result<\/td><\/tr>\n        <tr><td>Luremaster<\/td><td>2<\/td><td class=\"mono\">2<\/td><td>50% chance of an extra fish while a lure is on<\/td><\/tr>\n        <tr><td>Performance Bonus<\/td><td>2 · needs Bountiful Harvest 5/5<\/td><td class=\"mono\">3<\/td><td>15% chance of double Merchant's Favor on crate turn-ins<\/td><\/tr>\n        <tr><td>Dedicated Study<\/td><td>3 · needs Bartering 2/2<\/td><td class=\"mono\">1<\/td><td>Once a day, +1 skill in your lowest profession; Elemental Essences once they're all 300<\/td><\/tr>\n      <\/tbody><\/table><\/div>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"legacy-tiers\">\n      <summary><h3>Tier rules<\/h3><\/summary>\n      <ul>\n        <li>Tier 1 is open. Tier 2 needs 5 points in that tree; tier 3 needs 10.<\/li>\n        <li>A perk with a \"needs\" note also needs that perk at max rank.<\/li>\n        <li>With 16 points you can reach one tier-3 perk.<\/li>\n        <li>Each tree has two locked slots for perks Blizzard hasn't named yet. Don't plan around them.<\/li>\n        <li>Tiers and prerequisites come from the beta build (Oct 15). Check the tree in game before a reset.<\/li>\n      <\/ul>\n    <\/details>\n\n    <details class=\"gpanel wide\" data-key=\"legacy-builds\">\n      <summary><h3>Which 16 to take <small>picks for a PvE roster<\/small><\/h3><\/summary>\n      <div class=\"cols\">\n        <div><span class=\"label\">Leveling characters · recommended<\/span>\n          <ol class=\"talents\">\n            <li><span class=\"rk\">5/5<\/span><b>Well Rested<\/b><\/li>\n            <li><span class=\"rk\">5/5<\/span><b>Talented<\/b> <span class=\"why\">· your full talent build online 5 levels early<\/span><\/li>\n            <li><span class=\"rk\">5/5<\/span><b>Thrill of Adventure<\/b> <span class=\"why\">· less drinking between pulls<\/span><\/li>\n            <li><span class=\"rk\">1/2<\/span><b>Field Medicine<\/b><\/li>\n          <\/ol>\n          <p class=\"why\">Talented needs Well Rested 5/5 first, so the pair costs 10 points. Each Talented rank moves your first talent point one level earlier, and it's retroactive, so you lose nothing by adding it later.<\/p>\n        <\/div>\n        <div><span class=\"label\">At level 60 · dungeons and raids<\/span>\n          <ol class=\"talents\">\n            <li><span class=\"rk\">5/5<\/span><b>Reinforce<\/b><\/li>\n            <li><span class=\"rk\">3/3<\/span><b>Gourmand<\/b><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>The Quick and the Dead<\/b><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Permanence<\/b><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Reagent Economy<\/b><\/li>\n            <li><span class=\"rk\">3/5<\/span><b>Diplomat<\/b><\/li>\n          <\/ol>\n          <p class=\"why\">Leveling perks do nothing at 60, so reset Adventure there (10 gold) and move into this.<\/p>\n        <\/div>\n        <div><span class=\"label\">Gathering or gold alt<\/span>\n          <ol class=\"talents\">\n            <li><span class=\"rk\">5/5<\/span><b>Bountiful Harvest<\/b><\/li>\n            <li><span class=\"rk\">2/2<\/span><b>Bartering<\/b><\/li>\n            <li><span class=\"rk\">3/3<\/span><b>Performance Bonus<\/b><\/li>\n            <li><span class=\"rk\">1/1<\/span><b>Dedicated Study<\/b><\/li>\n            <li><span class=\"rk\">5/5<\/span><b>Working Overtime<\/b><\/li>\n          <\/ol>\n          <p class=\"why\">Swap Working Overtime for Master Chef or Luremaster if you cook or fish more than you craft.<\/p>\n        <\/div>\n      <\/div>\n      <p class=\"why\">For Great Honor and High Alert are PvP perks, so they're low value on PvE realms.<\/p>\n    <\/details>\n\n    <details class=\"gpanel wide\" data-key=\"legacy-gotchas\">\n      <summary><h3>Known issues &amp; tips <small>as of Nov 15<\/small><\/h3><\/summary>\n      <ul>\n        <li><b>Nov 6 hotfix:<\/b> The Quick and the Dead sometimes didn't work. Fixed.<\/li>\n        <li><b>\"Unable to apply talent\"<\/b> when moving Legacy points (reported Nov 8): unlearn them at your class trainer instead.<\/li>\n        <li><b>Legacy window won't open at 25:<\/b> some players report this bug; Blizzard hasn't responded.<\/li>\n        <li><b>Talented refunds:<\/b> on the beta, Talented could only be refunded after a class talent reset too, so expect two bills.<\/li>\n        <li><b>Glowing icon:<\/b> spending the point doesn't clear it. Open the Legacy Challenges tab and click the challenge that earned it.<\/li>\n        <li><b>Diplomat:<\/b> take it before turning in one-time reputation quests.<\/li>\n        <li><b>Raids<\/b> (Onyxia, Hyjal Summit, Barrow Deeps) open Dec 9, so those three points come later.<\/li>\n        <li><b>Coming later:<\/b> new challenges and perks with each content release, new trees, and Hardcore-only challenges and perks.<\/li>\n      <\/ul>\n    <\/details>\n\n  <\/div>\n  "}, "console": {"label": "Every character · account-wide", "h2": "Graphics console commands", "html": "\n  <p class=\"sdesc\">Hidden graphics settings that go past the Options sliders, from <a href=\"https://www.threads.com/@richard.moschetti/post/DfnTAgGn_LM\" target=\"_blank\" rel=\"noopener\">richard.moschetti's Threads post<\/a> (Nov 12). Expect more foliage further out, better water and fuller weather, at some cost to frame rate.<\/p>\n  <div class=\"guide\">\n\n    <details class=\"gpanel wide\" data-key=\"console-how-to-apply\">\n      <summary><h3>How to apply <small>4 macros · 2 to apply, 2 to undo<\/small><\/h3><\/summary>\n      <ol class=\"howto\">\n        <li>Type <code>/macro<\/code> and stay on the <b>General Macros<\/b> tab, so every character on the account gets them. Click New.<\/li>\n        <li>Type the <b>macro name<\/b> as shown and pick any icon.<\/li>\n        <li>Copy the <b>macro text<\/b> in exactly, line breaks included. The commands are split over two macros because a macro holds 255 characters at most.<\/li>\n        <li>Click both GFX Boost macros once. The game saves most of these settings, so you usually only need to run them once.<\/li>\n      <\/ol>\n      <ul class=\"mtips\">\n        <li>Moving a related graphics slider in Options can overwrite these values. If that happens, click the macros again.<\/li>\n        <li>The post's author found the sharpen setting (<code>ResampleAlwaysSharpen<\/code>) underwhelming. Leave that line out if you don't like how it looks.<\/li>\n        <li>If frame rate drops too far, <code>terrainLodDist<\/code> and the two grass distance settings are the heavy ones.<\/li>\n      <\/ul>\n    <\/details>\n\n    <details class=\"gpanel wide\" data-key=\"console-apply\">\n      <summary><h3>Apply<\/h3><\/summary>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>GFX Boost 1<\/b><\/div><button class=\"copy\" id=\"copy-gx1\" data-for=\"gx1\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"gx1\">/console cameraDistanceMaxZoomFactor 4\n/console groundEffectDensity 256\n/console groundEffectDist 500\n/console groundEffectFade 370\n/console ResampleAlwaysSharpen 1\n/console reflectionMode 3<\/pre>\n        <p class=\"why\">Camera, grass, sharpening and water.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>GFX Boost 2<\/b><\/div><button class=\"copy\" id=\"copy-gx2\" data-for=\"gx2\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"gx2\">/console weatherDensity 3\n/console lodObjectFadeScale 200\n/console lodObjectCullSize 8\n/console terrainLodDist 1000\n/console horizonstart 4000\n/console ssaotype 0<\/pre>\n        <p class=\"why\">Weather, draw distance, horizon and ambient occlusion.<\/p><\/div>\n    <\/details>\n\n    <details class=\"gpanel wide\" data-key=\"console-undo\">\n      <summary><h3>Undo<\/h3><\/summary>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>GFX Reset 1<\/b><\/div><button class=\"copy\" id=\"copy-gx3\" data-for=\"gx3\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"gx3\">/console cvar_default cameraDistanceMaxZoomFactor\n/console cvar_default groundEffectDensity\n/console cvar_default groundEffectDist\n/console cvar_default groundEffectFade\n/console cvar_default ResampleAlwaysSharpen\n/console cvar_default reflectionMode<\/pre>\n        <p class=\"why\">Puts the first six settings back to the game's defaults.<\/p><\/div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name<\/span><b>GFX Reset 2<\/b><\/div><button class=\"copy\" id=\"copy-gx4\" data-for=\"gx4\">Copy<\/button><\/div>\n        <span class=\"label\">Macro text<\/span>\n        <pre class=\"macro\" id=\"gx4\">/console cvar_default weatherDensity\n/console cvar_default lodObjectFadeScale\n/console cvar_default lodObjectCullSize\n/console cvar_default terrainLodDist\n/console cvar_default horizonstart\n/console cvar_default ssaotype<\/pre>\n        <p class=\"why\">Puts the other six back.<\/p><\/div>\n      <p class=\"why\">To reset just one setting, type <code>/console cvar_default<\/code> plus its name in chat.<\/p>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"console-what-each-one-does\">\n      <summary><h3>What each one does<\/h3><\/summary>\n      <ul><li><code>cameraDistanceMaxZoomFactor 4<\/code> <span class=\"why\">· Lets you zoom the camera further out<\/span><\/li><li><code>groundEffectDensity 256<\/code> <span class=\"why\">· Thicker grass and ground clutter<\/span><\/li><li><code>groundEffectDist 500<\/code> <span class=\"why\">· Grass drawn further out<\/span><\/li><li><code>groundEffectFade 370<\/code> <span class=\"why\">· Where that grass fades out<\/span><\/li><li><code>ResampleAlwaysSharpen 1<\/code> <span class=\"why\">· Sharpening filter<\/span><\/li><li><code>reflectionMode 3<\/code> <span class=\"why\">· Better water reflections<\/span><\/li><li><code>weatherDensity 3<\/code> <span class=\"why\">· Fuller rain and snow<\/span><\/li><li><code>lodObjectFadeScale 200<\/code> <span class=\"why\">· Objects stay detailed further out<\/span><\/li><li><code>lodObjectCullSize 8<\/code> <span class=\"why\">· Draws smaller distant objects<\/span><\/li><li><code>terrainLodDist 1000<\/code> <span class=\"why\">· Detailed terrain further out<\/span><\/li><li><code>horizonstart 4000<\/code> <span class=\"why\">· Pushes the horizon back<\/span><\/li><li><code>ssaotype 0<\/code> <span class=\"why\">· Turns off ambient occlusion shading<\/span><\/li><\/ul>\n    <\/details>\n\n    <details class=\"gpanel\" data-key=\"console-left-out-giquality-0\">\n      <summary><h3>Left out: giquality 0<\/h3><\/summary>\n      <p>The original post also listed <code>/console giquality 0<\/code>. Several players, including the author, said it turned the screen almost black. It switches off secondary lighting: frame rate goes up, but dark areas become unplayable. It isn't in the macros above.<\/p>\n      <p class=\"why\">If you already ran it, undo it with:<\/p>\n      <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Chat command<\/span><b>Undo giquality<\/b><\/div><button class=\"copy\" id=\"copy-gx5\" data-for=\"gx5\">Copy<\/button><\/div>\n        <pre class=\"macro\" id=\"gx5\">/console cvar_default giquality<\/pre><\/div>\n    <\/details>\n  <\/div>\n  "}};
+/* WoW Forever Planner shared data: class order, talents, races, racials, Legacy System and console tips. Checked/updated Nov 15, 2026.
+   The nine class guides live in data/class-<name>.js. Each one adds itself to window.FP_DATA.classes, so index.html loads them after this file. */
+window.FP_DATA = {
+ "order": [
+  "warrior",
+  "paladin",
+  "hunter",
+  "rogue",
+  "priest",
+  "shaman",
+  "mage",
+  "warlock",
+  "druid"
+ ],
+ "classes": {},
+ "talents": {
+  "warrior": [
+   [
+    "Arms",
+    [
+     [
+      "Improved Heroic Strike",
+      3,
+      1,
+      1,
+      ""
+     ],
+     [
+      "Deflection",
+      5,
+      1,
+      2,
+      ""
+     ],
+     [
+      "Improved Rend",
+      3,
+      1,
+      3,
+      ""
+     ],
+     [
+      "Improved Charge",
+      2,
+      2,
+      1,
+      ""
+     ],
+     [
+      "Improved Tactical Mastery",
+      3,
+      2,
+      2,
+      ""
+     ],
+     [
+      "Improved Overpower",
+      2,
+      2,
+      4,
+      ""
+     ],
+     [
+      "Anger Management",
+      1,
+      3,
+      2,
+      "Improved Tactical Mastery"
+     ],
+     [
+      "Deep Wounds",
+      3,
+      3,
+      3,
+      "Improved Rend"
+     ],
+     [
+      "Spearing Strike",
+      1,
+      4,
+      1,
+      ""
+     ],
+     [
+      "Two-Handed Weapon Specialization",
+      3,
+      4,
+      2,
+      ""
+     ],
+     [
+      "Impale",
+      2,
+      4,
+      3,
+      "Deep Wounds"
+     ],
+     [
+      "Bloodthrill",
+      2,
+      5,
+      1,
+      ""
+     ],
+     [
+      "Sweeping Strikes",
+      1,
+      5,
+      2,
+      ""
+     ],
+     [
+      "Weaponmaster",
+      5,
+      5,
+      3,
+      ""
+     ],
+     [
+      "Improved Slam",
+      2,
+      6,
+      1,
+      ""
+     ],
+     [
+      "Improved Hamstring",
+      3,
+      6,
+      3,
+      ""
+     ],
+     [
+      "Mortal Strike",
+      1,
+      7,
+      2,
+      "Sweeping Strikes"
+     ]
+    ]
+   ],
+   [
+    "Fury",
+    [
+     [
+      "Booming Voice",
+      5,
+      1,
+      2,
+      ""
+     ],
+     [
+      "Cruelty",
+      5,
+      1,
+      3,
+      ""
+     ],
+     [
+      "Lingering Rage",
+      5,
+      2,
+      2,
+      ""
+     ],
+     [
+      "Unbridled Wrath",
+      5,
+      2,
+      3,
+      ""
+     ],
+     [
+      "Furious Precision",
+      3,
+      3,
+      1,
+      ""
+     ],
+     [
+      "Piercing Howl",
+      1,
+      3,
+      2,
+      ""
+     ],
+     [
+      "Blood Craze",
+      3,
+      3,
+      3,
+      ""
+     ],
+     [
+      "Enrage",
+      5,
+      3,
+      4,
+      ""
+     ],
+     [
+      "Dual Wield Specialization",
+      5,
+      4,
+      1,
+      ""
+     ],
+     [
+      "Reckless Swings",
+      1,
+      4,
+      2,
+      ""
+     ],
+     [
+      "Improved Execute",
+      2,
+      4,
+      4,
+      ""
+     ],
+     [
+      "Improved Berserker Rage",
+      2,
+      5,
+      1,
+      ""
+     ],
+     [
+      "Death Wish",
+      1,
+      5,
+      2,
+      ""
+     ],
+     [
+      "Gore Drinker",
+      2,
+      5,
+      3,
+      "Blood Craze"
+     ],
+     [
+      "Improved Intercept",
+      2,
+      5,
+      4,
+      ""
+     ],
+     [
+      "Improved Whirlwind",
+      2,
+      6,
+      1,
+      ""
+     ],
+     [
+      "Flurry",
+      3,
+      6,
+      3,
+      ""
+     ],
+     [
+      "Bloodthirst",
+      1,
+      7,
+      2,
+      "Death Wish"
+     ]
+    ]
+   ],
+   [
+    "Protection",
+    [
+     [
+      "Improved Bloodrage",
+      2,
+      1,
+      1,
+      ""
+     ],
+     [
+      "Shield Specialization",
+      5,
+      1,
+      2,
+      ""
+     ],
+     [
+      "Iron Will",
+      5,
+      1,
+      3,
+      ""
+     ],
+     [
+      "Anticipation",
+      5,
+      2,
+      1,
+      ""
+     ],
+     [
+      "Improved Revenge",
+      3,
+      2,
+      3,
+      ""
+     ],
+     [
+      "Improved Thunder Clap",
+      3,
+      2,
+      4,
+      ""
+     ],
+     [
+      "Last Stand",
+      1,
+      3,
+      1,
+      ""
+     ],
+     [
+      "Master of Defense",
+      2,
+      3,
+      2,
+      "Shield Specialization"
+     ],
+     [
+      "Improved Disarm",
+      3,
+      3,
+      3,
+      ""
+     ],
+     [
+      "Defiance",
+      3,
+      3,
+      4,
+      ""
+     ],
+     [
+      "Improved Sunder Armor",
+      3,
+      4,
+      1,
+      ""
+     ],
+     [
+      "Vanguard",
+      1,
+      4,
+      2,
+      ""
+     ],
+     [
+      "Improved Shield Bash",
+      2,
+      4,
+      3,
+      ""
+     ],
+     [
+      "Improved Shield Wall",
+      2,
+      5,
+      1,
+      ""
+     ],
+     [
+      "Concussion Blow",
+      1,
+      5,
+      2,
+      ""
+     ],
+     [
+      "Focused Rage",
+      3,
+      5,
+      3,
+      ""
+     ],
+     [
+      "Bastion",
+      5,
+      6,
+      3,
+      ""
+     ],
+     [
+      "Shield Slam",
+      1,
+      7,
+      2,
+      "Concussion Blow"
+     ]
+    ]
+   ]
+  ],
+  "paladin": [
+   [
+    "Holy",
+    [
+     [
+      "Spiritual Focus",
+      5,
+      1,
+      2,
+      ""
+     ],
+     [
+      "Divine Strength",
+      5,
+      1,
+      3,
+      ""
+     ],
+     [
+      "Healing Light",
+      3,
+      2,
+      1,
+      ""
+     ],
+     [
+      "Reverence",
+      2,
+      2,
+      2,
+      ""
+     ],
+     [
+      "Improved Seals",
+      5,
+      2,
+      3,
+      ""
+     ],
+     [
+      "Purifying Power",
+      2,
+      2,
+      4,
+      ""
+     ],
+     [
+      "Divine Favor",
+      1,
+      3,
+      1,
+      ""
+     ],
+     [
+      "Illumination",
+      5,
+      3,
+      2,
+      "Reverence"
+     ],
+     [
+      "Holy Conduit",
+      2,
+      3,
+      3,
+      ""
+     ],
+     [
+      "Divine Precision",
+      2,
+      4,
+      1,
+      ""
+     ],
+     [
+      "Infusion of Light",
+      2,
+      4,
+      2,
+      ""
+     ],
+     [
+      "Oath of Light",
+      1,
+      4,
+      3,
+      ""
+     ],
+     [
+      "Consecrated Ground",
+      2,
+      5,
+      1,
+      ""
+     ],
+     [
+      "Holy Shock",
+      1,
+      5,
+      2,
+      ""
+     ],
+     [
+      "Boundless Light",
+      2,
+      5,
+      3,
+      "Holy Shock"
+     ],
+     [
+      "Holy Power",
+      5,
+      6,
+      3,
+      ""
+     ],
+     [
+      "Light's Vigil",
+      1,
+      7,
+      2,
+      "Holy Shock"
+     ]
+    ]
+   ],
+   [
+    "Protection",
+    [
+     [
+      "Divine Intellect",
+      5,
+      1,
+      2,
+      ""
+     ],
+     [
+      "Redoubt",
+      5,
+      1,
+      3,
+      ""
+     ],
+     [
+      "Precision",
+      3,
+      2,
+      1,
+      ""
+     ],
+     [
+      "Guardian's Favor",
+      2,
+      2,
+      2,
+      ""
+     ],
+     [
+      "Sacred Duty",
+      2,
+      2,
+      4,
+      ""
+     ],
+     [
+      "Templar's Bulwark",
+      1,
+      3,
+      1,
+      ""
+     ],
+     [
+      "Improved Hammer of Justice",
+      3,
+      3,
+      2,
+      ""
+     ],
+     [
+      "Shield Specialization",
+      2,
+      3,
+      3,
+      "Redoubt"
+     ],
+     [
+      "Toughness",
+      5,
+      3,
+      4,
+      ""
+     ],
+     [
+      "Swift Judgement",
+      1,
+      4,
+      1,
+      "Templar's Bulwark"
+     ],
+     [
+      "Improved Righteous Fury",
+      3,
+      4,
+      2,
+      ""
+     ],
+     [
+      "Anticipation",
+      5,
+      4,
+      3,
+      ""
+     ],
+     [
+      "Stoicism",
+      2,
+      5,
+      1,
+      ""
+     ],
+     [
+      "Holy Shield",
+      1,
+      5,
+      2,
+      ""
+     ],
+     [
+      "Reckoning",
+      5,
+      5,
+      3,
+      ""
+     ],
+     [
+      "Iron Creed",
+      3,
+      6,
+      3,
+      ""
+     ],
+     [
+      "Shieldsworn",
+      1,
+      7,
+      2,
+      "Holy Shield"
+     ]
+    ]
+   ],
+   [
+    "Retribution",
+    [
+     [
+      "Deflection",
+      5,
+      1,
+      2,
+      ""
+     ],
+     [
+      "Benediction",
+      5,
+      1,
+      3,
+      ""
+     ],
+     [
+      "Improved Judgement",
+      2,
+      2,
+      1,
+      ""
+     ],
+     [
+      "Conviction",
+      3,
+      2,
+      2,
+      ""
+     ],
+     [
+      "Sanctified Judgement",
+      3,
+      2,
+      3,
+      ""
+     ],
+     [
+      "Vindication",
+      3,
+      3,
+      1,
+      ""
+     ],
+     [
+      "Unyielding Faith",
+      2,
+      3,
+      2,
+      ""
+     ],
+     [
+      "Seal of Command",
+      1,
+      3,
+      3,
+      ""
+     ],
+     [
+      "Pursuit of Justice",
+      2,
+      3,
+      4,
+      ""
+     ],
+     [
+      "Eye for an Eye",
+      2,
+      4,
+      1,
+      ""
+     ],
+     [
+      "Sacred Arbiter",
+      1,
+      4,
+      2,
+      ""
+     ],
+     [
+      "Two-Handed Weapon Specialization",
+      3,
+      4,
+      4,
+      ""
+     ],
+     [
+      "Turn Evil",
+      2,
+      5,
+      1,
+      ""
+     ],
+     [
+      "Repentance",
+      1,
+      5,
+      2,
+      ""
+     ],
+     [
+      "Vengeance",
+      3,
+      5,
+      3,
+      "Seal of Command"
+     ],
+     [
+      "Champion of the Light",
+      5,
+      6,
+      3,
+      ""
+     ],
+     [
+      "Unsealed Wrath",
+      1,
+      7,
+      2,
+      "Repentance"
+     ]
+    ]
+   ]
+  ],
+  "hunter": [
+   [
+    "Beast Mastery",
+    [
+     [
+      "Deadly Aspects",
+      5,
+      1,
+      2,
+      ""
+     ],
+     [
+      "Endurance Training",
+      5,
+      1,
+      3,
+      ""
+     ],
+     [
+      "Focused Fire",
+      2,
+      2,
+      1,
+      ""
+     ],
+     [
+      "Improved Aspect of the Monkey",
+      3,
+      2,
+      2,
+      ""
+     ],
+     [
+      "Improved Revive Pet",
+      2,
+      2,
+      3,
+      ""
+     ],
+     [
+      "Pathfinding",
+      2,
+      3,
+      1,
+      ""
+     ],
+     [
+      "Bestial Swiftness",
+      1,
+      3,
+      2,
+      ""
+     ],
+     [
+      "Unleashed Fury",
+      5,
+      3,
+      3,
+      ""
+     ],
+     [
+      "Improved Mend Pet",
+      2,
+      4,
+      1,
+      ""
+     ],
+     [
+      "Ferocity",
+      5,
+      4,
+      3,
+      ""
+     ],
+     [
+      "Summon Hawk",
+      1,
+      4,
+      4,
+      ""
+     ],
+     [
+      "Spirit Bond",
+      2,
+      5,
+      1,
+      ""
+     ],
+     [
+      "Intimidation",
+      1,
+      5,
+      2,
+      "Bestial Swiftness"
+     ],
+     [
+      "Bestial Discipline",
+      2,
+      5,
+      4,
+      ""
+     ],
+     [
+      "Frenzy",
+      5,
+      6,
+      3,
+      "Ferocity"
+     ],
+     [
+      "Bestial Wrath",
+      1,
+      7,
+      2,
+      "Intimidation"
+     ]
+    ]
+   ],
+   [
+    "Marksmanship",
+    [
+     [
+      "Hawk Eye",
+      3,
+      1,
+      1,
+      ""
+     ],
+     [
+      "Improved Concussive Shot",
+      5,
+      1,
+      2,
+      ""
+     ],
+     [
+      "Lethal Attacks",
+      5,
+      1,
+      3,
+      ""
+     ],
+     [
+      "Improved Stings",
+      3,
+      2,
+      1,
+      ""
+     ],
+     [
+      "Efficiency",
+      5,
+      2,
+      2,
+      ""
+     ],
+     [
+      "Careful Aim",
+      5,
+      2,
+      3,
+      ""
+     ],
+     [
+      "Rapid Killing",
+      2,
+      3,
+      1,
+      ""
+     ],
+     [
+      "Improved Arcane Shot",
+      5,
+      3,
+      2,
+      ""
+     ],
+     [
+      "Lone Wolf",
+      1,
+      3,
+      4,
+      ""
+     ],
+     [
+      "Trueshot Aura",
+      1,
+      4,
+      2,
+      ""
+     ],
+     [
+      "Mortal Shots",
+      5,
+      4,
+      3,
+      "Careful Aim"
+     ],
+     [
+      "Rapid Recuperation",
+      2,
+      5,
+      1,
+      "Rapid Killing"
+     ],
+     [
+      "Barrage",
+      3,
+      5,
+      3,
+      ""
+     ],
+     [
+      "Scatter Shot",
+      1,
+      5,
+      4,
+      ""
+     ],
+     [
+      "Ranged Weapon Specialization",
+      5,
+      6,
+      3,
+      ""
+     ],
+     [
+      "Sniper Shot",
+      1,
+      7,
+      2,
+      "Trueshot Aura"
+     ]
+    ]
+   ],
+   [
+    "Survival",
+    [
+     [
+      "Improved Tracking",
+      5,
+      1,
+      2,
+      ""
+     ],
+     [
+      "Deflection",
+      5,
+      1,
+      3,
+      ""
+     ],
+     [
+      "Entrapment",
+      5,
+      2,
+      1,
+      ""
+     ],
+     [
+      "Savage Strikes",
+      2,
+      2,
+      2,
+      ""
+     ],
+     [
+      "Survivalist",
+      5,
+      2,
+      3,
+      ""
+     ],
+     [
+      "Improved Wing Clip",
+      3,
+      2,
+      4,
+      ""
+     ],
+     [
+      "Clever Traps",
+      2,
+      3,
+      1,
+      ""
+     ],
+     [
+      "Surefooted",
+      3,
+      3,
+      2,
+      ""
+     ],
+     [
+      "Deterrence",
+      1,
+      3,
+      3,
+      ""
+     ],
+     [
+      "Survival Tactics",
+      2,
+      4,
+      1,
+      ""
+     ],
+     [
+      "Predator's Edge",
+      5,
+      4,
+      2,
+      ""
+     ],
+     [
+      "Counterattack",
+      1,
+      4,
+      3,
+      "Deterrence"
+     ],
+     [
+      "Resourcefulness",
+      2,
+      5,
+      1,
+      ""
+     ],
+     [
+      "Expose Prey",
+      2,
+      5,
+      2,
+      ""
+     ],
+     [
+      "Survivalist's Discipline",
+      2,
+      5,
+      3,
+      ""
+     ],
+     [
+      "Strider Kick",
+      1,
+      5,
+      4,
+      ""
+     ],
+     [
+      "Lightning Reflexes",
+      5,
+      6,
+      3,
+      ""
+     ],
+     [
+      "Lacerating Strikes",
+      1,
+      7,
+      2,
+      "Expose Prey"
+     ]
+    ]
+   ]
+  ],
+  "rogue": [
+   [
+    "Assassination",
+    [
+     [
+      "Improved Gouge",
+      3,
+      1,
+      1,
+      ""
+     ],
+     [
+      "Remorseless Attacks",
+      2,
+      1,
+      2,
+      ""
+     ],
+     [
+      "Malice",
+      5,
+      1,
+      3,
+      ""
+     ],
+     [
+      "Ruthlessness",
+      3,
+      2,
+      1,
+      ""
+     ],
+     [
+      "Improved Expose Armor",
+      2,
+      2,
+      2,
+      ""
+     ],
+     [
+      "Improved Slice and Dice",
+      3,
+      2,
+      4,
+      ""
+     ],
+     [
+      "Vigor",
+      2,
+      3,
+      1,
+      ""
+     ],
+     [
+      "Blood Splatter",
+      1,
+      3,
+      2,
+      ""
+     ],
+     [
+      "Lethality",
+      2,
+      3,
+      3,
+      "Malice"
+     ],
+     [
+      "Vile Poisons",
+      5,
+      4,
+      1,
+      ""
+     ],
+     [
+      "Cold Blood",
+      1,
+      4,
+      2,
+      ""
+     ],
+     [
+      "Improved Poisons",
+      5,
+      4,
+      3,
+      ""
+     ],
+     [
+      "Relentless Strikes",
+      5,
+      5,
+      1,
+      ""
+     ],
+     [
+      "Venom",
+      1,
+      5,
+      2,
+      ""
+     ],
+     [
+      "Improved Kidney Shot",
+      2,
+      5,
+      3,
+      ""
+     ],
+     [
+      "Seal Fate",
+      3,
+      6,
+      3,
+      ""
+     ],
+     [
+      "Mutilate",
+      1,
+      7,
+      2,
+      "Venom"
+     ]
+    ]
+   ],
+   [
+    "Combat",
+    [
+     [
+      "Coup de Grace",
+      3,
+      1,
+      1,
+      ""
+     ],
+     [
+      "Efficient Strikes",
+      2,
+      1,
+      2,
+      ""
+     ],
+     [
+      "Lightning Reflexes",
+      5,
+      1,
+      3,
+      ""
+     ],
+     [
+      "Puncturing Wounds",
+      3,
+      2,
+      1,
+      ""
+     ],
+     [
+      "Deflection",
+      3,
+      2,
+      2,
+      ""
+     ],
+     [
+      "Precision",
+      3,
+      2,
+      3,
+      ""
+     ],
+     [
+      "Improved Sprint",
+      2,
+      2,
+      4,
+      ""
+     ],
+     [
+      "Endurance",
+      2,
+      3,
+      1,
+      ""
+     ],
+     [
+      "Riposte",
+      1,
+      3,
+      2,
+      "Deflection"
+     ],
+     [
+      "Composure",
+      2,
+      3,
+      4,
+      ""
+     ],
+     [
+      "Improved Kick",
+      2,
+      4,
+      1,
+      ""
+     ],
+     [
+      "Flawless Execution",
+      1,
+      4,
+      2,
+      ""
+     ],
+     [
+      "Weapon Expertise",
+      2,
+      4,
+      3,
+      "Precision"
+     ],
+     [
+      "Aggression",
+      3,
+      4,
+      4,
+      ""
+     ],
+     [
+      "Dual Wield Specialization",
+      2,
+      5,
+      1,
+      ""
+     ],
+     [
+      "Blade Flurry",
+      1,
+      5,
+      2,
+      ""
+     ],
+     [
+      "Hack and Slash",
+      5,
+      5,
+      3,
+      ""
+     ],
+     [
+      "Flash of Steel",
+      5,
+      6,
+      3,
+      ""
+     ],
+     [
+      "Adrenaline Rush",
+      1,
+      7,
+      2,
+      "Blade Flurry"
+     ]
+    ]
+   ],
+   [
+    "Subtlety",
+    [
+     [
+      "Setup",
+      3,
+      1,
+      1,
+      ""
+     ],
+     [
+      "Master of Deception",
+      3,
+      1,
+      2,
+      ""
+     ],
+     [
+      "Opportunity",
+      5,
+      1,
+      3,
+      ""
+     ],
+     [
+      "Dirty Deeds",
+      2,
+      2,
+      1,
+      ""
+     ],
+     [
+      "Camouflage",
+      3,
+      2,
+      2,
+      ""
+     ],
+     [
+      "Improved Ambush",
+      3,
+      2,
+      3,
+      ""
+     ],
+     [
+      "Dirty Tricks",
+      2,
+      2,
+      4,
+      ""
+     ],
+     [
+      "Initiative",
+      3,
+      3,
+      1,
+      ""
+     ],
+     [
+      "Premeditation",
+      1,
+      3,
+      2,
+      ""
+     ],
+     [
+      "Serrated Blades",
+      3,
+      3,
+      3,
+      ""
+     ],
+     [
+      "Elusiveness",
+      2,
+      4,
+      1,
+      ""
+     ],
+     [
+      "Ghostly Strike",
+      1,
+      4,
+      2,
+      ""
+     ],
+     [
+      "Quick Getaway",
+      2,
+      4,
+      4,
+      "Dirty Tricks"
+     ],
+     [
+      "Heightened Senses",
+      2,
+      5,
+      1,
+      ""
+     ],
+     [
+      "Preparation",
+      1,
+      5,
+      2,
+      ""
+     ],
+     [
+      "Hemorrhage",
+      1,
+      5,
+      3,
+      "Serrated Blades"
+     ],
+     [
+      "Boot Knife",
+      5,
+      6,
+      3,
+      ""
+     ],
+     [
+      "Death Mark",
+      1,
+      7,
+      2,
+      "Preparation"
+     ]
+    ]
+   ]
+  ],
+  "priest": [
+   [
+    "Discipline",
+    [
+     [
+      "Power in Light",
+      5,
+      1,
+      1,
+      ""
+     ],
+     [
+      "Wand Specialization",
+      2,
+      1,
+      2,
+      ""
+     ],
+     [
+      "Twin Disciplines",
+      5,
+      1,
+      3,
+      ""
+     ],
+     [
+      "Silent Resolve",
+      3,
+      2,
+      1,
+      ""
+     ],
+     [
+      "Holy Precision",
+      3,
+      2,
+      2,
+      ""
+     ],
+     [
+      "Mental Strength",
+      5,
+      2,
+      3,
+      ""
+     ],
+     [
+      "Martyrdom",
+      2,
+      2,
+      4,
+      ""
+     ],
+     [
+      "Mental Agility",
+      3,
+      3,
+      1,
+      ""
+     ],
+     [
+      "Inner Focus",
+      1,
+      3,
+      2,
+      ""
+     ],
+     [
+      "Improved Power Word: Shield",
+      3,
+      3,
+      3,
+      ""
+     ],
+     [
+      "Meditation",
+      3,
+      3,
+      4,
+      ""
+     ],
+     [
+      "Improved Inner Fire",
+      3,
+      4,
+      1,
+      ""
+     ],
+     [
+      "Improved Mana Burn",
+      2,
+      4,
+      2,
+      ""
+     ],
+     [
+      "Soul Warding",
+      1,
+      4,
+      3,
+      "Improved Power Word: Shield"
+     ],
+     [
+      "Penance",
+      1,
+      5,
+      2,
+      ""
+     ],
+     [
+      "Renewed Hope",
+      5,
+      5,
+      3,
+      "Soul Warding"
+     ],
+     [
+      "Divine Aegis",
+      3,
+      6,
+      3,
+      ""
+     ],
+     [
+      "Power Infusion",
+      1,
+      7,
+      2,
+      "Penance"
+     ]
+    ]
+   ],
+   [
+    "Holy",
+    [
+     [
+      "Twilight Focus",
+      3,
+      1,
+      1,
+      ""
+     ],
+     [
+      "Improved Renew",
+      3,
+      1,
+      2,
+      ""
+     ],
+     [
+      "Holy Specialization",
+      5,
+      1,
+      3,
+      ""
+     ],
+     [
+      "Spell Warding",
+      5,
+      2,
+      2,
+      ""
+     ],
+     [
+      "Divine Fury",
+      5,
+      2,
+      3,
+      ""
+     ],
+     [
+      "Holy Nova",
+      1,
+      3,
+      1,
+      ""
+     ],
+     [
+      "Blessed Recovery",
+      3,
+      3,
+      2,
+      ""
+     ],
+     [
+      "Inspiration",
+      3,
+      3,
+      4,
+      ""
+     ],
+     [
+      "Holy Reach",
+      2,
+      4,
+      1,
+      ""
+     ],
+     [
+      "Improved Healing",
+      3,
+      4,
+      2,
+      ""
+     ],
+     [
+      "Searing Light",
+      2,
+      4,
+      3,
+      "Divine Fury"
+     ],
+     [
+      "Holy Binding",
+      1,
+      4,
+      4,
+      ""
+     ],
+     [
+      "Litany of Light",
+      2,
+      5,
+      1,
+      ""
+     ],
+     [
+      "Spirit of Redemption",
+      1,
+      5,
+      2,
+      ""
+     ],
+     [
+      "Spiritual Guidance",
+      5,
+      5,
+      3,
+      ""
+     ],
+     [
+      "Spiritual Healing",
+      3,
+      6,
+      3,
+      ""
+     ],
+     [
+      "Prayer of Mending",
+      1,
+      7,
+      2,
+      "Spirit of Redemption"
+     ]
+    ]
+   ],
+   [
+    "Shadow",
+    [
+     [
+      "Shadow Focus",
+      5,
+      1,
+      1,
+      ""
+     ],
+     [
+      "Blackout",
+      5,
+      1,
+      2,
+      ""
+     ],
+     [
+      "Spirit Tap",
+      5,
+      1,
+      3,
+      ""
+     ],
+     [
+      "Improved Mind Blast",
+      5,
+      2,
+      1,
+      ""
+     ],
+     [
+      "Improved Shadow Word: Pain",
+      2,
+      2,
+      3,
+      ""
+     ],
+     [
+      "Shadow Reach",
+      2,
+      2,
+      4,
+      ""
+     ],
+     [
+      "Improved Psychic Scream",
+      2,
+      3,
+      2,
+      "Blackout"
+     ],
+     [
+      "Mind Flay",
+      1,
+      3,
+      3,
+      ""
+     ],
+     [
+      "Improved Mind Flay",
+      2,
+      3,
+      4,
+      "Mind Flay"
+     ],
+     [
+      "Dark Inspiration",
+      5,
+      4,
+      1,
+      ""
+     ],
+     [
+      "Vampiric Embrace",
+      1,
+      4,
+      2,
+      ""
+     ],
+     [
+      "Shadow Weaving",
+      3,
+      4,
+      3,
+      ""
+     ],
+     [
+      "Silence",
+      1,
+      5,
+      1,
+      ""
+     ],
+     [
+      "Devouring Contagion",
+      2,
+      5,
+      3,
+      ""
+     ],
+     [
+      "Early Demise",
+      2,
+      6,
+      1,
+      ""
+     ],
+     [
+      "Darkness",
+      5,
+      6,
+      3,
+      ""
+     ],
+     [
+      "Shadowform",
+      1,
+      7,
+      2,
+      "Vampiric Embrace"
+     ]
+    ]
+   ]
+  ],
+  "shaman": [
+   [
+    "Elemental",
+    [
+     [
+      "Convection",
+      5,
+      1,
+      2,
+      ""
+     ],
+     [
+      "Concussion",
+      5,
+      1,
+      3,
+      ""
+     ],
+     [
+      "Elemental Devastation",
+      3,
+      2,
+      1,
+      ""
+     ],
+     [
+      "Reverberation",
+      5,
+      2,
+      2,
+      ""
+     ],
+     [
+      "Elemental Alacrity",
+      3,
+      2,
+      3,
+      ""
+     ],
+     [
+      "Call of Flame",
+      3,
+      2,
+      4,
+      ""
+     ],
+     [
+      "Elemental Focus",
+      1,
+      3,
+      1,
+      ""
+     ],
+     [
+      "Elemental Warding",
+      3,
+      3,
+      2,
+      ""
+     ],
+     [
+      "Trial by Fire",
+      2,
+      4,
+      1,
+      ""
+     ],
+     [
+      "Eye of the Storm",
+      3,
+      4,
+      2,
+      ""
+     ],
+     [
+      "Earthbound",
+      1,
+      4,
+      4,
+      ""
+     ],
+     [
+      "Elemental Reach",
+      2,
+      5,
+      1,
+      ""
+     ],
+     [
+      "Call of Thunder",
+      1,
+      5,
+      2,
+      ""
+     ],
+     [
+      "Lightning Overload",
+      3,
+      5,
+      3,
+      "Elemental Alacrity"
+     ],
+     [
+      "Elemental Fury",
+      5,
+      6,
+      3,
+      "Lightning Overload"
+     ],
+     [
+      "Lightning Mastery",
+      1,
+      7,
+      2,
+      "Call of Thunder"
+     ]
+    ]
+   ],
+   [
+    "Enhancement",
+    [
+     [
+      "Earth's Grasp",
+      2,
+      1,
+      1,
+      ""
+     ],
+     [
+      "Thundering Strikes",
+      5,
+      1,
+      2,
+      ""
+     ],
+     [
+      "Ancestral Knowledge",
+      5,
+      1,
+      3,
+      ""
+     ],
+     [
+      "Guardian Totems",
+      2,
+      2,
+      1,
+      ""
+     ],
+     [
+      "Mental Dexterity",
+      3,
+      2,
+      2,
+      ""
+     ],
+     [
+      "Improved Lightning Shield",
+      3,
+      2,
+      3,
+      ""
+     ],
+     [
+      "Elemental Weapons",
+      3,
+      3,
+      1,
+      ""
+     ],
+     [
+      "Shamanistic Focus",
+      1,
+      3,
+      3,
+      ""
+     ],
+     [
+      "Anticipation",
+      3,
+      3,
+      4,
+      ""
+     ],
+     [
+      "Toughness",
+      5,
+      4,
+      1,
+      ""
+     ],
+     [
+      "Flurry",
+      5,
+      4,
+      2,
+      "Mental Dexterity"
+     ],
+     [
+      "Stormstrike",
+      1,
+      4,
+      3,
+      ""
+     ],
+     [
+      "Improved Ghost Wolf",
+      2,
+      4,
+      4,
+      ""
+     ],
+     [
+      "Spirit Weapons",
+      1,
+      5,
+      1,
+      ""
+     ],
+     [
+      "Mental Quickness",
+      2,
+      5,
+      2,
+      ""
+     ],
+     [
+      "Improved Stormstrike",
+      2,
+      5,
+      3,
+      "Stormstrike"
+     ],
+     [
+      "Maelstrom Weapon",
+      5,
+      6,
+      3,
+      ""
+     ],
+     [
+      "Rage of the Farseer",
+      1,
+      7,
+      2,
+      "Mental Quickness"
+     ]
+    ]
+   ],
+   [
+    "Restoration",
+    [
+     [
+      "Improved Healing Wave",
+      5,
+      1,
+      2,
+      ""
+     ],
+     [
+      "Tidal Focus",
+      5,
+      1,
+      3,
+      ""
+     ],
+     [
+      "Mindfulness",
+      3,
+      2,
+      1,
+      ""
+     ],
+     [
+      "Natural Grace",
+      3,
+      2,
+      2,
+      ""
+     ],
+     [
+      "Totemic Focus",
+      5,
+      2,
+      3,
+      ""
+     ],
+     [
+      "Improved Reincarnation",
+      2,
+      2,
+      4,
+      ""
+     ],
+     [
+      "Ancestral Healing",
+      3,
+      3,
+      1,
+      ""
+     ],
+     [
+      "Healing Focus",
+      3,
+      3,
+      2,
+      ""
+     ],
+     [
+      "Water Shield",
+      1,
+      3,
+      3,
+      ""
+     ],
+     [
+      "Tidal Mastery",
+      5,
+      4,
+      1,
+      ""
+     ],
+     [
+      "Restorative Totems",
+      5,
+      4,
+      2,
+      ""
+     ],
+     [
+      "Mana Tide Totem",
+      1,
+      4,
+      3,
+      ""
+     ],
+     [
+      "Healing Way",
+      3,
+      5,
+      2,
+      ""
+     ],
+     [
+      "Nature's Swiftness",
+      1,
+      5,
+      3,
+      ""
+     ],
+     [
+      "Purification",
+      5,
+      6,
+      3,
+      ""
+     ],
+     [
+      "Riptide",
+      1,
+      7,
+      2,
+      "Healing Way"
+     ]
+    ]
+   ]
+  ],
+  "mage": [
+   [
+    "Arcane",
+    [
+     [
+      "Wand Specialization",
+      2,
+      1,
+      1,
+      ""
+     ],
+     [
+      "Improved Channeling",
+      5,
+      1,
+      2,
+      ""
+     ],
+     [
+      "Arcane Resilience",
+      3,
+      1,
+      3,
+      ""
+     ],
+     [
+      "Arcane Subtlety",
+      2,
+      2,
+      1,
+      ""
+     ],
+     [
+      "Magic Absorption",
+      2,
+      2,
+      2,
+      ""
+     ],
+     [
+      "Arcane Concentration",
+      5,
+      2,
+      3,
+      ""
+     ],
+     [
+      "Missile Barrage",
+      2,
+      2,
+      4,
+      ""
+     ],
+     [
+      "Arcane Geometry",
+      2,
+      3,
+      1,
+      ""
+     ],
+     [
+      "Arcane Impact",
+      3,
+      3,
+      2,
+      ""
+     ],
+     [
+      "Arcane Blast",
+      1,
+      3,
+      4,
+      ""
+     ],
+     [
+      "Arcane Shielding",
+      2,
+      4,
+      1,
+      ""
+     ],
+     [
+      "Improved Counterspell",
+      2,
+      4,
+      2,
+      ""
+     ],
+     [
+      "Arcane Meditation",
+      3,
+      4,
+      3,
+      "Arcane Concentration"
+     ],
+     [
+      "Arcane Wrath",
+      1,
+      4,
+      4,
+      "Arcane Blast"
+     ],
+     [
+      "Presence of Mind",
+      1,
+      5,
+      2,
+      ""
+     ],
+     [
+      "Arcane Mind",
+      5,
+      5,
+      3,
+      ""
+     ],
+     [
+      "Arcane Instability",
+      3,
+      6,
+      3,
+      ""
+     ],
+     [
+      "Arcane Power",
+      1,
+      7,
+      2,
+      "Presence of Mind"
+     ]
+    ]
+   ],
+   [
+    "Fire",
+    [
+     [
+      "Incineration",
+      5,
+      1,
+      2,
+      ""
+     ],
+     [
+      "Accelerant",
+      5,
+      1,
+      3,
+      ""
+     ],
+     [
+      "Ignite",
+      5,
+      2,
+      1,
+      ""
+     ],
+     [
+      "Flame Throwing",
+      2,
+      2,
+      2,
+      ""
+     ],
+     [
+      "Impact",
+      3,
+      2,
+      3,
+      ""
+     ],
+     [
+      "Burning Soul",
+      3,
+      3,
+      1,
+      ""
+     ],
+     [
+      "Improved Flamestrike",
+      3,
+      3,
+      2,
+      ""
+     ],
+     [
+      "Pyroblast",
+      1,
+      3,
+      3,
+      ""
+     ],
+     [
+      "Improved Fire Blast",
+      2,
+      3,
+      4,
+      ""
+     ],
+     [
+      "Improved Scorch",
+      3,
+      4,
+      1,
+      ""
+     ],
+     [
+      "Improved Fire Ward",
+      2,
+      4,
+      2,
+      ""
+     ],
+     [
+      "Heating Up",
+      1,
+      4,
+      3,
+      "Pyroblast"
+     ],
+     [
+      "Master of Elements",
+      3,
+      4,
+      4,
+      ""
+     ],
+     [
+      "Critical Mass",
+      3,
+      5,
+      2,
+      ""
+     ],
+     [
+      "Blast Wave",
+      1,
+      5,
+      3,
+      ""
+     ],
+     [
+      "Fire Power",
+      3,
+      6,
+      3,
+      ""
+     ],
+     [
+      "Combustion",
+      1,
+      7,
+      2,
+      "Critical Mass"
+     ]
+    ]
+   ],
+   [
+    "Frost",
+    [
+     [
+      "Frost Warding",
+      2,
+      1,
+      1,
+      ""
+     ],
+     [
+      "Improved Frostbolt",
+      5,
+      1,
+      2,
+      ""
+     ],
+     [
+      "Precision",
+      3,
+      1,
+      3,
+      ""
+     ],
+     [
+      "Ice Shards",
+      5,
+      2,
+      1,
+      ""
+     ],
+     [
+      "Frostbite",
+      3,
+      2,
+      2,
+      ""
+     ],
+     [
+      "Improved Frost Nova",
+      2,
+      2,
+      3,
+      ""
+     ],
+     [
+      "Permafrost",
+      3,
+      2,
+      4,
+      ""
+     ],
+     [
+      "Frost Channeling",
+      3,
+      3,
+      1,
+      ""
+     ],
+     [
+      "Improved Blizzard",
+      3,
+      3,
+      2,
+      ""
+     ],
+     [
+      "Ice Lance",
+      1,
+      3,
+      3,
+      ""
+     ],
+     [
+      "Arctic Reach",
+      2,
+      4,
+      1,
+      ""
+     ],
+     [
+      "Ice Block",
+      1,
+      4,
+      2,
+      ""
+     ],
+     [
+      "Shatter",
+      3,
+      4,
+      4,
+      ""
+     ],
+     [
+      "Improved Cone of Cold",
+      3,
+      5,
+      1,
+      ""
+     ],
+     [
+      "Cold Snap",
+      1,
+      5,
+      2,
+      ""
+     ],
+     [
+      "Fingers of Frost",
+      2,
+      5,
+      3,
+      "Ice Lance"
+     ],
+     [
+      "Winter's Chill",
+      5,
+      6,
+      3,
+      ""
+     ],
+     [
+      "Ice Barrier",
+      1,
+      7,
+      2,
+      "Cold Snap"
+     ]
+    ]
+   ]
+  ],
+  "warlock": [
+   [
+    "Affliction",
+    [
+     [
+      "Improved Life Tap",
+      2,
+      1,
+      1,
+      ""
+     ],
+     [
+      "Suppression",
+      5,
+      1,
+      2,
+      ""
+     ],
+     [
+      "Improved Corruption",
+      5,
+      1,
+      3,
+      ""
+     ],
+     [
+      "Grim Reach",
+      2,
+      2,
+      1,
+      ""
+     ],
+     [
+      "Soul Harvest",
+      2,
+      2,
+      2,
+      ""
+     ],
+     [
+      "Improved Drains",
+      3,
+      2,
+      3,
+      ""
+     ],
+     [
+      "Improved Bane of Agony",
+      2,
+      3,
+      1,
+      ""
+     ],
+     [
+      "Fel Concentration",
+      3,
+      3,
+      2,
+      ""
+     ],
+     [
+      "Amplify Curse",
+      1,
+      3,
+      3,
+      ""
+     ],
+     [
+      "Pandemic",
+      3,
+      3,
+      4,
+      ""
+     ],
+     [
+      "Malevolence",
+      5,
+      4,
+      1,
+      ""
+     ],
+     [
+      "Nightfall",
+      2,
+      4,
+      2,
+      ""
+     ],
+     [
+      "Curse of Exhaustion",
+      1,
+      4,
+      3,
+      "Amplify Curse"
+     ],
+     [
+      "Siphon Life",
+      1,
+      5,
+      2,
+      ""
+     ],
+     [
+      "Soul Siphon",
+      3,
+      5,
+      3,
+      ""
+     ],
+     [
+      "Shadow Mastery",
+      5,
+      6,
+      3,
+      ""
+     ],
+     [
+      "Wrack",
+      1,
+      7,
+      2,
+      "Siphon Life"
+     ]
+    ]
+   ],
+   [
+    "Demonology",
+    [
+     [
+      "Improved Health Funnel",
+      2,
+      1,
+      1,
+      ""
+     ],
+     [
+      "Improved Imp",
+      3,
+      1,
+      2,
+      ""
+     ],
+     [
+      "Demonic Embrace",
+      5,
+      1,
+      3,
+      ""
+     ],
+     [
+      "Unholy Power",
+      5,
+      1,
+      4,
+      ""
+     ],
+     [
+      "Demonic Aegis",
+      2,
+      2,
+      1,
+      ""
+     ],
+     [
+      "Improved Voidwalker",
+      3,
+      2,
+      2,
+      ""
+     ],
+     [
+      "Fel Vitality",
+      3,
+      2,
+      3,
+      ""
+     ],
+     [
+      "Demonic Energies",
+      2,
+      2,
+      4,
+      ""
+     ],
+     [
+      "Improved Sayaad",
+      3,
+      3,
+      1,
+      ""
+     ],
+     [
+      "Demonic Sacrifice",
+      1,
+      3,
+      2,
+      ""
+     ],
+     [
+      "Master Summoner",
+      2,
+      3,
+      3,
+      ""
+     ],
+     [
+      "Decimation",
+      2,
+      4,
+      1,
+      ""
+     ],
+     [
+      "Fel Domination",
+      1,
+      4,
+      3,
+      "Master Summoner"
+     ],
+     [
+      "Demonic Brand",
+      3,
+      4,
+      4,
+      ""
+     ],
+     [
+      "Improved Felhunter",
+      3,
+      5,
+      1,
+      ""
+     ],
+     [
+      "Soul Link",
+      1,
+      5,
+      2,
+      "Demonic Sacrifice"
+     ],
+     [
+      "Demonic Knowledge",
+      3,
+      5,
+      3,
+      ""
+     ],
+     [
+      "Master Demonologist",
+      5,
+      6,
+      3,
+      ""
+     ],
+     [
+      "Demonic Pact",
+      1,
+      7,
+      2,
+      "Soul Link"
+     ]
+    ]
+   ],
+   [
+    "Destruction",
+    [
+     [
+      "Destructive Reach",
+      2,
+      1,
+      1,
+      ""
+     ],
+     [
+      "Improved Shadow Bolt",
+      5,
+      1,
+      2,
+      ""
+     ],
+     [
+      "Bane",
+      5,
+      1,
+      3,
+      ""
+     ],
+     [
+      "Molten Skin",
+      5,
+      2,
+      1,
+      ""
+     ],
+     [
+      "Cataclysm",
+      3,
+      2,
+      2,
+      ""
+     ],
+     [
+      "Aftermath",
+      5,
+      2,
+      3,
+      ""
+     ],
+     [
+      "Ruin",
+      5,
+      3,
+      2,
+      ""
+     ],
+     [
+      "Shadowburn",
+      1,
+      3,
+      3,
+      ""
+     ],
+     [
+      "Intensity",
+      3,
+      4,
+      1,
+      ""
+     ],
+     [
+      "Agonizing Flames",
+      3,
+      4,
+      2,
+      ""
+     ],
+     [
+      "Conflagrate",
+      1,
+      4,
+      3,
+      ""
+     ],
+     [
+      "Pyroclasm",
+      2,
+      5,
+      1,
+      "Intensity"
+     ],
+     [
+      "Bane of Havoc",
+      1,
+      5,
+      2,
+      ""
+     ],
+     [
+      "Fire and Brimstone",
+      3,
+      5,
+      3,
+      "Conflagrate"
+     ],
+     [
+      "Shadow and Flame",
+      5,
+      6,
+      3,
+      ""
+     ],
+     [
+      "Incinerate",
+      1,
+      7,
+      2,
+      "Bane of Havoc"
+     ]
+    ]
+   ]
+  ],
+  "druid": [
+   [
+    "Balance",
+    [
+     [
+      "Improved Wrath",
+      5,
+      1,
+      2,
+      ""
+     ],
+     [
+      "Genesis",
+      5,
+      1,
+      3,
+      ""
+     ],
+     [
+      "Moonglow",
+      3,
+      2,
+      1,
+      ""
+     ],
+     [
+      "Improved Moonfire",
+      2,
+      2,
+      2,
+      ""
+     ],
+     [
+      "Nature's Majesty",
+      2,
+      2,
+      3,
+      ""
+     ],
+     [
+      "Nature's Reach",
+      2,
+      2,
+      4,
+      ""
+     ],
+     [
+      "Improved Entangling Roots",
+      3,
+      3,
+      1,
+      ""
+     ],
+     [
+      "Nature's Splendor",
+      1,
+      3,
+      3,
+      "Nature's Majesty"
+     ],
+     [
+      "Insect Swarm",
+      1,
+      4,
+      1,
+      ""
+     ],
+     [
+      "Vengeance",
+      5,
+      4,
+      2,
+      "Improved Moonfire"
+     ],
+     [
+      "Improved Starfire",
+      5,
+      4,
+      3,
+      ""
+     ],
+     [
+      "Overgrowth",
+      2,
+      5,
+      1,
+      ""
+     ],
+     [
+      "Nature's Grace",
+      1,
+      5,
+      2,
+      ""
+     ],
+     [
+      "Eclipse",
+      3,
+      5,
+      3,
+      ""
+     ],
+     [
+      "Moonfury",
+      5,
+      6,
+      2,
+      ""
+     ],
+     [
+      "Moonkin Form",
+      1,
+      7,
+      2,
+      ""
+     ]
+    ]
+   ],
+   [
+    "Feral Combat",
+    [
+     [
+      "Ferocity",
+      5,
+      1,
+      2,
+      ""
+     ],
+     [
+      "Furor",
+      5,
+      1,
+      3,
+      ""
+     ],
+     [
+      "Feral Swiftness",
+      2,
+      2,
+      1,
+      ""
+     ],
+     [
+      "Feral Instinct",
+      3,
+      2,
+      2,
+      ""
+     ],
+     [
+      "Brutal Impact",
+      2,
+      2,
+      3,
+      ""
+     ],
+     [
+      "Thick Hide",
+      3,
+      2,
+      4,
+      ""
+     ],
+     [
+      "Shredding Attacks",
+      3,
+      3,
+      1,
+      ""
+     ],
+     [
+      "Savage Fury",
+      2,
+      3,
+      2,
+      ""
+     ],
+     [
+      "Feral Charge",
+      1,
+      3,
+      3,
+      ""
+     ],
+     [
+      "Sharpened Claws",
+      2,
+      3,
+      4,
+      ""
+     ],
+     [
+      "Predatory Strikes",
+      3,
+      4,
+      1,
+      ""
+     ],
+     [
+      "Lacerate",
+      1,
+      4,
+      2,
+      "Savage Fury"
+     ],
+     [
+      "Predatory Discipline",
+      1,
+      4,
+      3,
+      ""
+     ],
+     [
+      "Blood Frenzy",
+      2,
+      4,
+      4,
+      "Sharpened Claws"
+     ],
+     [
+      "Leader of the Pack",
+      1,
+      5,
+      2,
+      ""
+     ],
+     [
+      "Natural Instinct",
+      2,
+      5,
+      4,
+      ""
+     ],
+     [
+      "Rend and Tear",
+      5,
+      6,
+      1,
+      "Predatory Strikes"
+     ],
+     [
+      "Natural Reaction",
+      5,
+      6,
+      4,
+      ""
+     ],
+     [
+      "Primal Bite",
+      1,
+      7,
+      2,
+      "Leader of the Pack"
+     ],
+     [
+      "Shifting Power",
+      1,
+      7,
+      3,
+      "Predatory Discipline"
+     ]
+    ]
+   ],
+   [
+    "Restoration",
+    [
+     [
+      "Nature's Focus",
+      5,
+      1,
+      2,
+      ""
+     ],
+     [
+      "Heart of the Wild",
+      5,
+      1,
+      3,
+      ""
+     ],
+     [
+      "Naturalist",
+      5,
+      2,
+      1,
+      ""
+     ],
+     [
+      "Reflection",
+      3,
+      2,
+      2,
+      ""
+     ],
+     [
+      "Natural Shapeshifter",
+      3,
+      2,
+      3,
+      ""
+     ],
+     [
+      "Subtlety",
+      3,
+      3,
+      2,
+      ""
+     ],
+     [
+      "Gift of Nature",
+      5,
+      3,
+      3,
+      ""
+     ],
+     [
+      "Bloom",
+      1,
+      3,
+      4,
+      ""
+     ],
+     [
+      "Tranquil Spirit",
+      5,
+      4,
+      2,
+      ""
+     ],
+     [
+      "Improved Rejuvenation",
+      3,
+      4,
+      3,
+      ""
+     ],
+     [
+      "Swiftmend",
+      1,
+      4,
+      4,
+      ""
+     ],
+     [
+      "Nature's Swiftness",
+      1,
+      5,
+      1,
+      "Naturalist"
+     ],
+     [
+      "Living Spirit",
+      3,
+      5,
+      2,
+      ""
+     ],
+     [
+      "Improved Tranquility",
+      2,
+      5,
+      4,
+      ""
+     ],
+     [
+      "Improved Regrowth",
+      5,
+      6,
+      3,
+      "Improved Rejuvenation"
+     ],
+     [
+      "Wild Growth",
+      1,
+      7,
+      2,
+      "Living Spirit"
+     ]
+    ]
+   ]
+  ]
+ },
+ "ivids": {
+  "warrior": {
+   "0": 0,
+   "1": 1,
+   "2": 2,
+   "3": 3,
+   "4": 4,
+   "5": 5,
+   "6": 6,
+   "7": 7,
+   "8": 8,
+   "9": 9,
+   "a": 10,
+   "b": 11,
+   "c": 12,
+   "d": 13,
+   "e": 14,
+   "f": 15,
+   "g": 16,
+   "h": 17,
+   "i": 18,
+   "j": 19,
+   "k": 20,
+   "l": 21,
+   "m": 22,
+   "n": 23,
+   "q": 24,
+   "o": 25,
+   "Q": 26,
+   "r": 27,
+   "s": 28,
+   "t": 29,
+   "w": 30,
+   "u": 31,
+   "p": 32,
+   "v": 33,
+   "x": 34,
+   "y": 35,
+   "z": 36,
+   "A": 37,
+   "B": 38,
+   "C": 39,
+   "D": 40,
+   "E": 41,
+   "F": 42,
+   "G": 43,
+   "H": 44,
+   "I": 45,
+   "J": 46,
+   "K": 47,
+   "L": 48,
+   "M": 49,
+   "N": 50,
+   "O": 51,
+   "P": 52
+  },
+  "paladin": {
+   "0": 29,
+   "1": 17,
+   "2": 2,
+   "3": 0,
+   "4": 4,
+   "5": 40,
+   "6": 11,
+   "7": 3,
+   "8": 5,
+   "9": 10,
+   "O": 1,
+   "b": 6,
+   "a": 7,
+   "A": 8,
+   "c": 9,
+   "e": 12,
+   "d": 13,
+   "P": 14,
+   "f": 15,
+   "g": 16,
+   "i": 18,
+   "j": 19,
+   "k": 20,
+   "p": 21,
+   "t": 22,
+   "s": 23,
+   "o": 24,
+   "h": 25,
+   "q": 26,
+   "n": 27,
+   "l": 28,
+   "w": 30,
+   "u": 31,
+   "v": 32,
+   "m": 33,
+   "x": 34,
+   "y": 35,
+   "z": 36,
+   "B": 37,
+   "D": 38,
+   "C": 39,
+   "E": 41,
+   "F": 42,
+   "G": 43,
+   "H": 44,
+   "I": 45,
+   "Q": 46,
+   "K": 47,
+   "J": 48,
+   "L": 49,
+   "N": 50
+  },
+  "hunter": {
+   "0": 0,
+   "1": 1,
+   "2": 2,
+   "3": 3,
+   "4": 5,
+   "5": 4,
+   "6": 6,
+   "7": 7,
+   "8": 8,
+   "9": 9,
+   "a": 10,
+   "b": 11,
+   "c": 12,
+   "d": 13,
+   "e": 14,
+   "f": 15,
+   "g": 16,
+   "h": 17,
+   "i": 18,
+   "j": 19,
+   "k": 20,
+   "l": 21,
+   "m": 22,
+   "n": 23,
+   "o": 24,
+   "p": 25,
+   "q": 26,
+   "r": 27,
+   "s": 28,
+   "t": 29,
+   "u": 30,
+   "v": 31,
+   "w": 32,
+   "x": 33,
+   "y": 34,
+   "z": 35,
+   "A": 36,
+   "B": 37,
+   "C": 38,
+   "D": 39,
+   "E": 40,
+   "F": 41,
+   "G": 42,
+   "H": 43,
+   "I": 44,
+   "J": 45,
+   "K": 46,
+   "L": 47,
+   "M": 48,
+   "N": 49
+  },
+  "rogue": {
+   "0": 0,
+   "1": 1,
+   "2": 2,
+   "3": 3,
+   "4": 6,
+   "5": 5,
+   "6": 26,
+   "7": 4,
+   "8": 8,
+   "9": 9,
+   "c": 7,
+   "a": 10,
+   "b": 11,
+   "R": 12,
+   "g": 13,
+   "e": 14,
+   "f": 15,
+   "d": 16,
+   "h": 17,
+   "i": 18,
+   "j": 19,
+   "k": 20,
+   "l": 21,
+   "m": 22,
+   "p": 23,
+   "n": 24,
+   "o": 25,
+   "q": 27,
+   "r": 28,
+   "v": 29,
+   "w": 30,
+   "S": 31,
+   "t": 32,
+   "u": 33,
+   "s": 34,
+   "x": 35,
+   "B": 36,
+   "z": 37,
+   "A": 38,
+   "L": 39,
+   "y": 40,
+   "E": 41,
+   "D": 42,
+   "F": 43,
+   "J": 44,
+   "K": 45,
+   "C": 46,
+   "G": 47,
+   "O": 48,
+   "I": 49,
+   "M": 50,
+   "N": 51,
+   "P": 52,
+   "Q": 53
+  },
+  "priest": {
+   "0": 0,
+   "1": 1,
+   "2": 2,
+   "3": 3,
+   "4": 4,
+   "5": 5,
+   "6": 6,
+   "7": 7,
+   "8": 8,
+   "9": 9,
+   "a": 10,
+   "b": 11,
+   "c": 12,
+   "d": 13,
+   "e": 14,
+   "f": 15,
+   "g": 16,
+   "h": 17,
+   "i": 18,
+   "j": 19,
+   "k": 20,
+   "l": 21,
+   "m": 22,
+   "n": 23,
+   "o": 24,
+   "p": 25,
+   "q": 26,
+   "r": 27,
+   "s": 28,
+   "t": 29,
+   "u": 30,
+   "v": 31,
+   "w": 32,
+   "x": 33,
+   "y": 34,
+   "z": 35,
+   "A": 36,
+   "B": 37,
+   "C": 38,
+   "D": 39,
+   "E": 40,
+   "F": 41,
+   "G": 42,
+   "H": 43,
+   "I": 44,
+   "J": 45,
+   "K": 46,
+   "L": 47,
+   "M": 48,
+   "N": 49,
+   "O": 50,
+   "P": 51
+  },
+  "shaman": {
+   "0": 0,
+   "1": 1,
+   "2": 2,
+   "3": 3,
+   "4": 4,
+   "5": 5,
+   "6": 6,
+   "7": 7,
+   "8": 8,
+   "9": 9,
+   "a": 10,
+   "b": 11,
+   "c": 12,
+   "d": 13,
+   "e": 14,
+   "f": 15,
+   "g": 16,
+   "h": 17,
+   "i": 18,
+   "j": 19,
+   "k": 20,
+   "m": 21,
+   "n": 22,
+   "o": 23,
+   "p": 24,
+   "q": 25,
+   "r": 26,
+   "s": 27,
+   "l": 28,
+   "t": 29,
+   "u": 30,
+   "v": 31,
+   "w": 32,
+   "x": 33,
+   "y": 34,
+   "z": 35,
+   "A": 36,
+   "B": 37,
+   "C": 38,
+   "D": 39,
+   "E": 40,
+   "F": 41,
+   "G": 42,
+   "H": 43,
+   "I": 44,
+   "J": 45,
+   "K": 46,
+   "L": 47,
+   "M": 48,
+   "N": 49
+  },
+  "mage": {
+   "0": 0,
+   "2": 1,
+   "3": 2,
+   "4": 3,
+   "5": 4,
+   "6": 5,
+   "7": 6,
+   "8": 7,
+   "9": 8,
+   "a": 9,
+   "b": 10,
+   "c": 11,
+   "d": 12,
+   "e": 13,
+   "f": 14,
+   "g": 15,
+   "h": 16,
+   "i": 17,
+   "k": 18,
+   "l": 19,
+   "m": 20,
+   "n": 21,
+   "o": 22,
+   "p": 23,
+   "q": 24,
+   "r": 25,
+   "j": 26,
+   "s": 27,
+   "t": 28,
+   "u": 29,
+   "v": 30,
+   "w": 31,
+   "x": 32,
+   "y": 33,
+   "z": 34,
+   "A": 35,
+   "B": 36,
+   "C": 37,
+   "D": 38,
+   "E": 39,
+   "F": 40,
+   "G": 41,
+   "H": 42,
+   "I": 43,
+   "J": 44,
+   "K": 45,
+   "L": 46,
+   "M": 47,
+   "N": 48,
+   "O": 49,
+   "P": 50,
+   "Q": 51,
+   "R": 52
+  },
+  "warlock": {
+   "0": 0,
+   "1": 1,
+   "2": 2,
+   "3": 3,
+   "4": 4,
+   "5": 5,
+   "6": 6,
+   "7": 7,
+   "8": 8,
+   "9": 9,
+   "a": 10,
+   "b": 11,
+   "c": 12,
+   "d": 13,
+   "e": 14,
+   "f": 15,
+   "g": 16,
+   "h": 17,
+   "i": 18,
+   "j": 19,
+   "k": 20,
+   "l": 21,
+   "m": 22,
+   "n": 23,
+   "o": 24,
+   "p": 25,
+   "q": 26,
+   "r": 27,
+   "s": 28,
+   "t": 29,
+   "u": 30,
+   "v": 31,
+   "w": 32,
+   "x": 33,
+   "y": 34,
+   "z": 35,
+   "A": 36,
+   "B": 37,
+   "C": 38,
+   "D": 39,
+   "E": 40,
+   "F": 41,
+   "G": 42,
+   "H": 43,
+   "I": 44,
+   "J": 45,
+   "K": 46,
+   "L": 47,
+   "M": 48,
+   "N": 49,
+   "O": 50,
+   "P": 51
+  },
+  "druid": {
+   "0": 0,
+   "1": 1,
+   "2": 2,
+   "3": 3,
+   "4": 4,
+   "5": 5,
+   "6": 6,
+   "7": 7,
+   "8": 8,
+   "9": 9,
+   "a": 10,
+   "b": 11,
+   "c": 12,
+   "d": 13,
+   "e": 14,
+   "f": 15,
+   "g": 16,
+   "h": 17,
+   "i": 18,
+   "j": 19,
+   "k": 20,
+   "l": 21,
+   "m": 22,
+   "n": 23,
+   "o": 24,
+   "p": 25,
+   "s": 26,
+   "r": 27,
+   "q": 28,
+   "t": 29,
+   "v": 30,
+   "w": 31,
+   "y": 32,
+   "x": 33,
+   "z": 34,
+   "u": 35,
+   "A": 36,
+   "B": 37,
+   "C": 38,
+   "D": 39,
+   "E": 40,
+   "F": 41,
+   "G": 42,
+   "H": 43,
+   "I": 44,
+   "J": 45,
+   "K": 46,
+   "L": 47,
+   "M": 48,
+   "N": 49,
+   "O": 50,
+   "P": 51
+  }
+ },
+ "races": {
+  "Alliance": [
+   "Human",
+   "Dwarf",
+   "Night Elf",
+   "Gnome",
+   "Skyborne (High Order)"
+  ],
+  "Horde": [
+   "Orc",
+   "Undead",
+   "Tauren",
+   "Troll",
+   "Skyborne (Windshaper)"
+  ]
+ },
+ "racials": {
+  "Human": [
+   [
+    "Ruthless",
+    "Passive",
+    "+1% crit chance with all spells and attacks."
+   ],
+   [
+    "The Human Spirit",
+    "Passive",
+    "+10% Spirit."
+   ],
+   [
+    "Perception",
+    "Active · 3 min",
+    "Greatly increased stealth detection for 20 sec."
+   ],
+   [
+    "Will to Survive",
+    "Active · 3 min",
+    "Removes all stun effects."
+   ]
+  ],
+  "Dwarf": [
+   [
+    "Artisan's Precision",
+    "Passive",
+    "+1% hit chance with spells and attacks."
+   ],
+   [
+    "Big Game Hunter",
+    "Passive",
+    "+5% damage vs Beasts."
+   ],
+   [
+    "Stoneform",
+    "Active · 3 min",
+    "Removes and grants immunity to Bleed, Poison and Disease; −10% physical damage taken for 8 sec."
+   ],
+   [
+    "Find Treasure",
+    "Active",
+    "Shows nearby treasure on the minimap and sometimes increases treasure found."
+   ]
+  ],
+  "Night Elf": [
+   [
+    "Quickness",
+    "Passive",
+    "+1% dodge, +2% movement speed. Night Elf Rogues and Druids are harder to detect in Stealth (as if 1 level higher)."
+   ],
+   [
+    "Wisp Spirit",
+    "Passive",
+    "Wisp form on death, +75% movement speed."
+   ],
+   [
+    "Shadowmeld",
+    "Active · 10 sec",
+    "Stealth while still; 2 min cooldown if used in combat."
+   ],
+   [
+    "Elune's Light",
+    "Active · 3 min",
+    "+10% crit chance with spells and attacks for 15 sec."
+   ]
+  ],
+  "Gnome": [
+   [
+    "Expansive Mind",
+    "Passive",
+    "+5% maximum mana, rage or energy."
+   ],
+   [
+    "Engineering Specialization",
+    "Passive",
+    "Engineering devices fail or backfire 20% less often."
+   ],
+   [
+    "Escape Artist",
+    "Active · 2 min",
+    "Escape any movement-impairing effect, immune for 3 sec."
+   ],
+   [
+    "Eureka!",
+    "Active · 2 min",
+    "8 sec: non-periodic damaging abilities cost 10% less and deal 10% more. Priests also get it on non-periodic heals."
+   ]
+  ],
+  "Skyborne (High Order)": [
+   [
+    "Wind Blessed",
+    "Passive",
+    "+2% spell, melee and ranged haste."
+   ],
+   [
+    "Elemental Insight",
+    "Passive",
+    "+5% damage vs Elementals."
+   ],
+   [
+    "Read Leyline",
+    "Active · 2 min",
+    "+50% health and mana regen for 15 sec. Used at a Ley Line, it attunes you for 1 hour at +100%; lasts through death, ends when you enter a raid."
+   ],
+   [
+    "Walk on Air",
+    "Active · 90 sec",
+    "Steerable downward glide for 10 sec."
+   ]
+  ],
+  "Orc": [
+   [
+    "Hardiness",
+    "Passive",
+    "Stun durations on you −20%."
+   ],
+   [
+    "Command",
+    "Passive",
+    "+5% damage from Hunter and Warlock pets."
+   ],
+   [
+    "Blood Fury",
+    "Active · 2 min",
+    "+10% Attack Power and Spell Power for 15 sec."
+   ],
+   [
+    "Shatter Curse",
+    "Active · 3 min",
+    "Removes all Curses and Banes; −5% magic damage taken for 8 sec."
+   ]
+  ],
+  "Undead": [
+   [
+    "Touch of the Grave",
+    "Passive",
+    "Damaging spells and attacks can drain up to 5% of your max health from the target (30% chance for casters, 20% for Paladins, Rogues and Warriors). 15 sec internal cooldown."
+   ],
+   [
+    "Underwater Breathing",
+    "Passive",
+    "Breath lasts 300% longer."
+   ],
+   [
+    "Will of the Forsaken",
+    "Active · 2 min",
+    "Removes Charm, Fear and Sleep."
+   ],
+   [
+    "Cannibalize",
+    "Active · 2 min",
+    "Regenerate 7% health and mana every 2 sec for 10 sec from a Humanoid or Undead corpse."
+   ]
+  ],
+  "Tauren": [
+   [
+    "Endurance",
+    "Passive",
+    "+5% total health."
+   ],
+   [
+    "Plainsrunning",
+    "Passive",
+    "+2% movement speed every 5 sec of moving, up to +60%. Damage or standing still reduces it; no mounted bonus."
+   ],
+   [
+    "War Stomp",
+    "Active · 90 sec",
+    "Stuns up to 5 enemies within 8 yd for 2 sec."
+   ],
+   [
+    "Cultivation",
+    "Active · 15 min",
+    "Grow a harvestable copy of a nearby herb, no Herbalism needed."
+   ]
+  ],
+  "Troll": [
+   [
+    "Regeneration",
+    "Passive",
+    "+20% health regen; 20% of it continues in combat."
+   ],
+   [
+    "Beast Slaying",
+    "Passive",
+    "+5% damage vs Beasts."
+   ],
+   [
+    "Berserking",
+    "Active · 3 min",
+    "+10% cast and attack speed for 15 sec."
+   ],
+   [
+    "Rapid Regeneration",
+    "Active · 3 min",
+    "Channel: regenerate 50% of max health over 6 sec."
+   ]
+  ],
+  "Skyborne (Windshaper)": [
+   [
+    "Wind Blessed",
+    "Passive",
+    "+2% spell, melee and ranged haste."
+   ],
+   [
+    "Elemental Insight",
+    "Passive",
+    "+5% damage vs Elementals."
+   ],
+   [
+    "Skysight",
+    "Active · 2 min",
+    "+15% movement speed for 15 sec. Used at an elemental convergence, it charges you for 1 hour at +30%."
+   ],
+   [
+    "Walk on Air",
+    "Active · 90 sec",
+    "Steerable downward glide for 10 sec."
+   ]
+  ]
+ },
+ "legacy": {
+  "label": "Every character · account-wide",
+  "h2": "Legacy System",
+  "html": "\n  <p class=\"sdesc\">Forever's account-wide progression. You complete Legacy Challenges (an achievement-style list) to earn Legacy Points, and every character spends those points on its own perks in three Legacy Trees. These are separate from your 51 class talent points. Open it in game with <b>Y</b>. Numbers are from live-launch guides, cross-checked as of Nov 15.</p>\n  <div class=\"guide\">\n\n    <details class=\"gpanel wide\" data-key=\"legacy-how\">\n      <summary><h3>How it works <small>the short version</small></h3></summary>\n      <ul>\n        <li><b>Unlocks</b> with your first Legacy Point. For most people that's the first character to reach level 25. Reaching 150 in a crafting profession or exploring the whole world map also does it.</li>\n        <li><b>65 points to earn</b> at launch, 1 per challenge, shared by every character on your Battle.net account.</li>\n        <li><b>16 points to spend per character</b> at launch. Blizzard will raise this cap over time. Points aren't used up: every character gets its own 16 from the same account total.</li>\n        <li><b>One character can earn 29</b>, so you can reach 16 without alts, but your roster gets there much faster.</li>\n        <li><b>Challenges are first-time milestones.</b> A second character of the same class earns nothing for reaching the same level.</li>\n        <li><b>Rewards</b> come from your total points earned (15 / 25 / 40 / 55), not from what you spend. Claim them from Innkeeper Wiley in Ratchet, The Barrens.</li>\n        <li><b>Reset</b> at your own class trainer (\"I wish to unlearn my class or legacy talents\"). The first Legacy reset costs 10 gold, per character.</li>\n        <li><b>Hardcore</b> (not open yet): Hardcore challenges count everywhere, but normal-realm challenges don't carry into Hardcore.</li>\n      </ul>\n    </details>\n\n    <details class=\"gpanel wide\" data-key=\"legacy-tracker\" open>\n      <summary><h3>Your Legacy Points <small>tick what you've earned · saves with your planner</small></h3></summary>\n      <div class=\"tsum\" id=\"lgSum\"></div>\n      <div class=\"lgrewards\" id=\"lgRewards\"></div>\n      <div class=\"cols lgcols\" id=\"lgBox\">\n        <div><span class=\"label\">Classes <span class=\"mono colct\" data-lgc=\"c\"></span></span>\n          <p class=\"why lgnote\">Each class reaching 25, 45 and 60. Classes on your roster are marked.</p>\n          <div class=\"scroll\"><table class=\"lgt\"><thead><tr><th>Class</th><th>25</th><th>45</th><th>60</th></tr></thead><tbody>\n            <tr><th>Druid</th><td><input type=\"checkbox\" data-lg=\"c-druid-25\" aria-label=\"Druid level 25\"></td><td><input type=\"checkbox\" data-lg=\"c-druid-45\" aria-label=\"Druid level 45\"></td><td><input type=\"checkbox\" data-lg=\"c-druid-60\" aria-label=\"Druid level 60\"></td></tr>\n            <tr><th>Hunter</th><td><input type=\"checkbox\" data-lg=\"c-hunter-25\" aria-label=\"Hunter level 25\"></td><td><input type=\"checkbox\" data-lg=\"c-hunter-45\" aria-label=\"Hunter level 45\"></td><td><input type=\"checkbox\" data-lg=\"c-hunter-60\" aria-label=\"Hunter level 60\"></td></tr>\n            <tr><th>Paladin</th><td><input type=\"checkbox\" data-lg=\"c-paladin-25\" aria-label=\"Paladin level 25\"></td><td><input type=\"checkbox\" data-lg=\"c-paladin-45\" aria-label=\"Paladin level 45\"></td><td><input type=\"checkbox\" data-lg=\"c-paladin-60\" aria-label=\"Paladin level 60\"></td></tr>\n            <tr><th>Rogue</th><td><input type=\"checkbox\" data-lg=\"c-rogue-25\" aria-label=\"Rogue level 25\"></td><td><input type=\"checkbox\" data-lg=\"c-rogue-45\" aria-label=\"Rogue level 45\"></td><td><input type=\"checkbox\" data-lg=\"c-rogue-60\" aria-label=\"Rogue level 60\"></td></tr>\n            <tr><th>Shaman</th><td><input type=\"checkbox\" data-lg=\"c-shaman-25\" aria-label=\"Shaman level 25\"></td><td><input type=\"checkbox\" data-lg=\"c-shaman-45\" aria-label=\"Shaman level 45\"></td><td><input type=\"checkbox\" data-lg=\"c-shaman-60\" aria-label=\"Shaman level 60\"></td></tr>\n            <tr><th>Warlock</th><td><input type=\"checkbox\" data-lg=\"c-warlock-25\" aria-label=\"Warlock level 25\"></td><td><input type=\"checkbox\" data-lg=\"c-warlock-45\" aria-label=\"Warlock level 45\"></td><td><input type=\"checkbox\" data-lg=\"c-warlock-60\" aria-label=\"Warlock level 60\"></td></tr>\n            <tr><th>Mage</th><td><input type=\"checkbox\" data-lg=\"c-mage-25\" aria-label=\"Mage level 25\"></td><td><input type=\"checkbox\" data-lg=\"c-mage-45\" aria-label=\"Mage level 45\"></td><td><input type=\"checkbox\" data-lg=\"c-mage-60\" aria-label=\"Mage level 60\"></td></tr>\n            <tr><th>Priest</th><td><input type=\"checkbox\" data-lg=\"c-priest-25\" aria-label=\"Priest level 25\"></td><td><input type=\"checkbox\" data-lg=\"c-priest-45\" aria-label=\"Priest level 45\"></td><td><input type=\"checkbox\" data-lg=\"c-priest-60\" aria-label=\"Priest level 60\"></td></tr>\n            <tr><th>Warrior</th><td><input type=\"checkbox\" data-lg=\"c-warrior-25\" aria-label=\"Warrior level 25\"></td><td><input type=\"checkbox\" data-lg=\"c-warrior-45\" aria-label=\"Warrior level 45\"></td><td><input type=\"checkbox\" data-lg=\"c-warrior-60\" aria-label=\"Warrior level 60\"></td></tr>\n          </tbody></table></div>\n        </div>\n        <div><span class=\"label\">Crafting professions <span class=\"mono colct\" data-lgc=\"t\"></span></span>\n          <p class=\"why lgnote\">Skill 150, 225 and 300, once per profession across the account. Gathering doesn't count.</p>\n          <div class=\"scroll\"><table class=\"lgt\"><thead><tr><th>Profession</th><th>150</th><th>225</th><th>300</th></tr></thead><tbody>\n            <tr><th>Alchemy</th><td><input type=\"checkbox\" data-lg=\"t-alch-150\" aria-label=\"Alchemy 150\"></td><td><input type=\"checkbox\" data-lg=\"t-alch-225\" aria-label=\"Alchemy 225\"></td><td><input type=\"checkbox\" data-lg=\"t-alch-300\" aria-label=\"Alchemy 300\"></td></tr>\n            <tr><th>Blacksmithing</th><td><input type=\"checkbox\" data-lg=\"t-bs-150\" aria-label=\"Blacksmithing 150\"></td><td><input type=\"checkbox\" data-lg=\"t-bs-225\" aria-label=\"Blacksmithing 225\"></td><td><input type=\"checkbox\" data-lg=\"t-bs-300\" aria-label=\"Blacksmithing 300\"></td></tr>\n            <tr><th>Enchanting</th><td><input type=\"checkbox\" data-lg=\"t-ench-150\" aria-label=\"Enchanting 150\"></td><td><input type=\"checkbox\" data-lg=\"t-ench-225\" aria-label=\"Enchanting 225\"></td><td><input type=\"checkbox\" data-lg=\"t-ench-300\" aria-label=\"Enchanting 300\"></td></tr>\n            <tr><th>Engineering</th><td><input type=\"checkbox\" data-lg=\"t-eng-150\" aria-label=\"Engineering 150\"></td><td><input type=\"checkbox\" data-lg=\"t-eng-225\" aria-label=\"Engineering 225\"></td><td><input type=\"checkbox\" data-lg=\"t-eng-300\" aria-label=\"Engineering 300\"></td></tr>\n            <tr><th>Leatherworking</th><td><input type=\"checkbox\" data-lg=\"t-lw-150\" aria-label=\"Leatherworking 150\"></td><td><input type=\"checkbox\" data-lg=\"t-lw-225\" aria-label=\"Leatherworking 225\"></td><td><input type=\"checkbox\" data-lg=\"t-lw-300\" aria-label=\"Leatherworking 300\"></td></tr>\n            <tr><th>Tailoring</th><td><input type=\"checkbox\" data-lg=\"t-tail-150\" aria-label=\"Tailoring 150\"></td><td><input type=\"checkbox\" data-lg=\"t-tail-225\" aria-label=\"Tailoring 225\"></td><td><input type=\"checkbox\" data-lg=\"t-tail-300\" aria-label=\"Tailoring 300\"></td></tr>\n          </tbody></table></div>\n        </div>\n        <div><span class=\"label\">Dungeons, raids &amp; adventure <span class=\"mono colct\" data-lgc=\"dra\"></span></span>\n          <ul class=\"tick lgl\">\n            <li><label><input type=\"checkbox\" data-lg=\"d-novice\"><span><b>Novice Spelunker</b> <span class=\"why\">· final boss of every level 15–25 dungeon</span></span></label></li>\n            <li><label><input type=\"checkbox\" data-lg=\"d-exp\"><span><b>Experienced Spelunker</b> <span class=\"why\">· every level 26–45 dungeon</span></span></label></li>\n            <li><label><input type=\"checkbox\" data-lg=\"d-master\"><span><b>Master Spelunker</b> <span class=\"why\">· every level 46–60 dungeon</span></span></label></li>\n            <li><label><input type=\"checkbox\" data-lg=\"r-ony\"><span><b>Conqueror of the Lair</b> <span class=\"why\">· Onyxia</span></span></label></li>\n            <li><label><input type=\"checkbox\" data-lg=\"r-hyjal\"><span><b>Conqueror of the Wilds</b> <span class=\"why\">· all 13 Hyjal Summit bosses</span></span></label></li>\n            <li><label><input type=\"checkbox\" data-lg=\"r-barrow\"><span><b>Conqueror of the Deeps</b> <span class=\"why\">· all 8 Barrow Deeps bosses</span></span></label></li>\n            <li><label><input type=\"checkbox\" data-lg=\"a-explore\"><span><b>Explorer</b> <span class=\"why\">· explore the whole world map on one character</span></span></label></li>\n            <li><label><input type=\"checkbox\" data-lg=\"a-valthalak\"><span><b>Lord Valthalak</b> <span class=\"why\">· the dungeon-set questline, \"An Earnest Proposition\" to \"Saving the Best for Last\"</span></span></label></li>\n          </ul>\n        </div>\n        <div class=\"lgwide\"><span class=\"label\">PvP <span class=\"mono colct\" data-lgc=\"p\"></span></span>\n          <ul class=\"tick lgl lgpvp\">\n            <li><label><input type=\"checkbox\" data-lg=\"p-r3\"><span><b>PvP Rank 3</b></span></label></li>\n            <li><label><input type=\"checkbox\" data-lg=\"p-r7\"><span><b>PvP Rank 7</b></span></label></li>\n            <li><label><input type=\"checkbox\" data-lg=\"p-r10\"><span><b>PvP Rank 10</b></span></label></li>\n            <li><label><input type=\"checkbox\" data-lg=\"p-r13\"><span><b>PvP Rank 13</b></span></label></li>\n            <li><label><input type=\"checkbox\" data-lg=\"p-r14\"><span><b>PvP Rank 14</b></span></label></li>\n            <li><label><input type=\"checkbox\" data-lg=\"p-av\"><span><b>Exalted · Alterac Valley</b></span></label></li>\n            <li><label><input type=\"checkbox\" data-lg=\"p-ab\"><span><b>Exalted · Arathi Basin</b></span></label></li>\n            <li><label><input type=\"checkbox\" data-lg=\"p-wsg\"><span><b>Exalted · Warsong Gulch</b></span></label></li>\n            <li><label><input type=\"checkbox\" data-lg=\"p-di\"><span><b>Exalted · Darkspear Islands</b></span></label></li>\n            <li><label><input type=\"checkbox\" data-lg=\"p-foh4\"><span><b>Field of Honor · week 4</b> <span class=\"why\">· Season's Journey quest</span></span></label></li>\n            <li><label><input type=\"checkbox\" data-lg=\"p-foh7\"><span><b>Field of Honor · week 7</b></span></label></li>\n            <li><label><input type=\"checkbox\" data-lg=\"p-foh10\"><span><b>Field of Honor · week 10</b></span></label></li>\n          </ul>\n        </div>\n      </div>\n      <div class=\"tactions\"><button class=\"tbtn\" data-lgact=\"clear\">Clear Legacy ticks</button></div>\n    </details>\n\n    <details class=\"gpanel\" data-key=\"legacy-tree-adventure\">\n      <summary><h3>Adventure tree <small>leveling &amp; open world</small></h3></summary>\n      <div class=\"scroll\"><table class=\"lgperk\"><thead><tr><th>Perk</th><th>Tier</th><th>Ranks</th><th>At max rank</th></tr></thead><tbody>\n        <tr><td>Well Rested</td><td>1</td><td class=\"mono\">5</td><td>Rested XP builds 20% faster and the rested cap is 20% higher (4% per rank)</td></tr>\n        <tr><td>Thrill of Adventure</td><td>1</td><td class=\"mono\">5</td><td>A killing blow restores 5% of max Health and Mana over 10 sec. Outdoors only</td></tr>\n        <tr><td>Talented</td><td>2 · needs Well Rested 5/5</td><td class=\"mono\">5</td><td>First talent point at level 5 instead of 10, so all 51 points by 55. Retroactive. Still 51 total</td></tr>\n        <tr><td>High Alert</td><td>2</td><td class=\"mono\">2</td><td>Detect stealth as if 2 levels higher. Not in battlegrounds</td></tr>\n        <tr><td>Field Guide</td><td>2</td><td class=\"mono\">3</td><td>Camp feature cooldown about 25% shorter (8% per rank)</td></tr>\n        <tr><td>Field Medicine</td><td>2</td><td class=\"mono\">2</td><td>Recently Bandaged 10 sec shorter. Outdoors only</td></tr>\n        <tr><td>Frequent Flier</td><td>3 · needs Field Guide 3/3</td><td class=\"mono\">1</td><td>Flight paths half price and 20% faster</td></tr>\n      </tbody></table></div>\n    </details>\n\n    <details class=\"gpanel\" data-key=\"legacy-tree-resource\">\n      <summary><h3>Resourcefulness tree <small>endgame convenience</small></h3></summary>\n      <div class=\"scroll\"><table class=\"lgperk\"><thead><tr><th>Perk</th><th>Tier</th><th>Ranks</th><th>At max rank</th></tr></thead><tbody>\n        <tr><td>Gourmand</td><td>1</td><td class=\"mono\">3</td><td>Food buffs last twice as long (+33% per rank)</td></tr>\n        <tr><td>The Quick and the Dead</td><td>1</td><td class=\"mono\">2</td><td>10% faster while dead; helpful spells cost nothing for 2 min after you resurrect, or until combat</td></tr>\n        <tr><td>Reinforce</td><td>1</td><td class=\"mono\">5</td><td>40% less durability lost when you die</td></tr>\n        <tr><td>Diplomat</td><td>2</td><td class=\"mono\">5</td><td>+10% reputation with every faction</td></tr>\n        <tr><td>For Great Honor</td><td>2</td><td class=\"mono\">5</td><td>+10% Honor</td></tr>\n        <tr><td>Permanence</td><td>2 · needs Gourmand 3/3</td><td class=\"mono\">2</td><td>Long class buffs last 100% longer; camp rest benefits too</td></tr>\n        <tr><td>Reagent Economy</td><td>3 · needs Quick and the Dead 2/2</td><td class=\"mono\">1</td><td>Class abilities no longer need vendor-bought reagents</td></tr>\n      </tbody></table></div>\n    </details>\n\n    <details class=\"gpanel\" data-key=\"legacy-tree-prof\">\n      <summary><h3>Professions tree <small>crafting, gathering, gold</small></h3></summary>\n      <div class=\"scroll\"><table class=\"lgperk\"><thead><tr><th>Perk</th><th>Tier</th><th>Ranks</th><th>At max rank</th></tr></thead><tbody>\n        <tr><td>Working Overtime</td><td>1</td><td class=\"mono\">5</td><td>+20% chance of a skill-up in any tradeskill, Lockpicking included</td></tr>\n        <tr><td>Bountiful Harvest</td><td>1</td><td class=\"mono\">5</td><td>Scarce Mining, Herbalism and Skinning materials twice as likely</td></tr>\n        <tr><td>Bartering</td><td>2</td><td class=\"mono\">2</td><td>10% off vendor items (not training, riding or repairs)</td></tr>\n        <tr><td>Master Chef</td><td>2</td><td class=\"mono\">5</td><td>50% chance of an extra Cooking result</td></tr>\n        <tr><td>Luremaster</td><td>2</td><td class=\"mono\">2</td><td>50% chance of an extra fish while a lure is on</td></tr>\n        <tr><td>Performance Bonus</td><td>2 · needs Bountiful Harvest 5/5</td><td class=\"mono\">3</td><td>15% chance of double Merchant's Favor on crate turn-ins</td></tr>\n        <tr><td>Dedicated Study</td><td>3 · needs Bartering 2/2</td><td class=\"mono\">1</td><td>Once a day, +1 skill in your lowest profession; Elemental Essences once they're all 300</td></tr>\n      </tbody></table></div>\n    </details>\n\n    <details class=\"gpanel\" data-key=\"legacy-tiers\">\n      <summary><h3>Tier rules</h3></summary>\n      <ul>\n        <li>Tier 1 is open. Tier 2 needs 5 points in that tree; tier 3 needs 10.</li>\n        <li>A perk with a \"needs\" note also needs that perk at max rank.</li>\n        <li>With 16 points you can reach one tier-3 perk.</li>\n        <li>Each tree has two locked slots for perks Blizzard hasn't named yet. Don't plan around them.</li>\n        <li>Tiers and prerequisites come from the beta build (Oct 15). Check the tree in game before a reset.</li>\n      </ul>\n    </details>\n\n    <details class=\"gpanel wide\" data-key=\"legacy-builds\">\n      <summary><h3>Which 16 to take <small>picks for a PvE roster</small></h3></summary>\n      <div class=\"cols\">\n        <div><span class=\"label\">Leveling characters · recommended</span>\n          <ol class=\"talents\">\n            <li><span class=\"rk\">5/5</span><b>Well Rested</b></li>\n            <li><span class=\"rk\">5/5</span><b>Talented</b> <span class=\"why\">· your full talent build online 5 levels early</span></li>\n            <li><span class=\"rk\">5/5</span><b>Thrill of Adventure</b> <span class=\"why\">· less drinking between pulls</span></li>\n            <li><span class=\"rk\">1/2</span><b>Field Medicine</b></li>\n          </ol>\n          <p class=\"why\">Talented needs Well Rested 5/5 first, so the pair costs 10 points. Each Talented rank moves your first talent point one level earlier, and it's retroactive, so you lose nothing by adding it later.</p>\n        </div>\n        <div><span class=\"label\">At level 60 · dungeons and raids</span>\n          <ol class=\"talents\">\n            <li><span class=\"rk\">5/5</span><b>Reinforce</b></li>\n            <li><span class=\"rk\">3/3</span><b>Gourmand</b></li>\n            <li><span class=\"rk\">2/2</span><b>The Quick and the Dead</b></li>\n            <li><span class=\"rk\">2/2</span><b>Permanence</b></li>\n            <li><span class=\"rk\">1/1</span><b>Reagent Economy</b></li>\n            <li><span class=\"rk\">3/5</span><b>Diplomat</b></li>\n          </ol>\n          <p class=\"why\">Leveling perks do nothing at 60, so reset Adventure there (10 gold) and move into this.</p>\n        </div>\n        <div><span class=\"label\">Gathering or gold alt</span>\n          <ol class=\"talents\">\n            <li><span class=\"rk\">5/5</span><b>Bountiful Harvest</b></li>\n            <li><span class=\"rk\">2/2</span><b>Bartering</b></li>\n            <li><span class=\"rk\">3/3</span><b>Performance Bonus</b></li>\n            <li><span class=\"rk\">1/1</span><b>Dedicated Study</b></li>\n            <li><span class=\"rk\">5/5</span><b>Working Overtime</b></li>\n          </ol>\n          <p class=\"why\">Swap Working Overtime for Master Chef or Luremaster if you cook or fish more than you craft.</p>\n        </div>\n      </div>\n      <p class=\"why\">For Great Honor and High Alert are PvP perks, so they're low value on PvE realms.</p>\n    </details>\n\n    <details class=\"gpanel wide\" data-key=\"legacy-gotchas\">\n      <summary><h3>Known issues &amp; tips <small>as of Nov 15</small></h3></summary>\n      <ul>\n        <li><b>Nov 6 hotfix:</b> The Quick and the Dead sometimes didn't work. Fixed.</li>\n        <li><b>\"Unable to apply talent\"</b> when moving Legacy points (reported Nov 8): unlearn them at your class trainer instead.</li>\n        <li><b>Legacy window won't open at 25:</b> some players report this bug; Blizzard hasn't responded.</li>\n        <li><b>Talented refunds:</b> on the beta, Talented could only be refunded after a class talent reset too, so expect two bills.</li>\n        <li><b>Glowing icon:</b> spending the point doesn't clear it. Open the Legacy Challenges tab and click the challenge that earned it.</li>\n        <li><b>Diplomat:</b> take it before turning in one-time reputation quests.</li>\n        <li><b>Raids</b> (Onyxia, Hyjal Summit, Barrow Deeps) open Dec 9, so those three points come later.</li>\n        <li><b>Coming later:</b> new challenges and perks with each content release, new trees, and Hardcore-only challenges and perks.</li>\n      </ul>\n    </details>\n\n  </div>\n  "
+ },
+ "console": {
+  "label": "Every character · account-wide",
+  "h2": "Graphics console commands",
+  "html": "\n  <p class=\"sdesc\">Hidden graphics settings that go past the Options sliders, from <a href=\"https://www.threads.com/@richard.moschetti/post/DfnTAgGn_LM\" target=\"_blank\" rel=\"noopener\">richard.moschetti's Threads post</a> (Nov 12). Expect more foliage further out, better water and fuller weather, at some cost to frame rate.</p>\n  <div class=\"guide\">\n\n    <details class=\"gpanel wide\" data-key=\"console-how-to-apply\">\n      <summary><h3>How to apply <small>4 macros · 2 to apply, 2 to undo</small></h3></summary>\n      <ol class=\"howto\">\n        <li>Type <code>/macro</code> and stay on the <b>General Macros</b> tab, so every character on the account gets them. Click New.</li>\n        <li>Type the <b>macro name</b> as shown and pick any icon.</li>\n        <li>Copy the <b>macro text</b> in exactly, line breaks included. The commands are split over two macros because a macro holds 255 characters at most.</li>\n        <li>Click both GFX Boost macros once. The game saves most of these settings, so you usually only need to run them once.</li>\n      </ol>\n      <ul class=\"mtips\">\n        <li>Moving a related graphics slider in Options can overwrite these values. If that happens, click the macros again.</li>\n        <li>The post's author found the sharpen setting (<code>ResampleAlwaysSharpen</code>) underwhelming. Leave that line out if you don't like how it looks.</li>\n        <li>If frame rate drops too far, <code>terrainLodDist</code> and the two grass distance settings are the heavy ones.</li>\n      </ul>\n    </details>\n\n    <details class=\"gpanel wide\" data-key=\"console-apply\">\n      <summary><h3>Apply</h3></summary>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name</span><b>GFX Boost 1</b></div><button class=\"copy\" id=\"copy-gx1\" data-for=\"gx1\">Copy</button></div>\n        <span class=\"label\">Macro text</span>\n        <pre class=\"macro\" id=\"gx1\">/console cameraDistanceMaxZoomFactor 4\n/console groundEffectDensity 256\n/console groundEffectDist 500\n/console groundEffectFade 370\n/console ResampleAlwaysSharpen 1\n/console reflectionMode 3</pre>\n        <p class=\"why\">Camera, grass, sharpening and water.</p></div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name</span><b>GFX Boost 2</b></div><button class=\"copy\" id=\"copy-gx2\" data-for=\"gx2\">Copy</button></div>\n        <span class=\"label\">Macro text</span>\n        <pre class=\"macro\" id=\"gx2\">/console weatherDensity 3\n/console lodObjectFadeScale 200\n/console lodObjectCullSize 8\n/console terrainLodDist 1000\n/console horizonstart 4000\n/console ssaotype 0</pre>\n        <p class=\"why\">Weather, draw distance, horizon and ambient occlusion.</p></div>\n    </details>\n\n    <details class=\"gpanel wide\" data-key=\"console-undo\">\n      <summary><h3>Undo</h3></summary>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name</span><b>GFX Reset 1</b></div><button class=\"copy\" id=\"copy-gx3\" data-for=\"gx3\">Copy</button></div>\n        <span class=\"label\">Macro text</span>\n        <pre class=\"macro\" id=\"gx3\">/console cvar_default cameraDistanceMaxZoomFactor\n/console cvar_default groundEffectDensity\n/console cvar_default groundEffectDist\n/console cvar_default groundEffectFade\n/console cvar_default ResampleAlwaysSharpen\n/console cvar_default reflectionMode</pre>\n        <p class=\"why\">Puts the first six settings back to the game's defaults.</p></div>\n        <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Macro name</span><b>GFX Reset 2</b></div><button class=\"copy\" id=\"copy-gx4\" data-for=\"gx4\">Copy</button></div>\n        <span class=\"label\">Macro text</span>\n        <pre class=\"macro\" id=\"gx4\">/console cvar_default weatherDensity\n/console cvar_default lodObjectFadeScale\n/console cvar_default lodObjectCullSize\n/console cvar_default terrainLodDist\n/console cvar_default horizonstart\n/console cvar_default ssaotype</pre>\n        <p class=\"why\">Puts the other six back.</p></div>\n      <p class=\"why\">To reset just one setting, type <code>/console cvar_default</code> plus its name in chat.</p>\n    </details>\n\n    <details class=\"gpanel\" data-key=\"console-what-each-one-does\">\n      <summary><h3>What each one does</h3></summary>\n      <ul><li><code>cameraDistanceMaxZoomFactor 4</code> <span class=\"why\">· Lets you zoom the camera further out</span></li><li><code>groundEffectDensity 256</code> <span class=\"why\">· Thicker grass and ground clutter</span></li><li><code>groundEffectDist 500</code> <span class=\"why\">· Grass drawn further out</span></li><li><code>groundEffectFade 370</code> <span class=\"why\">· Where that grass fades out</span></li><li><code>ResampleAlwaysSharpen 1</code> <span class=\"why\">· Sharpening filter</span></li><li><code>reflectionMode 3</code> <span class=\"why\">· Better water reflections</span></li><li><code>weatherDensity 3</code> <span class=\"why\">· Fuller rain and snow</span></li><li><code>lodObjectFadeScale 200</code> <span class=\"why\">· Objects stay detailed further out</span></li><li><code>lodObjectCullSize 8</code> <span class=\"why\">· Draws smaller distant objects</span></li><li><code>terrainLodDist 1000</code> <span class=\"why\">· Detailed terrain further out</span></li><li><code>horizonstart 4000</code> <span class=\"why\">· Pushes the horizon back</span></li><li><code>ssaotype 0</code> <span class=\"why\">· Turns off ambient occlusion shading</span></li></ul>\n    </details>\n\n    <details class=\"gpanel\" data-key=\"console-left-out-giquality-0\">\n      <summary><h3>Left out: giquality 0</h3></summary>\n      <p>The original post also listed <code>/console giquality 0</code>. Several players, including the author, said it turned the screen almost black. It switches off secondary lighting: frame rate goes up, but dark areas become unplayable. It isn't in the macros above.</p>\n      <p class=\"why\">If you already ran it, undo it with:</p>\n      <div class=\"mac\"><div class=\"macrohead\"><div class=\"mname\"><span class=\"label\">Chat command</span><b>Undo giquality</b></div><button class=\"copy\" id=\"copy-gx5\" data-for=\"gx5\">Copy</button></div>\n        <pre class=\"macro\" id=\"gx5\">/console cvar_default giquality</pre></div>\n    </details>\n  </div>\n  "
+ }
+};
