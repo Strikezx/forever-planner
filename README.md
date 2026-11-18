@@ -28,4 +28,6 @@ Not affiliated with or endorsed by Blizzard Entertainment. World of Warcraft is 
 - `index.html`: the page
 - `assets/app.js`: the app
 - `assets/app.css`: styles (dark and light modes)
-- `data/classes.js`: class guides, talent orders, spells, races and racials
+- `data/classes.js`: shared data (class order, talents, races, racials, Legacy System, console tips)
+- `data/class-<name>.js`: one file per class guide (guide, builds, spells, macros, sources)
+- `data/campfire.js`: camping data

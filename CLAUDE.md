@@ -6,10 +6,11 @@ Most friends have no Claude account, so everything must work as a plain website 
 
 ## How the project is built
 - Plain HTML, CSS and JavaScript. No framework, no build step, no npm. Keep it that way unless Scott asks.
-- `index.html`: the page shell. It loads `data/classes.js`, then `data/campfire.js`, then `assets/app.js`.
+- `index.html`: the page shell. It loads `data/classes.js`, then the nine `data/class-<name>.js` files, then `data/campfire.js`, then `assets/app.js`. Order matters: the class files add themselves to `window.FP_DATA.classes`, which `classes.js` creates, and `app.js` reads it once on load.
 - `assets/app.js`: the whole app (roster, character planners, class guides, Legacy tracker, races).
 - `assets/app.css`: styles for dark mode (default) and light mode.
-- `data/classes.js`: `window.FP_DATA`, which holds class guides, talent orders, spells, races and racials.
+- `data/classes.js`: `window.FP_DATA`, which holds the shared data: class order, talents, races, racials, Legacy System and console tips.
+- `data/class-<name>.js` (warrior, paladin, hunter, rogue, priest, shaman, mage, warlock, druid): one class guide each (blurb, specs, builds, spells, macros, sources). Edit a class by opening only its file. A new class file also needs a `<script>` tag in `index.html` and an entry in `order` in `classes.js`.
 - `data/campfire.js`: `window.FP_CAMP`, which holds camping data.
 - Guide content goes in `data/`, not hard-coded in `app.js`.
 
