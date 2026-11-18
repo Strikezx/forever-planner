@@ -6,7 +6,7 @@
 <title>WoW Forever Planner</title>
 <meta name="description" content="Plan your WoW Forever roster: class leveling guides, talent checklists, macros, races and the Legacy System. Your roster saves in your browser and shares by link.">
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/app.css">
+<link rel="stylesheet" href="assets/app.css?v=20261118b">
 <script>
 try { if (localStorage.getItem("fp:look") === "light") document.documentElement.dataset.style = "c"; } catch (e) {}
 </script>
@@ -24,7 +24,7 @@ try { if (localStorage.getItem("fp:look") === "light") document.documentElement.
   <div class="jump" id="jump"><button type="button" class="jumpbtn" id="jumpbtn" aria-haspopup="true" aria-expanded="false" aria-controls="jumpmenu"><span class="jl">Jump to</span><span class="jc" id="jumpcur">Top</span></button>
     <div class="jumpmenu" id="jumpmenu" role="menu" aria-label="Sections" hidden></div></div>
   <div class="ctl">
-    <div class="lvbox" id="lvbox" role="group" aria-label="Level" hidden><span id="lvlabel">Lv</span><button type="button" id="lvdown" aria-label="Level down">−</button><select id="lvinput" aria-label="Level"></select><button type="button" id="lvup" aria-label="Level up">+</button></div>
+    <div class="lvbox" id="lvbox" role="group" aria-label="Level" hidden><span id="lvlabel">Lv</span><button type="button" id="lvdown" aria-label="Level down">−</button><input id="lvinput" type="number" min="1" max="60" value="1" inputmode="numeric" aria-label="Level"><button type="button" id="lvup" aria-label="Level up">+</button></div>
     <span class="save" id="savestate" data-s="local">Saved in this browser</span>
     <button type="button" class="tbtn" id="lookbtn">Light mode</button>
     <button type="button" class="tbtn" id="expandall">Expand all</button>
@@ -39,17 +39,17 @@ try { if (localStorage.getItem("fp:look") === "light") document.documentElement.
 <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 
 <noscript><p class="wrap">This planner needs JavaScript turned on.</p></noscript>
-<script src="data/classes.js"></script>
-<script src="data/class-warrior.js"></script>
-<script src="data/class-paladin.js"></script>
-<script src="data/class-hunter.js"></script>
-<script src="data/class-rogue.js"></script>
-<script src="data/class-priest.js"></script>
-<script src="data/class-shaman.js"></script>
-<script src="data/class-mage.js"></script>
-<script src="data/class-warlock.js"></script>
-<script src="data/class-druid.js"></script>
-<script src="data/campfire.js"></script>
-<script src="assets/app.js"></script>
+<script src="data/classes.js?v=20261118b"></script>
+<script src="data/class-warrior.js?v=20261118b"></script>
+<script src="data/class-paladin.js?v=20261118b"></script>
+<script src="data/class-hunter.js?v=20261118b"></script>
+<script src="data/class-rogue.js?v=20261118b"></script>
+<script src="data/class-priest.js?v=20261118b"></script>
+<script src="data/class-shaman.js?v=20261118b"></script>
+<script src="data/class-mage.js?v=20261118b"></script>
+<script src="data/class-warlock.js?v=20261118b"></script>
+<script src="data/class-druid.js?v=20261118b"></script>
+<script src="data/campfire.js?v=20261118b"></script>
+<script src="assets/app.js?v=20261118b"></script>
 </body>
 </html>

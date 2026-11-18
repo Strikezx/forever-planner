@@ -591,10 +591,9 @@ function renderBuildGuide() {
 }
 function refresh() { if (!ctx) return; if (!CLS[ctx.k].builds[ctx.build]) ctx.build = firstBuild(ctx.k); if (!ctx.ticks[ctx.build]) ctx.ticks[ctx.build] = rowsOf(ctx.k, ctx.build).map(() => false); syncLevelUI(); renderTalents(); renderBuildGuide(); renderBeasts(); renderNow(); markSteps(); syncAllBtn(); }
 
-/* level box (top bar) and in-page level pickers: every control shows the same level */
+/* level box (top bar number box) and in-page level dropdowns: every control shows the same level */
 const LV_OPTS = Array.from({ length: 60 }, (_, i) => `<option value="${i + 1}">${i + 1}</option>`).join("");
 const lvInput = $("#lvinput");
-lvInput.innerHTML = LV_OPTS;
 function lvPicker() {
   return `<div class="lvpick" role="group" aria-label="Level"><span class="lvl">Level</span><button type="button" class="lvstep" data-d="-1" aria-label="Level down">−</button><select class="lvsel" aria-label="Level">${LV_OPTS}</select><button type="button" class="lvstep" data-d="1" aria-label="Level up">+</button></div>`;
 }
@@ -610,6 +609,7 @@ function syncLevelUI() {
 }
 function setLevel(n) { if (!ctx && scope === "camp") { campLv = clampLv(n, campLv); lvInput.value = campLv; renderCampBuffs(); return; } if (!ctx) return; const v = clampLv(n, ctx.level); ctx.level = v; persistCtx(); refresh(); if (ctx.char) updateCharStamp(); }
 lvInput.addEventListener("change", () => setLevel(lvInput.value));
+lvInput.addEventListener("keydown", e => { if (e.key === "Enter") setLevel(lvInput.value); });
 app.addEventListener("change", e => { const x = e.target.closest(".lvsel"); if (x && ctx) setLevel(x.value); });
 app.addEventListener("click", e => {
   if (!ctx) return;

@@ -37,4 +37,5 @@ Most friends have no Claude account, so everything must work as a plain website 
 1. Make changes on a branch and open a pull request with a short, plain-English summary of what changed for players. Push straight to `main` only when Scott says to.
 2. Test before finishing. Run `python3 -m http.server` in the repo, load the page, check for console errors, and click through the part you changed. Check both dark and light modes and phone width.
 3. Keep `README.md` in step when features change.
+   Whenever you change any file under `assets/` or `data/`, change the `?v=` tag on every script and style link in `index.html` to a new value (for example today's date plus a letter). Browsers cache these files for several minutes, and without a new tag a visitor can get the new page with an old script, which breaks it.
 4. Scott's older Claude artifact planners are a separate backup. This repo doesn't need to match them.
