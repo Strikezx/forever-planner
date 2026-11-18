@@ -4,6 +4,8 @@ A free, fan-made planner for **World of Warcraft: Forever**. Build your own rost
 
 - **Your roster:** add characters with name, faction, race, class, realm type, guild, main or alt, professions and notes. Only valid race/class combinations are offered.
 - **Planner for each character:** a "What to do now" panel driven by your level, a talent checklist for the build you follow, rotation, gear, class quests, macros you can copy, and that race's racials.
+- **Set your level anywhere:** a 1–60 dropdown with − / + buttons in the top bar and in the "Your character" card (or in "What to do now" on class pages). They stay in step, and your level is saved with the character.
+- **Everything follows your level:** "What to do now", talent points due, the guide steps (done, now, coming soon), and which phase of your talent build you are in. "Jump to my level" opens the guide at your level, and "Hide earlier levels" tucks away the steps you have passed.
 - **Class guides for all nine classes:** browse any class without making a character.
 - **Legacy System tracker:** tick the challenges your account has done and see how many points each character can spend.
 - **Races & racials:** which races can play which class, and every racial with its current numbers.

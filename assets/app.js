@@ -454,6 +454,10 @@ let ctx = null; // {k, build, level, ticks, char}
 const browse = {}; // per-class temporary state when browsing without a character
 function persistCtx() { if (ctx.char) { ctx.char.level = ctx.level; ctx.char.build = ctx.build; ctx.char.ticks = ctx.ticks; save(); } else if (browse[ctx.k]) { browse[ctx.k].level = ctx.level; browse[ctx.k].build = ctx.build; } }
 function available() { return Math.max(0, Math.min(totalOf(ctx.k, ctx.build), ctx.level - 9)); }
+/* which phase(s) of a build the level falls in: each column is one phase, spanning the levels of its rows */
+function phaseCols(bd, L) {
+  return bd.cols.map((_, c) => { const rs = bd.rows.filter(r => r[0] === c); return rs.length && Math.min(...rs.map(r => r[3])) <= L && L <= Math.max(...rs.map(r => r[4])) ? c : -1; }).filter(c => c >= 0);
+}
 function lvTxt(r) { return r[3] === r[4] ? r[3] : `${r[3]}–${r[4]}`; }
 function renderTalents() {
   const tapp = $("#talents-app", app); if (!tapp || !ctx) return;
@@ -474,7 +478,8 @@ function renderTalents() {
     const cl = ticks[i] ? "done" : ((i === nx ? "next" : "") + (r[3] <= ctx.level ? " due" : "")).trim();
     return `<li class="${cl}"><label><input type="checkbox" data-i="${i}" ${ticks[i] ? "checked" : ""}><span class="rk">${esc(r[1])}</span><span><b>${esc(r[2])}</b>${r[6] ? ` <span class="why">· ${esc(r[6])}</span>` : ""}</span><span class="lvl2">Lv ${lvTxt(r)}</span></label></li>`;
   }).join("");
-  const cols = bd.cols.map((lab, c) => `<div><span class="label">${esc(lab)} <span class="mono colct">${sp.cols[c]}/${colTotal(c)}</span></span><ul class="tick">${col(c)}</ul></div>`).join("");
+  const here = phaseCols(bd, ctx.level);
+  const cols = bd.cols.map((lab, c) => `<div${here.includes(c) ? ' class="phase"' : ""}><span class="label">${esc(lab)} <span class="mono colct">${sp.cols[c]}/${colTotal(c)}</span>${here.includes(c) ? ` <span class="here">Level ${ctx.level} is here</span>` : ""}</span><ul class="tick">${col(c)}</ul></div>`).join("");
   const addBtn = `<button type="button" class="addbuild" data-act="addbuild" title="Paste a Talents Forever or Icy Veins link, or a talent order">+ Add a build</button>`;
   tapp.innerHTML = `${ctx.char ? "" : `<p class="why">You're browsing, so ticks here aren't saved. <a href="#/new/${k}">Add a ${esc(CLS[k].name)}</a> to keep your progress.</p>`}<div class="tbar">${tabs}${addBtn}</div>
     <div class="tsum"><span class="meter">Points spent <i><b style="width:${pct}%"></b></i> <span class="mono">${sp.all}/${tot}</span></span>${note}</div>
@@ -510,6 +515,7 @@ function markSteps() {
     else if (r[0] <= L) st.classList.add("now");
     else if (r[0] <= L + 4) st.classList.add("soon");
   });
+  $$(".steps", app).forEach(c => { const ss = $$(".step", c); c.classList.toggle("allpast", !!ss.length && ctx != null && ss.every(x => x.classList.contains("past"))); });
 }
 
 /* hunter beasts */
@@ -545,6 +551,8 @@ function renderNow() {
   if (L < 10) tal = pill("Talents start at 10", "strong") + (rows[0] ? pill(`First point: ${esc(rows[0][2])}`) : "");
   else if (due.length) tal = (diff > 0 ? pill(`${diff} point${diff > 1 ? "s" : ""} to spend`, "strong") : pill("Tick what you've spent", "strong")) + due.slice(0, 4).map(x => pill(`<b>${esc(x.r[2])}</b> ${esc(x.r[1])}`)).join("") + (due.length > 4 ? pill(`+${due.length - 4} more`, "soft") : "");
   else tal = pill("Up to date", "strong") + (nx >= 0 ? pill(`Next: <b>${esc(rows[nx][2])}</b> ${esc(rows[nx][1])} at ${rows[nx][3]}`, "soft") : pill("All points spent", "soft"));
+  const ph = phaseCols(C.builds[ctx.build], L);
+  if (ph.length) tal += pill(`Build phase: <b>${esc(C.builds[ctx.build].cols[ph[0]])}</b>`, "soft");
   let out = nrow("Talents", tal, L >= 10 && due.length > 0);
   for (const R of C.now) {
     if (R.type === "train") {
@@ -581,13 +589,56 @@ function renderBuildGuide() {
   if (old) old.replaceWith(el); else host.after(el);
   buildJump(); syncAllBtn();
 }
-function refresh() { if (!ctx) return; if (!CLS[ctx.k].builds[ctx.build]) ctx.build = firstBuild(ctx.k); if (!ctx.ticks[ctx.build]) ctx.ticks[ctx.build] = rowsOf(ctx.k, ctx.build).map(() => false); $("#lvinput").value = ctx.level; renderTalents(); renderBuildGuide(); renderBeasts(); renderNow(); markSteps(); syncAllBtn(); }
+function refresh() { if (!ctx) return; if (!CLS[ctx.k].builds[ctx.build]) ctx.build = firstBuild(ctx.k); if (!ctx.ticks[ctx.build]) ctx.ticks[ctx.build] = rowsOf(ctx.k, ctx.build).map(() => false); syncLevelUI(); renderTalents(); renderBuildGuide(); renderBeasts(); renderNow(); markSteps(); syncAllBtn(); }
 
-/* level box */
+/* level box (top bar) and in-page level pickers: every control shows the same level */
+const LV_OPTS = Array.from({ length: 60 }, (_, i) => `<option value="${i + 1}">${i + 1}</option>`).join("");
 const lvInput = $("#lvinput");
+lvInput.innerHTML = LV_OPTS;
+function lvPicker() {
+  return `<div class="lvpick" role="group" aria-label="Level"><span class="lvl">Level</span><button type="button" class="lvstep" data-d="-1" aria-label="Level down">−</button><select class="lvsel" aria-label="Level">${LV_OPTS}</select><button type="button" class="lvstep" data-d="1" aria-label="Level up">+</button></div>`;
+}
+function lvStrip(withPicker) {
+  return `<div class="lvstrip">${withPicker ? lvPicker() : ""}<button type="button" class="tbtn" data-lv="jump" title="Open the guide at your level and scroll to it">Jump to my level</button><button type="button" class="tbtn" data-lv="hidepast" aria-pressed="false">Hide earlier levels</button></div>`;
+}
+function syncLevelUI() {
+  if (!ctx) return;
+  lvInput.value = ctx.level;
+  $$(".lvsel", app).forEach(x => (x.value = ctx.level));
+  const hp = app.classList.contains("hidepast");
+  $$('[data-lv="hidepast"]', app).forEach(b => { b.setAttribute("aria-pressed", String(hp)); b.textContent = hp ? "Show earlier levels" : "Hide earlier levels"; });
+}
 function setLevel(n) { if (!ctx && scope === "camp") { campLv = clampLv(n, campLv); lvInput.value = campLv; renderCampBuffs(); return; } if (!ctx) return; const v = clampLv(n, ctx.level); ctx.level = v; persistCtx(); refresh(); if (ctx.char) updateCharStamp(); }
 lvInput.addEventListener("change", () => setLevel(lvInput.value));
-lvInput.addEventListener("keydown", e => { if (e.key === "Enter") setLevel(lvInput.value); });
+app.addEventListener("change", e => { const x = e.target.closest(".lvsel"); if (x && ctx) setLevel(x.value); });
+app.addEventListener("click", e => {
+  if (!ctx) return;
+  const st = e.target.closest(".lvstep"); if (st) { setLevel(ctx.level + +st.dataset.d); return; }
+  const b = e.target.closest("[data-lv]"); if (!b) return;
+  if (b.dataset.lv === "hidepast") { app.classList.toggle("hidepast"); syncLevelUI(); }
+  else jumpToLevel();
+});
+/* open the guide at your level: opens the panels that have a step for it and scrolls to the first one.
+   If no step covers this level, it goes to the closest one instead. */
+function jumpToLevel() {
+  markSteps();
+  const L = ctx.level;
+  let hit = $(".step.now", app) || $(".step.soon", app), near = false;
+  if (!hit) {
+    let best = Infinity;
+    $$(".step", app).forEach(st => {
+      const r = range(st.querySelector(".lv")?.textContent); if (!r) return;
+      const d = L < r[0] ? r[0] - L : L > r[1] ? L - r[1] : 0;
+      if (d < best) { best = d; hit = st; }
+    });
+    near = !!hit;
+  }
+  if (!hit) { toast("Nothing in this guide is tied to a level"); return; }
+  if (near) toast(`No step covers level ${L} exactly, so this is the closest one`);
+  if (near && hit.classList.contains("past") && app.classList.contains("hidepast")) { app.classList.remove("hidepast"); syncLevelUI(); }
+  $$("details.gpanel", app).forEach(d => { if (d === hit.closest("details.gpanel") || d.querySelector(".step.now, .step.soon")) d.open = true; });
+  hit.scrollIntoView({ block: "center", behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+}
 $("#lvdown").addEventListener("click", () => ctx ? setLevel(ctx.level - 1) : scope === "camp" && setLevel(campLv - 1));
 $("#lvup").addEventListener("click", () => ctx ? setLevel(ctx.level + 1) : scope === "camp" && setLevel(campLv + 1));
 
@@ -637,7 +688,7 @@ function charCard(c, full) {
     ${full ? "" : `<a class="cover" href="#/c/${c.id}" aria-label="Open ${esc(c.name)}"></a>`}
     <div><div class="name">${esc(c.name)}</div><div class="sub">${esc(c.race)} · ${esc(C.name)} · ${esc(c.faction)} · ${esc(c.realm)} realm</div></div>
     ${badges ? `<div class="badges">${badges}</div>` : ""}
-    <div class="meta"><span>Level <b class="lvtxt">${c.level}</b></span><span>Build <b>${esc(C.builds[c.build].name)}</b></span>${c.guild ? `<span>Guild <b>&lt;${esc(c.guild)}&gt;</b></span>` : ""}</div>
+    <div class="meta">${full ? lvPicker() : `<span>Level <b class="lvtxt">${c.level}</b></span>`}<span>Build <b>${esc(C.builds[c.build].name)}</b></span>${c.guild ? `<span>Guild <b>&lt;${esc(c.guild)}&gt;</b></span>` : ""}</div>
     <div class="prog"><span>Talents</span><i><b style="width:${Math.round(sp / tot * 100)}%"></b></i><span class="mono">${sp}/${tot}</span></div>
     ${full ? `${profs.length ? `<dl><dt>Professions</dt><dd>${profs.map(esc).join(", ")}</dd></dl>` : ""}
     ${c.looks ? `<details class="look"><summary>Character creation</summary><p style="white-space:pre-wrap;margin:8px 0 0">${esc(c.looks)}</p></details>` : ""}
@@ -670,9 +721,9 @@ function pageChar(id) {
   scope = c.cls; setColors(C.color, C.ink);
   ctx = { k: c.cls, build: c.build, level: c.level, ticks: c.ticks, char: c };
   setLevelBox(true, `${c.name.split(" ")[0]} Lv`);
-  header(esc(c.name), `${esc(c.race)} ${esc(C.name)} on a ${esc(c.realm)} realm. Set your level in the bar and the planner shows what to train, which talents are due and what to do next.`,
+  header(esc(c.name), `${esc(c.race)} ${esc(C.name)} on a ${esc(c.realm)} realm. Set your level in the bar or in Your character, and the planner shows what to train, which talents are due and what to do next.`,
     [`Level <b class="stlv">${c.level}</b>`, `${esc(c.faction)}`, `${esc(C.roles.join(" · "))}`, c.guild ? `Guild <b>&lt;${esc(c.guild)}&gt;</b>` : "", c.main ? "<b>Main</b>" : "", c.alt ? "<b>Alt</b>" : ""].filter(Boolean), "roster");
-  const now = sect("now", `${esc(c.name)} · set your level in the bar above`, "What to do now", `  <div class="nowlist" id="now-app"></div>`, { h2id: "now-title", jump: "Now" });
+  const now = sect("now", `${esc(c.name)} · set your level in the bar above or in Your character below`, "What to do now", lvStrip(false) + `\n  <div class="nowlist" id="now-app"></div>`, { h2id: "now-title", jump: "Now" });
   const card = sect("character", "Your character", esc(c.name), `  <div class="roster single">${charCard(c, true)}</div>`, { jump: "Character" });
   const racials = sect("racials", "Current numbers", `${esc(c.race)} racials`, racialTable(c.race) + `\n  <p class="why" style="margin-top:10px"><a href="#/races">Compare every race</a></p>`, { jump: "Racials" });
   app.innerHTML = overviewSection(c.cls) + now + card + specSection(c.cls) + classSections(c.cls) + racials;
@@ -687,10 +738,10 @@ function pageClass(k) {
   ctx = { k, build: browse[k].build, level: browse[k].level, ticks: browse[k].ticks, char: null };
   setLevelBox(true, `${C.name} Lv`);
   const mine = S.roster.filter(x => x.cls === k);
-  header(`${esc(C.name)} guide`, `Leveling guide, talent order, rotation, gear, macros and race picks for the ${esc(C.name)}. Set a level in the bar to preview what's due.`,
+  header(`${esc(C.name)} guide`, `Leveling guide, talent order, rotation, gear, macros and race picks for the ${esc(C.name)}. Set a level below, or in the bar, to preview what's due.`,
     [`${esc(C.roles.join(" · "))}`, `Races <b>${C.races.length}</b>`, mine.length ? `On your roster <b>${mine.length}</b>` : ""].filter(Boolean), "classes");
   const top = `<div class="notice" style="margin-bottom:24px"><span>${mine.length ? `You have ${mine.map(m => `<a href="#/c/${m.id}">${esc(m.name)}</a>`).join(", ")}. Open a character to save level and talent ticks.` : `You're browsing. Add a ${esc(C.name)} to your roster to save level and talent ticks.`}</span><a class="btn primary" href="#/new/${k}">Add a ${esc(C.name)}</a></div>`;
-  const now = sect("now", "Preview · set a level in the bar above", "What to do now", `  <div class="nowlist" id="now-app"></div>`, { h2id: "now-title", jump: "Now" });
+  const now = sect("now", "Preview · set a level here or in the bar above", "What to do now", lvStrip(true) + `\n  <div class="nowlist" id="now-app"></div>`, { h2id: "now-title", jump: "Now" });
   app.innerHTML = top + overviewSection(k) + now + specSection(k) + classSections(k);
   afterRender(); refresh();
 }
