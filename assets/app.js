@@ -187,7 +187,9 @@ function flatTal(k) { // every talent of a class in tree order: {i, t, tree, nam
   if (!flatCache[k]) { const out = []; D.talents[k].forEach(([tree, list], t) => list.forEach(([name, max, row, col, req]) => out.push({ i: out.length, t, tree, name, max, row, col, req }))); flatCache[k] = out; }
   return flatCache[k];
 }
-function talByName(k, n) { return flatTal(k).find(x => x.name.toLowerCase() === String(n).toLowerCase()); }
+// talents Blizzard renamed after launch: old names (in saved builds, links and older guides) map to the new ones
+function talAlias(k, n) { const m = (D.talentAliases || {})[k] || {}, s = String(n), hit = Object.keys(m).find(o => o.toLowerCase() === s.toLowerCase()); return hit ? m[hit] : s; }
+function talByName(k, n) { const s = talAlias(k, n).toLowerCase(); return flatTal(k).find(x => x.name.toLowerCase() === s); }
 // check an order (array of talent names, one per point from level 10) against the class's trees
 function checkOrder(k, order) {
   const F = flatTal(k), ranks = F.map(() => 0), inTree = D.talents[k].map(() => 0);
@@ -372,7 +374,7 @@ function orderRows(k, order, notes) {
 function fixBuild(b) {
   if (!b || typeof b !== "object" || !CLS[b.cls] || !D.talents[b.cls] || !Array.isArray(b.order)) return null;
   const id = typeof b.id === "string" && /^u_[a-z0-9]{4,24}$/.test(b.id) ? b.id : "u_" + uid();
-  const order = b.order.map(String).slice(0, 51);
+  const order = b.order.map(n => talAlias(b.cls, n)).slice(0, 51);
   if (!checkOrder(b.cls, order).ok) return null;
   const str = (x, n) => String(x == null ? "" : x).slice(0, n);
   const notes = Array.isArray(b.notes) ? b.notes.slice(0, 51).map(x => str(x, 200)) : null;

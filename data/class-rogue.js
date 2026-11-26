@@ -1,4 +1,4 @@
-/* WoW Forever Planner: Rogue guide. Class data last checked/updated Nov 15, 2026.
+/* WoW Forever Planner: Rogue guide. Class data last checked/updated Nov 26, 2026.
    Loads after data/classes.js and adds itself to window.FP_DATA.classes. */
 window.FP_DATA.classes.rogue = {
  "key": "rogue",
@@ -46,11 +46,11 @@ window.FP_DATA.classes.rogue = {
    "new": true
   }
  ],
- "blurb": "Assassination gets Mutilate and a Venom finisher. Combat's Restless Blades lets finishers shorten Adrenaline Rush, Blade Flurry, Sprint, Evasion and Vanish. Subtlety expands bleed and Backstab play. Lock picking, Pick Pocket, Sap and Distract are unchanged.",
+ "blurb": "Assassination gets a Venom finisher and Mutilate as its 31-point talent. Combat's Restless Blades lets finishers shorten Adrenaline Rush, Blade Flurry, Sprint, Evasion and Vanish. Subtlety expands bleed and Backstab play. Lock picking, Pick Pocket, Sap and Distract are unchanged.",
  "specs": [
   [
    "Assassination",
-   "Mutilate at 30 and a new Venom finisher at 40 make it a real poison spec."
+   "A new Venom finisher at 30 and Mutilate as the 31-point talent at 40 make it a real poison spec. Murder and Thousand Cuts were removed on Nov 2."
   ],
   [
    "Combat",
@@ -58,7 +58,7 @@ window.FP_DATA.classes.rogue = {
   ],
   [
    "Subtlety",
-   "Expands bleed and Backstab play, built around Stealth openers. The most-planned leveling spec in the calculator."
+   "Expands bleed and Backstab play, built around Stealth openers, with the new Death Mark as its 31-point talent. The most-planned leveling spec in the calculator."
   ]
  ],
  "general": "Lock picking, Pick Pocket, Sap and Distract are unchanged.",
@@ -731,7 +731,7 @@ window.FP_DATA.classes.rogue = {
   {
    "t": "Assassination",
    "s": "29.7%",
-   "p": "First points: Malice 5/5, Ruthlessness 3/3, Murder 2/2. Mutilate (30) and the new Venom finisher (40) make it a real poison spec."
+   "p": "First points: Malice 5/5, Ruthlessness 3/3 (Murder was removed on Nov 2). The new Venom finisher comes at 30 and Mutilate, now the 31-point talent, at 40."
   }
  ],
  "keyspells": "Sap, Slice and Dice, Sprint 10 · Ambush 18 · Poisons 20 · Vanish 22 · Shank 24 · Cheap Shot 26 · Kidney Shot 30 · Blind 34",
