@@ -1,4 +1,4 @@
-/* WoW Forever Planner: Mage guide. Class data last checked/updated Nov 15, 2026.
+/* WoW Forever Planner: Mage guide. Class data last checked/updated Nov 26, 2026.
    Loads after data/classes.js and adds itself to window.FP_DATA.classes. */
 window.FP_DATA.classes.mage = {
  "key": "mage",
@@ -34,7 +34,7 @@ window.FP_DATA.classes.mage = {
    "new": false
   }
  ],
- "blurb": "Arcane Blast was redesigned to stack spell damage from Intellect, and Arcane Wrath is a new talent. Frost Blast (level 24) replaces down-ranked Frostbolt. Fire's Heating Up speeds Pyroblast. Frostfire Bolt comes at 40. Slows were cut back, so AoE kiting is harder than in Classic.",
+ "blurb": "Arcane Blast was redesigned to stack spell damage from Intellect, and Arcane Wrath is a new talent. Frost Blast was removed on Nov 2, and Ice Barrier now also raises your Frost damage. Fire's Heating Up speeds Pyroblast. Frostfire Bolt comes at 40. Slows were cut back, so AoE kiting is harder than in Classic.",
  "specs": [
   [
    "Arcane",
@@ -46,7 +46,7 @@ window.FP_DATA.classes.mage = {
   ],
   [
    "Frost",
-   "Ice Lance and Fingers of Frost add burst, and Frost Blast replaces down-ranked Frostbolt. The beginner-friendly leveling pick."
+   "Ice Lance and Fingers of Frost add burst, and since Nov 2 Ice Barrier adds 15% Frost damage for 1 min when you cast it, plus 5% while it holds. Frost Blast was removed. The beginner-friendly leveling pick."
   ]
  ],
  "general": "Frostfire Bolt comes at 40. Slows were cut back, so AoE kiting is harder than in Classic.",
@@ -774,7 +774,7 @@ window.FP_DATA.classes.mage = {
   {
    "t": "Frost AoE",
    "s": "Asuna_qt · ends 18/0/33",
-   "p": "For pulling packs: Precision, Frost Warding, Improved Frost Nova, Permafrost and Improved Blizzard by 23. Frost Nova, then Flamestrike and Cone of Cold."
+   "p": "For pulling packs: Precision, Frost Warding, Improved Frost Nova, Permafrost and Improved Blizzard by 23. Frost Nova, then Flamestrike and Cone of Cold. Since the Nov 13 hotfix, Blizzard damage and proc damage break Frost Nova, so don't Nova mobs and then Blizzard on top of them."
   },
   {
    "t": "Fire",

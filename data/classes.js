@@ -1,4 +1,4 @@
-/* WoW Forever Planner shared data: class order, talents, races, racials, Legacy System and console tips. Checked/updated Nov 15, 2026.
+/* WoW Forever Planner shared data: class order, talents, races, racials, Legacy System and console tips. Checked/updated Nov 26, 2026.
    The nine class guides live in data/class-<name>.js. Each one adds itself to window.FP_DATA.classes, so index.html loads them after this file. */
 window.FP_DATA = {
  "order": [
@@ -13,6 +13,12 @@ window.FP_DATA = {
   "druid"
  ],
  "classes": {},
+ "talentAliases": {
+  "druid": {
+   "Improved Wrath": "Starlight Wrath",
+   "Improved Moonfire": "Moon and Stars"
+  }
+ },
  "talents": {
   "warrior": [
    [
@@ -3060,7 +3066,7 @@ window.FP_DATA = {
     "Balance",
     [
      [
-      "Improved Wrath",
+      "Starlight Wrath",
       5,
       1,
       2,
@@ -3081,7 +3087,7 @@ window.FP_DATA = {
       ""
      ],
      [
-      "Improved Moonfire",
+      "Moon and Stars",
       2,
       2,
       2,
@@ -3127,7 +3133,7 @@ window.FP_DATA = {
       5,
       4,
       2,
-      "Improved Moonfire"
+      "Moon and Stars"
      ],
      [
       "Improved Starfire",
